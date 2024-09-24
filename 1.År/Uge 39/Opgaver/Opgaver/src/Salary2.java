@@ -41,3 +41,5 @@ public class Salary2
         System.out.println();
     }
 }
+
+// HEJ MATIAS!
