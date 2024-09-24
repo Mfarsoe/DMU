@@ -42,4 +42,3 @@ public class Salary2
     }
 }
 
-// HEJ MATIAS!
