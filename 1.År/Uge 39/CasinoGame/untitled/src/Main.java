@@ -1,8 +1,17 @@
+/*
+JAVA CONSOLE GAME - CASINO
+UGE 39 - GRUNDLÆGGENDE PROGRAMMERING
+MARTIN - ELIN - CHRISTINE - ANDREAS
+ */
+
+
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // Starting Balance is set
         int balance = 100;
         Scanner sc = new Scanner(System.in);
         // Story
@@ -11,6 +20,7 @@ public class Main {
         System.out.println("The lights inside were blinding, and the sound of slot machines echoed in his mind as he approached the poker table.");
         System.out.println("With a deep breath, he pushed the $100 forward, praying for the impossible.");
         System.out.println("\"This is it,\" he whispered to himself, \"win or lose, there’s no turning back now.\"");
+        // To not flood the console
         System.out.println("Press Enter to continue...");
         sc.nextLine();
         System.out.println("Welcome to the Casino!");
@@ -26,6 +36,7 @@ public class Main {
                 " \\/___/  \\'  '\\  /\n" +
                 "          \\'__'\\/");
         System.out.println("Try your luck and win big!");
+        // To not flood the console
         System.out.println("Press Enter to continue...");
         sc.nextLine();
         //Game loop begins
@@ -41,7 +52,7 @@ public class Main {
                 // Switch to choose which game - Uses methods to call each game.
                 switch (choice) {
                     case 1:
-                        balance = DiceRoll(balance);
+                        balance = chanceGame(balance);
                         break;
                     case 2:
                         balance = guessTheNumber(balance);
@@ -81,7 +92,7 @@ public class Main {
         }
 
     }
-    private static int DiceRoll(int balance) {
+    private static int chanceGame(int balance) {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
         System.out.println("✦✧✦✧✦✧✦✧✦✧✦✧✦✧✦✧\n" +
@@ -90,13 +101,17 @@ public class Main {
                 " The goal of the game is to simply sit back and late fate take the wheel! \n " +
                 "We will roll a number between 1-100 and depending on the outcome \n " +
                 "You can win up to 3x your bet! 1-60 You Lose, 61-90 2x, 91-100 3x!!");
+        // Asks for bet input
         System.out.println("Please enter your bet: ");
         int bet = sc.nextInt();
+        // Incase the bet > balance
         if (bet > balance) {
             System.out.println("Your bet is greater than the current balance");
         } else {
+            //Game Loop Starts - Balance being subtracted
             balance -= bet;
             System.out.println("You've bet $" + bet + " and your current balance is $" + balance);
+            // Random number being chosen between 1-100
             int randomNumber = rand.nextInt(100);
             if (randomNumber < 60) {
                 System.out.println("You Lost");
@@ -130,14 +145,16 @@ public class Main {
                     "Type R when you are ready.");
             String ready = input.nextLine();
 
+            //Game starts after r is typed in the console
             if (ready.equalsIgnoreCase("r")) ;
             while (!ready.equalsIgnoreCase("r")) {
                 System.out.println("Invalid input. Please type 'R' when you are ready.");
                 ready = input.nextLine();
             }
-
+            //Ask the user for input (a number to compares with the randomly generated number)
             System.out.println("Guess the number between 1 and 100");
 
+            // Random number gets checked with conditions and the give user a hint
             if (random % 2 == 0) {
                 System.out.println("Hint: the number is even");
             } else {
@@ -153,17 +170,19 @@ public class Main {
             } else {
                 System.out.println("A number is NOT divisible by 3");
             }
-
+            // User input for the guessed number
             int guess = input.nextInt();
 
+            //The guessed number is compared to the randomly generated number
             while (guess != random) {
                 if (balance > 0) {
                     balance -= 20;
+                    //Hint. The guessed number is compared with generated number (greater or smaller)
                     if (guess > random) {
                         System.out.println("Your number is too high");
                     } else
                         System.out.println("Your number is too low");
-
+                    // Hint that shows to user how far number is from input to the random number
                     int difference = Math.abs(guess - random);
                     {
                         if (difference <= 10) {
@@ -172,13 +191,13 @@ public class Main {
                             System.out.println("Hint: You're far from the correct number (10  or more).");
                         }
                     }
-                    System.out.println("Your balance is $" + balance);
+                    System.out.println("Your balance is $" + balance); //Balance shows after each attempt
 
-                    guess = input.nextInt();
+                    guess = input.nextInt(); //Next input for the next attempt
                 } else
                     break;
             }
-
+            //Balance increased by 100 after the guessed number is equal to the random
             if (guess == random) {
                 balance += 100;
                 System.out.println("Congratulations! You win and your balance is $" + balance);
