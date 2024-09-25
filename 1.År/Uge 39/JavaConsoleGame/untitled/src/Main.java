@@ -45,16 +45,15 @@ public class Main {
                 }
             }
 
-            // When no more _ is in our result, we mark it complete.
+            // When no more _ is in our result, we mark it complete to get out of the while loop
             if (result.indexOf("_") == -1){
                 isCompleted = true;
             }
         }
+        // If guess amount is under 10, you've won.
         if (guessAmmount < 10 && guessAmmount >= 0) {
             System.out.println("The word was " + chosenWord + "!");
             System.out.println("You've won 5x your bet!");
-
-
         } else {
             System.out.println("The word was " + chosenWord + "!");
             System.out.println("You've lost, too bad..");
