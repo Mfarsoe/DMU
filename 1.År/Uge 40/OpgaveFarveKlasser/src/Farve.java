@@ -2,6 +2,7 @@ public class Farve {
     private int Red;
     private int Green;
     private int Blue;
+
     //Default-Constructor
     public Farve() {
         Red = 0;
@@ -10,12 +11,12 @@ public class Farve {
     }
     //Set-Constructor
     public Farve(int red, int green, int blue) {
-        this.Red = red;
-        this.Green = green;
-        this.Blue = blue;
+        set(red, green, blue);
     }
     //Copy-Constructor
-
+        public Farve(String farve) {
+        
+        }
     //toString
     public String toString() {
         if (Red==255 && Green==0 && Blue==0) {
@@ -34,9 +35,9 @@ public class Farve {
     //SetMethod
     public void set(int red, int green, int blue) {
 
-        Red = normalize(red);
-        Green = normalize(green);
-        Blue = normalize(blue);
+        this.Red = normalize(red);
+        this.Green = normalize(green);
+        this.Blue = normalize(blue);
     }
     //Normalize Number to be between 0 and 255
     private int normalize(int normNumber) {
@@ -48,7 +49,7 @@ public class Farve {
     }
 
     public boolean equals(Farve farve) {
-        if ( == farve)
+        if (farve == farve)
             return true;
         else {
             return false;
