@@ -4,12 +4,10 @@ UGE 39 - GRUNDLÆGGENDE PROGRAMMERING
 MARTIN - ELIN - CHRISTINE - ANDREAS
  */
 
-
-
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class Casino {
     public static void main(String[] args) {
         // Starting Balance is set
         int balance = 100;
@@ -52,7 +50,7 @@ public class Main {
                 // Switch to choose which game - Uses methods to call each game.
                 switch (choice) {
                     case 1:
-                        balance = chanceGame(balance);
+                        balance = ChanceGame(balance);
                         break;
                     case 2:
                         balance = guessTheNumber(balance);
@@ -90,9 +88,8 @@ public class Main {
                 break;
             }
         }
-
     }
-    private static int chanceGame(int balance) {
+    private static int ChanceGame(int balance) {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
         System.out.println("✦✧✦✧✦✧✦✧✦✧✦✧✦✧✦✧\n" +
