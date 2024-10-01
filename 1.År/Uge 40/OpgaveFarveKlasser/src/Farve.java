@@ -5,17 +5,17 @@ public class Farve {
 
     //Default-Constructor
     public Farve() {
-        Red = 0;
-        Green = 0;
-        Blue = 0;
+        this(0,0,0);
     }
     //Set-Constructor
     public Farve(int red, int green, int blue) {
         set(red, green, blue);
     }
     //Copy-Constructor
-        public Farve(String farve) {
-        
+        public Farve(Farve other) {
+        this.Red = other.Red;
+        this.Green = other.Green;
+        this.Blue = other.Blue;
         }
     //toString
     public String toString() {
