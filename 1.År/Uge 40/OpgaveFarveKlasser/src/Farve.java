@@ -12,7 +12,7 @@ public class Farve {
         set(red, green, blue);
     }
     //Copy-Constructor
-        public Farve(Farve other) {
+    public Farve(Farve other) {
         this(other.Red, other.Green, other.Blue);
         }
     //toString
@@ -46,7 +46,7 @@ public class Farve {
         else
             return normNumber;
     }
-
+    //Equal
     public boolean equals(Farve other) {
         return (this.Red==other.Red &&
                 this.Green==other.Green &&
