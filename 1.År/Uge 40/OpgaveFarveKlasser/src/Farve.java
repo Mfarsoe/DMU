@@ -13,9 +13,7 @@ public class Farve {
     }
     //Copy-Constructor
         public Farve(Farve other) {
-        this.Red = other.Red;
-        this.Green = other.Green;
-        this.Blue = other.Blue;
+        this(other.Red, other.Green, other.Blue);
         }
     //toString
     public String toString() {
@@ -42,17 +40,17 @@ public class Farve {
     //Normalize Number to be between 0 and 255
     private int normalize(int normNumber) {
         if (normNumber > 255)
-            normNumber = 255;
+            return 255;
         else if (normNumber < 0)
-            normNumber = 0;
-        return normNumber;
+            return 0;
+        else
+            return normNumber;
     }
 
-    public boolean equals(Farve farve) {
-        if (farve == farve)
-            return true;
-        else {
-            return false;
+    public boolean equals(Farve other) {
+        return (this.Red==other.Red &&
+                this.Green==other.Green &&
+                this.Blue==other.Blue);
         }
-    }
 }
+
