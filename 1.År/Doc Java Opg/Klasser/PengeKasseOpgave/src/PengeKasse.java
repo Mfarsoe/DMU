@@ -96,33 +96,76 @@ public class PengeKasse {
         tiere = 0;
         tyvere = 0;
     }
+
+
+    public PengeKasse givTilbage (int beløb) {
+        PengeKasse returKasse = new PengeKasse();
+        //Så længe beløbet er over 20 og vi har tyvere, tager vi fra vores pengekasse og lægger over i returkasse
+        while (beløb >= 20 && tyvere > 0){
+            returKasse.tyvere++;
+            tyvere--;
+            beløb -= 20;
+        }
+        while (beløb >= 10 && tiere > 0){
+            returKasse.tiere++;
+            tiere--;
+            beløb -= 10;
+        }
+        while (beløb >= 5 && femmere > 0){
+            returKasse.femmere++;
+            femmere--;
+            beløb -= 5;
+        }
+        while (beløb >= 2 && toere > 0) {
+            returKasse.toere++;
+            toere--;
+            beløb -= 2;
+        }
+        //Hvis vi ikke kan opfylde beløbet med det antal enere vi har, returneres hele vores returkasse tilbage i vores pengekasse og returneres null.
+        if (beløb > enere) {
+            add(returKasse);
+            return null;
+        } else {
+            returKasse.enere = beløb;
+            enere -= beløb;
+            return returKasse;
+        }
+
+    }
+
+
+
+
+
+
     //Returnere Pengekasse med antal mønter i, med størte mønt.
     // Gør vi ved modulus vores beløb for at se hvor mange gange beløbet går op i vores enheder,
     // hvorefter vi tilføjer det til vores returKasse instans. Derefter trækker vi vores nye varaible fra vores beløb.
-    public PengeKasse givTilbage (int beløb) {
+    public PengeKasse givTilbage2 (int beløb) {
         PengeKasse returKasse = new PengeKasse();
-        while (beløb > 0) {
+
+        while (beløb >= 20 && tyvere > 0){
             returKasse.set(20, beløb%20);
             beløb -= returKasse.tyvere*20;
-
-            returKasse.set(10, beløb%10);
-            beløb -= returKasse.tiere*10;
-
-            returKasse.set(5, beløb%5);
-            beløb -= returKasse.femmere*5;
-
-            returKasse.set(2, beløb%2);
-            beløb -= returKasse.toere*2;
-
-            if (beløb > enere) {
-                add(returKasse);
-                return null;
-            } else {
-                    returKasse.set(1, enere);
-                    beløb -= returKasse.enere;
-                }
-
-            }
-        return returKasse;
+        }
+        while (beløb >= 10 && tiere > 0) {
+            returKasse.set(10, beløb % 10);
+            beløb -= returKasse.tiere * 10;
+        }
+        while (beløb >= 5 && femmere > 0) {
+            returKasse.set(5, beløb % 5);
+            beløb -= returKasse.femmere * 5;
+        }
+        while (beløb >= 2 && toere > 0) {
+            returKasse.set(2, beløb % 2);
+            beløb -= returKasse.toere * 2;
+        }
+        if (beløb > enere) {
+            add(returKasse);
+            return null;
+        } else {
+            returKasse.set(1, enere);
+            return returKasse;
+        }
     }
 }
