@@ -2,8 +2,8 @@ public class Linie {
     private Punkt a,b;
 
     public Linie(Punkt a, Punkt b) {
-        this.a = a;
-        this.b = b;
+        this.a = new Punkt(a);
+        this.b = new Punkt(b);
     }
 
     public double length() {

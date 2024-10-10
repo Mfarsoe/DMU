@@ -5,6 +5,10 @@ public class Punkt {
     public Punkt(int x, int y) {
         set(x, y);
     }
+    public Punkt(Punkt punkt){
+        set(punkt.x, punkt.y);
+    }
+
     public int getX() {
         return x;
     }
