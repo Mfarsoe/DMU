@@ -2,6 +2,8 @@ public class Main {
     public static void main(String[] args) {
         bogTest();
         bogHandelTest();
+
+        
     }
     public static void bogTest() {
         Bog b1 = new Bog("Java: how to program", "Deitel & Deitel", 8, 497);
