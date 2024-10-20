@@ -21,5 +21,13 @@ public class Main {
         Opg19.løsning();
         Opg20.løsning();
         Opg21.løsning();
+        Opg23.Løsning();
+        Opg24.Løsning();
+        Opg26.Løsning();
+        Opg27.Løsning();
+        Opg28.Løsning();
+        Opg30.Løsning1();
+        Opg30.Løsning2();
+        Opg30.Løsning3();
     }
 }
