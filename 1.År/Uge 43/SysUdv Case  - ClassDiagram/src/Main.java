@@ -17,8 +17,5 @@ public class Main {
 
         System.out.println("På skolen " + s.getName() + " underviser " + d.getName() + " Og har eleverne " + d.getStudents());
 
-
-
-
     }
 }
