@@ -1,4 +1,8 @@
-public class Book {
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Book implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String bookName;
     private String bookAuthor;
     private String ISBN;
@@ -11,6 +15,20 @@ public class Book {
         this.ISBN = ISBN;
         this.isAvailable = true;
     }
+
+
+    public boolean equals(Book b) {
+        if (this == b) return true;
+        if (b == null || getClass() != b.getClass()) return false;
+        Book book = (Book) b;
+        return Objects.equals(bookName, book.bookName) && Objects.equals(bookAuthor, book.bookAuthor);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(bookName, bookAuthor, ISBN, isAvailable);
+    }
+
 
     public void borrowBook() {
         if (isAvailable) {

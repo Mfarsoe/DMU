@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,11 +10,12 @@ public class Libary {
     }
     public void addBook(Book book) {
         books.add(book);
+        WriteList.writeToFile("books.dat", books);
     }
     public void removeBook(Book book) {
         books.remove(book);
     }
-    public List<Book> getBooks() {
-        return books;
+    public List<Book> getBooks() throws IOException {
+        return ReadListBook.readFromFile("books.dat");
     }
 }

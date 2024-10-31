@@ -1,5 +1,5 @@
 
-public class Member {
+public abstract class Member {
     private String name;
     private int memberID;
 

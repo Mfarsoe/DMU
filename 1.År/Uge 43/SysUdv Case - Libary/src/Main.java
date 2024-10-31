@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -36,7 +37,11 @@ public class Main {
 
                             break;
                         case 3:
-                            lib.getBooks();
+                            try {
+                                lib.getBooks();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
                             break;
                     }
             }
