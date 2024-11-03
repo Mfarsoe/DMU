@@ -46,14 +46,7 @@ public class Book implements Serializable {
         return Objects.hash(isbn);
     }
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", isbn='" + isbn + '\'' +
-                ", isReserved=" + isReserved +
-                ", isLent=" + isLent +
-                ", reservedBy='" + reservedBy + '\'' +
-                '}';
+        return "title=" + title + ", author=" + author + ", isbn=" + isbn + ", isReserved=" + isReserved + ", isLent=" + isLent + ", reservedBy=" + reservedBy;
     }
 
 }

@@ -1,8 +1,8 @@
 public class Librarian extends Member{
 
 
-    public Librarian(String name, String ID){
-        super(name,ID);
+    public Librarian(String name, String ID, String password){
+        super(name,ID,password);
     }
 
     public void addBook(Book book) {
@@ -13,12 +13,12 @@ public class Librarian extends Member{
         }
     }
 
-    public void createMember(String name, String ID, boolean isLibrarian){
+    public void createMember(String name, String ID, String password, boolean isLibrarian){
         Member newMember;
         if(isLibrarian){
-            newMember = new Librarian(name, ID);
+            newMember = new Librarian(name, ID,password);
         } else {
-            newMember = new Member(ID, name);
+            newMember = new Member(ID, name, password);
         }
         try {
             LibrarySystem.addMember(newMember);

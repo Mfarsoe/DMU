@@ -1,0 +1,1 @@
+title=1, author=1, isbn=1, isReserved=false, isLent=false, reservedBy=null

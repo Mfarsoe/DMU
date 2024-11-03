@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -13,9 +14,7 @@ public class Main {
             System.out.println("2. Member Menu");
             System.out.println("3. Exit");
             System.out.print("Choose an option: ");
-
             int choice = Integer.parseInt(scanner.nextLine());
-
             switch (choice) {
                 case 1:
                     librarianMenu(scanner, librarySystem);
@@ -108,11 +107,13 @@ public class Main {
         String name = scanner.nextLine();
         System.out.print("Enter Member ID: ");
         String memberId = scanner.nextLine();
+        System.out.print("Enter Member Password: ");
+        String password = scanner.nextLine();
         System.out.print("Is the member a librarian? (true/false): ");
         boolean isLibrarian = Boolean.parseBoolean(scanner.nextLine());
 
         try {
-            librarySystem.addMember(isLibrarian ? new Librarian(name, memberId) : new Member(name, memberId));
+            librarySystem.addMember(isLibrarian ? new Librarian(name, memberId, password) : new Member(name, memberId, password));
             System.out.println("Member added successfully.");
         } catch (Exception e) {
             System.out.println("Error adding member: " + e.getMessage());
@@ -150,7 +151,7 @@ public class Main {
     private static Member findMemberById(LibrarySystem librarySystem, String memberId) {
         for (Member member : librarySystem.getMembers()) {
             if (member.getID().equals(memberId)) {
-                return member; // Return the matching member
+                return member; // Return the matching member1
             }
         }
         return null; // Return null if no matching member is found
