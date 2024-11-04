@@ -17,6 +17,8 @@ public class Lejlighed extends Bolig{
         return "[Lejlighed: " + super.toString() + ", husleje=" + husleje + "]";
     }
 
+
+    @Override
     public double årligHusleje() {
         return husleje * 12;
     }

@@ -15,6 +15,7 @@ public class Villa extends Bolig{
         super(villa);
         this.pris = villa.pris;
         this.iBy = villa.iBy;
+        this.grund = villa.grund;
     }
 
     public String toString() {
