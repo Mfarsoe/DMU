@@ -36,31 +36,31 @@ public class Controller {
     }
     @FXML
     public void clearRadioButtonsA() {
+        clearRaidoButtons();
         radioButtonA.setSelected(true);
-        radioButtonB.setSelected(false);
-        radioButtonC.setSelected(false);
-        radioButtonD.setSelected(false);
     }
     @FXML
     public void clearRadioButtonsB() {
-        radioButtonA.setSelected(false);
+        clearRaidoButtons();
         radioButtonB.setSelected(true);
-        radioButtonC.setSelected(false);
-        radioButtonD.setSelected(false);
     }
     @FXML
     public void clearRadioButtonsC() {
-        radioButtonA.setSelected(false);
-        radioButtonB.setSelected(false);
+        clearRaidoButtons();
         radioButtonC.setSelected(true);
-        radioButtonD.setSelected(false);
     }
     @FXML
     public void clearRadioButtonsD() {
+        clearRaidoButtons();
+        radioButtonD.setSelected(true);
+    }
+
+
+    private void clearRaidoButtons(){
         radioButtonA.setSelected(false);
         radioButtonB.setSelected(false);
         radioButtonC.setSelected(false);
-        radioButtonD.setSelected(true);
+        radioButtonD.setSelected(false);
     }
     @FXML
     protected void onButtonClick() {
