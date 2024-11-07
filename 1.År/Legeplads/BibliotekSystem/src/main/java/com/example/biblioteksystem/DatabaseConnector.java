@@ -3,18 +3,26 @@ package com.example.biblioteksystem;
 import java.sql.*;
 
 public class DatabaseConnector {
-    private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static final String DB_URL = "jdbc:mysql://mysql87.unoeuro.com:3306/mfarsoe_dk_db_bibsys";
-    private static final String USER = "mfarsoe_dk";
-    private static final String PASS = "";
+    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static final String DB_URL = "jdbc:mysql://localhost/user_db";
+    private static final String USER = "root";
+    private static final String PASS = "rootPW";
+    //private static final String connectionString = "jdbc:mysql://" + DB_URL + "?user=" + USER + "&password=" + PASS + "&useUnicode=true&characterEncoding=UTF-8";
 
     public static Connection connection() throws SQLException {
+        Connection conn = null;
         try {
             Class.forName(JDBC_DRIVER);
-            System.out.println("Connecting to database...");
-            return DriverManager.getConnection(DB_URL, USER, PASS);
-        } catch (ClassNotFoundException e) {
-            throw new SQLException("Database driver not found",e);
+            //Trying to establish connection
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+
+            //Error handling that prints a stacktrace for debugging
+        } catch (Exception e) {
+            System.out.println("Could not connect to database: mfarsoe_dk_db_bibsys!\n");
+            System.out.println(e.getMessage() + "\n STACK TRACE: \n");
+            e.printStackTrace();
         }
+        return conn;
     }
 }
+
