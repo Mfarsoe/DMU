@@ -24,4 +24,5 @@
    <PasswordField fx:id="Password" alignment="CENTER" maxWidth="150.0" prefWidth="150.0" />
   <Button fx:id="Login" onAction="#onButtonClick" text="Login" />
    <Label fx:id="Check" />
+   <Button mnemonicParsing="false" text="Register" />
 </VBox>

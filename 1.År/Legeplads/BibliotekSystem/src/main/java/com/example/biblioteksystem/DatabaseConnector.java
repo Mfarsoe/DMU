@@ -18,7 +18,7 @@ public class DatabaseConnector {
 
             //Error handling that prints a stacktrace for debugging
         } catch (Exception e) {
-            System.out.println("Could not connect to database: mfarsoe_dk_db_bibsys!\n");
+            System.out.println("Could not connect to database: user_db!\n");
             System.out.println(e.getMessage() + "\n STACK TRACE: \n");
             e.printStackTrace();
         }
