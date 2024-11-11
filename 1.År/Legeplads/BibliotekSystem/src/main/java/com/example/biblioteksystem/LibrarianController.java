@@ -53,8 +53,7 @@ public class LibrarianController implements Initializable {
     private TextField txtTitle;
 
     ObservableList<Book> listM;
-
-    int index = -1;
+    Book book = null;
 
     Connection conn = null;
     ResultSet rs = null;
@@ -63,21 +62,25 @@ public class LibrarianController implements Initializable {
 
 
     public void initialize(URL url, ResourceBundle rb) {
+        UpdateBookList();
+    }
+
+
+    @FXML
+    private void UpdateBookList() {
         bookNumber.setCellValueFactory(new PropertyValueFactory<Book,Integer>("id"));
         bookName.setCellValueFactory(new PropertyValueFactory<Book,String>("title"));
         bookAuthor.setCellValueFactory(new PropertyValueFactory<Book,String>("Author"));
         bookISBN.setCellValueFactory(new PropertyValueFactory<Book,String>("isbn"));
-
         listM = BookService.getDataBooks();
 
         tableBooks.setItems(listM);
     }
 
-
     @FXML
     void onAddButtonClick(ActionEvent event) {
         conn = DatabaseConnector.connection();
-        String sql = "INSERT INTO books (name, author, isbn)(?,?,?)";
+        String sql = "INSERT INTO books (name, author, isbn) VALUES (?,?,?)";
         try {
             pst = conn.prepareStatement(sql);
             pst.setString(1,txtTitle.getText());
@@ -88,11 +91,22 @@ public class LibrarianController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        UpdateBookList();
+
     }
 
     @FXML
     void onDeleteButtonClick(ActionEvent event) {
-
+        book = tableBooks.getSelectionModel().getSelectedItem();
+        conn = DatabaseConnector.connection();
+        String query = "DELETE FROM books WHERE id = " + book.getId();
+        try {
+            pst = conn.prepareStatement(query);
+            pst.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        UpdateBookList();
     }
 
     @FXML

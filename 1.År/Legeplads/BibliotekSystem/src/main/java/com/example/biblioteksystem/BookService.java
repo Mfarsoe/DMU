@@ -14,7 +14,7 @@ public class BookService {
         Connection conn = DatabaseConnector.connection();
         ObservableList<Book> list = FXCollections.observableArrayList();
         try {
-            PreparedStatement ps = conn.prepareStatement("select * from user_db.books");
+            PreparedStatement ps = conn.prepareStatement("SELECT * FROM user_db.books");
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
