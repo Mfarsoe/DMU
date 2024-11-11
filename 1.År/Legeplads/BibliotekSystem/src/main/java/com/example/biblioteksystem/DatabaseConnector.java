@@ -9,7 +9,7 @@ public class DatabaseConnector {
     private static final String PASS = "rootPW";
     //private static final String connectionString = "jdbc:mysql://" + DB_URL + "?user=" + USER + "&password=" + PASS + "&useUnicode=true&characterEncoding=UTF-8";
 
-    public static Connection connection() throws SQLException {
+    public static Connection connection(){
         Connection conn = null;
         try {
             Class.forName(JDBC_DRIVER);

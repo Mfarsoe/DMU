@@ -19,8 +19,7 @@ public class LoginController {
     private TextField Username;
     @FXML
     private PasswordField Password;
-    @FXML
-    private Button Login;
+
     @FXML
     private Label Check;
     @FXML
@@ -30,7 +29,7 @@ public class LoginController {
 
 
     @FXML
-    public void onButtonClick(ActionEvent event) throws IOException {
+    public void onLoginButtonClick(ActionEvent event) throws IOException {
         String username = Username.getText();
         String password = Password.getText();
         LoginService loginService = new LoginService();
@@ -40,6 +39,7 @@ public class LoginController {
         } else
             Check.setText("Login Failed");
     }
+
 
     @FXML
     public void switchSceneLib(ActionEvent event) throws IOException {
