@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DatabaseConnector {
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String DB_URL = "jdbc:mysql://localhost/torinopizza";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/torinopizza";
     private static final String USER = "root";
     private static final String PASS = "rootPW";
     //private static final String connectionString = "jdbc:mysql://" + DB_URL + "?user=" + USER + "&password=" + PASS + "&useUnicode=true&characterEncoding=UTF-8";
