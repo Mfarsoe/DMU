@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="400.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.torinopizza.KundeSysController">
    <children>
       <TextField fx:id="textFieldNavn" layoutX="31.0" layoutY="87.0" />
@@ -17,13 +16,12 @@
         <columns>
           <TableColumn fx:id="tableViewKundeID" prefWidth="49.60003662109375" text="ID" />
           <TableColumn fx:id="tableViewKundeNavn" prefWidth="100.79998779296875" text="Navn" />
-            <TableColumn fx:id="tableViewKundeAdresse" prefWidth="148.79998779296875" text="Adresse" />
+            <TableColumn fx:id="tableViewKundeAdresse" prefWidth="148.79998779296875" text="Addresse" />
             <TableColumn fx:id="tableViewKundeTelefon" prefWidth="98.39996337890625" text="Telefon" />
         </columns>
       </TableView>
-      <Button fx:id="opretKundeBtn" layoutX="56.0" layoutY="256.0" maxWidth="100.0" mnemonicParsing="false" onAction="#opretKundePress" prefWidth="100.0" text="Opret Kunde" />
-      <Button fx:id="opdaterKundePress" layoutX="56.0" layoutY="297.0" maxWidth="100.0" mnemonicParsing="false" onAction="#opdaterKundePress" prefWidth="100.0" text="Opdater Kunde" />
-      <Button fx:id="sletKundeBtn" layoutX="56.0" layoutY="340.0" maxWidth="100.0" mnemonicParsing="false" onAction="#sletKundePress" prefWidth="100.0" text="Slet Kunde" />
+      <Button fx:id="opretKundeBtn" layoutX="56.0" layoutY="302.0" maxWidth="100.0" mnemonicParsing="false" onAction="#opretKundePress" prefWidth="100.0" text="Opret Kunde" />
+      <Button fx:id="sletKundeBtn" layoutX="56.0" layoutY="340.0" maxWidth="100.0" mnemonicParsing="false" onAction="#sletKundePress" prefWidth="100.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Slet Kunde" />
       <Label layoutX="33.0" layoutY="70.0" text="Navn" />
       <Label layoutX="33.0" layoutY="130.0" text="Adresse" />
       <Label layoutX="33.0" layoutY="193.0" text="Telefon" />
