@@ -307,7 +307,7 @@ public class NyordreViewController implements Initializable {
         return -1;
     }
 
-
+    //
     private void updateOrdreList() {
         TableColumn<String, String> pizzaColumn = new TableColumn<>("Pizza Navn");
         pizzaColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue()));
@@ -318,7 +318,7 @@ public class NyordreViewController implements Initializable {
         ordreTableView.setItems(ordreExtraObservableList);
     }
 
-
+    //Observablelist med alle ordreextras
     private ObservableList<String> getOrdreExtraList() {
         conn = DatabaseConnector.connection();
         String sql = "SELECT m.Navn FROM menu m JOIN ordredetalje od ON m.PizzaID = od.PizzaID WHERE od.OrdreID = " + currentOrdreID;
@@ -337,6 +337,7 @@ public class NyordreViewController implements Initializable {
         return list;
     }
 
+    //Opdatere prislable
     private void setPrisLabel(){
         prisLabel.setText(String.valueOf(temppris));
     }

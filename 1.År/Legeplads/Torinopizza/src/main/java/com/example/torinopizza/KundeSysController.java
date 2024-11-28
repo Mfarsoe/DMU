@@ -5,19 +5,14 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.chart.PieChart;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
-
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class KundeSysController implements Initializable {
@@ -53,24 +48,7 @@ public class KundeSysController implements Initializable {
         UpdateKundeList();
     }
 
-    //Ikke brugt - Ideen var at hente dataen ned og indsætte dataen i textfelterne, hvorefter man kunne ændre det og opdatere.
-    /*@FXML
-    void opdaterKundePress(ActionEvent event) {
-        kunde = tableViewKunde.getSelectionModel().getSelectedItem();
-        conn = DatabaseConnector.connection();
-        String sql = "UPDATE kunde SET Kundenavn = ?, Addresse = ?, Telefon = ? WHERE KundeID = " + kunde.getID() + " VALUES (?,?,?)";
-        try {
-            pst = conn.prepareStatement(sql);
-            pst.setString(1, textFieldNavn.getText());
-            pst.setString(2, textFieldAdresse.getText());
-            pst.setString(3, textFieldTelefon.getText());
-            pst.execute();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-     */
-
+    //Indsætter data ind i databasen udfra hvad der står i tekstfelterne
     @FXML
     void opretKundePress(ActionEvent event) {
         conn = DatabaseConnector.connection();

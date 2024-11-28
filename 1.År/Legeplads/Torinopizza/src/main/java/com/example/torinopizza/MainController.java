@@ -12,7 +12,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -23,20 +22,6 @@ import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
 
-    @FXML
-    private Button brugerHBtn;
-
-    @FXML
-    private Button nyOrdreBtn;
-
-    @FXML
-    private Button opdaterOrdreBtn;
-
-    @FXML
-    private Button ordreHistorikBtn;
-
-    @FXML
-    private Button sletOrdreBtn;
 
     @FXML
     private TableView<OrdreListObj> ordreTableView;
@@ -130,6 +115,7 @@ public class MainController implements Initializable {
     //Sletter Ordre fra den viste liste og i databasen
     @FXML
     void sletOrdrePress(ActionEvent event) {
+        sletLevering();
         sletOrdreDetalje();
         ordreListObj = ordreTableView.getSelectionModel().getSelectedItem();
         conn = DatabaseConnector.connection();
@@ -167,6 +153,18 @@ public class MainController implements Initializable {
             pst.execute();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    private void sletLevering(){
+        ordreListObj = ordreTableView.getSelectionModel().getSelectedItem();
+        conn = DatabaseConnector.connection();
+        String sql = "DELETE FROM levering WHERE OrdreID = " + ordreListObj.getID();
+        try {
+            pst = conn.prepareStatement(sql);
+            pst.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 }
