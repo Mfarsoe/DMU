@@ -6,6 +6,7 @@ public class Main {
         //System.out.println(randomNum(4100 ));
         //Filer.printSource("src/Filer.java");
         Filer.countChar("input.txt");
+        Filer.removeChar("input.txt");
     }
 
     public static int[] zeroFront(int[] nums) {

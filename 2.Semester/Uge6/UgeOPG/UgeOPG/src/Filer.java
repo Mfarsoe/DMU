@@ -1,6 +1,6 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class Filer {
@@ -19,7 +19,7 @@ public class Filer {
     public static void countChar(String filename){
         Map<Character, Integer> map = new HashMap<>();
         int totalLetters = 0;
-        for (char c = 'a'; c <= 'z'; c++) {
+        for (char c = 'A'; c <= 'Z'; c++) {
             map.put(c, 0);
         }
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
@@ -40,7 +40,25 @@ public class Filer {
         for (char c = 'A'; c <= 'Z'; c++) {
             int count = map.get(c);
             double percentage = totalLetters > 0 ? (count * 100.0 / totalLetters) : 0;
-            System.out.println(String.format("%c: %d (%.2f%%)\n", c, count, percentage));
+            System.out.println(String.format("%c: %d (%.2f%%)", c, count, percentage));
+        }
+    }
+
+    public static void removeChar(String filename){
+        File inputFile = new File(filename);
+        File outputFile = new File("cleaned_" + filename); // Ny fil til renset tekst
+
+        try (BufferedReader br = new BufferedReader(new FileReader(inputFile));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String ClearedLine = line.replaceAll("[^a-zA-Z]",""); //regex der kun includere alle a-z i upper og lowercase.
+                bw.write(ClearedLine);
+                bw.newLine();
+            }
+            System.out.println("Fil " + outputFile + " blev skrevet.");
+        } catch (IOException e) {
+            System.out.println("Fejl : " + e);
         }
     }
 
