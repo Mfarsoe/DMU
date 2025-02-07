@@ -1,7 +1,7 @@
 module com.example.sortalgs {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.desktop;
+    requires javafx.graphics;
 
 
     opens com.example.sortalgs to javafx.fxml;

@@ -26,6 +26,8 @@ public class SortVisualizer extends Application {
     private static final int ARRAY_SIZE = 100;
     // Mindre arraystørrelse for Bogosort (da algoritmen er ekstremt ineffektiv)
     private static final int BOGO_ARRAY_SIZE = 7;
+    //Hastighed som programmet opdatere i milis
+    private static final int SORTING_SPEED = 25;
 
     private int[] array;
     // Listen indeholder SortStep-objekter med array-tilstand og de indekser, der skal fremhæves.
@@ -152,7 +154,7 @@ public class SortVisualizer extends Application {
     private void animateSorting(GraphicsContext gc, List<SortStep> steps) {
         if (steps == null || steps.isEmpty()) return;
         Timeline timeline = new Timeline();
-        Duration frameDuration = Duration.millis(50);
+        Duration frameDuration = Duration.millis(SORTING_SPEED);
         for (int i = 0; i < steps.size(); i++) {
             SortStep step = steps.get(i);
             KeyFrame kf = new KeyFrame(frameDuration.multiply(i), event -> drawArray(gc, step));
@@ -161,9 +163,6 @@ public class SortVisualizer extends Application {
         timeline.play();
     }
 
-    // ---------------------------------------------------
-    // SORTERINGSALGORITHMER MED OPTAGELSE AF TRIN OG HIGHLIGHT
-    // ---------------------------------------------------
 
     // Bubble Sort
     private List<SortStep> bubbleSortSteps(int[] original) {
@@ -347,9 +346,6 @@ public class SortVisualizer extends Application {
         }
     }
 
-    // ---------------------------------------------------
-    // NYE ALGORITMER: Bogosort, Cocktail Sort, Shell Sort og Comb Sort
-    // ---------------------------------------------------
 
     // Bogosort – ekstremt ineffektiv; kører på et lille array (BOGO_ARRAY_SIZE)
     private List<SortStep> bogoSortSteps(int[] original) {
