@@ -6,7 +6,6 @@ public class ConSubject implements Subject {
 
     public ConSubject(int value) {
         observers = new ArrayList<Observer>();
-
         changeState(value);
     }
 
