@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1024.0" maxWidth="1980.0" minHeight="512.0" minWidth="1024.0" prefHeight="512.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.matiasmicroscalc.Controller">
+   <children>
+      <HBox>
+         <children>
+            <VBox prefHeight="512.0" prefWidth="512.0">
+               <children>
+                  <HBox prefHeight="255.0" prefWidth="0.0">
+                     <children>
+                        <VBox prefHeight="255.0" prefWidth="203.0">
+                           <children>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tilføj Ingridiens">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ComboBox prefWidth="150.0" />
+                                    <TextField alignment="BOTTOM_CENTER" maxWidth="120.0" onAction="#textfieldGram" prefWidth="50.0" promptText="Indtast antal Gram" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Tilføj" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="261.0" prefWidth="512.0">
+                     <children>
+                        <HBox prefHeight="259.0" prefWidth="256.0">
+                           <children>
+                              <PieChart />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="259.0" prefWidth="256.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="512.0" prefHeight="512.0" prefWidth="512.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="557.0" prefWidth="512.0">
+               <children>
+                  <TableView fx:id="tabelviewIngridienser" prefHeight="381.0" prefWidth="525.0">
+                    <columns>
+                      <TableColumn prefWidth="156.0" text="C1" />
+                      <TableColumn maxWidth="90.0" prefWidth="90.0" text="C2" />
+                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Column X" />
+                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Column X" />
+                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Column X" />
+                    </columns>
+                  </TableView>
+               </children></VBox>
+            <HBox prefHeight="260.0" prefWidth="512.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="102.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="102.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Protein">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="labelProtein" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="102.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kulhydrater">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="labelKulhydrater" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="102.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fedt">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="labelFedt" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="102.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kcal">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="labelKcal" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <MenuBar prefHeight="25.0" prefWidth="1024.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#menuMakroberegner" text="Makroberegner" />
+          <Menu mnemonicParsing="false" onAction="#menuIngridienser" text="Ingridienser" />
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
