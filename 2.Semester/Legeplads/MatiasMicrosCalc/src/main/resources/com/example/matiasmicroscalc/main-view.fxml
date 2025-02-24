@@ -21,7 +21,7 @@
          <children>
             <VBox prefHeight="512.0" prefWidth="512.0">
                <children>
-                  <HBox prefHeight="255.0" prefWidth="0.0">
+                  <HBox prefHeight="255.0" prefWidth="512.0">
                      <children>
                         <VBox prefHeight="255.0" prefWidth="203.0">
                            <children>
@@ -37,7 +37,7 @@
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <ComboBox prefWidth="150.0" />
-                                    <TextField alignment="BOTTOM_CENTER" maxWidth="120.0" onAction="#textfieldGram" prefWidth="50.0" promptText="Indtast antal Gram" />
+                                    <TextField alignment="BOTTOM_CENTER" maxWidth="120.0" onAction="#textfieldGram" prefWidth="50.0" promptText="Indtast antal gram" />
                                  </children>
                               </VBox>
                               <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
@@ -47,6 +47,48 @@
                               </VBox>
                            </children>
                         </VBox>
+                        <HBox prefHeight="182.0" prefWidth="309.0">
+                           <children>
+                              <VBox prefHeight="253.0" prefWidth="210.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Protein" />
+                                          <Label text="Label" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kulhydrater" />
+                                          <Label text="Label" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fedt" />
+                                          <Label text="Label" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kcal" />
+                                          <Label text="Label" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="253.0" prefWidth="211.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
                      </children>
                   </HBox>
                   <HBox prefHeight="261.0" prefWidth="512.0">
@@ -56,7 +98,11 @@
                               <PieChart />
                            </children>
                         </HBox>
-                        <HBox prefHeight="259.0" prefWidth="256.0" />
+                        <HBox prefHeight="259.0" prefWidth="256.0">
+                           <children>
+                              <VBox prefHeight="259.0" prefWidth="210.0" />
+                              <VBox prefHeight="259.0" prefWidth="209.0" />
+                           </children></HBox>
                      </children>
                   </HBox>
                </children>
@@ -69,11 +115,11 @@
                <children>
                   <TableView fx:id="tabelviewIngridienser" prefHeight="381.0" prefWidth="525.0">
                     <columns>
-                      <TableColumn prefWidth="156.0" text="C1" />
-                      <TableColumn maxWidth="90.0" prefWidth="90.0" text="C2" />
-                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Column X" />
-                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Column X" />
-                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Column X" />
+                      <TableColumn prefWidth="156.0" text="Ingridiens" />
+                      <TableColumn maxWidth="90.0" prefWidth="90.0" text="Protein" />
+                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Kulhydrater" />
+                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Fedt" />
+                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Kcal" />
                     </columns>
                   </TableView>
                </children></VBox>
@@ -164,7 +210,7 @@
             </HBox>
          </children>
       </VBox>
-      <MenuBar prefHeight="25.0" prefWidth="1024.0">
+      <MenuBar prefHeight="25.0" prefWidth="203.0">
         <menus>
           <Menu mnemonicParsing="false" onAction="#menuMakroberegner" text="Makroberegner" />
           <Menu mnemonicParsing="false" onAction="#menuIngridienser" text="Ingridienser" />
