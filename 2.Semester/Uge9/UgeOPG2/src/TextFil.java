@@ -7,7 +7,7 @@ import java.time.ZoneId;
 
 public class TextFil {
 
-    public static TextFil instance;
+    public static TextFil instance = null;
     private boolean isClosed = false;
 
 
@@ -17,6 +17,7 @@ public class TextFil {
         }
         return instance;
     }
+    private TextFil() {}
     public void register(String tekst){
         if (!isClosed){
             try {

@@ -27,7 +27,7 @@
                            <children>
                               <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tilføj Ingridiens">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Tilføj Ingridiens">
                                        <font>
                                           <Font size="25.0" />
                                        </font>
@@ -36,13 +36,13 @@
                               </VBox>
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <ComboBox prefWidth="150.0" />
-                                    <TextField alignment="BOTTOM_CENTER" maxWidth="120.0" onAction="#textfieldGram" prefWidth="50.0" promptText="Indtast antal gram" />
+                                    <ComboBox fx:id="comboboxIng" prefWidth="150.0" />
+                                    <TextField fx:id="textfieldGram" alignment="BOTTOM_CENTER" maxWidth="120.0" prefWidth="50.0" promptText="Indtast antal gram" />
                                  </children>
                               </VBox>
                               <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Button mnemonicParsing="false" text="Tilføj" />
+                                    <Button mnemonicParsing="false" onAction="#addBtn" text="Tilføj" />
                                  </children>
                               </VBox>
                            </children>
@@ -54,26 +54,38 @@
                                     <VBox prefHeight="200.0" prefWidth="100.0" />
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Protein" />
-                                          <Label text="Label" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Protein">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Text>
+                                          <Label fx:id="labelCurrentIPro" />
                                        </children>
                                     </VBox>
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kulhydrater" />
-                                          <Label text="Label" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Kulhydrater">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Text>
+                                          <Label fx:id="labelCurrentICarb" />
                                        </children>
                                     </VBox>
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fedt" />
-                                          <Label text="Label" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Fedt">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Text>
+                                          <Label fx:id="labelCurrentIFat" />
                                        </children>
                                     </VBox>
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kcal" />
-                                          <Label text="Label" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Kcal">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Text>
+                                          <Label fx:id="labelCurrentIKcal" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -100,8 +112,49 @@
                         </HBox>
                         <HBox prefHeight="259.0" prefWidth="256.0">
                            <children>
-                              <VBox prefHeight="259.0" prefWidth="210.0" />
-                              <VBox prefHeight="259.0" prefWidth="209.0" />
+                              <VBox prefHeight="259.0" prefWidth="210.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Protein %" />
+                                          <TextField fx:id="textfieldPercentPro" maxWidth="60.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kulhydrater %" />
+                                          <TextField fx:id="textfieldPercentCarb" maxWidth="60.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fedt %" />
+                                          <TextField fx:id="textfieldPercentFat" maxWidth="60.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#calcBtn" style="-fx-background-color: lightgreen; -fx-text-fill: white;" text="Udregn" />
+                                       </children>
+                                    </VBox>
+                                 </children></VBox>
+                              <VBox prefHeight="259.0" prefWidth="209.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#removeBtn" style="-fx-background-color: red; -fx-text-fill: white;" text="Fjern valgte" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#printBtn" style="-fx-background-color: blue; -fx-text-fill: white;" text="Udskriv" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                 </children></VBox>
                            </children></HBox>
                      </children>
                   </HBox>
@@ -113,13 +166,13 @@
          <children>
             <VBox alignment="BOTTOM_CENTER" prefHeight="557.0" prefWidth="512.0">
                <children>
-                  <TableView fx:id="tabelviewIngridienser" prefHeight="381.0" prefWidth="525.0">
+                  <TableView fx:id="tableViewIngridiens" prefHeight="381.0" prefWidth="525.0">
                     <columns>
-                      <TableColumn prefWidth="156.0" text="Ingridiens" />
-                      <TableColumn maxWidth="90.0" prefWidth="90.0" text="Protein" />
-                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Kulhydrater" />
-                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Fedt" />
-                        <TableColumn maxWidth="90.0" prefWidth="90.0" text="Kcal" />
+                      <TableColumn fx:id="tableColumnName" prefWidth="156.0" text="Ingridiens" />
+                      <TableColumn fx:id="tableColumnProtein" maxWidth="90.0" prefWidth="90.0" text="Protein" />
+                        <TableColumn fx:id="tableColumnCarb" maxWidth="90.0" prefWidth="90.0" text="Kulhydrater" />
+                        <TableColumn fx:id="tableColumnFat" maxWidth="90.0" prefWidth="90.0" text="Fedt" />
+                        <TableColumn fx:id="tableColumnKcal" maxWidth="90.0" prefWidth="90.0" text="Kcal" />
                     </columns>
                   </TableView>
                </children></VBox>
@@ -127,7 +180,7 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="102.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Total">
                            <font>
                               <Font size="23.0" />
                            </font>
@@ -138,7 +191,7 @@
                      <children>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Protein">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Protein">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -156,7 +209,7 @@
                      <children>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kulhydrater">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Kulhydrater">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -174,7 +227,7 @@
                      <children>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fedt">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Fedt">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -183,7 +236,7 @@
                         </VBox>
                         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label fx:id="labelFedt" />
+                              <Label fx:id="labelTotalFedt" />
                            </children>
                         </VBox>
                      </children>
@@ -192,7 +245,7 @@
                      <children>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kcal">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Kcal">
                                  <font>
                                     <Font size="16.0" />
                                  </font>

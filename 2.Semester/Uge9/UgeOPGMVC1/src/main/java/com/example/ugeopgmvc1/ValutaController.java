@@ -2,32 +2,21 @@ package com.example.ugeopgmvc1;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
 
 public class ValutaController {
 
-    private final double USDVALUTAKURS = 0.1405;
-    private final double GBPVALUTAKURS = 0.1113;
-    private final double YENVALUTAKURS = 21.28;
-    private final double EUROVALUTAKURS = 0.1341;
 
 
     @FXML
-    private TextField textFieldEuro;
-
-    @FXML
-    private TextField textFieldGBP;
-
-    @FXML
-    private TextField textFieldUSD;
+    private TextField textFieldEuro, textFieldGBP, textFieldUSD, textFieldYen;
 
     @FXML
     private TextField textFieldValuta;
 
-    @FXML
-    private TextField textFieldYen;
+    private CurrencyModel model = new CurrencyModel();
+
+
 
     public void initialize() {
         textFieldUSD.setEditable(false);
@@ -38,16 +27,24 @@ public class ValutaController {
 
     @FXML
     void opdaterBtn(ActionEvent event) {
-        setTextField(textFieldUSD, USDVALUTAKURS);
-        setTextField(textFieldEuro, EUROVALUTAKURS);
-        setTextField(textFieldGBP, GBPVALUTAKURS);
-        setTextField(textFieldYen, YENVALUTAKURS);
+        try {
+            // Hent beløb fra inputfeltet
+
+            model.setAmountInDKK(Double.parseDouble(textFieldValuta.getText()));
+
+            // Opdater labels med de konverterede beløb
+            textFieldUSD.setText(String.format("%.2f", model.getAmountInUSD()));
+            textFieldGBP.setText(String.format("%.2f", model.getAmountInGBP()));
+            textFieldYen.setText(String.format("%.2f", model.getAmountInYEN()));
+            textFieldEuro.setText(String.format("%.2f", model.getAmountInEURO()));
+        } catch (NumberFormatException e) {
+            // Håndter ugyldigt input
+            textFieldUSD.setText("Ugyldigt input");
+            textFieldGBP.setText("Ugyldigt input");
+            textFieldYen.setText("Ugyldigt input");
+            textFieldEuro.setText("Ugyldigt input");
+        }
     }
 
-    private String calcValuta(int indtast, double valutakurs){
-        return String.format("%.2f",(indtast * valutakurs));
-    }
-    private void setTextField(TextField textField,double valutakurs) {
-        textField.setText(calcValuta(Integer.parseInt(textFieldValuta.getText()), valutakurs));
-    }
+
 }

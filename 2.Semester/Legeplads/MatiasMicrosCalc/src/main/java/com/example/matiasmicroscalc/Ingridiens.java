@@ -4,14 +4,14 @@ package com.example.matiasmicroscalc;
 public class Ingridiens {
     private String name;
     private double protein;
-    private double carbs;
+    private double carb;
     private double fat;
     private double kcal;
 
-    public Ingridiens(String name, double protein, double carbs, double fat, double kcal) {
+    public Ingridiens(String name, double protein, double carb, double fat, double kcal) {
         this.name = name;
         this.protein = protein;
-        this.carbs = carbs;
+        this.carb = carb;
         this.fat = fat;
         this.kcal = kcal;
     }
@@ -24,8 +24,8 @@ public class Ingridiens {
         return protein;
     }
 
-    public double getCarbs() {
-        return carbs;
+    public double getCarb() {
+        return carb;
     }
 
     public double getFat() {
@@ -38,6 +38,6 @@ public class Ingridiens {
 
     @Override
     public String toString() {
-        return name;
+        return "Name=" + name + " Protein=" + protein + " Carbs=" + carb + " Fat=" + fat + " Kcal=" + kcal;
     }
 }
