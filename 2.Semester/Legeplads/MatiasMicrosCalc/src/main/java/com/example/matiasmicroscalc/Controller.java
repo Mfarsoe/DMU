@@ -127,7 +127,9 @@ public class Controller {
 
     private void setTotals(){
         labelTotalFedt.setText(String.format("%.2f",calculateTotal(Utils.readFromFile("Ingridienser"),"fat")) + "g");
-
+        labelKcal.setText(String.format("%.2f",calculateTotal(Utils.readFromFile("Ingridienser"),"kcal")) + "g");
+        labelKulhydrater.setText(String.format("%.2f",calculateTotal(Utils.readFromFile("Ingridienser"),"carb")) + "g");
+        labelProtein.setText(String.format("%.2f",calculateTotal(Utils.readFromFile("Ingridienser"),"protein")) + "g");
     }
 
     public static double calculateTotal(List<Ingridiens> ingriList, String column) {

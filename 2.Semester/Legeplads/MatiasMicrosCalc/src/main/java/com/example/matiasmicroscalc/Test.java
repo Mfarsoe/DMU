@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        Utils.writeToIFile("ingridienser","test",2.1,2.2,2.3,2.4);
+        Utils.writeToIFile("ingridienser","matiasTest",12.3,43.3,12.1,0.01);
 
         List<Ingridiens> ing = Utils.readFromFile("ingridienser");
 
