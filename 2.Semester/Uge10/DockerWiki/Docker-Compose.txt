@@ -1,0 +1,10 @@
+Docker-Compose
+
+lav fil med nano: 
+nano docker-compose.yml
+
+Kør docker-compose fil:
+docker-compose up -d
+
+Luk docker-compose:
+docker-compose down

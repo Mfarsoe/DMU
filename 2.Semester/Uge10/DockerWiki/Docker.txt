@@ -1,0 +1,29 @@
+Docker Commands
+
+Installer docker:
+sudo apt install -y docker.io
+sudo systemctl enable --now docker
+
+Hent image fra Docker Hub:
+docker pull <image_name>
+
+Lav og kør docker container med specificeret port og navn:
+docker run -p <host_port>:<container_port> --name <container_name> <image_name>
+
+Alle kørende containers:
+docker ps
+
+Restart docker service:
+sudo systemctl restart docker
+
+Se locale images:
+docker images
+
+Fjern image:
+docker rmi <image_name>
+
+Fjern alle ubrugte images:
+docker image prune
+
+
+

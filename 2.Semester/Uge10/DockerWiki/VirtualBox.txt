@@ -1,0 +1,76 @@
+Oprettelse ny VM:
+
+Sæt navn, sti og vælg ISO.
+
+Tryk "Skip Unattended Installation" til.
+Hvis ikke bruges VirtualBox Unattended Installation feature.
+Ved at skippe kan vi installere vores OS manuelt.
+
+Under Hardware kan man vælge forbrug af Memory og Processor kraft. 9/10 gange er standard rigeligt.
+
+Under Harddisk vælges størrelsen af virtuel hdd. Vælg efter behov.
+Kan tilvælge pre-allocate full size, for at reservere pladsen til VM på din hdd.
+
+-----------------------------------------------------------------------------------
+Opsætning af Virtual Box Netværk:
+
+Vælg VM og derefter settings
+
+Under network sørg for at der bruges NAT
+
+Port Forwarding - TCP protokol
+--
+SSH port 22
+Http port 80
+Https port 8080
+
+Åben op efter behov. Skal altid åbne porten man sætter I sin docker container fx.
+
+-----------------------------------------------------------------------------------
+
+Start VM:
+
+Åben VM ved dobbeltklik.
+
+-----------------------------------------------------------------
+UBUNTU Server:
+
+Vælg Try or install Ubunto Server
+
+Vælg sprog til VM.
+
+Update til nyeste installer hvis iso ikke er opdateret.
+
+Vælg keyboard layout
+
+Vælg Ubuntu installationstype (default er fint)
+
+Ændre ikke på network eller proxy.
+
+Vent på archive mirror
+
+Vælg use an entire disk (dette er fint da vi har virtuelle disk)
+
+Ændre ikke på storage configuration
+
+Indtast Profil oplysninger
+--Evt altid brug initialer eller lign så det kan huskes. 
+
+Skip Ubuntu Pro
+
+Tilføj SSH
+Igennem CMD kan man nu SSH til sin VM.
+ssh -p 22 <username>@<vm_ip>
+
+Tilføj evt docker eller andre pakker efter behov
+
+Reboot når prompted.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+Fjerne variable
+unset <variable_name>
+
+se returkode for seneste udførte kommando
+echo $?
+
+Laver .sh fil executeable
+chmod +x <file_name>.sh
+
+Sættes I toppen af sin .sh fil for at dirigere den til bash.
+#!/bin/bash
+
+Print I terminal
+echo <augment>
+
+åbne manual for given kommando
+man <commando>
+
+kommentar I bash:
+# <kommentar>
+
+alt+a til at sætte mark og så brug piletaster til at lave selection.
+
+ctrl + k til slet/cut
+

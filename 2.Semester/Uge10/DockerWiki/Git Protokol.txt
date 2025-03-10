@@ -1,0 +1,52 @@
+Systemet
+Ideen er at man kan arbejde lokalt, og så kun interagere med den fælles kodebase (origin/master el. main/master aka the blessed repo) når man har noget kode der er klar - ideelt set er det man pusher fejlfrit...
+
+Kort beskrivelse
+
+    Lav en lokal branch
+    Kod og commit på den lokale branch
+    Skift til lokal master
+    Fetch og pull (hvis der er noget at pulle - tjek status)
+    Merge den lokale ind i lokal master
+    Hvis alt er vel, så push
+
+Detaljeret gennemgang med git koder
+
+    Lav lokal branch
+    git checkout -b lokalnavn
+    eller:
+    git branch lokalnavn
+    git checkout lokalnavn
+
+OBS: Man skal som regel sørge for at man laver sin nye branch fra master og hvor master er identisk med origin/master. Fordi så starter man med den nyeste version af den fælles kodebase.
+Selvfølgelig kan det være at man sidder lokalt og har brug for at lave en variant af sin lokale kode, fordi man vil teste et eller andet og så kan man lave sin nye branch baseret på den lokale - men det er særtilfælde.
+
+    Commit på en branch
+    git add .
+    git commit -m "Beskrivelse af sin commit"
+
+    Skift til master
+    git checkout master
+
+    Opdater master
+    git fetch
+    git status
+    git pull
+    "git pull" er selvfølgelig kun nødvendigt hvis status viser at der er nye commits.
+
+    Merge den lokale med master
+    git merge lokalnavn
+    I tilfælde af konflikt kan man gøre to ting:
+    Enten kan man løse konflikten ved at kigge på de filer git nævner og fikse problemet (hvis man er 100% sikker på at man ved hvad man gør). Så vil man derefter have en ekstra commit og giteditoren åbnes (for at komme ud: Insert, ESC, :wq, Return).
+    Ellers - hvis ændringen fx er i en enkelt klasse, men konflikten er med flere - så kan man skrive git reset merge og så gå tilbage til sin lokale branch, manuelt kopiere den klasse man vil smide i kodebasen. Gå til master, opdatere master, copy-paste sin klasse ind, committe, pushe.
+
+    Push
+    git push
+    God stil at give besked i chatten når man pusher.
+
+Aliaser
+Det er hylt at kunne skrive git co i stedet for git checkout fx. Man kan lave aliaser til alle kommandoer i git. Fx:
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status
+git config --global alias.fe fetch

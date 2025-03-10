@@ -1,0 +1,36 @@
+Linux commands
+
+Opdater Linux:
+sudo apt update
+
+Tilføj rettigheder til burger (docker):
+sudo usermod -aG docker $USER
+newgrp docker
+
+Tilføj SSH til VM:
+sudo apt install openssh-server -y
+
+Skift mappe:
+cd <folder_name>
+
+List over filer i nuværende sti:
+ls
+
+Lav mappe:
+mkdir <folder_name>
+
+Kombination af commands:
+<aug 1> && <aug 2>
+
+Teksteditor:
+nano <file_name>
+
+IP addresser:
+ip a
+
+Slå firewall fra/til:
+sudo ufw disable/enable
+
+Tillad port åben igennem firewall:
+sudo ufw allow <port>/tcp
+
