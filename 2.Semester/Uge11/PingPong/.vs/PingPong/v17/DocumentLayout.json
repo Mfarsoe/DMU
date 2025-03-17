@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\2.Semester\\Uge11\\PingPong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4EE1FA5-8E62-4ED6-88F3-80E7722038DC}|PingPong\\PingPong.csproj|c:\\dmu\\2.semester\\uge11\\pingpong\\pingpong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4EE1FA5-8E62-4ED6-88F3-80E7722038DC}|PingPong\\PingPong.csproj|solutionrelative:pingpong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge11\\PingPong\\PingPong\\Program.cs",
+              "RelativeDocumentMoniker": "PingPong\\Program.cs",
+              "ToolTip": "C:\\DMU\\2.Semester\\Uge11\\PingPong\\PingPong\\Program.cs",
+              "RelativeToolTip": "PingPong\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T09:39:02.266Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

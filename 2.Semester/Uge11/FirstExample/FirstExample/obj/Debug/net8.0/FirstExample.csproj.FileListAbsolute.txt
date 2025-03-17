@@ -1,0 +1,15 @@
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\bin\Debug\net8.0\FirstExample.exe
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\bin\Debug\net8.0\FirstExample.deps.json
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\bin\Debug\net8.0\FirstExample.runtimeconfig.json
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\bin\Debug\net8.0\FirstExample.dll
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\bin\Debug\net8.0\FirstExample.pdb
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.AssemblyInfoInputs.cache
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.AssemblyInfo.cs
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.csproj.CoreCompileInputs.cache
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.sourcelink.json
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.dll
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\refint\FirstExample.dll
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.pdb
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\FirstExample.genruntimeconfig.cache
+C:\DMU\2.Semester\Uge11\FirstExample\FirstExample\obj\Debug\net8.0\ref\FirstExample.dll

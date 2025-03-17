@@ -1,0 +1,15 @@
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\bin\Debug\net8.0\PingPong.exe
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\bin\Debug\net8.0\PingPong.deps.json
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\bin\Debug\net8.0\PingPong.runtimeconfig.json
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\bin\Debug\net8.0\PingPong.dll
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\bin\Debug\net8.0\PingPong.pdb
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.AssemblyInfoInputs.cache
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.AssemblyInfo.cs
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.csproj.CoreCompileInputs.cache
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.sourcelink.json
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.dll
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\refint\PingPong.dll
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.pdb
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\PingPong.genruntimeconfig.cache
+C:\DMU\2.Semester\Uge11\PingPong\PingPong\obj\Debug\net8.0\ref\PingPong.dll

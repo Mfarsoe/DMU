@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\2.Semester\\Uge12\\FractionOverload\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAF5A2AD-F53B-46F8-AB99-0524359F967B}|FractionOverload\\FractionOverload.csproj|c:\\dmu\\2.semester\\uge12\\fractionoverload\\fractionoverload\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAF5A2AD-F53B-46F8-AB99-0524359F967B}|FractionOverload\\FractionOverload.csproj|solutionrelative:fractionoverload\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAF5A2AD-F53B-46F8-AB99-0524359F967B}|FractionOverload\\FractionOverload.csproj|c:\\dmu\\2.semester\\uge12\\fractionoverload\\fractionoverload\\fraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAF5A2AD-F53B-46F8-AB99-0524359F967B}|FractionOverload\\FractionOverload.csproj|solutionrelative:fractionoverload\\fraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fraction.cs",
+              "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge12\\FractionOverload\\FractionOverload\\Fraction.cs",
+              "RelativeDocumentMoniker": "FractionOverload\\Fraction.cs",
+              "ToolTip": "C:\\DMU\\2.Semester\\Uge12\\FractionOverload\\FractionOverload\\Fraction.cs",
+              "RelativeToolTip": "FractionOverload\\Fraction.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T07:27:03.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge12\\FractionOverload\\FractionOverload\\Program.cs",
+              "RelativeDocumentMoniker": "FractionOverload\\Program.cs",
+              "ToolTip": "C:\\DMU\\2.Semester\\Uge12\\FractionOverload\\FractionOverload\\Program.cs",
+              "RelativeToolTip": "FractionOverload\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T07:26:27.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
