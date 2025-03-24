@@ -1,0 +1,15 @@
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\bin\Debug\net8.0\SecondExample.exe
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\bin\Debug\net8.0\SecondExample.deps.json
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\bin\Debug\net8.0\SecondExample.runtimeconfig.json
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\bin\Debug\net8.0\SecondExample.dll
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\bin\Debug\net8.0\SecondExample.pdb
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.AssemblyInfoInputs.cache
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.AssemblyInfo.cs
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.csproj.CoreCompileInputs.cache
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.sourcelink.json
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.dll
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\refint\SecondExample.dll
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.pdb
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\SecondExample.genruntimeconfig.cache
+C:\DMU\2.Semester\Uge12\SecondExample\SecondExample\obj\Debug\net8.0\ref\SecondExample.dll
