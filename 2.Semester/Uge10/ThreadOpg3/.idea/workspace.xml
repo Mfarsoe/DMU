@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ca84edf-6867-4e88-ad41-3ca44c3506e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/ProjectEvaluation/secondexample.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/ProjectEvaluation/secondexample.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/ProjectEvaluation/secondexample.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/ProjectEvaluation/secondexample.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/ProjectEvaluation/secondexample.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/ProjectEvaluation/secondexample.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/FileContentIndex/4429605d-1b4e-4023-99ea-b24352f797c2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/FileContentIndex/a7c6935f-9fd9-4938-8045-9a5cb3ce9718.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/.vs/SecondExample/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/obj/Debug/net8.0/SecondExample.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/obj/Debug/net8.0/SecondExample.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/obj/Debug/net8.0/SecondExample.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge12/SecondExample/SecondExample/obj/Debug/net8.0/SecondExample.AssemblyInfoInputs.cache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mfarsoe&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mfarsoe/DMU.git&quot;,
+    &quot;accountId&quot;: &quot;9a85da17-e844-4013-a0c9-2602205c07e3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ukx1jKAsReNycHbclQutSBx6Ev" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/DMU/2.Semester/Uge13/ThreadOpg3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/DMU/2.Semester/Uge10/ThreadOpg3/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ca84edf-6867-4e88-ad41-3ca44c3506e5" name="Changes" comment="" />
+      <created>1742806161046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742806161046</updated>
+      <workItem from="1742806162148" duration="2089000" />
+      <workItem from="1742813539095" duration="9000" />
+      <workItem from="1742813554505" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

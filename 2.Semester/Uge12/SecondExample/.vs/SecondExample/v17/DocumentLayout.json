@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\DMU\\2.Semester\\Uge12\\SecondExample\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|c:\\dmu\\2.semester\\uge12\\secondexample\\secondexample\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|solutionrelative:secondexample\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|c:\\dmu\\2.semester\\uge12\\secondexample\\secondexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|solutionrelative:secondexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|c:\\dmu\\2.semester\\uge12\\secondexample\\secondexample\\punkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|solutionrelative:secondexample\\punkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|c:\\dmu\\2.semester\\uge12\\secondexample\\secondexample\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA57AD0C-99E2-4B94-9D28-91F1DD2632DA}|SecondExample\\SecondExample.csproj|solutionrelative:secondexample\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Punkt.cs",
               "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge12\\SecondExample\\SecondExample\\Punkt.cs",
               "RelativeDocumentMoniker": "SecondExample\\Punkt.cs",
               "ToolTip": "C:\\DMU\\2.Semester\\Uge12\\SecondExample\\SecondExample\\Punkt.cs",
               "RelativeToolTip": "SecondExample\\Punkt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T12:32:28.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge12\\SecondExample\\SecondExample\\Book.cs",
               "RelativeDocumentMoniker": "SecondExample\\Book.cs",
               "ToolTip": "C:\\DMU\\2.Semester\\Uge12\\SecondExample\\SecondExample\\Book.cs",
               "RelativeToolTip": "SecondExample\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T12:05:38.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge12\\SecondExample\\SecondExample\\Program.cs",
               "RelativeDocumentMoniker": "SecondExample\\Program.cs",
               "ToolTip": "C:\\DMU\\2.Semester\\Uge12\\SecondExample\\SecondExample\\Program.cs",
               "RelativeToolTip": "SecondExample\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T12:05:16.978Z",
               "EditorCaption": ""

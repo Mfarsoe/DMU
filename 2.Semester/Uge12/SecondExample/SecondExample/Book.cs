@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SecondExample {
     class Book {
-        public string? Title { get; set; }
+        public string? Title { get ; set; }
 
         public Book(string title) {
             Title = title;
