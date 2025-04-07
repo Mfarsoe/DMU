@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\2.Semester\\Uge14\\ThreadOpg1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC7EEA-B359-45EF-844B-65A5D596B695}|ThreadOpg1\\ThreadOpg1.csproj|c:\\dmu\\2.semester\\uge14\\threadopg1\\threadopg1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC7EEA-B359-45EF-844B-65A5D596B695}|ThreadOpg1\\ThreadOpg1.csproj|solutionrelative:threadopg1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC7EEA-B359-45EF-844B-65A5D596B695}|ThreadOpg1\\ThreadOpg1.csproj|c:\\dmu\\2.semester\\uge14\\threadopg1\\threadopg1\\tennisspiller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC7EEA-B359-45EF-844B-65A5D596B695}|ThreadOpg1\\ThreadOpg1.csproj|solutionrelative:threadopg1\\tennisspiller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TennisSpiller.cs",
+              "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge14\\ThreadOpg1\\ThreadOpg1\\TennisSpiller.cs",
+              "RelativeDocumentMoniker": "ThreadOpg1\\TennisSpiller.cs",
+              "ToolTip": "C:\\DMU\\2.Semester\\Uge14\\ThreadOpg1\\ThreadOpg1\\TennisSpiller.cs",
+              "RelativeToolTip": "ThreadOpg1\\TennisSpiller.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:28:50.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DMU\\2.Semester\\Uge14\\ThreadOpg1\\ThreadOpg1\\Program.cs",
+              "RelativeDocumentMoniker": "ThreadOpg1\\Program.cs",
+              "ToolTip": "C:\\DMU\\2.Semester\\Uge14\\ThreadOpg1\\ThreadOpg1\\Program.cs*",
+              "RelativeToolTip": "ThreadOpg1\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:28:03.12Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\bin\Debug\net8.0\ThreadOpg1.exe
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\bin\Debug\net8.0\ThreadOpg1.deps.json
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\bin\Debug\net8.0\ThreadOpg1.runtimeconfig.json
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\bin\Debug\net8.0\ThreadOpg1.dll
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\bin\Debug\net8.0\ThreadOpg1.pdb
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.AssemblyInfoInputs.cache
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.AssemblyInfo.cs
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.csproj.CoreCompileInputs.cache
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.sourcelink.json
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.dll
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\refint\ThreadOpg1.dll
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.pdb
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ThreadOpg1.genruntimeconfig.cache
+C:\DMU\2.Semester\Uge14\ThreadOpg1\ThreadOpg1\obj\Debug\net8.0\ref\ThreadOpg1.dll
