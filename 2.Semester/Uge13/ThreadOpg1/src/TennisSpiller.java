@@ -19,7 +19,7 @@ public class TennisSpiller extends Thread {
 
             if (Math.random() > 0.20) {
                 harBold = false;
-                System.out.println(navn + " retunere!");
+                System.out.println(navn + " retunerer!");
 
                 modstander.modtagBold();
             } else {

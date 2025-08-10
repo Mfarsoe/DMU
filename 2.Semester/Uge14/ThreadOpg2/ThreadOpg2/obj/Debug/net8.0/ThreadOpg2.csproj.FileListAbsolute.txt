@@ -1,0 +1,15 @@
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\bin\Debug\net8.0\ThreadOpg2.exe
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\bin\Debug\net8.0\ThreadOpg2.deps.json
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\bin\Debug\net8.0\ThreadOpg2.runtimeconfig.json
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\bin\Debug\net8.0\ThreadOpg2.dll
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\bin\Debug\net8.0\ThreadOpg2.pdb
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.AssemblyInfoInputs.cache
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.AssemblyInfo.cs
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.csproj.CoreCompileInputs.cache
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.sourcelink.json
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.dll
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\refint\ThreadOpg2.dll
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.pdb
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ThreadOpg2.genruntimeconfig.cache
+C:\DMU\2.Semester\Uge14\ThreadOpg2\ThreadOpg2\obj\Debug\net8.0\ref\ThreadOpg2.dll
