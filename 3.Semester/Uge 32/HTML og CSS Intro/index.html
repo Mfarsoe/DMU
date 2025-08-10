@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!---->
+    <meta charset="UTF-8">
+    <title>HTML og CSS Introduktion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HTML og CSS Introduktion</h1>
+
+    <p>Formålet er at danne sig en grundlæggende viden inden for HTML og CSS.</p>
+
+    <h2>HTML Opgaver</h2>
+    <hr>
+    <!--Opgave 1-->
+    <h3>Hvad er HTML en forkortelse for, og hvor stammer HTML fra?</h3>
+
+    <p> HTML er en forkortelse for <Strong>HyperText Markup Language</Strong>.
+        HyperText refererer til tekst med links, som forbinder dokumenter.
+        Dette er grundlaget for internettet.
+        Markup Language betyder et mærkningssprog, der bruges til at strukturere og formatere indholdet i et dokument.
+        Dette kan være tekst, billeder og links. HTML beskriver, hvordan en internetbrowser skal vise indhold ved hjælp
+        af tags.
+    </p>
+
+    <p> HTML blev udviklet i begyndelsen af 1990'erne af <strong>Tim Berners-Lee</strong>, computerforsker og fysiker.
+        Målet var at skabe en nem måde at dele og sammenkoble information på mellem forskere over internettet.
+        Først version var i 1991, og var også grundlaget for World Wide Web (Internettet).
+    </p>
+    <hr>
+    <!--Opgave 2-->
+    <h3>Hvad er historien bag, og forskellen på HTML4, XHTML, og HTML5?</h3>
+    <!--HTML4-->
+    <p> HTML4 blev udgivet i 1997 af W3C og var i mange år den mest brugte version af HTML på nettet.
+        Der var fokus på struktur og ikke så meget på design og interaktivitet.
+        Introducerede formularer, tabeller, og grundlæggende struktur-elementer.
+        HTML4 var med forkus på vidensdeling.
+    </p>
+    <!--XHTML-->
+    <p> XHTML blev introduceret i 2000 som et forsøg på at forbedre HTML4 ved at gøre det mere strukturelt strengt og
+        XML-kompatibelt.
+        XHTML står for <Strong>Extensible HyperText Markup Language</Strong>, og er en version af HTML som skal følge
+        XML-regler:
+    <ul>
+        <li>Alle tags skal lukkes korrekt.</li>
+        <li>Alt skal være med små bogstaver.</li>
+        <li>Attributter skal have citationstegn.</li>
+    </ul>
+    Til gengæld er det mere forudsigelig for computeren og browseren.
+    </p>
+    <!--HTML5-->
+    <p> HTML5 blev først gang udgivet i 2014. Udviklet af WHATWG (Web Hypertext Application Technology Working Group) og
+        senere standardiseret af W3C.
+        HTML5 er løbende blevet opdateret og er pt den aktuelle standard.
+        I HTML 5 er der fokus på multimedie, interaktivitet og semantik. Der er indbygget understøttelse af video, lyd,
+        grafik, geolocation, offline-funktioner m.m.
+    </p>
+    <!--Tabel over forskellen:-->
+    <table>
+        <thead>
+            <tr>
+                <th>Egenskab</th>
+                <th>HTML4</th>
+                <th>XHTML</th>
+                <th>HTML5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Syntaks</td>
+                <td>Løs</td>
+                <td>Streng (XML)</td>
+                <td>Løs (men anbefalet korrekt)</td>
+            </tr>
+            <tr>
+                <td>Video/lyd support</td>
+                <td>Nej</td>
+                <td>Nej</td>
+                <td>Ja</td>
+            </tr>
+            <tr>
+                <td>Semantiske tags</td>
+                <td>Få</td>
+                <td>Få</td>
+                <td>Mange nye</td>
+            </tr>
+            <tr>
+                <td>Fejltolerance</td>
+                <td>Ja</td>
+                <td>Nej</td>
+                <td>Ja</td>
+            </tr>
+            <tr>
+                <td>XML-kompatibel</td>
+                <td>Nej</td>
+                <td>Ja</td>
+                <td>Nej (men inspireret af det)</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!--Opgave 3-->
+    <h3>Undersøg betydningen af flg. tags, og hvordan de bruges</h3>
+    <h4>Dokument tags</h4>
+    <p> <strong>&lt;html&gt;</strong> er rod-elementet. Hele HTML-koden skal være i dette tag.<br>
+        <strong>&lt;head&gt;</strong> indeholder metadata (titel, link til css, skrifttype, scripts osv).<br>
+        <strong>&lt;body&gt;</strong> er alt de synlige indhold på websiden (tekst, billeder, knapper osv).<br>
+    </p>
+    <h4>Tekstformateringstags:</h4>
+    <p> <strong>&lt;h1&gt;-&lt;h6&gt;</strong> er overskrifter hierarkisk. h1 er mest betydene, h6 er mindst.<br>
+    <h1>h1 - Vigtigst</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6 - Mindst vigtigst</h6>
+
+    <strong>&lt;p&gt;</strong> er en paragraf/et afsnit, som bruges til almindelig brødtekst.
+    <p>Dette er et eksempel på en paragraf. Den bruges til brødtekst på en webside.</p>
+
+    <strong>&lt;br&gt;</strong> er linjeskift (break). Bruges som <code>&lt;br&gt;</code> uden slut-tag.
+    <p>Dette er én linje<br>og dette er en ny linje efter <code>&lt;br&gt;</code>.</p>
+
+    <strong>&lt;hr&gt;</strong> er en vandret linje og bruges som visuel opdeling.
+    <p>Før linjen</p>
+    <hr>
+    <p>Efter linjen</p>
+
+    <strong>&lt;b&gt;</strong> fed tekst (bold). Kun visuelt, uden semantisk betydning.
+    <p>Dette er <b>fed tekst</b> uden betydning for skærmlæsere.</p>
+
+    <strong>&lt;strong&gt;</strong> fed tekst, men med semantisk betydning.
+    <p>Dette er <strong>vigtig tekst</strong>, som bliver fremhævet både visuelt og semantisk.</p>
+
+    <strong>&lt;i&gt;</strong> kursiv tekst (italic). Kun visuelt, uden semantisk betydning.
+    <p>Dette er <i>kursiv tekst</i> uden særlig betydning.</p>
+
+    <strong>&lt;em&gt;</strong> kursiv tekst, men med semantisk betydning.
+    <p>Dette er <em>betonet tekst</em>, som også opfattes som vigtig af skærmlæsere.</p>
+
+    Ved både &lt;b&gt; og &lt;i&gt; er det vigtig at påpeje at det udelukkende er visuelt.<br> Hvis man ønsker at bruge
+    HTML5 til sit fulde, bør man <br>bruge &lt;strong&gt; og &lt;em&gt;, da disse tags fortæller hvad teksten er <br>og
+    ikke udelukkende hvordan den ser ud.
+    En forskel vil fx vise sig ved brugen af en tekstoplæser, SEO eller ved vedligeholdelse og fremtidssikring af HTML
+    kode.
+    </p>
+    <h4>Listetags</h4>
+    <p> <strong>&lt;ul&gt;</strong> "Unordered list" - Punktopstilling med prikker<br>
+        <strong>&lt;ol&gt;</strong> "Ordered list" - Nummereret liste (1,2,3...)<br>
+        <strong>&lt;li&gt;</strong> "List item" - Wrapper omkring indholdet i &lt;ul&gt; og &lt;ol&gt;<br>
+        <br>
+        Eksempel:
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <ol>
+        <li>Trin 1</li>
+        <li>Trin 2</li>
+    </ol>
+
+    </p>
+    <h4>Link Tag</h4>
+    <p> <strong>&lt;a&gt;</strong> "Anchor" - bruges til links. Kræver href-attribut.<br>
+        Eksempel:<br> <code>&lt;a href="https://www.google.com"&gt;Besøg Google&lt;/a&gt;</code>
+        <a href="https://google.com">Besøg Google</a>
+    </p>
+    <h4>Billeder</h4>
+    <p> <strong>&lt;img&gt;</strong> Viser billeder. Skal have billedets sti og alternativ tekst <br>
+        Eksempel:<br>
+        <code>&lt;img src="billede.jpg" alt="Et eksempelbillede" width="300&gt;</code>
+
+    <p>
+        <img src="https://www.collinsdictionary.com/images/full/apple_158989157_1000.jpg?version=6.0.84" alt="Æble"
+            width="300">
+    </p>
+    </p>
+    <h4>Tabeller</h4>
+    <p> <strong>&lt;table&gt;</strong> Starter en tabel<br>
+        <strong>&lt;tr&gt;</strong> "Table Row" - En række i tabellen<br>
+        <strong>&lt;td&gt;</strong> "Table Data" - En celle med almindeligt indhold<br>
+        <strong>&lt;th&gt;</strong> "Table header" - en celle med overskrift (vises typisk i fed tekst)<br>
+        <strong>&lt;thread&gt;</strong> Sektion til tabellens overskrift (række med th)<br>
+        <strong>&lt;tbody&gt;</strong> Sektion til selve indholdet af tabellen<br>
+        <strong>&lt;tfoot&gt;</strong> Sektion til tabellens fod (bruges fx til summer)<br>
+        <br>
+        Eksempel:
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Instruktør</th>
+                <th>Udgivelsesår</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12 Angry Men</td>
+                <td>Sidney Lumet</td>
+                <td>1957</td>
+                <td>Crime, Drama</td>
+            </tr>
+            <tr>
+                <td>The Lord of the Rings: The Fellowship of the Ring</td>
+                <td>Peter Jackson</td>
+                <td>2001</td>
+                <td>Adventure, Fantasy</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Slut på tabellen</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h3>Eksempel:</h3>
+
+    <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Titel&lt;/th&gt;
+      &lt;th&gt;Instruktør&lt;/th&gt;
+      &lt;th&gt;Udgivelsesår&lt;/th&gt;
+      &lt;th&gt;Genre&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;12 Angry Men&lt;/td&gt;
+      &lt;td&gt;Sidney Lumet&lt;/td&gt;
+      &lt;td&gt;1957&lt;/td&gt;
+      &lt;td&gt;Crime, Drama&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The Lord of the Rings: The Fellowship of the Ring&lt;/td&gt;
+      &lt;td&gt;Peter Jackson&lt;/td&gt;
+      &lt;td&gt;2001&lt;/td&gt;
+      &lt;td&gt;Adventure, Fantasy&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="4"&gt;Slut på tabellen&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+
+    <hr>
+    <!--Ekstra opgave-->
+    <h4>Ekstra tags</h4>
+    <strong>&lt;form&gt;</strong> bruges til at samle inputfelter og sende data, typisk til en server.
+    <form>
+        <p><strong>&lt;input&gt;</strong> - bruges til forskellige typer input:</p>
+        <input type="text" placeholder="Skriv dit navn">
+
+        <p><strong>&lt;textarea&gt;</strong> - bruges til længere tekst, fx en besked:</p>
+        <textarea rows="4" cols="30" placeholder="Skriv en besked"></textarea>
+
+        <p><strong>&lt;select&gt;</strong> og <strong>&lt;option&gt;</strong> - rullemenu med valg:</p>
+        <select>
+            <option>Vælg en farve</option>
+            <option>Rød</option>
+            <option>Blå</option>
+            <option>Grøn</option>
+        </select>
+
+        <p><strong>&lt;button&gt;</strong> - bruges til at sende formularen eller udføre handling:</p>
+        <button type="submit">Send</button>
+    </form>
+    <p>Mange af disse tags får først rigtig funktionalitet, når de kombineres med CSS og/eller JavaScript</p>
+    <hr>
+    <div class="layout">
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+
+        <div class="columns">
+            <div class="left">
+                <p>Indhold i venstre kolonne</p>
+            </div>
+            <div class="right">
+                <p>Indhold i højre kolonne</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </div>
+
+
+    <hr>
+    <h3>Hvad er &lt;div&gt; og hvordan bruges class?</h3>
+
+    <p><strong>&lt;div&gt;</strong> er et blok-element i HTML, som bruges til at gruppere andre HTML-elementer. Det har
+        ingen visuel effekt i sig selv, men bruges til at strukturere layout og indhold på en webside.</p>
+
+    <p>Ved at bruge <strong>class</strong> kan du give din &lt;div&gt; (eller andre HTML-elementer) et navn, som du
+        senere kan bruge til at tilføje styling via CSS eller manipulere med JavaScript.</p>
+
+    <h4>Eksempel på brug af &lt;div&gt; med class:</h4>
+
+    <pre><code>&lt;div class="header"&gt;
+  &lt;h2&gt;Dette er headeren&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div class="columns"&gt;
+  &lt;div class="left"&gt;
+    &lt;h3&gt;Venstre kolonne&lt;/h3&gt;
+    &lt;p&gt;Indhold i venstre kolonne.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="right"&gt;
+    &lt;h3&gt;Højre kolonne&lt;/h3&gt;
+    &lt;p&gt;Indhold i højre kolonne.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="footer"&gt;
+  &lt;p&gt;Dette er footeren&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+    <p>Her bruges forskellige <code>class</code>-navne: <code>header</code>, <code>columns</code>,
+        <code>left</code>, <code>right</code> og <code>footer</code>. Disse kan styles via CSS.
+    </p>
+
+    <hr>
+<h2>CSS Opgaver</h2>
+<hr>
+<h3>Hvad er CSS?</h3>
+
+<p><strong>CSS</strong> står for <em>Cascading Style Sheets</em>, og det bruges til at styre udseendet og layoutet af HTML-elementer på en webside. CSS blev udviklet af <strong>W3C</strong> (World Wide Web Consortium) i midten af 1990’erne som en måde at adskille indhold (HTML) fra præsentation (stil og design).</p>
+
+<hr>
+<h3>Hvad er selectors?</h3>
+
+<p>En <strong>selector</strong> i CSS er den del, der udvælger hvilket HTML-element eller hvilke elementer, reglerne skal gælde for. De bruges til at koble CSS-regler sammen med specifikke elementer.</p>
+
+<p>Eksempler på selectors:</p>
+<ul>
+  <li><code>p</code> - vælger alle &lt;p&gt;-tags</li>
+  <li><code>.menu</code> - vælger alle elementer med class="menu"</li>
+  <li><code>#footer</code> - vælger elementet med id="footer"</li>
+  <li><code>h1, h2</code> - vælger både h1 og h2</li>
+</ul>
+
+<hr>
+<h3>Hvilke egenskaber kan man angive for tekst?</h3>
+
+<p>Med CSS kan man ændre tekstens udseende med følgende egenskaber:</p>
+<ul>
+  <li><code>font-family</code> - hvilken skrifttype der bruges</li>
+  <li><code>font-size</code> - hvor stor teksten er</li>
+  <li><code>font-weight</code> - hvor tyk/fed teksten er</li>
+  <li><code>font-style</code> - fx italic (kursiv)</li>
+  <li><code>text-align</code> - hvordan teksten skal placeres (venstre, højre, center)</li>
+  <li><code>line-height</code> - linjeafstand</li>
+  <li><code>letter-spacing</code> - afstand mellem bogstaver</li>
+</ul>
+
+<hr>
+<h3>Hvordan angives en fonts egenskaber?</h3>
+
+<p>Man kan bruge både <code>font</code>-forkortelsen eller skrive egenskaber enkeltvis:</p>
+
+<pre><code>p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}</code></pre>
+
+<p>Det angiver skrifttype, størrelse, fed tekst og kursiv for et afsnit.</p>
+
+<hr>
+<h3>Hvordan angives farver?</h3>
+
+<p>Farver angives typisk med:</p>
+<ul>
+  <li><code>navne</code>: <code>red</code>, <code>blue</code>, <code>black</code></li>
+  <li><code>hex-koder</code>: <code>#ff0000</code> (rød), <code>#000000</code> (sort)</li>
+  <li><code>RGB</code>: <code>rgb(255, 0, 0)</code></li>
+  <li><code>HSL</code>: <code>hsl(0, 100%, 50%)</code></li>
+</ul>
+
+<pre><code>body {
+  color: #333333;
+  background-color: #f9f9f9;
+}</code></pre>
+
+<hr>
+<h3>Hvordan angives størrelser?</h3>
+
+<p>Man kan angive størrelser i forskellige enheder:</p>
+<ul>
+  <li><code>px</code> - pixels (fast størrelse)</li>
+  <li><code>em</code> - relativ til elementets skrifttype</li>
+  <li><code>rem</code> - relativ til root element (html)</li>
+  <li><code>%</code> - relativ til forælderens størrelse</li>
+</ul>
+
+<pre><code>h1 {
+  font-size: 2em;
+}
+
+p {
+  width: 80%;
+}</code></pre>
+
+<hr>
+<h3>Hvad er padding og margin?</h3>
+
+<p><strong>Padding</strong> er den indvendige afstand mellem indholdet og kanten af et element.</p>
+<p><strong>Margin</strong> er den udvendige afstand mellem elementet og det omkringliggende indhold.</p>
+
+<pre><code>div {
+  padding: 20px;
+  margin: 30px;
+}</code></pre>
+
+<p>Ovenstående betyder, at der er 20px luft inde i boksen og 30px luft udenom boksen.</p>
+
+<hr>
+<h3>Flere vigtige CSS properties</h3>
+
+<ul>
+  <li><strong>opacity</strong>: Gennemsigtighed på et element. <br> <code>opacity: 0.5;</code> gør elementet halvgennemsigtigt.</li>
+  <li><strong>visibility</strong>: Skjuler eller viser et element, men bevarer pladsen. <br> <code>visibility: hidden;</code></li>
+  <li><strong>width</strong>: Bredden på et element. <br> <code>width: 300px;</code> eller <code>width: 50%;</code></li>
+  <li><strong>height</strong>: Højden på et element. <br> <code>height: 200px;</code></li>
+  <li><strong>top / left</strong>: Bruges til at placere elementer, når man bruger positionering. <br> <code>top: 20px;</code>, <code>left: 10px;</code></li>
+</ul>
+
+<hr>
+<h3>Hvordan kan man anvende CSS i HTML?</h3>
+
+<p>Der er tre måder at tilføje CSS til en HTML-side:</p>
+
+<ol>
+  <li><strong>Inline CSS</strong> - direkte i et HTML-element:<br>
+    <code>&lt;p style="color: red;"&gt;Rød tekst&lt;/p&gt;</code>
+  </li>
+
+  <li><strong>Internal CSS</strong> - i et &lt;style&gt;-tag i &lt;head&gt;-sektionen:<br>
+    <pre><code>&lt;style&gt;
+  p { color: blue; }
+&lt;/style&gt;</code></pre>
+  </li>
+
+  <li><strong>External CSS</strong> - i en separat .css-fil:<br>
+    <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+  </li>
+</ol>
+
+<hr>
+<h3>Positionering i CSS</h3>
+
+<p>Standard positionering i HTML er <strong>static</strong>. Det betyder, at elementer vises i den rækkefølge, de kommer i dokumentet.</p>
+
+<p>Andre positionstyper:</p>
+<ul>
+  <li><strong>relative</strong> - element flyttes i forhold til sin normale placering</li>
+  <li><strong>absolute</strong> - placeres i forhold til nærmeste positionerede forælder</li>
+  <li><strong>fixed</strong> - fast placering i forhold til vinduet (fx sticky menu)</li>
+  <li><strong>sticky</strong> - opfører sig som relative, men "klistrer" ved scrolling</li>
+</ul>
+
+<pre><code>.box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}</code></pre>
+
+<hr>
+<h3>Hvordan fungerer CSS Flexbox?</h3>
+
+<p><strong>Flexbox</strong> er en layoutmetode til at arrangere elementer i én række eller én kolonne. Den er god til at fordele plads og justere elementer.</p>
+
+<pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+
+<ul>
+  <li><code>justify-content</code> styrer vandret placering</li>
+  <li><code>align-items</code> styrer lodret placering</li>
+</ul>
+
+<hr>
+<h3>Hvordan fungerer CSS Grid?</h3>
+
+<p><strong>Grid</strong> er en mere avanceret layoutmetode end Flexbox, og bruges til at lave todimensionelle layout – både rækker og kolonner.</p>
+
+<pre><code>.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}</code></pre>
+
+<p>Det skaber to kolonner af samme størrelse med 20px afstand imellem.</p>
+
+<hr>
+<h3>Hvad er Bootstrap?</h3>
+
+<p><strong>Bootstrap</strong> er et populært CSS-framework udviklet af Twitter. Det indeholder færdiglavede klasser og komponenter, der gør det nemt at lave responsive og moderne websites uden selv at kode alt CSS fra bunden.</p>
+
+<p>Med Bootstrap kan man:</p>
+<ul>
+  <li>Brug færdige <strong>layouts og grid-systemer</strong></li>
+  <li>Brug <strong>knapper, formularer, tabeller og kort</strong> uden ekstra CSS</li>
+  <li>Tilpasse <strong>designet til mobil og desktop</strong> automatisk (responsive design)</li>
+  <li>Tilføje komponenter som <strong>modals, navigation og sliders</strong></li>
+</ul>
+
+<p>Eksempel på en Bootstrap-knap:</p>
+<button class="btn btn-primary">Klik Her</button>
+<br>
+<p></p>
+<pre><code>&lt;button class="btn btn-primary"&gt;Klik her&lt;/button&gt;</code></pre>
+
+<p>Bootstrap kræver at du inkluderer et link til frameworket i &lt;head&gt;-sektionen:</p>
+<pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</code></pre>
+
+</body>
+
+</html>
