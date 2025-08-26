@@ -5,25 +5,32 @@ class Program
 {
     public static void Main(string[] args)
     {
-        //finder path til projectet og bruger actors.xml
+        //find basepath actors.xml
         string inputPath = Path.Combine(AppContext.BaseDirectory, "actors.xml");
 
+        //gets list of actors from xml file
         var actors = readActors(inputPath);
 
+        //print actors to console
         Console.WriteLine("Skuespillere der optræder i filen:");
+
         foreach (var actor in actors)
         {
             Console.WriteLine(" - " + actor);
         }
 
+        //write actors to new xml file
         string outputPath = Path.Combine(AppContext.BaseDirectory, "actors_out.xml");
+
         WriteActors(outputPath, actors);
+
+        //confirm to console
         Console.WriteLine($"\nSkrev {actors.Count} skuespillere til: {outputPath}");
 
     }
 
 
-
+    // reads actors from xml file
     static List<Actor> readActors(string path)
     {
         var actors = new List<Actor>();
@@ -60,9 +67,10 @@ class Program
                     current.year = reader.ReadElementContentAsInt();
                 }
             }
+            // when we reach </actor>
             else if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "actor")
             {
-                // when we leave </actor>, add actor object to list
+                // add current actor to list
                 if (current != null)
                     actors.Add(current);
             }
@@ -71,28 +79,32 @@ class Program
         return actors;
     }
 
+    // writes list of actors to xml file
     static void WriteActors(string path, List<Actor> actors)
     {
+        // settings for xml writer
         var settings = new XmlWriterSettings { Indent = true, Encoding = System.Text.Encoding.UTF8 };
 
+        //creates writer
         using var writer = XmlWriter.Create(path, settings);
 
-        writer.WriteStartDocument();
-        writer.WriteStartElement("actors");
+        writer.WriteStartDocument(); // <?xml version="1.0" encoding="utf-8"?>
+        writer.WriteStartElement("actors"); // <actors>
 
+        // writes each <actor>
         foreach (var a in actors)
         {
-            writer.WriteStartElement("actor");
+            writer.WriteStartElement("actor"); // <actor>
             writer.WriteAttributeString("nationality", a.nationality);
 
             writer.WriteElementString("name", a.name);
             writer.WriteElementString("role", a.role);
             writer.WriteElementString("year", a.year.ToString());
-
+          
             writer.WriteEndElement(); // </actor>
         }
 
         writer.WriteEndElement();   // </actors>
-        writer.WriteEndDocument();
+        writer.WriteEndDocument(); 
     }
 }
