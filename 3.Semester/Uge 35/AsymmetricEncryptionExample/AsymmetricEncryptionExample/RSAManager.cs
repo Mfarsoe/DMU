@@ -40,7 +40,17 @@ namespace AsymmetricEncryptionExample
             string xmlKey = File.ReadAllText(filePath);
             otherRSA = new RSACryptoServiceProvider();
             otherRSA.FromXmlString(xmlKey);
-        } 
+        }
+
+        // Save encrypted message to file
+        public void saveMessageMenuItem_Click(string message, string filepath)
+        {
+            byte[] messageBytes = Encoding.Unicode.GetBytes(message);
+            byte[] encryptedBytes = otherRSA.Encrypt(messageBytes, false);
+            string encryptedMessage = Convert.ToBase64String(encryptedBytes);
+            File.WriteAllText(filepath, encryptedMessage);
+        }
+
         //Export public key
         public void exportKeyMenuItem_Click(string filepath)
         {
