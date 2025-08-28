@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 35\\asymmetricapp\\asymmetricapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|solutionrelative:asymmetricapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 35\\asymmetricapp\\asymmetricapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|solutionrelative:asymmetricapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 35\\asymmetricapp\\asymmetricapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|solutionrelative:asymmetricapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 35\\asymmetricapp\\asymmetricapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC14FA8A-A03F-4826-BA34-BD9803C778D3}|AsymmetricApp\\AsymmetricApp.csproj|solutionrelative:asymmetricapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "AsymmetricApp\\App.xaml.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\App.xaml.cs",
+              "RelativeToolTip": "AsymmetricApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:33:48.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\App.xaml",
+              "RelativeDocumentMoniker": "AsymmetricApp\\App.xaml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\App.xaml",
+              "RelativeToolTip": "AsymmetricApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-27T13:33:45.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AsymmetricApp\\MainWindow.xaml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\MainWindow.xaml",
+              "RelativeToolTip": "AsymmetricApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-27T13:30:21.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AsymmetricApp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 35\\AsymmetricApp\\AsymmetricApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AsymmetricApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:30:18.934Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
