@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\Uge 35\\Opgave A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|c:\\dmu\\3.semester\\uge 35\\opgave a\\opgave a\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|c:\\dmu\\3.semester\\uge 35\\opgave a\\opgave a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Uge 35\\Opgave A\\Opgave A\\Person.cs",
+              "RelativeDocumentMoniker": "Opgave A\\Person.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Uge 35\\Opgave A\\Opgave A\\Person.cs",
+              "RelativeToolTip": "Opgave A\\Person.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T07:12:47.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Uge 35\\Opgave A\\Opgave A\\Program.cs",
+              "RelativeDocumentMoniker": "Opgave A\\Program.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Uge 35\\Opgave A\\Opgave A\\Program.cs",
+              "RelativeToolTip": "Opgave A\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T07:12:12.128Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
