@@ -10,15 +10,15 @@ namespace Opgave_A
 {
     public class Person
     {
-        private string name;
-        private int age;
+        private string Name;
+        private int Age;
 
         public Person() { }
     
         public Person(string name, int age)
         {
-            this.name = name;
-            this.age = age;
+            this.Name = name;
+            this.Age = age;
         }
 
         public string ToXML() 
@@ -50,8 +50,8 @@ namespace Opgave_A
         public void ToXml(XmlWriter writer) 
         {
             writer.WriteStartElement("Person");
-            writer.WriteElementString("Name", name);
-            writer.WriteElementString("Age", age.ToString());
+            writer.WriteElementString("Name", Name);
+            writer.WriteElementString("Age", Age.ToString());
             writer.WriteEndElement();
         }
 
@@ -59,9 +59,9 @@ namespace Opgave_A
         {
             reader.ReadToFollowing("Person");
             reader.ReadToFollowing("Name");
-            name = reader.ReadElementContentAsString();
+            Name = reader.ReadElementContentAsString();
             reader.ReadToFollowing("Age");
-            age = reader.ReadElementContentAsInt();
+            Age = reader.ReadElementContentAsInt();
         }
     } 
 }
