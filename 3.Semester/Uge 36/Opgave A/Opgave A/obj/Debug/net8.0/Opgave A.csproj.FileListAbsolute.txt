@@ -1,0 +1,15 @@
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\bin\Debug\net8.0\Opgave A.exe
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\bin\Debug\net8.0\Opgave A.deps.json
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\bin\Debug\net8.0\Opgave A.runtimeconfig.json
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\bin\Debug\net8.0\Opgave A.dll
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\bin\Debug\net8.0\Opgave A.pdb
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.GeneratedMSBuildEditorConfig.editorconfig
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.AssemblyInfoInputs.cache
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.AssemblyInfo.cs
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.csproj.CoreCompileInputs.cache
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.sourcelink.json
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.dll
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\refint\Opgave A.dll
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.pdb
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\Opgave A.genruntimeconfig.cache
+D:\Datamatiker\DMU\3.Semester\Uge 36\Opgave A\Opgave A\obj\Debug\net8.0\ref\Opgave A.dll

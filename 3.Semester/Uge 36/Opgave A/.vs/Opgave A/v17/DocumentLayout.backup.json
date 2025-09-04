@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 36\\opgave a\\opgave a\\stub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\stub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 36\\opgave a\\opgave a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 36\\opgave a\\opgave a\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 36\\opgave a\\opgave a\\skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E386D0F4-DFB0-4A40-AD38-F3675CC05D1F}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stub.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Stub.cs",
+              "RelativeDocumentMoniker": "Opgave A\\Stub.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Stub.cs",
+              "RelativeToolTip": "Opgave A\\Stub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T12:57:36.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Program.cs",
+              "RelativeDocumentMoniker": "Opgave A\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Program.cs",
+              "RelativeToolTip": "Opgave A\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T13:07:59.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Skeleton.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Skeleton.cs",
+              "RelativeDocumentMoniker": "Opgave A\\Skeleton.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Skeleton.cs",
+              "RelativeToolTip": "Opgave A\\Skeleton.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T13:04:19.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Person.cs",
+              "RelativeDocumentMoniker": "Opgave A\\Person.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 36\\Opgave A\\Opgave A\\Person.cs",
+              "RelativeToolTip": "Opgave A\\Person.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA0wEcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T07:12:47.311Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
