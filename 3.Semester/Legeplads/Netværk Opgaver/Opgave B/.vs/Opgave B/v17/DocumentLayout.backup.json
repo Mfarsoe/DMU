@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Program.cs",
+              "RelativeDocumentMoniker": "Opgave B\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Program.cs",
+              "RelativeToolTip": "Opgave B\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T20:03:40.956Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
