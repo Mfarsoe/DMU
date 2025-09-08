@@ -1,67 +1,112 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Opgave_B.Server;
+using Opgave_B;
+using System.Net.Sockets;
+using System.Xml;
 
-namespace Opgave_B.Server
+internal class SkeletonWorker
 {
-    internal class SkeletonWorker
+    private SkeletonManager manager;
+    private System.Net.Sockets.Socket connection;
+    private System.Threading.Thread thread;
+    private bool stop;
+    private IMethodImpl calledObject; // <- ændret til interface
+
+    public SkeletonWorker(SkeletonManager manager, System.Net.Sockets.Socket connection, IMethodImpl calledObject)
     {
-        private SkeletonManager manager;
-        private System.Net.Sockets.Socket connection;
-        private System.Threading.Thread thread;
-        private bool stop;
-        public SkeletonWorker(SkeletonManager manager, System.Net.Sockets.Socket connection)
+        this.manager = manager;
+        this.connection = connection;
+        this.calledObject = calledObject ?? throw new ArgumentNullException(nameof(calledObject));
+        stop = false;
+    }
+
+    public void Start()
+    {
+        thread = new System.Threading.Thread(Run);
+        thread.Start();
+    }
+
+    private void Run()
+    {
+        try
         {
-            this.manager = manager;
-            this.connection = connection;
-            stop = false;
-        }
-        public void Start()
-        {
-            thread = new System.Threading.Thread(Run);
-            thread.Start();
-        }
-        private void Run()
-        {
-            try
+            using (var stream = new NetworkStream(connection))
+            using (var reader = new StreamReader(stream))
+            using (var writer = new StreamWriter(stream))
             {
-                using (System.Net.Sockets.NetworkStream stream = new System.Net.Sockets.NetworkStream(connection))
-                using (System.IO.StreamReader reader = new System.IO.StreamReader(stream))
-                using (System.IO.StreamWriter writer = new System.IO.StreamWriter(stream))
+                while (!stop)
                 {
-                    while (!stop)
+                    if (stream.DataAvailable)
                     {
-                        if (stream.DataAvailable)
+                        string xml = reader.ReadLine();
+                        if (xml == null)
+                            break;
+
+                        Console.WriteLine("Received XML: " + xml);
+
+                        using (var sr = new StringReader(xml))
+                        using (var xr = XmlReader.Create(sr))
                         {
-                            string xml = reader.ReadLine();
-                            Person person = new Person();
-                            person.FromXml(xml);
-                            Console.WriteLine("Received person: " + person);
+                            xr.MoveToContent();
+
+                            if (xr.IsStartElement("oldest") || xr.IsStartElement("OldestRequest"))
+                            {
+                                xr.ReadStartElement(); // <oldest>
+
+                                Person p1 = new Person();
+                                p1.FromXml(xr);
+                                Person p2 = new Person();
+                                p2.FromXml(xr);
+
+                                xr.ReadEndElement(); // </oldest>
+
+                                // Kald serverens MethodImpl
+                                Person oldest = calledObject.Oldest(p1, p2);
+                                Console.WriteLine($"Server: Oldest is {oldest}");
+
+                                // Send XML-svar
+                                string responseXml = BuildResponseXml(oldest);
+                                writer.WriteLine(responseXml);
+                                writer.Flush();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Unknown XML request");
+                            }
                         }
-                        else
-                        {
-                            System.Threading.Thread.Sleep(100);
-                        }
+                    }
+                    else
+                    {
+                        System.Threading.Thread.Sleep(100);
                     }
                 }
             }
-            catch (System.IO.IOException)
-            {
-                Console.WriteLine("I/O error");
-            }
-            finally
-            {
-                connection.Close();
-                manager.RemoveWorker(this);
-            }
         }
-        public void Shutdown(bool waitForTermination)
+        catch (Exception ex)
         {
-            stop = true;
-            if (waitForTermination && thread != null)
-                thread.Join();
+            Console.WriteLine("SkeletonWorker error: " + ex);
         }
+        finally
+        {
+            connection.Close();
+            manager.RemoveWorker(this);
+        }
+    }
+
+    private string BuildResponseXml(Person p)
+    {
+        using (StringWriter sw = new StringWriter())
+        using (XmlWriter xw = XmlWriter.Create(sw))
+        {
+            p.ToXml(xw);
+            xw.Flush();
+            return sw.ToString();
+        }
+    }
+
+    public void Shutdown(bool waitForTermination)
+    {
+        stop = true;
+        if (waitForTermination && thread != null)
+            thread.Join();
     }
 }

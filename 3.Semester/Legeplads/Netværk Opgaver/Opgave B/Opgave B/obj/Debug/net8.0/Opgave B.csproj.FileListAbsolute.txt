@@ -1,0 +1,15 @@
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\bin\Debug\net8.0\Opgave B.exe
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\bin\Debug\net8.0\Opgave B.deps.json
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\bin\Debug\net8.0\Opgave B.runtimeconfig.json
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\bin\Debug\net8.0\Opgave B.dll
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\bin\Debug\net8.0\Opgave B.pdb
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.GeneratedMSBuildEditorConfig.editorconfig
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.AssemblyInfoInputs.cache
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.AssemblyInfo.cs
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.csproj.CoreCompileInputs.cache
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.sourcelink.json
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.dll
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\refint\Opgave B.dll
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.pdb
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\Opgave B.genruntimeconfig.cache
+D:\Datamatiker\DMU\3.Semester\Legeplads\Netværk Opgaver\Opgave B\Opgave B\obj\Debug\net8.0\ref\Opgave B.dll

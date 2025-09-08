@@ -1,74 +1,72 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Opgave_B;
 
-namespace Opgave_B.Server
+public class SkeletonManager
 {
-    public class SkeletonManager
+    private List<SkeletonWorker> workers;
+    private int port;
+    private bool stop;
+    private bool waitForTermination;
+    private System.Threading.Thread thread;
+    private IMethodImpl calledObject;
+
+    public SkeletonManager(int port, IMethodImpl calledObject)
     {
-        private List<SkeletonWorker> workers;
-        private int port;
-        private bool stop;
+        this.port = port;
+        this.calledObject = calledObject ?? throw new ArgumentNullException(nameof(calledObject));
+        workers = new List<SkeletonWorker>();
+        stop = false;
+    }
 
-        private bool waitForTermination;
-        private System.Threading.Thread thread;
-        public SkeletonManager(int port)
-        {
-            this.port = port;
-            workers = new List<SkeletonWorker>();
-            stop = false;
-        }
-        public void Start()
-        {
-            thread = new System.Threading.Thread(Run);
-            thread.Start();
-        }
+    public void Start()
+    {
+        thread = new System.Threading.Thread(Run);
+        thread.Start();
+    }
 
-        private void Run()
+    private void Run()
+    {
+        try
         {
-            try
+            var server = new System.Net.Sockets.TcpListener(System.Net.IPAddress.Any, port);
+            server.Start();
+            Console.WriteLine("Server online");
+
+            while (!stop)
             {
-                System.Net.Sockets.TcpListener server = new System.Net.Sockets.TcpListener(System.Net.IPAddress.Any, port);
-                server.Start();
-                Console.WriteLine("Server online");
-                while (!stop)
+                if (server.Pending())
                 {
-                    if (server.Pending())
-                    {
-                        System.Net.Sockets.Socket connection = server.AcceptSocket();
-                        SkeletonWorker worker = new SkeletonWorker(this, connection);
-                        workers.Add(worker);
-                        worker.Start();
-                    }
-                    else
-                    {
-                        System.Threading.Thread.Sleep(100);
-                    }
+                    var connection = server.AcceptSocket();
+                    SkeletonWorker worker = new SkeletonWorker(this, connection, calledObject);
+                    workers.Add(worker);
+                    worker.Start();
                 }
-                foreach (SkeletonWorker worker in workers)
+                else
                 {
-                    worker.Shutdown(waitForTermination);
+                    System.Threading.Thread.Sleep(100);
                 }
-                Console.WriteLine("Server offline");
             }
-            catch (System.IO.IOException)
-            {
-                Console.WriteLine("I/O error");
-            }
-        }
-        public void Shutdown(bool waitForTermination)
-        {
-            this.waitForTermination = waitForTermination;
-            stop = true;
-            if (thread != null)
-                thread.Join();
-        }
-        internal void RemoveWorker(SkeletonWorker worker)
-        {
-            workers.Remove(worker);
-        }
 
+            foreach (var worker in workers)
+                worker.Shutdown(waitForTermination);
+
+            Console.WriteLine("Server offline");
+        }
+        catch (System.IO.IOException)
+        {
+            Console.WriteLine("I/O error");
+        }
+    }
+
+    public void Shutdown(bool waitForTermination)
+    {
+        this.waitForTermination = waitForTermination;
+        stop = true;
+        if (thread != null)
+            thread.Join();
+    }
+
+    internal void RemoveWorker(SkeletonWorker worker)
+    {
+        workers.Remove(worker);
     }
 }
