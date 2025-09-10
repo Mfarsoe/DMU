@@ -8,10 +8,8 @@ namespace ConwaysGameOfLife
 {
     internal class World
     {
-        public int Width { get; }
-        public int Height { get; }
-        public bool[,] Map { get; }
-        
+        private int Width, Height;
+        private int[,] Map;
         public World() : this(15, 15)
         {
         }
@@ -20,72 +18,74 @@ namespace ConwaysGameOfLife
         {
             Width = width;
             Height = height;
-            Map = new bool[width, height];
+            Map = new int[width, height];
         }
 
-        public void Randomize(double freq=0.5)
+        private int this[int x, int y]
         {
-            var rand = new Random();
+            get
+            {
+                if (LegalX(x) && LegalY(y))
+                {
+                    return Map[x, y];
+                }
+                return 0; 
+            }
+        }
+
+
+        private static Random rand = new Random();
+        public void Randomize(double freq = 0.5)
+        {
             for (int x = 0; x < Width; x++)
             {
                 for (int y = 0; y < Height; y++)
                 {
-                    Map[x, y] = rand.NextDouble() > freq;
+                    Map[x, y] = rand.NextDouble() > freq ? 1 : 0; // 1 = alive, 0 = dead
                 }
-            }
-        }
-        public void Print()
-        {
-            for (int y = 0; y < Height; y++)
-            {
-                for (int x = 0; x < Width; x++)
-                {
-                    Console.Write(Map[x, y] ? "O" : ".");
-                }
-                Console.WriteLine();
             }
         }
 
-        public void Step()
+        private bool LegalX(int x)
         {
-            var newMap = new bool[Width, Height];
-            for (int x = 0; x < Width; x++)
-            {
-                for (int y = 0; y < Height; y++)
-                {
-                    int aliveNeighbors = CountAliveNeighbors(x, y);
-                    if (Map[x, y])
-                    {
-                        // Any live cell with two or three live neighbours survives.
-                        newMap[x, y] = aliveNeighbors == 2 || aliveNeighbors == 3;
-                    }
-                    else
-                    {
-                        // Any dead cell with three live neighbours becomes a live cell.
-                        newMap[x, y] = aliveNeighbors == 3;
-                    }
-                }
-            }
-            Array.Copy(newMap, Map, Width * Height);
+            return x >= 0 && x < Width;
+        }
+        private bool LegalY(int y)
+        {
+            return y >= 0 && y < Height;
         }
 
-        private int CountAliveNeighbors(int x, int y)
+        public int Neighbours(int x, int y)
         {
             int count = 0;
-            for (int dx = -1; dx <= 1; dx++)
+            for (int deltaX = -1; deltaX <= 1; deltaX++)
             {
-                for (int dy = -1; dy <= 1; dy++)
+                for (int deltaY = -1; deltaY <= 1; deltaY++)
                 {
-                    if (dx == 0 && dy == 0) continue; // Skip the cell itself
-                    int nx = x + dx;
-                    int ny = y + dy;
-                    if (nx >= 0 && nx < Width && ny >= 0 && ny < Height)
+                    if (deltaX == 0 && deltaY == 0) continue; // Hop over self
+                    int nx = x + deltaX; // Neighbor X
+                    int ny = y + deltaY; // Neighbor Y
+                    if (LegalX(nx) && LegalY(ny))
                     {
-                        if (Map[nx, ny]) count++;
+                        count += this[nx, ny]; // Add 1 if alive, 0 if dead
                     }
                 }
             }
             return count;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int y = 0; y < Height; y++)
+            {
+                for (int x = 0; x < Width; x++)
+                {
+                    sb.Append(Map[x, y] == 1 ? 'X' : '.'); // Alive = X, Dead = .
+                }
+                sb.AppendLine();
+            }
+            return sb.ToString();
         }
     }
 }

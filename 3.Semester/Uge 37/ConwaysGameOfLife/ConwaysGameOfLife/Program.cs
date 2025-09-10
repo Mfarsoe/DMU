@@ -1,15 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-using ConwaysGameOfLife;
+﻿using ConwaysGameOfLife;
 
-Console.WriteLine("Hello, World!");
-var world = new World(50,50);
+var world = new World(15, 15);
 
 world.Randomize();
-for (int i = 0; i < 100; i++)
-{
-    Thread.Sleep(1000);
-    world.Print();
-    world.Step();
-    Console.WriteLine();
 
-}
+Console.WriteLine(world.ToString());
+
+Console.WriteLine($"Neighbours at (0,0): {world.Neighbours(0, 0)}");
+Console.WriteLine($"Neighbours at (1,1): {world.Neighbours(1, 1)}");
+Console.WriteLine($"Neighbours at (2,2): {world.Neighbours(2, 2)}");
