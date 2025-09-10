@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netværk Opgaver\\Opgave B\\Opgave B\\Opgave B.csproj",
+      "projectUniqueName": "C:\\DMU\\3.Semester\\Legeplads\\Netværk Opgaver\\Opgave B\\Opgave B\\Opgave B.csproj",
       "projectName": "Opgave B",
-      "projectPath": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netværk Opgaver\\Opgave B\\Opgave B\\Opgave B.csproj",
+      "projectPath": "C:\\DMU\\3.Semester\\Legeplads\\Netværk Opgaver\\Opgave B\\Opgave B\\Opgave B.csproj",
       "packagesPath": "C:\\Users\\quite\\.nuget\\packages\\",
-      "outputPath": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netværk Opgaver\\Opgave B\\Opgave B\\obj\\",
+      "outputPath": "C:\\DMU\\3.Semester\\Legeplads\\Netværk Opgaver\\Opgave B\\Opgave B\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

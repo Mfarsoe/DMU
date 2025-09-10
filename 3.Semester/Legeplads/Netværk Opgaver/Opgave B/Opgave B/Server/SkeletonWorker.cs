@@ -9,13 +9,12 @@ internal class SkeletonWorker
     private System.Net.Sockets.Socket connection;
     private System.Threading.Thread thread;
     private bool stop;
-    private IMethodImpl calledObject; // <- ændret til interface
+    
 
-    public SkeletonWorker(SkeletonManager manager, System.Net.Sockets.Socket connection, IMethodImpl calledObject)
+    public SkeletonWorker(SkeletonManager manager, System.Net.Sockets.Socket connection)
     {
         this.manager = manager;
         this.connection = connection;
-        this.calledObject = calledObject ?? throw new ArgumentNullException(nameof(calledObject));
         stop = false;
     }
 
@@ -48,7 +47,7 @@ internal class SkeletonWorker
                         {
                             xr.MoveToContent();
 
-                            if (xr.IsStartElement("oldest") || xr.IsStartElement("OldestRequest"))
+                            if (xr.IsStartElement("oldest"))
                             {
                                 xr.ReadStartElement(); // <oldest>
 
@@ -60,7 +59,7 @@ internal class SkeletonWorker
                                 xr.ReadEndElement(); // </oldest>
 
                                 // Kald serverens MethodImpl
-                                Person oldest = calledObject.Oldest(p1, p2);
+                                var oldest = new MethodImpl().Oldest(p1, p2);
                                 Console.WriteLine($"Server: Oldest is {oldest}");
 
                                 // Send XML-svar

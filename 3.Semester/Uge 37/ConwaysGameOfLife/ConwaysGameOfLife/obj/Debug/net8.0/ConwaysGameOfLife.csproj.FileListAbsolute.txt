@@ -1,0 +1,15 @@
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\bin\Debug\net8.0\ConwaysGameOfLife.exe
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\bin\Debug\net8.0\ConwaysGameOfLife.deps.json
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\bin\Debug\net8.0\ConwaysGameOfLife.runtimeconfig.json
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\bin\Debug\net8.0\ConwaysGameOfLife.dll
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\bin\Debug\net8.0\ConwaysGameOfLife.pdb
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.AssemblyInfoInputs.cache
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.AssemblyInfo.cs
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.csproj.CoreCompileInputs.cache
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.sourcelink.json
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.dll
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\refint\ConwaysGameOfLife.dll
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.pdb
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ConwaysGameOfLife.genruntimeconfig.cache
+C:\DMU\3.Semester\Uge 37\ConwaysGameOfLife\ConwaysGameOfLife\obj\Debug\net8.0\ref\ConwaysGameOfLife.dll

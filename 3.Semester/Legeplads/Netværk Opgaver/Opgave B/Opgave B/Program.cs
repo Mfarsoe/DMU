@@ -7,22 +7,21 @@ class Program
     static void Main()
     {
         int port = 9001;
-        IMethodImpl methodImpl = new MethodImpl();
 
         // Start serveren
-        var manager = new SkeletonManager(port, methodImpl);
+        var manager = new SkeletonManager(port);
         manager.Start();
 
         Thread.Sleep(200); // giv serveren tid til at starte
 
         // Client
-        var stub = new Stub("127.0.0.1", port);
+        Stub stub = new Stub("127.0.0.1", port);
 
-        var p1 = new Person("Balice", 25);
-        var p2 = new Person("Ob", 32);
+        Person p1 = new Person("Balice", 25);
+        Person p2 = new Person("Ob", 32);
 
         Console.WriteLine("Client: Kalder Oldest...");
-        var oldest = stub.Oldest(p1, p2);
+        Person oldest = stub.Oldest(p1, p2);
 
         Console.WriteLine("Resultat: " + (oldest != null ? oldest.ToString() : "Ingen respons"));
 

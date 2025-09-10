@@ -7,12 +7,11 @@ public class SkeletonManager
     private bool stop;
     private bool waitForTermination;
     private System.Threading.Thread thread;
-    private IMethodImpl calledObject;
 
-    public SkeletonManager(int port, IMethodImpl calledObject)
+    public SkeletonManager(int port)
     {
         this.port = port;
-        this.calledObject = calledObject ?? throw new ArgumentNullException(nameof(calledObject));
+        
         workers = new List<SkeletonWorker>();
         stop = false;
     }
@@ -36,7 +35,7 @@ public class SkeletonManager
                 if (server.Pending())
                 {
                     var connection = server.AcceptSocket();
-                    SkeletonWorker worker = new SkeletonWorker(this, connection, calledObject);
+                    SkeletonWorker worker = new SkeletonWorker(this, connection);
                     workers.Add(worker);
                     worker.Start();
                 }
