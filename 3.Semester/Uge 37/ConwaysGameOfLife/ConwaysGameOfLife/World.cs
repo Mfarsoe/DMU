@@ -74,6 +74,30 @@ namespace ConwaysGameOfLife
             return count;
         }
 
+        public void Iterate()
+        {
+            int[,] newMap = new int[Width, Height];
+            for (int x = 0; x < Width; x++)
+            {
+                for (int y = 0; y < Height; y++)
+                {
+                    int alive = this[x, y];
+                    int neighbors = Neighbours(x, y);
+                    if (alive == 1)
+                    {
+                        // Any live cell with two or three live neighbours survives.
+                        newMap[x, y] = (neighbors == 2 || neighbors == 3) ? 1 : 0;
+                    }
+                    else
+                    {
+                        // Any dead cell with exactly three live neighbours becomes a live cell.
+                        newMap[x, y] = (neighbors == 3) ? 1 : 0;
+                    }
+                }
+            }
+            Map = newMap;
+        }
+
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -87,5 +111,7 @@ namespace ConwaysGameOfLife
             }
             return sb.ToString();
         }
+
+        
     }
 }
