@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConwaysGameOfLife")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a92f63fcfad4ca660d3b84dab2cf73cbdaef0421")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a00cdfe50363aa5cd986282a8aa44aface42ac3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConwaysGameOfLife")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConwaysGameOfLife")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
