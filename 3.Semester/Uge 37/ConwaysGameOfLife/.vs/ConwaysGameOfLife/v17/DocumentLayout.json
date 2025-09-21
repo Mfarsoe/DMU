@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 37\\ConwaysGameOfLife\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB4FA2C3-C451-4238-8DFF-73D2F3F2E674}|ConwaysGameOfLife\\ConwaysGameOfLife.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 37\\conwaysgameoflife\\conwaysgameoflife\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4FA2C3-C451-4238-8DFF-73D2F3F2E674}|ConwaysGameOfLife\\ConwaysGameOfLife.csproj|solutionrelative:conwaysgameoflife\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FB4FA2C3-C451-4238-8DFF-73D2F3F2E674}|ConwaysGameOfLife\\ConwaysGameOfLife.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 37\\conwaysgameoflife\\conwaysgameoflife\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB4FA2C3-C451-4238-8DFF-73D2F3F2E674}|ConwaysGameOfLife\\ConwaysGameOfLife.csproj|solutionrelative:conwaysgameoflife\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4FA2C3-C451-4238-8DFF-73D2F3F2E674}|ConwaysGameOfLife\\ConwaysGameOfLife.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 37\\conwaysgameoflife\\conwaysgameoflife\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4FA2C3-C451-4238-8DFF-73D2F3F2E674}|ConwaysGameOfLife\\ConwaysGameOfLife.csproj|solutionrelative:conwaysgameoflife\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "World.cs",
               "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 37\\ConwaysGameOfLife\\ConwaysGameOfLife\\World.cs",
               "RelativeDocumentMoniker": "ConwaysGameOfLife\\World.cs",
@@ -35,7 +35,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 37\\ConwaysGameOfLife\\ConwaysGameOfLife\\Program.cs",
               "RelativeDocumentMoniker": "ConwaysGameOfLife\\Program.cs",
