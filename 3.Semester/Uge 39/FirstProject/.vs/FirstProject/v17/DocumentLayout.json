@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 39\\FirstProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C238A887-5977-48E1-ABF8-E99C65FA3EFD}|FirstProject.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 39\\firstproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C238A887-5977-48E1-ABF8-E99C65FA3EFD}|FirstProject.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C238A887-5977-48E1-ABF8-E99C65FA3EFD}|FirstProject.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 39\\firstproject\\views\\home\\myview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C238A887-5977-48E1-ABF8-E99C65FA3EFD}|FirstProject.csproj|solutionrelative:views\\home\\myview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C238A887-5977-48E1-ABF8-E99C65FA3EFD}|FirstProject.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 39\\firstproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C238A887-5977-48E1-ABF8-E99C65FA3EFD}|FirstProject.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyView.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 39\\FirstProject\\Views\\Home\\MyView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\MyView.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 39\\FirstProject\\Views\\Home\\MyView.cshtml",
+              "RelativeToolTip": "Views\\Home\\MyView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T13:20:43.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 39\\FirstProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 39\\FirstProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:16:41.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 39\\FirstProject\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 39\\FirstProject\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-22T13:13:10.357Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
