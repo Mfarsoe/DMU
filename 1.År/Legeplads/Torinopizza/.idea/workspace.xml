@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea73c2b0-cd16-4821-89ef-17520c2debbd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/1. December.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/Dec1Del1_MF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/Dec1Del2_MF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/src/DagEtDelEt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/1. December/src/DagEtDelTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/2. December.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/2. December/src/SafeNumberDelEt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/3. December.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/src/Multiply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/src/ReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/3. December/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/4. December.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/src/ReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/src/XMASCounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Advent of Code/4. December/test.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mfarsoe&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mfarsoe/DMU.git&quot;,
+    &quot;accountId&quot;: &quot;9a85da17-e844-4013-a0c9-2602205c07e3&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2p3qHRhX8uDcBgvx2kea4DKtMXp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TorinoApp.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/quite/Documents/JavaProjekter/Midtvejs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea73c2b0-cd16-4821-89ef-17520c2debbd" name="Changes" comment="" />
+      <created>1732005021171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732005021171</updated>
+      <workItem from="1732005022008" duration="1702000" />
+      <workItem from="1732008101181" duration="8521000" />
+      <workItem from="1732611688102" duration="3011000" />
+      <workItem from="1732616568334" duration="4096000" />
+      <workItem from="1732625467273" duration="643000" />
+      <workItem from="1732626127815" duration="925000" />
+      <workItem from="1732778875057" duration="2000" />
+      <workItem from="1732779335917" duration="43000" />
+      <workItem from="1732785752221" duration="15000" />
+      <workItem from="1736251202433" duration="108000" />
+      <workItem from="1736251323445" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
