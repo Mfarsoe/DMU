@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|c:\\dmu\\3.semester\\asp.net\\nameprint\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|c:\\dmu\\3.semester\\asp.net\\nameprint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|c:\\dmu\\3.semester\\asp.net\\nameprint\\models\\name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|solutionrelative:models\\name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|c:\\dmu\\3.semester\\asp.net\\nameprint\\views\\home\\showname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B87AD09E-EA13-494F-AD57-7B454D505A95}|NamePrint.csproj|solutionrelative:views\\home\\showname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShowName.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Views\\Home\\ShowName.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ShowName.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Views\\Home\\ShowName.cshtml",
+              "RelativeToolTip": "Views\\Home\\ShowName.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T09:03:33.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Name.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Models\\Name.cs",
+              "RelativeDocumentMoniker": "Models\\Name.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Models\\Name.cs",
+              "RelativeToolTip": "Models\\Name.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:01:45.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T09:00:53.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\NamePrint\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:00:27.399Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
