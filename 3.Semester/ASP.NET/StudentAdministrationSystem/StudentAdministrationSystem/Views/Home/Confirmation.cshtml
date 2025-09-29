@@ -1,0 +1,18 @@
+﻿@model StudentAdministrationSystem.Models.StudentViewModel
+<div>
+	<h2>Student Registration Confirmation</h2>
+	<p>The student @Model.firstName @Model.lastName has been registered.</p>
+	<p>Student details:</p>
+	<ul>
+		<li>Education: @Model.education</li>
+		<li>Semester: @Model.semester</li>
+		<li>Email: @Model.email</li>
+	</ul>
+</div>
+<div>
+	<a asp-action="CreateStudent" class="menu-item">Register another student</a>
+	<br />
+	<a asp-action="ListStudents" class="menu-item">View List</a>
+	<br />
+	<a asp-action="Index" class="menu-item">Back to Home</a>
+</div>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<StudentAdministrationSystem.Models.StudentViewModel>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Education</th>
+			<th>Semester</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (StudentAdministrationSystem.Models.StudentViewModel student in Model!)
+		{
+			<tr>
+				<td>@student.firstName @student.lastName</td>
+				<td>@student.education</td>
+				<td>@student.semester</td>
+				<td>@student.email</td>
+			</tr>
+		}
+</table>
+<div>
+	<a asp-action="CreateStudent" class="menu-item">Register another student</a>
+	<br />
+	<a asp-action="Index" class="menu-item">Back to Home</a>
+</div>

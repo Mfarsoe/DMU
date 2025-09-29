@@ -1,49 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\",
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\models\\guestresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:models\\guestresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\listresponses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\home\\listresponses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\rsvpform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\rsvpform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\home\\rsvpform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\home\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\listresponses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\home\\listresponses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\models\\guestresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:models\\guestresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|c:\\dmu\\3.semester\\asp.net\\partyinvites\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\views\\home\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:views\\home\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\partyinvites\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4B859F45-2C5E-4A52-B971-3170FC2C4141}|PartyInvites.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -54,40 +66,67 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T09:27:44.979Z",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-29T13:19:33.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-23T07:46:47.754Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-29T13:19:29.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-29T13:19:28.931Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-23T07:46:47.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "styles.css",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\styles.css",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\styles.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\styles.css",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\wwwroot\\css\\styles.css",
               "RelativeToolTip": "wwwroot\\css\\styles.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -97,48 +136,47 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ListResponses.cshtml",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\ListResponses.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\ListResponses.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ListResponses.cshtml",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\ListResponses.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\ListResponses.cshtml",
               "RelativeToolTip": "Views\\Home\\ListResponses.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-22T14:15:37.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Thanks.cshtml",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Thanks.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Thanks.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Thanks.cshtml",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Thanks.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Thanks.cshtml",
               "RelativeToolTip": "Views\\Home\\Thanks.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-22T14:13:31.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T14:13:31.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\Repository.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\Repository.cs",
               "RelativeDocumentMoniker": "Models\\Repository.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\Repository.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\Repository.cs",
               "RelativeToolTip": "Models\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T14:11:33.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "RsvpForm.cshtml",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\RsvpForm.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\RsvpForm.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\RsvpForm.cshtml",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\RsvpForm.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\RsvpForm.cshtml",
               "RelativeToolTip": "Views\\Home\\RsvpForm.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -147,11 +185,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "GuestResponse.cs",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\GuestResponse.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\GuestResponse.cs",
               "RelativeDocumentMoniker": "Models\\GuestResponse.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\GuestResponse.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\GuestResponse.cs",
               "RelativeToolTip": "Models\\GuestResponse.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -160,11 +198,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -173,13 +211,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA3wBoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T13:49:33.909Z",
               "EditorCaption": ""
@@ -187,18 +225,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:27:44.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\PartyInvites\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-22T13:48:55.011Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
