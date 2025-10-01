@@ -29,3 +29,5 @@ D:\Datamatiker\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdminis
 D:\Datamatiker\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\obj\Debug\net6.0\StudentAdministrationSystem.pdb
 D:\Datamatiker\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\obj\Debug\net6.0\StudentAdministrationSystem.genruntimeconfig.cache
 D:\Datamatiker\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\obj\Debug\net6.0\ref\StudentAdministrationSystem.dll
+D:\Datamatiker\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\bin\Debug\net6.0\libman.json
+D:\Datamatiker\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

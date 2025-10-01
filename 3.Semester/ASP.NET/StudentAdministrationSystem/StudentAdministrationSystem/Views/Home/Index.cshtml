@@ -1,5 +1,28 @@
-﻿
+﻿@model IEnumerable<StudentAdministrationSystem.Models.StudentViewModel>
 <div class="index">
-	<h1>Welcome to the Student Administration System</h1>
+	@if (Model != null && Model.Any())
+	{
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Education</th>
+					<th>Semester</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (StudentAdministrationSystem.Models.StudentViewModel student in Model!)
+				{
+					<tr>
+						<td>@student.firstName @student.lastName</td>
+						<td>@student.education</td>
+						<td>@student.semester</td>
+						<td>@student.email</td>
+					</tr>
+				}
+	</table>
+	}
 	<a asp-action="CreateStudent" class="menu-item">Create new student!</a>
+	
 </div>

@@ -7,8 +7,9 @@ namespace StudentAdministrationSystem.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(Repository.Students);
         }
+
 
         [HttpGet]
         public IActionResult CreateStudent()
@@ -22,14 +23,16 @@ namespace StudentAdministrationSystem.Controllers
             if (ModelState.IsValid)
             {
                 Repository.AddStudent(student);
-                return View("Confirmation", student);
+                return View("Index", Repository.Students);
             }
             return View(student);
         }
 
+        /*
         public IActionResult ListStudents()
         {
             return View(Repository.Students);
         }
+        */
     }
 }
