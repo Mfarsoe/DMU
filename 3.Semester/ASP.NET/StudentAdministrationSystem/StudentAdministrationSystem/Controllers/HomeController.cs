@@ -5,9 +5,18 @@ namespace StudentAdministrationSystem.Controllers
 {
     public class HomeController : Controller
     {
+        //repository field
+        private readonly IStudentRepository _repo;
+
+        //constructor
+        public HomeController(IStudentRepository repo = null)
+        {
+            _repo = repo ?? new StudentRepository(); // fallback to new instance
+        }
+
         public IActionResult Index()
         {
-            return View(Repository.Students);
+            return View(_repo.Students);
         }
 
 
@@ -22,8 +31,8 @@ namespace StudentAdministrationSystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                Repository.AddStudent(student);
-                return View("Index", Repository.Students);
+                _repo.AddStudent(student);
+                return View("Index", _repo.Students);
             }
             return View(student);
         }

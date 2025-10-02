@@ -1,17 +1,14 @@
 ﻿namespace StudentAdministrationSystem.Models
 {
-    public class Repository
+    public class StudentRepository : IStudentRepository
     {
-        private static List<StudentViewModel> students = new List<StudentViewModel>();
-        public static IEnumerable<StudentViewModel> Students => students;
+        private readonly List<StudentViewModel> _students = new List<StudentViewModel>();
 
-        public static void AddStudent(StudentViewModel student)
+        public IEnumerable<StudentViewModel> Students => _students;
+
+        public void AddStudent(StudentViewModel student)
         {
-            students.Add(student);
-        }
-        public static List<StudentViewModel> GetAllStudents()
-        {
-            return students;
+            _students.Add(student);
         }
     }
 }

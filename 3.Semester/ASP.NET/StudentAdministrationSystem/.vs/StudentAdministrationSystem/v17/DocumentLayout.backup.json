@@ -1,65 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\",
+  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\liststudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\home\\liststudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\home\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\home\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\wwwroot\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\wwwroot\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\models\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\models\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\models\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\models\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\studentadministrationsystem.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\models\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\models\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA013C73-C074-4A2A-B83B-14DE62C21983}|StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem.tests\\indexmodeltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA013C73-C074-4A2A-B83B-14DE62C21983}|StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj|solutionrelative:studentadministrationsystem.tests\\indexmodeltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA013C73-C074-4A2A-B83B-14DE62C21983}|StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem.tests\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA013C73-C074-4A2A-B83B-14DE62C21983}|StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj|solutionrelative:studentadministrationsystem.tests\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\liststudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\home\\liststudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\home\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\home\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\home\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\wwwroot\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\wwwroot\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\studentadministrationsystem.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\studentadministrationsystem.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|d:\\datamatiker\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|c:\\dmu\\3.semester\\asp.net\\studentadministrationsystem\\studentadministrationsystem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{62E2C2A2-F21F-4FDD-8666-1BE3ACEBC9E7}|StudentAdministrationSystem\\StudentAdministrationSystem.csproj|solutionrelative:studentadministrationsystem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -74,63 +86,37 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ListStudents.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
-              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
-              "RelativeToolTip": "StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T13:02:20.353Z",
+              "DocumentIndex": 3,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Models\\IStudentRepository.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\IStudentRepository.cs",
+              "RelativeToolTip": "StudentAdministrationSystem\\Models\\IStudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T09:15:40.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Confirmation.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
-              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
-              "RelativeToolTip": "StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T12:52:52.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\Repository.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\Repository.cs",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Models\\Repository.cs",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\Repository.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\Repository.cs",
               "RelativeToolTip": "StudentAdministrationSystem\\Models\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T12:49:28.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StyleSheet.css",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
-              "RelativeDocumentMoniker": "StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
-              "RelativeToolTip": "StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-29T12:28:34.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "CreateStudent.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\CreateStudent.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\CreateStudent.cshtml",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\Home\\CreateStudent.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\CreateStudent.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\CreateStudent.cshtml",
               "RelativeToolTip": "StudentAdministrationSystem\\Views\\Home\\CreateStudent.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -139,26 +125,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "StudentViewModel.cs",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\StudentViewModel.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\StudentViewModel.cs",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Models\\StudentViewModel.cs",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\StudentViewModel.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Models\\StudentViewModel.cs",
               "RelativeToolTip": "StudentAdministrationSystem\\Models\\StudentViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T07:51:16.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "StudentAdministrationSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T07:49:15.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Properties\\launchSettings.json",
+              "RelativeToolTip": "StudentAdministrationSystem\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-29T07:46:32.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "StudentAdministrationSystem\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBsAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-29T07:49:31.574Z",
               "EditorCaption": ""
@@ -166,23 +178,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "StudentAdministrationSystem\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAsAAAAAAAAAAAAAAA==",
+              "Title": "IndexModelTest.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\IndexModelTest.cs",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem.Tests\\IndexModelTest.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\IndexModelTest.cs",
+              "RelativeToolTip": "StudentAdministrationSystem.Tests\\IndexModelTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T07:49:15.65Z",
+              "WhenOpened": "2025-10-02T08:45:25.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "Usings.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\Usings.cs",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem.Tests\\Usings.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\Usings.cs",
+              "RelativeToolTip": "StudentAdministrationSystem.Tests\\Usings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T08:46:03.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StyleSheet.css",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
+              "RelativeToolTip": "StudentAdministrationSystem\\wwwroot\\css\\StyleSheet.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-29T12:28:34.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
+              "RelativeToolTip": "StudentAdministrationSystem\\Views\\Home\\Confirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-29T12:52:52.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListStudents.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
+              "RelativeToolTip": "StudentAdministrationSystem\\Views\\Home\\ListStudents.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-29T13:02:20.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "StudentAdministrationSystem\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -191,74 +255,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "StudentAdministrationSystem\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T07:47:49.933Z"
+              "WhenOpened": "2025-09-29T07:47:49.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "StudentAdministrationSystem",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
               "RelativeToolTip": "StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-29T12:34:46.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\appsettings.json",
-              "RelativeDocumentMoniker": "StudentAdministrationSystem\\appsettings.json",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\appsettings.json",
-              "RelativeToolTip": "StudentAdministrationSystem\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-29T12:34:59.981Z"
+              "WhenOpened": "2025-09-29T12:34:46.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentAdministrationSystem\\appsettings.json",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\appsettings.json",
+              "RelativeToolTip": "StudentAdministrationSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-29T12:34:59.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "StudentAdministrationSystem\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T07:47:29.833Z"
+              "WhenOpened": "2025-09-29T07:47:29.833Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "StudentAdministrationSystem\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Properties\\launchSettings.json",
-              "RelativeToolTip": "StudentAdministrationSystem\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-29T07:46:32.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Program.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Program.cs",
               "RelativeDocumentMoniker": "StudentAdministrationSystem\\Program.cs",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Program.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\Program.cs",
               "RelativeToolTip": "StudentAdministrationSystem\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T07:46:18.199Z"
+              "WhenOpened": "2025-09-29T07:46:18.199Z",
+              "EditorCaption": ""
             }
           ]
         }
