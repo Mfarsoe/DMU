@@ -10,5 +10,10 @@
         {
             _students.Add(student);
         }
+
+        public IEnumerable<StudentViewModel> GetAllStudents()
+        {
+            return Students;
+        }
     }
 }
