@@ -6,17 +6,36 @@ namespace StudentAdministrationSystem.Controllers
     public class HomeController : Controller
     {
         //repository field
-        private readonly IStudentRepository _repo;
+        private readonly IStudentRepository repo;
+        
 
         //constructor
-        public HomeController(IStudentRepository repo = null)
+        public HomeController(IStudentRepository repo)
         {
-            _repo = repo ?? new StudentRepository(); // fallback to new instance
+            this.repo = repo; 
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int studentPage = 1)
         {
-            return View(_repo.Students);
+            const int PageSize = 4;
+
+            // EF query (IQueryable)
+            var query = repo.Students.OrderBy(s => s.LastName);
+
+            // Pagineret del
+            var studentsForPage = query
+                                  .Skip((studentPage - 1) * PageSize)
+                                  .Take(PageSize)
+                                  .ToList(); // materialize som IEnumerable
+
+            var model = new StudentListViewModel
+            {
+                Students = studentsForPage,   // IEnumerable<Student> passer perfekt
+                CurrentPage = studentPage,
+                TotalPages = (int)Math.Ceiling(repo.Students.Count() / (double)PageSize)
+            };
+
+            return View(model);
         }
 
 
@@ -27,12 +46,12 @@ namespace StudentAdministrationSystem.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateStudent(StudentViewModel student)
+        public IActionResult CreateStudent(Student student)
         {
             if (ModelState.IsValid)
             {
-                _repo.AddStudent(student);
-                return View("Index", _repo.Students);
+                repo.AddStudent(student);
+                return RedirectToAction("Index");
             }
             return View(student);
         }

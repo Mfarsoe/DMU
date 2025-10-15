@@ -1,13 +1,8 @@
-﻿namespace StudentAdministrationSystem.Models
-{
-    public interface IStudentRepository
-    {
-        IEnumerable<StudentViewModel> Students { get; }
-        void AddStudent(StudentViewModel student);
+﻿using StudentAdministrationSystem.Models;
 
-        IEnumerable<StudentViewModel> GetAllStudents()
-        {
-            return Students;
-        }
-    }
+public interface IStudentRepository
+{
+    IQueryable<Student> Students { get; }
+    void AddStudent(Student student);
+    IEnumerable<Student> GetAllStudents();
 }

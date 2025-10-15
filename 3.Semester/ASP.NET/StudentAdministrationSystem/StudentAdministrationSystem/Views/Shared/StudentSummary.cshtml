@@ -1,0 +1,13 @@
+﻿@model StudentAdministrationSystem.Models.Student
+
+<div class="card shadow-sm border-0 my-3 p-3 mx-auto" style="max-width: 400px;">
+    <div class="card-header bg-primary text-white d-flex align-items-center py-2 px-3 rounded-top">
+        <h5 class="mb-0 me-3">@Model.FirstName @Model.LastName</h5>
+    </div>
+
+    <div class="card-body px-3 py-3">
+        <p class="card-text mb-2 fs-6 text-muted"><strong>Education:</strong> @Model.Education</p>
+        <p class="card-text mb-2 fs-6 text-muted"><strong>Semester:</strong> @Model.Semester</p>
+        <p class="card-text mb-0 fs-6 text-muted"><strong>Email:</strong> <a href="mailto:@Model.Email">@Model.Email</a></p>
+    </div>
+</div>

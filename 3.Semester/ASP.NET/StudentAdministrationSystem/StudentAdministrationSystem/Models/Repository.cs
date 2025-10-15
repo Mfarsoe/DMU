@@ -1,19 +1,25 @@
-﻿namespace StudentAdministrationSystem.Models
+﻿using StudentAdministrationSystem.Models;
+
+public class StudentRepository : IStudentRepository
 {
-    public class StudentRepository : IStudentRepository
+    private readonly StudentDbContext context;
+    public StudentRepository(StudentDbContext context)
     {
-        private readonly List<StudentViewModel> _students = new List<StudentViewModel>();
+        this.context = context;
+    }
 
-        public IEnumerable<StudentViewModel> Students => _students;
+    public IQueryable<Student> Students => context.Students; // live query
 
-        public void AddStudent(StudentViewModel student)
-        {
-            _students.Add(student);
-        }
+    public void AddStudent(Student student)
+    {
+        context.Students.Add(student);
+        context.SaveChanges();
+    }
 
-        public IEnumerable<StudentViewModel> GetAllStudents()
-        {
-            return Students;
-        }
+    public IEnumerable<Student> GetAllStudents()
+    {
+        return context.Students.ToList();
     }
 }
+
+

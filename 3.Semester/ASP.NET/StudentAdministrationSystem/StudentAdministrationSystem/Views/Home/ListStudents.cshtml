@@ -1,4 +1,4 @@
-﻿@model IEnumerable<StudentAdministrationSystem.Models.StudentViewModel>
+﻿@model IEnumerable<StudentAdministrationSystem.Models.Student>
 <table>
 	<thead>
 		<tr>
@@ -9,13 +9,13 @@
 		</tr>
 	</thead>
 	<tbody>
-		@foreach (StudentAdministrationSystem.Models.StudentViewModel student in Model!)
+		@foreach (StudentAdministrationSystem.Models.Student student in Model!)
 		{
 			<tr>
-				<td>@student.firstName @student.lastName</td>
-				<td>@student.education</td>
-				<td>@student.semester</td>
-				<td>@student.email</td>
+				<td>@student.FirstName @student.LastName</td>
+				<td>@student.Education</td>
+				<td>@student.Semester</td>
+				<td>@student.Email</td>
 			</tr>
 		}
 </table>

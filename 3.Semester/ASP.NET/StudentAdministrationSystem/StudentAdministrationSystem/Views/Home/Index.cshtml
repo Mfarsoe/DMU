@@ -1,28 +1,27 @@
-﻿@model IEnumerable<StudentViewModel>
-<div class="index">
-	@if (Model != null && Model.Any())
-	{
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Education</th>
-					<th>Semester</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				@foreach (StudentAdministrationSystem.Models.StudentViewModel student in Model!)
-				{
-					<tr>
-						<td>@student.firstName @student.lastName</td>
-						<td>@student.education</td>
-						<td>@student.semester</td>
-						<td>@student.email</td>
-					</tr>
-				}
-	</table>
-	}
-	<a asp-action="CreateStudent" class="menu-item">Create new student!</a>
-	
+﻿@model StudentAdministrationSystem.Models.StudentListViewModel
+
+<div class="container">
+    <h2 class="mb-4 text-center">Registered Students</h2>
+    <div class="row justify-content-center">
+        @foreach (var student in Model.Students)
+        {
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                @await Html.PartialAsync("StudentSummary", student)
+            </div>
+        }
+    </div>
+
+    <!-- Pagination -->
+    <nav aria-label="Student pagination" class="mt-4">
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { studentPage = i })">@i</a>
+
+                </li>
+            }
+        </ul>
+    </nav>
+    <a asp-action="CreateStudent" class="menu-item">Create new student!</a>
 </div>

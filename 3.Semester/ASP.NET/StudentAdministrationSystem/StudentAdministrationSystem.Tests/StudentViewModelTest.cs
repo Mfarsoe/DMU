@@ -9,21 +9,21 @@ namespace StudentAdministrationSystem.Tests
         public void CanSetAndGetProperties()
         {
             // Arrange
-            var student = new StudentViewModel();
+            var student = new Student();
 
             // Act
-            student.firstName = "John";
-            student.lastName = "Doe";
-            student.education = "Computer Science";
-            student.semester = 3;
-            student.email = "john.doe@example.com";
+            student.FirstName = "John";
+            student.LastName = "Doe";
+            student.Education = "Computer Science";
+            student.Semester = 3;
+            student.Email = "john.doe@example.com";
 
             // Assert
-            Assert.Equal("John", student.firstName);
-            Assert.Equal("Doe", student.lastName);
-            Assert.Equal("Computer Science", student.education);
-            Assert.Equal(3, student.semester);
-            Assert.Equal("john.doe@example.com", student.email);
+            Assert.Equal("John", student.FirstName);
+            Assert.Equal("Doe", student.LastName);
+            Assert.Equal("Computer Science", student.Education);
+            Assert.Equal(3, student.Semester);
+            Assert.Equal("john.doe@example.com", student.Email);
         }
 
         [Theory]
@@ -32,21 +32,21 @@ namespace StudentAdministrationSystem.Tests
         public void CanCreateStudentWithDifferentValues(string firstName, string lastName, string education, int semester, string email)
         {
             // Arrange & Act
-            var student = new StudentViewModel
+            var student = new Student
             {
-                firstName = firstName,
-                lastName = lastName,
-                education = education,
-                semester = semester,
-                email = email
+                FirstName = firstName,
+                LastName = lastName,
+                Education = education,
+                Semester = semester,
+                Email = email
             };
 
             // Assert
-            Assert.Equal(firstName, student.firstName);
-            Assert.Equal(lastName, student.lastName);
-            Assert.Equal(education, student.education);
-            Assert.Equal(semester, student.semester);
-            Assert.Equal(email, student.email);
+            Assert.Equal(firstName, student.FirstName);
+            Assert.Equal(lastName, student.LastName);
+            Assert.Equal(education, student.Education);
+            Assert.Equal(semester, student.Semester);
+            Assert.Equal(email, student.Email);
         }
     }
 }

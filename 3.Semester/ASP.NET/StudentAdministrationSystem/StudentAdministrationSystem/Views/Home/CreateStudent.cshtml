@@ -1,30 +1,30 @@
-﻿@model StudentAdministrationSystem.Models.StudentViewModel
+﻿@model StudentAdministrationSystem.Models.Student
 
 <form asp-action="CreateStudent">
 	<div class="form-group" method="post">
-		<label asp-for="firstName" class="control-label">First Name:</label>
-		<input asp-for="firstName" class="form-control" />
-		<span asp-validation-for="firstName" class="text-danger"></span>
+		<label asp-for="FirstName" class="control-label">First Name:</label>
+		<input asp-for="FirstName" class="form-control" />
+		<span asp-validation-for="FirstName" class="text-danger"></span>
 	</div>
 	<div class="form-group">
-		<label asp-for="lastName" class="control-label">Last Name:</label>
-		<input asp-for="lastName" class="form-control" />
-		<span asp-validation-for="lastName" class="text-danger"></span>
+		<label asp-for="LastName" class="control-label">Last Name:</label>
+		<input asp-for="LastName" class="form-control" />
+		<span asp-validation-for="LastName" class="text-danger"></span>
 	</div>
 	<div class="form-group">
-		<label asp-for="education" class="control-label">Education:</label>
-		<input asp-for="education" class="form-control" />
-		<span asp-validation-for="education" class="text-danger"></span>
+		<label asp-for="Education" class="control-label">Education:</label>
+		<input asp-for="Education" class="form-control" />
+		<span asp-validation-for="Education" class="text-danger"></span>
 	</div>
 	<div class="form-group">
-		<label asp-for="semester" class="control-label">Semester:</label>
-		<input asp-for="semester" class="form-control" />
-		<span asp-validation-for="semester" class="text-danger"></span>
+		<label asp-for="Semester" class="control-label">Semester:</label>
+		<input asp-for="Semester" class="form-control" />
+		<span asp-validation-for="Semester" class="text-danger"></span>
 	</div>
 	<div class="form-group">
-		<label asp-for="email" class="control-label">Email:</label>
-		<input asp-for="email" class="form-control" />
-		<span asp-validation-for="email" class="text-danger"></span>
+		<label asp-for="Email" class="control-label">Email:</label>
+		<input asp-for="Email" class="form-control" />
+		<span asp-validation-for="Email" class="text-danger"></span>
 	</div>
 	<div class="form-group">
 		<input type="submit" value="Opret" class="btn btn-primary" />
