@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore", "SportsStore\SportsStore.csproj", "{0FBCC028-569F-4613-981E-AD227BEB0327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Tests", "SportsStore.Tests\SportsStore.Tests.csproj", "{19C6AE5A-7E9A-490E-A4BC-5C06A504938A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FBCC028-569F-4613-981E-AD227BEB0327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBCC028-569F-4613-981E-AD227BEB0327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBCC028-569F-4613-981E-AD227BEB0327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBCC028-569F-4613-981E-AD227BEB0327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C6AE5A-7E9A-490E-A4BC-5C06A504938A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C6AE5A-7E9A-490E-A4BC-5C06A504938A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C6AE5A-7E9A-490E-A4BC-5C06A504938A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C6AE5A-7E9A-490E-A4BC-5C06A504938A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A563C45-D4C3-4AE3-BD55-0D6E4CBBFFAF}
+	EndGlobalSection
+EndGlobal
