@@ -17,7 +17,7 @@ namespace StudentAdministrationSystem.Controllers
 
         public IActionResult Index(int studentPage = 1)
         {
-            const int PageSize = 4;
+            const int PageSize = 9;
 
             // EF query (IQueryable)
             var query = repo.Students.OrderBy(s => s.LastName);
