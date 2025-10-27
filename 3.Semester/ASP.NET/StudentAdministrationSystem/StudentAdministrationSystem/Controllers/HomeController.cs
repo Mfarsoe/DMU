@@ -30,7 +30,7 @@ namespace StudentAdministrationSystem.Controllers
 
             var model = new StudentListViewModel
             {
-                Students = studentsForPage,   // IEnumerable<Student> passer perfekt
+                Students = studentsForPage,   // IEnumerable<Student>
                 CurrentPage = studentPage,
                 TotalPages = (int)Math.Ceiling(repo.Students.Count() / (double)PageSize)
             };

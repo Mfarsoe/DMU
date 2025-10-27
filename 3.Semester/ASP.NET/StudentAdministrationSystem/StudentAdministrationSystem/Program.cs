@@ -12,6 +12,7 @@ builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 var app = builder.Build();
 app.UseStaticFiles();
 app.UseRouting();
+app.MapDefaultControllerRoute();
 
 app.MapControllerRoute(
     name: "pagination",

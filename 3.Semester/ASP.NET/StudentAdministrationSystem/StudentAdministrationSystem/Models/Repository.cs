@@ -8,7 +8,7 @@ public class StudentRepository : IStudentRepository
         this.context = context;
     }
 
-    public IQueryable<Student> Students => context.Students; // live query
+    public IQueryable<Student> Students => context.Students; 
 
     public void AddStudent(Student student)
     {
