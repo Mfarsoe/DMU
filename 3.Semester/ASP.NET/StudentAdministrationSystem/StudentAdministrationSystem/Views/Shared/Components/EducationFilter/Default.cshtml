@@ -1,0 +1,18 @@
+﻿@model StudentAdministrationSystem.Models.EducationFilterViewModel
+
+<div class="card mb-3">
+    <div class="card-header bg-light">
+        <strong>Filtrer efter uddannelse</strong>
+    </div>
+    <div class="card-body p-2">
+        <form asp-action="Index" method="get">
+            <select class="form-select mb-2" name="educationFilter" onchange="this.form.submit()">
+                <option value="">Vis alle</option>
+                @foreach (var edu in Model.AvailableEducations)
+                {
+                    <option value="@edu" selected="@(Model.SelectedEducation == edu ? "selected" : null)">@edu</option>
+                }
+            </select>
+        </form>
+    </div>
+</div>

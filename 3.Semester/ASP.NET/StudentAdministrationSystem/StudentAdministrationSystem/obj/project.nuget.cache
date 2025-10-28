@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AzWNErEZP8A=",
+  "dgSpecHash": "wrgVwg5ZO+I=",
   "success": true,
-  "projectFilePath": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
+  "projectFilePath": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\quite\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\quite\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

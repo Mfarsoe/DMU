@@ -2,26 +2,36 @@
 
 <div class="container">
     <h2 class="mb-4 text-center">Registered Students</h2>
-    <div class="row justify-content-center">
-        @foreach (var student in Model.Students)
-        {
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                @await Html.PartialAsync("StudentSummary", student)
+    <div class="row">
+        <!-- Venstre menu -->
+        <div class="col-md-3">
+            @await Component.InvokeAsync("EducationFilter", new { selectedEducation = Model.EducationFilter })
+        </div>
+
+        <!-- Højre kortvisning -->
+        <div class="col-md-9">
+            <div class="row justify-content-center">
+                @foreach (var student in Model.Students)
+                {
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                        @await Html.PartialAsync("StudentSummary", student)
+                    </div>
+                }
             </div>
-        }
+
+            <!-- Pagination -->
+            <nav aria-label="Student pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("Index", new { studentPage = i, educationFilter = Model.EducationFilter })">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+
+            <a asp-action="CreateStudent" class="menu-item mt-3 d-inline-block">Create new student!</a>
+        </div>
     </div>
-
-    <!-- Pagination -->
-    <nav aria-label="Student pagination" class="mt-4">
-        <ul class="pagination justify-content-center">
-            @for (int i = 1; i <= Model.TotalPages; i++)
-            {
-                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
-                    <a class="page-link" href="@Url.Action("Index", new { studentPage = i })">@i</a>
-
-                </li>
-            }
-        </ul>
-    </nav>
-    <a asp-action="CreateStudent" class="menu-item">Create new student!</a>
 </div>

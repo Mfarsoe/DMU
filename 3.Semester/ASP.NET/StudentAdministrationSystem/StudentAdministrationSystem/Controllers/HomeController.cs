@@ -15,28 +15,33 @@ namespace StudentAdministrationSystem.Controllers
             this.repo = repo; 
         }
 
-        public IActionResult Index(int studentPage = 1)
+        public IActionResult Index(string educationFilter, int studentPage = 1)
         {
             const int PageSize = 9;
 
-            // EF query (IQueryable)
-            var query = repo.Students.OrderBy(s => s.LastName);
+            var query = repo.Students.AsQueryable();
 
-            // Pagineret del
+            if (!string.IsNullOrEmpty(educationFilter))
+                query = query.Where(s => s.Education == educationFilter);
+
+            query = query.OrderBy(s => s.LastName);
+
             var studentsForPage = query
                                   .Skip((studentPage - 1) * PageSize)
                                   .Take(PageSize)
-                                  .ToList(); // materialize som IEnumerable
+                                  .ToList();
 
             var model = new StudentListViewModel
             {
-                Students = studentsForPage,   // IEnumerable<Student>
+                Students = studentsForPage,
                 CurrentPage = studentPage,
-                TotalPages = (int)Math.Ceiling(repo.Students.Count() / (double)PageSize)
+                TotalPages = (int)Math.Ceiling(query.Count() / (double)PageSize),
+                EducationFilter = educationFilter
             };
 
             return View(model);
         }
+
 
 
         [HttpGet]
