@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\adminlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\adminlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\routed.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\routed.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\ordertable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\ordertable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|c:\\dmu\\3.semester\\asp.net\\pro-asp.net-core-6\\10 - sportsstore - 4\\end of chapter\\sportssln\\sportsstore\\pages\\admin\\editor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6512AD42-1199-457C-A8EF-0F571C58726C}|SportsStore\\SportsStore.csproj|solutionrelative:sportsstore\\pages\\admin\\editor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "SportsStore\\Models\\Order.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Models\\Order.cs",
+              "RelativeToolTip": "SportsStore\\Models\\Order.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:05:44.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Products.razor",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Products.razor",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\Products.razor",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Products.razor",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\Products.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:48:40.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Editor.razor",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Editor.razor",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\Editor.razor",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Editor.razor",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\Editor.razor",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:47:57.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Routed.razor",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Routed.razor",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\Routed.razor",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Routed.razor",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\Routed.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:47:43.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderTable.razor",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\OrderTable.razor",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\OrderTable.razor",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\OrderTable.razor",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\OrderTable.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:47:36.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Index.cshtml",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:40:51.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Orders.razor",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Orders.razor",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\Orders.razor",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Orders.razor",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\Orders.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:41:54.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminLayout.razor",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\AdminLayout.razor",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\AdminLayout.razor",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\AdminLayout.razor",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\AdminLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:41:49.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.razor",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Details.razor",
+              "RelativeDocumentMoniker": "SportsStore\\Pages\\Admin\\Details.razor",
+              "ToolTip": "C:\\DMU\\3.Semester\\ASP.NET\\pro-asp.net-core-6\\10 - SportsStore - 4\\End of Chapter\\SportsSln\\SportsStore\\Pages\\Admin\\Details.razor",
+              "RelativeToolTip": "SportsStore\\Pages\\Admin\\Details.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T08:40:37.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
