@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using StudentAdministrationSystem.Models;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
@@ -9,10 +10,21 @@ builder.Services.AddDbContext<StudentDbContext>(options => {
 });
 
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+
+
+builder.Services.AddDbContext<AppIdentityDbContext>(options =>
+options.UseSqlServer(
+builder.Configuration["ConnectionStrings:IdentityConnection"]));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+.AddEntityFrameworkStores<AppIdentityDbContext>();
+
 var app = builder.Build();
 app.UseStaticFiles();
 app.UseRouting();
 app.MapDefaultControllerRoute();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "pagination",
@@ -25,4 +37,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}"
 );
 SeedData.EnsurePopulated(app);
+IdentitySeedData.EnsurePopulated(app);
 app.Run();
