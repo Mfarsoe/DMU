@@ -61,6 +61,42 @@ namespace StudentAdministrationSystem.Controllers
             return View(student);
         }
 
+        // Delete student direkte
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteStudent(int id)
+        {
+            var student = repo.Students.FirstOrDefault(s => s.StudentId == id);
+            if (student != null)
+            {
+                repo.DeleteStudent(student);
+            }
+
+            // Redirect tilbage til listen
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public IActionResult EditStudent(int id)
+        {
+            var student = repo.Students.FirstOrDefault(s => s.StudentId == id);
+            if (student == null) return NotFound();
+
+            return View(student);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditStudent(Student student)
+        {
+            if (!ModelState.IsValid)
+                return View(student);
+
+            repo.EditStudent(student);
+            return RedirectToAction(nameof(Index));
+        }
+
+
         /*
         public IActionResult ListStudents()
         {

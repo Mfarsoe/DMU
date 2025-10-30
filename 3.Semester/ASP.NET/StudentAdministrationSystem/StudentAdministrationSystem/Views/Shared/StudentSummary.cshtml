@@ -1,13 +1,34 @@
 ﻿@model StudentAdministrationSystem.Models.Student
 
-<div class="card shadow-sm border-0 my-3 p-3 mx-auto" style="width: 400px;">
-    <div class="card-header bg-primary text-white d-flex align-items-center py-2 px-3 rounded-top">
-        <h5 class="mb-0 me-3">@Model.FirstName @Model.LastName</h5>
-    </div>
+<tr class="align-middle border-bottom">
+    <td class="fw-medium">@Model.FirstName</td>
+    <td class="fw-medium">@Model.LastName</td>
+    <td>
+        <span class="badge bg-light text-dark border">@Model.Education</span>
+    </td>
+    <td>@Model.Semester</td>
+    <td>
+        <a href="mailto:@Model.Email" class="text-decoration-none text-primary">
+            @Model.Email
+        </a>
+    </td>
+    <td class="text-end" style="padding-right:0;">
+        <!-- Edit Button (icon) -->
+        <a asp-action="EditStudent" asp-route-id="@Model.StudentId"
+           class="btn btn-sm btn-outline-primary rounded-pill me-1 d-inline-flex align-items-center justify-content-center"
+           style="background-color: white; width:36px; height:36px; padding:0;">
+            <i class="bi bi-pencil"></i>
+        </a>
 
-    <div class="card-body px-3 py-3">
-        <p class="card-text mb-2 fs-6 text-muted"><strong>Education:</strong> @Model.Education</p>
-        <p class="card-text mb-2 fs-6 text-muted"><strong>Semester:</strong> @Model.Semester</p>
-        <p class="card-text mb-0 fs-6 text-muted"><strong>Email:</strong> <a href="mailto:@Model.Email">@Model.Email</a></p>
-    </div>
-</div>
+        <!-- Delete Button (POST form) -->
+        <form asp-action="DeleteStudent" asp-route-id="@Model.StudentId" method="post"
+              class="d-inline m-0 p-0" style="display:inline-block;">
+            <button type="submit"
+                    class="btn btn-sm btn-outline-danger rounded-pill d-inline-flex align-items-center justify-content-center delete-btn"
+                    style="background-color:white; width:36px; height:36px; padding:0; border-width:1px;"
+                    onclick="return confirm('Are you sure you want to delete @Model.FirstName @Model.LastName?');">
+                <i class="bi bi-trash"></i>
+            </button>
+        </form>
+    </td>
+</tr>
