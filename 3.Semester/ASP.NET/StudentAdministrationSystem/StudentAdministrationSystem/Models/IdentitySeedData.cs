@@ -6,14 +6,14 @@ namespace StudentAdministrationSystem.Models
     public static class IdentitySeedData
     {
         private const string adminUser = "Admin";
-        private const string adminPassword = "Kode1234!"; // <-- bemærk '!' for at undgå password-policy problemer
+        private const string adminPassword = "Kode1234!"; 
 
-        public static async Task EnsurePopulatedAsync(IApplicationBuilder app)
+        public static async void EnsurePopulatedAsync(IApplicationBuilder app)
         {
             using var scope = app.ApplicationServices.CreateScope();
             var services = scope.ServiceProvider;
 
-            var context = services.GetRequiredService<AppIdentityDbContext>();
+            var context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<AppIdentityDbContext>();
             // Kør migration hvis der er nogen
             if (context.Database.GetPendingMigrations().Any())
             {
@@ -33,22 +33,7 @@ namespace StudentAdministrationSystem.Models
                     EmailConfirmed = true
                 };
 
-                var result = await userManager.CreateAsync(user, adminPassword);
-
-                if (!result.Succeeded)
-                {
-                    // Log fejl til konsol så du kan se hvad der går galt
-                    Console.WriteLine("FEJL ved oprettelse af admin-bruger:");
-                    foreach (var err in result.Errors)
-                    {
-                        Console.WriteLine($" - {err.Code}: {err.Description}");
-                    }
-                    throw new Exception("Kan ikke oprette admin-bruger. Se konsol for detaljer.");
-                }
-                else
-                {
-                    Console.WriteLine("Admin-bruger oprettet.");
-                }
+                await userManager.CreateAsync(user, adminPassword);
             }
             else
             {

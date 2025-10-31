@@ -8155,11 +8155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj",
+      "projectUniqueName": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj",
       "projectName": "StudentAdministrationSystem.Tests",
-      "projectPath": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj",
+      "projectPath": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\StudentAdministrationSystem.Tests.csproj",
       "packagesPath": "C:\\Users\\quite\\.nuget\\packages\\",
-      "outputPath": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\obj\\",
+      "outputPath": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8180,8 +8180,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj": {
-              "projectPath": "D:\\Datamatiker\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj"
+            "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj": {
+              "projectPath": "C:\\DMU\\3.Semester\\ASP.NET\\StudentAdministrationSystem\\StudentAdministrationSystem\\StudentAdministrationSystem.csproj"
             }
           }
         }

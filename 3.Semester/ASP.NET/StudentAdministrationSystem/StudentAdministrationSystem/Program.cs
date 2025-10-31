@@ -37,7 +37,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}"
 );
 SeedData.EnsurePopulated(app);
-await IdentitySeedData.EnsurePopulatedAsync(app);
+IdentitySeedData.EnsurePopulatedAsync(app);
 
 
 app.Run();
