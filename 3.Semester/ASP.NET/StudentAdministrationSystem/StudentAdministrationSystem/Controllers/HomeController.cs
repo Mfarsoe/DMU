@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using StudentAdministrationSystem.Models;
 
 namespace StudentAdministrationSystem.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         //repository field

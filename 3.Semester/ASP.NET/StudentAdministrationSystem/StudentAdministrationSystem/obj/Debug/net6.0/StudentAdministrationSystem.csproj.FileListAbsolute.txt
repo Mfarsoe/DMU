@@ -156,3 +156,4 @@ C:\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSyste
 C:\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\obj\Debug\net6.0\StudentAdministrationSystem.csproj.AssemblyReference.cache
 C:\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\obj\Debug\net6.0\StudentA.4C19673C.Up2Date
+D:\Datamatiker\DMU\3.Semester\ASP.NET\StudentAdministrationSystem\StudentAdministrationSystem\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

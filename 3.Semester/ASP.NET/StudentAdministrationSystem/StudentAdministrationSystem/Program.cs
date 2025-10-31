@@ -23,7 +23,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.MapDefaultControllerRoute();
 
-app.UseAuthentication();
+app.UseAuthentication();  
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -37,5 +37,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}"
 );
 SeedData.EnsurePopulated(app);
-IdentitySeedData.EnsurePopulated(app);
+await IdentitySeedData.EnsurePopulatedAsync(app);
+
+
 app.Run();
