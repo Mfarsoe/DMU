@@ -1,0 +1,24 @@
+﻿version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "MyDatabaseSecret123!"
+    ports:
+      - "1433:1433"
+
+  studentadministrationsystem:
+    build: .
+    container_name: studentadministrationsystem
+    depends_on:
+      - sqlserver
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5000
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;User Id=sa;Password=MyDatabaseSecret123!;TrustServerCertificate=True;"
+    ports:
+      - "5000:5000"
+    restart: on-failure

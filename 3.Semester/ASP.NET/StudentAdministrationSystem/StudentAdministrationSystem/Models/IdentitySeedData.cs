@@ -8,7 +8,9 @@ namespace StudentAdministrationSystem.Models
         private const string adminUser = "Admin";
         private const string adminPassword = "Kode1234!"; 
 
-        public static async void EnsurePopulatedAsync(IApplicationBuilder app)
+        public static async 
+        Task
+EnsurePopulatedAsync(IApplicationBuilder app)
         {
             using var scope = app.ApplicationServices.CreateScope();
             var services = scope.ServiceProvider;

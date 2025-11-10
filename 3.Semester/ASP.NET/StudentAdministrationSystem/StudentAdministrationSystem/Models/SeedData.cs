@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Threading;
 
 namespace StudentAdministrationSystem.Models
 {
@@ -6,38 +7,50 @@ namespace StudentAdministrationSystem.Models
     {
         public static void EnsurePopulated(IApplicationBuilder app)
         {
-            StudentDbContext context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<StudentDbContext>();
-            if (context.Database.GetPendingMigrations().Any())
+            using var scope = app.ApplicationServices.CreateScope();
+            var context = scope.ServiceProvider.GetRequiredService<StudentDbContext>();
+
+            // Retry-loop for database connection
+            int retries = 10;
+            while (retries > 0)
             {
-                context.Database.Migrate();
+                try
+                {
+                    if (context.Database.CanConnect())
+                    {
+                        Console.WriteLine("Database connected");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Database not ready yet...");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Database connection failed: {ex.Message}");
+                }
+
+                retries--;
+                Thread.Sleep(5000);
             }
+
+            if (retries == 0)
+            {
+                Console.WriteLine("Could not connect to database after multiple attempts.");
+                return; // exit EnsurePopulated, ellers vil seed fejle
+            }
+
+
+            // Seed data
             if (!context.Students.Any())
             {
+                Console.WriteLine("Seeding students...");
+
                 context.Students.AddRange(
-                    new Student
-                    {
-                        FirstName = "John",
-                        LastName = "Deer",
-                        Education = "Datamatiker",
-                        Semester = 3,
-                        Email = "John@eamv.dk"
-                    },
-                    new Student
-                    {
-                        FirstName = "Maggie",
-                        LastName = "Smith",
-                        Education = "Finansøkonom",
-                        Semester = 2,
-                        Email = "Jane@eamv.dk"
-                    },
-                    new Student
-                    {
-                        FirstName = "Michael",
-                        LastName = "Jackson",
-                        Education = "Markedsføringsøkonom",
-                        Semester = 1,
-                        Email = "Michael@eamv.dk"
-                    },
+                    new Student { FirstName = "John", LastName = "Deer", Education = "Datamatiker", Semester = 3, Email = "John@eamv.dk" },
+                    new Student { FirstName = "Maggie", LastName = "Smith", Education = "Finansøkonom", Semester = 2, Email = "Jane@eamv.dk" },
+                    new Student { FirstName = "Michael", LastName = "Jackson", Education = "Markedsføringsøkonom", Semester = 1, Email = "Michael@eamv.dk" },
                     new Student { FirstName = "Emma", LastName = "Johnson", Education = "Datamatiker", Semester = 1, Email = "emma@eamv.dk" },
                     new Student { FirstName = "Oliver", LastName = "Brown", Education = "Finansøkonom", Semester = 2, Email = "oliver@eamv.dk" },
                     new Student { FirstName = "Sophia", LastName = "Davis", Education = "Markedsføringsøkonom", Semester = 3, Email = "sophia@eamv.dk" },
@@ -54,7 +67,13 @@ namespace StudentAdministrationSystem.Models
                     new Student { FirstName = "Ethan", LastName = "Lee", Education = "Finansøkonom", Semester = 2, Email = "ethan@eamv.dk" },
                     new Student { FirstName = "Harper", LastName = "Perez", Education = "Markedsføringsøkonom", Semester = 4, Email = "harper@eamv.dk" }
                 );
+
                 context.SaveChanges();
+                Console.WriteLine("Students seeded successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Students already exist. Skipping seeding.");
             }
         }
     }

@@ -1,0 +1,6 @@
+﻿/* Fjern grå pill-formet skygge / focus / active kun på Delete-knappen */
+button.delete-btn:focus,
+button.delete-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
