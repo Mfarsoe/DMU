@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\asp.net\\clean\\clean\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|solutionrelative:clean\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\asp.net\\clean\\clean\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|solutionrelative:clean\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\asp.net\\clean\\clean\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|solutionrelative:clean\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\asp.net\\clean\\clean\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|solutionrelative:clean\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\asp.net\\clean\\clean\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|solutionrelative:clean\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\asp.net\\clean\\clean\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08D137D0-801F-4307-BE8F-9F8DFDB4EF5C}|Clean\\Clean.csproj|solutionrelative:clean\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Program.cs",
+              "RelativeDocumentMoniker": "Clean\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Program.cs*",
+              "RelativeToolTip": "Clean\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:24:35.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Clean\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Clean\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T14:22:41.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Clean\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Clean\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T14:20:28.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Clean\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Clean\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T14:20:27.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Clean\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Clean\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T14:20:26.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Clean\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\ASP.NET\\Clean\\Clean\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Clean\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:17:57.489Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

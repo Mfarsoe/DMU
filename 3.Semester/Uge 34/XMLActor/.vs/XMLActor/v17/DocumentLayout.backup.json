@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\",
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|c:\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|solutionrelative:xmlactor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|c:\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|solutionrelative:xmlactor\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|c:\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\actors.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\actors.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|solutionrelative:xmlactor\\actors.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|c:\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\actors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|d:\\datamatiker\\dmu\\3.semester\\uge 34\\xmlactor\\xmlactor\\actors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{808D27D3-A62D-463E-BCA2-0D03ED3A1BB4}|XMLActor\\XMLActor.csproj|solutionrelative:xmlactor\\actors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Actor.cs",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Actor.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Actor.cs",
               "RelativeDocumentMoniker": "XMLActor\\Actor.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Actor.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Actor.cs",
               "RelativeToolTip": "XMLActor\\Actor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -46,37 +46,35 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "actors.txt",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.txt",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.txt",
               "RelativeDocumentMoniker": "XMLActor\\actors.txt",
-              "ToolTip": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.txt",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.txt",
               "RelativeToolTip": "XMLActor\\actors.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-08-26T07:49:30.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T07:49:30.861Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "actors.xml",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.xml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.xml",
               "RelativeDocumentMoniker": "XMLActor\\actors.xml",
-              "ToolTip": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.xml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\actors.xml",
               "RelativeToolTip": "XMLActor\\actors.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-26T07:49:27.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T07:49:27.362Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Program.cs",
               "RelativeDocumentMoniker": "XMLActor\\Program.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\Program.cs",
               "RelativeToolTip": "XMLActor\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T14:59:55.163Z",
               "EditorCaption": ""

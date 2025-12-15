@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj": {}
+    "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj": {}
   },
   "projects": {
-    "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj": {
+    "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj",
+        "projectUniqueName": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj",
         "projectName": "XMLActor",
-        "projectPath": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj",
+        "projectPath": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\XMLActor.csproj",
         "packagesPath": "C:\\Users\\quite\\.nuget\\packages\\",
-        "outputPath": "C:\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\obj\\",
+        "outputPath": "D:\\Datamatiker\\DMU\\3.Semester\\Uge 34\\XMLActor\\XMLActor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave A\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6217903E-EFBB-4DB9-BC56-43D24DE51F10}|Opgave A\\Opgave A.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave a\\opgave a\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6217903E-EFBB-4DB9-BC56-43D24DE51F10}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6217903E-EFBB-4DB9-BC56-43D24DE51F10}|Opgave A\\Opgave A.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave a\\opgave a\\opgave a.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6217903E-EFBB-4DB9-BC56-43D24DE51F10}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\opgave a.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6217903E-EFBB-4DB9-BC56-43D24DE51F10}|Opgave A\\Opgave A.csproj|d:\\datamatiker\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave a\\opgave a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6217903E-EFBB-4DB9-BC56-43D24DE51F10}|Opgave A\\Opgave A.csproj|solutionrelative:opgave a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave A\\Opgave A\\Person.cs",
+              "RelativeDocumentMoniker": "Opgave A\\Person.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave A\\Opgave A\\Person.cs",
+              "RelativeToolTip": "Opgave A\\Person.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T18:29:38.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Opgave A",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave A\\Opgave A\\Opgave A.csproj",
+              "RelativeDocumentMoniker": "Opgave A\\Opgave A.csproj",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave A\\Opgave A\\Opgave A.csproj",
+              "RelativeToolTip": "Opgave A\\Opgave A.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-07T18:27:10.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave A\\Opgave A\\Program.cs",
               "RelativeDocumentMoniker": "Opgave A\\Program.cs",

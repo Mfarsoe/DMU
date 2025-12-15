@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\server\\skeletonworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\server\\skeletonworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\server\\skeletonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\server\\skeletonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\server\\methodimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\server\\methodimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\server\\skeletonworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\server\\skeletonworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\server\\methodimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|solutionrelative:opgave b\\server\\methodimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07EECA9E-79D0-4636-BAEF-492358D9EC0C}|Opgave B\\Opgave B.csproj|c:\\dmu\\3.semester\\legeplads\\netv\u00E6rk opgaver\\opgave b\\opgave b\\client\\stub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +38,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Program.cs",
               "RelativeDocumentMoniker": "Opgave B\\Program.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Program.cs*",
-              "RelativeToolTip": "Opgave B\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Program.cs",
+              "RelativeToolTip": "Opgave B\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T15:18:53.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MethodImpl.cs",
               "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Server\\MethodImpl.cs",
               "RelativeDocumentMoniker": "Opgave B\\Server\\MethodImpl.cs",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SkeletonWorker.cs",
               "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Server\\SkeletonWorker.cs",
               "RelativeDocumentMoniker": "Opgave B\\Server\\SkeletonWorker.cs",
@@ -111,9 +111,9 @@
               "Title": "SkeletonManager.cs",
               "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Server\\SkeletonManager.cs",
               "RelativeDocumentMoniker": "Opgave B\\Server\\SkeletonManager.cs",
-              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Server\\SkeletonManager.cs*",
-              "RelativeToolTip": "Opgave B\\Server\\SkeletonManager.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Netv\u00E6rk Opgaver\\Opgave B\\Opgave B\\Server\\SkeletonManager.cs",
+              "RelativeToolTip": "Opgave B\\Server\\SkeletonManager.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAArwCgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T20:05:57.591Z",
               "EditorCaption": ""
