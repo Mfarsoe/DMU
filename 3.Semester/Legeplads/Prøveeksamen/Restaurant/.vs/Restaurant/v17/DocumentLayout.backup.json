@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\views\\home\\checkage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\views\\home\\checkage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\models\\vare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\models\\vare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\models\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\models\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\models\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\models\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\restaurant\\restaurant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0E8ED65-CD73-47DC-B553-8F63447E77AD}|Restaurant\\Restaurant.csproj|solutionrelative:restaurant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckAge.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\Home\\CheckAge.cshtml",
+              "RelativeDocumentMoniker": "Restaurant\\Views\\Home\\CheckAge.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\Home\\CheckAge.cshtml",
+              "RelativeToolTip": "Restaurant\\Views\\Home\\CheckAge.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T09:25:57.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Repo.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Models\\Repo.cs",
+              "RelativeDocumentMoniker": "Restaurant\\Models\\Repo.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Models\\Repo.cs",
+              "RelativeToolTip": "Restaurant\\Models\\Repo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T09:10:33.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepo.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Models\\IRepo.cs",
+              "RelativeDocumentMoniker": "Restaurant\\Models\\IRepo.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Models\\IRepo.cs",
+              "RelativeToolTip": "Restaurant\\Models\\IRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T09:09:07.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Restaurant\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Restaurant\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T09:04:02.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vare.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Models\\Vare.cs",
+              "RelativeDocumentMoniker": "Restaurant\\Models\\Vare.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Models\\Vare.cs",
+              "RelativeToolTip": "Restaurant\\Models\\Vare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T09:01:42.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Restaurant\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Restaurant\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T09:01:34.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Restaurant\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Restaurant\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T09:01:12.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Restaurant\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Restaurant\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T09:00:34.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Program.cs",
+              "RelativeDocumentMoniker": "Restaurant\\Program.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Program.cs",
+              "RelativeToolTip": "Restaurant\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T08:58:05.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Restaurant\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Restaurant\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T09:00:27.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Restaurant\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Restaurant\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T08:58:34.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

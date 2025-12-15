@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Restaurant.Models.Vare>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Welcome to Our Restaurant</h1>
+<p>Explore our delicious menu and make a reservation today!</p>
+<div>
+    <h2>Menu</h2>
+    
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Name - @item.Price DKK</li>
+            <a asp-action="Choose" asp-route-id="@Model" >
+                Vælg
+            </a>
+        }
+    </ul>
+    </div>
+    <div>
+    <h2>Enter you age</h2>
+    <form method="post" asp-controller="Home" asp-action="CheckAge">
+        <input type="number" name="age" required />
+        <button type="submit">Submit</button>
+    </form>
