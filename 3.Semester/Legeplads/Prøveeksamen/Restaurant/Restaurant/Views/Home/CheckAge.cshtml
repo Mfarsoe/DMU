@@ -1,0 +1,19 @@
+﻿@model int
+
+@{
+    ViewData["Title"] = "Age Verification Result";
+}
+
+<h1>Age Verification Result</h1>
+@if (Model < 12)
+{
+    <p>You are @Model years old. 50% off!</p>
+}
+else if (Model >= 65)
+{
+    <p>You are @Model years old. 20% off!</p>
+}
+else
+{
+    <p>You are @Model years old. You are not allowed to enter.</p>
+}

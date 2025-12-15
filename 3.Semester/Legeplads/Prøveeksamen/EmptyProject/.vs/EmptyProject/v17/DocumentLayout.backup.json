@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\models\\emptyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\models\\emptyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\models\\vare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\models\\vare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|c:\\dmu\\3.semester\\legeplads\\pr\u00F8veeksamen\\emptyproject\\emptyproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CAC6891-E567-4FA6-9B39-CE783F8FCA90}|EmptyProject\\EmptyProject.csproj|solutionrelative:emptyproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EmptyProject\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EmptyProject\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T08:48:29.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\appsettings.json",
+              "RelativeDocumentMoniker": "EmptyProject\\appsettings.json",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\appsettings.json",
+              "RelativeToolTip": "EmptyProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T08:48:21.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Vare.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Models\\Vare.cs",
+              "RelativeDocumentMoniker": "EmptyProject\\Models\\Vare.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Models\\Vare.cs",
+              "RelativeToolTip": "EmptyProject\\Models\\Vare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T08:46:05.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Program.cs",
+              "RelativeDocumentMoniker": "EmptyProject\\Program.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Program.cs",
+              "RelativeToolTip": "EmptyProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T08:26:09.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmptyViewModel.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Models\\EmptyViewModel.cs",
+              "RelativeDocumentMoniker": "EmptyProject\\Models\\EmptyViewModel.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Models\\EmptyViewModel.cs",
+              "RelativeToolTip": "EmptyProject\\Models\\EmptyViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T08:02:42.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EmptyProject\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EmptyProject\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-26T07:20:51.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EmptyProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "EmptyProject\\Controllers\\HomeController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T07:20:27.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "EmptyProject\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "EmptyProject\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-26T07:19:45.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "EmptyProject\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "EmptyProject\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-26T07:19:35.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EmptyProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\EmptyProject\\EmptyProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EmptyProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-26T07:19:16.8Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
