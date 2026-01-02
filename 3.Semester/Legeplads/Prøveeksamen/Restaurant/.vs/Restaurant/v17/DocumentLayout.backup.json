@@ -79,8 +79,7 @@
               "RelativeToolTip": "Restaurant\\Models\\Repo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:10:33.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:10:33.678Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Restaurant\\Models\\IRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:09:07.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:09:07.767Z"
             },
             {
               "$type": "Document",
@@ -103,7 +101,7 @@
               "RelativeDocumentMoniker": "Restaurant\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\DMU\\3.Semester\\Legeplads\\Pr\u00F8veeksamen\\Restaurant\\Restaurant\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Restaurant\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-04T09:04:02.45Z",
               "EditorCaption": ""
@@ -118,8 +116,7 @@
               "RelativeToolTip": "Restaurant\\Models\\Vare.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:01:42.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:01:42.951Z"
             },
             {
               "$type": "Document",
@@ -131,8 +128,7 @@
               "RelativeToolTip": "Restaurant\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:01:34.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:01:34.829Z"
             },
             {
               "$type": "Document",
@@ -144,8 +140,7 @@
               "RelativeToolTip": "Restaurant\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-04T09:01:12.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:01:12.701Z"
             },
             {
               "$type": "Document",
@@ -157,8 +152,7 @@
               "RelativeToolTip": "Restaurant\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-04T09:00:34.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:00:34.561Z"
             },
             {
               "$type": "Document",
@@ -170,8 +164,7 @@
               "RelativeToolTip": "Restaurant\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T08:58:05.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T08:58:05.255Z"
             },
             {
               "$type": "Document",
@@ -183,8 +176,7 @@
               "RelativeToolTip": "Restaurant\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-04T09:00:27.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:00:27.628Z"
             },
             {
               "$type": "Document",
@@ -196,8 +188,7 @@
               "RelativeToolTip": "Restaurant\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-04T08:58:34.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T08:58:34.134Z"
             }
           ]
         }
