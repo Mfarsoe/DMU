@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\models\\bog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\models\\bog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\models\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\models\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\bibliotek\\bibliotek\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E53136E-0B99-4CC9-AFF9-C90C62893421}|Bibliotek\\Bibliotek.csproj|solutionrelative:bibliotek\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\appsettings.json",
+              "RelativeDocumentMoniker": "Bibliotek\\appsettings.json",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\appsettings.json",
+              "RelativeToolTip": "Bibliotek\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T15:04:15.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Models\\Repository.cs",
+              "RelativeDocumentMoniker": "Bibliotek\\Models\\Repository.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Models\\Repository.cs",
+              "RelativeToolTip": "Bibliotek\\Models\\Repository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T15:00:46.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Bibliotek\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Bibliotek\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T14:52:48.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Models\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "Bibliotek\\Models\\BookViewModel.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Models\\BookViewModel.cs",
+              "RelativeToolTip": "Bibliotek\\Models\\BookViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T14:50:03.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bog.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Models\\Bog.cs",
+              "RelativeDocumentMoniker": "Bibliotek\\Models\\Bog.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Models\\Bog.cs",
+              "RelativeToolTip": "Bibliotek\\Models\\Bog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T14:49:18.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bibliotek\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Bibliotek\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T14:48:54.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Program.cs",
+              "RelativeDocumentMoniker": "Bibliotek\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Program.cs",
+              "RelativeToolTip": "Bibliotek\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T14:48:05.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Bibliotek\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Bibliotek\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T14:46:51.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Bibliotek\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Bibliotek\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T14:46:32.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Bibliotek\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Bibliotek\\Bibliotek\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Bibliotek\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T14:46:26.487Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

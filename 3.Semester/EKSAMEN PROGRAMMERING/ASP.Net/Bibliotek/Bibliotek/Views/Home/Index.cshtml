@@ -1,0 +1,28 @@
+﻿@model Bibliotek.Models.BookViewModel
+
+<h2>Bibliotek</h2>
+
+<!-- Formular til ny bog -->
+<form method="post">
+    <label>Titel:</label>
+    <input asp-for="Title" />
+    <label>Forfatter:</label>
+    <input asp-for="Author" />
+    <label>Antal sider:</label>
+    <input asp-for="Pages" type="number" />
+    <button type="submit">Tilføj bog</button>
+</form>
+
+<!-- Vis eksisterende bøger -->
+<h3>Bøger:</h3>
+<ul>
+    @foreach (var bog in Model.books)
+    {
+        <li>@bog.Titel af @bog.Forfatter - @bog.Sider sider</li>
+    }
+</ul>
+
+@if (Model.TotalPages.HasValue)
+{
+    <p>Gennemsnitligt antal sider: @Model.TotalPages</p>
+}

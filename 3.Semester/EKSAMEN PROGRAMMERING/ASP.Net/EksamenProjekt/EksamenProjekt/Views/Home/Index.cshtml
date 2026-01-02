@@ -1,0 +1,38 @@
+﻿@model EksamenProjekt.Models.BestillingViewModel
+
+<h1>Restaurant</h1>
+
+<!-- Viser menuen -->
+<h3>Menu</h3>
+<ul>
+    @foreach (var vare in Model.Menu)
+    {
+        <li>@vare.Navn – @vare.Pris kr.</li>
+    }
+</ul>
+
+<!-- Formular til brugerinput -->
+<form asp-action="Index" method="post">
+    <div>
+        <label>Kundens alder:</label>
+        <input type="number" asp-for="Alder" />
+    </div>
+
+    <div>
+        <label>Vælg ret:</label>
+        <select asp-for="ValgtRet">
+            @foreach (var vare in Model.Menu)
+            {
+                <option value="@vare.Navn">@vare.Navn</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit">Beregn pris</button>
+</form>
+
+<!-- Viser resultatet, hvis der er beregnet en pris -->
+@if (Model.BeregnetPris != null)
+{
+    <h3>Pris: @Model.BeregnetPris kr.</h3>
+}

@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\models\\elevviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\models\\elevviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\models\\elev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\models\\elev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\elevkarakter\\elevkarakter\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FAFCA11-887F-46C1-9AC9-A8CAA218FE5E}|ElevKarakter\\ElevKarakter.csproj|solutionrelative:elevkarakter\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ElevKarakter\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ElevKarakter\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T19:46:20.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ElevViewModel.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Models\\ElevViewModel.cs",
+              "RelativeDocumentMoniker": "ElevKarakter\\Models\\ElevViewModel.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Models\\ElevViewModel.cs",
+              "RelativeToolTip": "ElevKarakter\\Models\\ElevViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T19:11:10.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Program.cs",
+              "RelativeDocumentMoniker": "ElevKarakter\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Program.cs",
+              "RelativeToolTip": "ElevKarakter\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T19:04:40.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\appsettings.json",
+              "RelativeDocumentMoniker": "ElevKarakter\\appsettings.json",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\appsettings.json",
+              "RelativeToolTip": "ElevKarakter\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T19:04:38.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Models\\Repository.cs",
+              "RelativeDocumentMoniker": "ElevKarakter\\Models\\Repository.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Models\\Repository.cs",
+              "RelativeToolTip": "ElevKarakter\\Models\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T19:03:20.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Elev.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Models\\Elev.cs",
+              "RelativeDocumentMoniker": "ElevKarakter\\Models\\Elev.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Models\\Elev.cs",
+              "RelativeToolTip": "ElevKarakter\\Models\\Elev.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T19:02:13.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ElevKarakter\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ElevKarakter\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T19:02:02.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ElevKarakter\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ElevKarakter\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T19:01:36.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ElevKarakter\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ElevKarakter\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T19:01:28.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ElevKarakter\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\ElevKarakter\\ElevKarakter\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ElevKarakter\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T19:01:12.423Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

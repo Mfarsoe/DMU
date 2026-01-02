@@ -1,0 +1,24 @@
+﻿@model ElevKarakter.Models.ElevViewModel
+
+<h1>Student List</h1>
+<ul>
+	@foreach (var elev in Model.Elevlist)
+	{
+		<li>
+			<strong>@elev.Navn</strong> - Karakter: @elev.Karakter
+		</li>
+	}
+</ul>
+
+<form method="post">
+    <label>Navn:</label>
+    <input asp-for="Navn" />
+    <label>Karakter:</label>
+    <input asp-for="Karakter"/>
+	<button type="submit">Tilføj Student</button>
+</form>
+
+@if (Model.GennemsnitKarakter != null)
+{
+	<p>@Model.GennemsnitKarakter</p>
+}
