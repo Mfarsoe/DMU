@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\XML\\Hash (skabelon)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BEB81F0-95A8-47E2-92EE-7C006F85CA14}|Hash2\\Hash2.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\xml\\hash (skabelon)\\hash2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BEB81F0-95A8-47E2-92EE-7C006F85CA14}|Hash2\\Hash2.csproj|solutionrelative:hash2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\XML\\Hash (skabelon)\\Hash2\\Program.cs",
+              "RelativeDocumentMoniker": "Hash2\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\XML\\Hash (skabelon)\\Hash2\\Program.cs",
+              "RelativeToolTip": "Hash2\\Program.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwD4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T06:29:03.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

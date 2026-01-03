@@ -39,8 +39,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T15:06:23.38Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -52,8 +51,7 @@
               "RelativeToolTip": "XMLActor\\actors.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-08-26T07:49:30.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T07:49:30.861Z"
             },
             {
               "$type": "Document",
@@ -75,7 +73,7 @@
               "RelativeDocumentMoniker": "XMLActor\\Program.cs",
               "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\XML\\XMLActor\\XMLActor\\Program.cs",
               "RelativeToolTip": "XMLActor\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowBgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T14:59:55.163Z",
               "EditorCaption": ""

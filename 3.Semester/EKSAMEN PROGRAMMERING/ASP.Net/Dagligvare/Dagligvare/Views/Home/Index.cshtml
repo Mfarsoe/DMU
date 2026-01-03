@@ -1,0 +1,46 @@
+﻿@model Dagligvare.Models.ViewModel
+
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome to Dagligvare</h1>
+<p>Your one-stop shop for daily groceries!</p>
+@if (Model.Varer != null && Model.Varer.Any())
+{
+	<h2>Available Products</h2>
+	<ul>
+		@foreach (var product in Model.Varer)
+		{
+			<li>
+				<strong>@product.Navn</strong> - @product.Pris.ToString("C")
+			</li>
+		}
+	</ul>
+
+	<form asp-action="Index" method="post">
+		@for (int i = 0; i < Model.Varer.Count; i++)
+		{
+			<div>
+				<strong>@Model.Varer[i].Navn</strong>
+				- @Model.Varer[i].Pris.ToString("C")
+				
+				<input type="hidden" asp-for="Varer[@i].Navn" />
+				<input type="hidden" asp-for="Varer[@i].Pris" />
+
+				<label>Antal</label>
+				<input type="number" asp-for="Varer[@i].Antal" min="0" />
+			</div>
+		}
+		<button type="submit">Calculate Total Price</button>
+	</form>
+	
+	if (Model.TotalPris.HasValue)
+	{
+		<p>Total Price: @Model.TotalPris.Value.ToString("C")</p>
+	}
+}
+else
+{
+	<p>No products available at the moment. Please check back later.</p>
+}
