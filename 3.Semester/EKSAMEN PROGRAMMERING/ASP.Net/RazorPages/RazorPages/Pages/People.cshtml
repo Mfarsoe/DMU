@@ -1,0 +1,23 @@
+﻿@page
+@model RazorPagesDemo.Pages.PeopleModel
+@{
+    ViewData["Title"] = "People";
+}
+
+<h2>People</h2>
+
+<form method="post">
+    <label>Name:</label>
+    <input asp-for="Name" />
+    <label>Age:</label>
+    <input asp-for="Age" type="number" />
+    <button type="submit">Add Person</button>
+</form>
+
+<h3>Current People</h3>
+<ul>
+    @foreach (var person in Model.PeopleList)
+    {
+        <li>@person.Name (@person.Age years old)</li>
+    }
+</ul>
