@@ -1,0 +1,39 @@
+﻿@page
+@model RazorPagesDemo.Pages.IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+@foreach (var item in Model.Vareliste)
+{
+	<div>
+		<h2>@item.Navn</h2>
+		<p>@item.Pris kr</p>
+	</div>
+}
+
+<form method="post">
+	<div>
+
+	
+	<label asp-for="Age"></label>
+	<input asp-for="Age" type="number"/>
+	</div>
+
+	<label>Vælg Ret:</label>
+	<select asp-for="ValgtRet">
+		@foreach (var ret in Model.Vareliste)
+		{
+			<option value="@ret.Navn">@ret.Navn</option>
+		}
+	</select>
+	<button type="submit">Submit</button>
+
+</form>
+
+@if (Model.BeregnetPris != null)
+{
+	<p>@Model.BeregnetPris</p>
+}
+
+

@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\models\\studentcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\models\\studentcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\models\\homeindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\models\\homeindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\models\\studentlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\models\\studentlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\models\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\models\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\pagination - copy\\pagination\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D7778346-38EE-4894-B636-FED260FB78A0}|Pagination\\Pagination.csproj|solutionrelative:pagination\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeIndexViewModel.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\HomeIndexViewModel.cs",
+              "RelativeDocumentMoniker": "Pagination\\Models\\HomeIndexViewModel.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\HomeIndexViewModel.cs",
+              "RelativeToolTip": "Pagination\\Models\\HomeIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:09:53.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentCreateViewModel.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\StudentCreateViewModel.cs",
+              "RelativeDocumentMoniker": "Pagination\\Models\\StudentCreateViewModel.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\StudentCreateViewModel.cs",
+              "RelativeToolTip": "Pagination\\Models\\StudentCreateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:09:27.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentListViewModel.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\StudentListViewModel.cs",
+              "RelativeDocumentMoniker": "Pagination\\Models\\StudentListViewModel.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\StudentListViewModel.cs",
+              "RelativeToolTip": "Pagination\\Models\\StudentListViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:09:03.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "Pagination\\Models\\IStudentRepository.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\IStudentRepository.cs",
+              "RelativeToolTip": "Pagination\\Models\\IStudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T01:18:52.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pagination\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Pagination\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-04T00:12:50.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Program.cs",
+              "RelativeDocumentMoniker": "Pagination\\Program.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Program.cs",
+              "RelativeToolTip": "Pagination\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T00:11:57.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\Repository.cs",
+              "RelativeDocumentMoniker": "Pagination\\Models\\Repository.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\Repository.cs",
+              "RelativeToolTip": "Pagination\\Models\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T23:00:00.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Pagination\\Models\\Student.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Models\\Student.cs",
+              "RelativeToolTip": "Pagination\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T22:59:42.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Pagination\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Pagination\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAcwCcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T22:59:28.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pagination\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pagination\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T22:57:29.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pagination\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pagination\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T22:57:22.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Pagination\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Pagination - Copy\\Pagination\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Pagination\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T22:57:12.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

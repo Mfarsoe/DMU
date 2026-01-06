@@ -1,0 +1,47 @@
+﻿@model Pagination.Models.HomeIndexViewModel
+
+<h2>Students</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.List.Students)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.Age</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<nav>
+    @for (int i = 1; i <= Model.List.TotalPages; i++)
+    {
+        <a href="@Url.Action("Index", new { page = i })">@i</a>
+    }
+</nav>
+
+
+
+
+<h2>Add Student</h2>
+<form asp-action="AddStudent" method="post">
+    <input type="hidden" asp-for="NewStudent.CurrentPage" />
+    <label asp-for="NewStudent.Name"></label>
+    <input asp-for="NewStudent.Name" type="text"/>
+    <span asp-validation-for="NewStudent.Name"></span>
+
+    <label asp-for="NewStudent.Age"></label>
+    <input asp-for="NewStudent.Age" type="number" />
+    <span asp-validation-for="NewStudent.Age"></span>
+
+    <button type="submit">Add Student</button>
+</form>
+

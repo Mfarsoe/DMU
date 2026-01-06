@@ -1,0 +1,50 @@
+﻿@model EksamenProjekt.Models.DrikkevareViewModel
+
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome to EksamenProjekt!</h1>
+	<p>Explore our selection of drinks below:</p>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Navn</th>
+				<th>Pris</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var drikkevare in Model.Drikkevarer)
+			{
+				<tr>
+					<td>@drikkevare.Navn</td>
+					<td>@drikkevare.Pris.ToString("C")</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+<div class="text-center">
+	<form asp-action="Index" method="post">
+		<select asp-for="ValgtDrik">
+			@foreach (var drikkevare in Model.Drikkevarer)
+			{
+				<option value="@drikkevare.Navn">@drikkevare.Navn</option>
+			}
+		</select>
+		<label asp-for="Antal"></label>
+		<input asp-for="Antal" type="number"/>
+		<button type="submit">Calculate Total Price</button>
+	</form>
+</div>
+
+
+@if (Model.TotalPris != null)
+{
+	<div class="alert alert-success" role="alert">
+		Total Pris of all drinks: @Model.TotalPris dkk
+	</div>
+}

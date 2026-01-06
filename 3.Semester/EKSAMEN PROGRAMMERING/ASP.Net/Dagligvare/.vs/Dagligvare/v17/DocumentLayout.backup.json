@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|solutionrelative:dagligvare\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\dagligvare\\dagligvare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|solutionrelative:dagligvare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\dagligvare\\dagligvare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|solutionrelative:dagligvare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\dagligvare\\dagligvare\\models\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|solutionrelative:dagligvare\\models\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\dagligvare\\dagligvare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|solutionrelative:dagligvare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\dagligvare\\dagligvare\\models\\vare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|solutionrelative:dagligvare\\models\\vare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\dagligvare\\dagligvare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|solutionrelative:dagligvare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CE45EB1-B2F9-4925-A5CC-A3C3153F74AB}|Dagligvare\\Dagligvare.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\dagligvare\\dagligvare\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -58,8 +58,7 @@
               "RelativeToolTip": "Dagligvare\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-02T22:05:12.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T22:05:12.08Z"
             },
             {
               "$type": "Document",
@@ -71,34 +70,32 @@
               "RelativeToolTip": "Dagligvare\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T22:04:07.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T22:04:07.852Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ViewModel.cs",
               "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Models\\ViewModel.cs",
               "RelativeDocumentMoniker": "Dagligvare\\Models\\ViewModel.cs",
               "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Models\\ViewModel.cs",
               "RelativeToolTip": "Dagligvare\\Models\\ViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T21:58:40.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Dagligvare\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Dagligvare\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAiwB8AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwB8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T21:58:27.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:58:27.436Z"
             },
             {
               "$type": "Document",
@@ -108,14 +105,14 @@
               "RelativeDocumentMoniker": "Dagligvare\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Dagligvare\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T21:58:17.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Vare.cs",
               "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Models\\Vare.cs",
               "RelativeDocumentMoniker": "Dagligvare\\Models\\Vare.cs",
@@ -123,12 +120,11 @@
               "RelativeToolTip": "Dagligvare\\Models\\Vare.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T21:57:32.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:57:32.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Dagligvare\\Views\\Shared\\_Layout.cshtml",
@@ -136,8 +132,7 @@
               "RelativeToolTip": "Dagligvare\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T21:56:46.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:56:46.971Z"
             },
             {
               "$type": "Document",
@@ -149,8 +144,7 @@
               "RelativeToolTip": "Dagligvare\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T21:56:36.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:56:36.78Z"
             },
             {
               "$type": "Document",
@@ -162,8 +156,7 @@
               "RelativeToolTip": "Dagligvare\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T21:56:25.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:56:25.256Z"
             }
           ]
         }
