@@ -1,13 +1,49 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EksamenProjekt.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace EksamenProjekt.Controllers
 {
     public class HomeController : Controller
     {
-
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            var model = new ViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Index(ViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                if (viewModel.LineBreaks)
+                {
+                    for(int i = 0; i < viewModel.Count; i++)
+                    {
+                         viewModel.OutputText += viewModel.InputText + "\n";
+                    }
+                    ;
+                }
+                else
+                {
+                    viewModel.OutputText = serviceMethod(viewModel.Count, viewModel.InputText, " ");
+                    ;
+                }
+            }
+            return View(viewModel);
+        }
+
+        private string serviceMethod(int count, string input, string d)
+        {
+            StringBuilder strB = new StringBuilder();
+            for (int i = 0; i < count; i++)
+            {
+                strB.Append(input);
+                strB.Append(d);
+            }
+            return strB.ToString();
         }
     }
 }

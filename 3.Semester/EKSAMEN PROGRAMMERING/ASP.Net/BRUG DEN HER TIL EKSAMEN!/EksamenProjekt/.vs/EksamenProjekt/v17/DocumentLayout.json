@@ -1,34 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\",
+  "WorkspaceRootPath": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|d:\\datamatiker\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\models\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\models\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|c:\\dmu\\3.semester\\eksamen programmering\\asp.net\\brug den her til eksamen!\\eksamenprojekt\\eksamenprojekt\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1BE9D1F-8622-43C7-B66A-AA89AC0D7010}|EksamenProjekt\\EksamenProjekt.csproj|solutionrelative:eksamenprojekt\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,27 +46,41 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "EksamenProjekt\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Properties\\launchSettings.json",
-              "RelativeToolTip": "EksamenProjekt\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-28T16:23:35.816Z"
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EksamenProjekt\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EksamenProjekt\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-07T08:55:20.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "EksamenProjekt\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "EksamenProjekt\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T16:14:18.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\appsettings.json",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\appsettings.json",
               "RelativeDocumentMoniker": "EksamenProjekt\\appsettings.json",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\appsettings.json",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\appsettings.json",
               "RelativeToolTip": "EksamenProjekt\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -66,65 +88,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Program.cs",
-              "RelativeDocumentMoniker": "EksamenProjekt\\Program.cs",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Program.cs",
-              "RelativeToolTip": "EksamenProjekt\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAB3AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ViewModel.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Models\\ViewModel.cs",
+              "RelativeDocumentMoniker": "EksamenProjekt\\Models\\ViewModel.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Models\\ViewModel.cs",
+              "RelativeToolTip": "EksamenProjekt\\Models\\ViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T16:19:07.15Z"
+              "WhenOpened": "2026-01-07T08:52:00.57Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "EksamenProjekt\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Controllers\\HomeController.cs",
               "RelativeToolTip": "EksamenProjekt\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAywB4AAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-28T16:16:43.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Program.cs",
+              "RelativeDocumentMoniker": "EksamenProjekt\\Program.cs",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Program.cs",
+              "RelativeToolTip": "EksamenProjekt\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T16:19:07.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "EksamenProjekt\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "EksamenProjekt\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-28T16:14:40.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "EksamenProjekt\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "EksamenProjekt\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-28T16:14:28.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T16:14:28.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "EksamenProjekt\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "EksamenProjekt\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-28T16:14:18.594Z"
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EksamenProjekt\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EksamenProjekt\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T16:23:35.816Z"
             }
           ]
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dagligvare")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6cb404aebcc6dcaadfa6dde7cef2042050b035d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f268cc66239a8c8b8fb57598dbca0d40de220ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dagligvare")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dagligvare")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

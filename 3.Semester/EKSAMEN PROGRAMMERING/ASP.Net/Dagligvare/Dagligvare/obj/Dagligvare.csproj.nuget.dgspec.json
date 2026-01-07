@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj": {}
+    "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj": {}
   },
   "projects": {
-    "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj": {
+    "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj",
+        "projectUniqueName": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj",
         "projectName": "Dagligvare",
-        "projectPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj",
+        "projectPath": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\Dagligvare.csproj",
         "packagesPath": "C:\\Users\\quite\\.nuget\\packages\\",
-        "outputPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\obj\\",
+        "outputPath": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\Dagligvare\\Dagligvare\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

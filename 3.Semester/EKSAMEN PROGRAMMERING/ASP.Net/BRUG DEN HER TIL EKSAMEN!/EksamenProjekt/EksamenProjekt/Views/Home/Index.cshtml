@@ -1,0 +1,39 @@
+﻿@model EksamenProjekt.Models.ViewModel
+
+@{
+    ViewData["Title"] = "Tekst og Antal";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div>
+
+<p>Indtast text i input feltet og angiv antal.</p>
+
+
+<form asp-action="Index" method="post">
+    
+    <div>
+        <label asp-for="InputText">Indtast tekst:</label>
+        <input asp-for="InputText" />
+        
+        <br />
+        <label asp-for="Count">Antal:</label>
+        <input asp-for="Count" type="number"/>
+        <br />
+        <label asp-for="LineBreaks">Inkluder linjeskift:</label>
+        <input asp-for="LineBreaks" type="checkbox" />
+        <div asp-validation-summary="All" class="text-danger"></div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Udskriv Tekst</button>
+</form>
+    
+    
+
+@if (Model.OutputText != null)
+{
+    <div>
+        <h3>Output:</h3>
+        <p style="white-space: pre-line">@Model.OutputText</p>
+    </div>
+}
+</div>

@@ -9,29 +9,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dagligvare
 build_property.RootNamespace = Dagligvare
-build_property.ProjectDir = D:\Datamatiker\DMU\3.Semester\EKSAMEN PROGRAMMERING\ASP.Net\Dagligvare\Dagligvare\
+build_property.ProjectDir = C:\DMU\3.Semester\EKSAMEN PROGRAMMERING\ASP.Net\Dagligvare\Dagligvare\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Datamatiker\DMU\3.Semester\EKSAMEN PROGRAMMERING\ASP.Net\Dagligvare\Dagligvare
+build_property.MSBuildProjectDirectory = C:\DMU\3.Semester\EKSAMEN PROGRAMMERING\ASP.Net\Dagligvare\Dagligvare
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Datamatiker/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/Home/Index.cshtml]
+[C:/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Datamatiker/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/Shared/_Layout.cshtml]
+[C:/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Datamatiker/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/_ViewImports.cshtml]
+[C:/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Datamatiker/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/_ViewStart.cshtml]
+[C:/DMU/3.Semester/EKSAMEN PROGRAMMERING/ASP.Net/Dagligvare/Dagligvare/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
