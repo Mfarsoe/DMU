@@ -20,16 +20,12 @@ namespace EksamenProjekt.Controllers
             {
                 if (viewModel.LineBreaks)
                 {
-                    for(int i = 0; i < viewModel.Count; i++)
-                    {
-                         viewModel.OutputText += viewModel.InputText + "\n";
-                    }
-                    ;
+                         viewModel.OutputText += serviceMethod(viewModel.Count, viewModel.InputText, "\n");
+
                 }
                 else
                 {
                     viewModel.OutputText = serviceMethod(viewModel.Count, viewModel.InputText, " ");
-                    ;
                 }
             }
             return View(viewModel);

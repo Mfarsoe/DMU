@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj": {}
+    "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj": {}
   },
   "projects": {
-    "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj": {
+    "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj",
+        "projectUniqueName": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj",
         "projectName": "EksamenProjekt",
-        "projectPath": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj",
+        "projectPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\EksamenProjekt.csproj",
         "packagesPath": "C:\\Users\\quite\\.nuget\\packages\\",
-        "outputPath": "C:\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\obj\\",
+        "outputPath": "D:\\Datamatiker\\DMU\\3.Semester\\EKSAMEN PROGRAMMERING\\ASP.Net\\BRUG DEN HER TIL EKSAMEN!\\EksamenProjekt\\EksamenProjekt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     }

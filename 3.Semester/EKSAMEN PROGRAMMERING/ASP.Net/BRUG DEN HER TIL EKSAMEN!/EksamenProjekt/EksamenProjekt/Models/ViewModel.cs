@@ -7,7 +7,7 @@ namespace EksamenProjekt.Models
         [Required(ErrorMessage = "Indtast en tekst")]
         public string? InputText { get; set; }
 
-        [Range(1,100,ErrorMessage = "Vælg et tal mellem 1-100")]
+        [Range(1,10000,ErrorMessage = "Vælg et tal mellem 1-10000")]
         public int Count { get; set; }
 
         public string? OutputText { get; set; }
