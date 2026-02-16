@@ -5,14 +5,44 @@
   --card-radius: calc(var(--size-unit) * 0.5);
   --background-color: white;
   --font-color: black;
+  --card-bg: #f0f0f0;
   --primary-color: hsl(40, 40%, 35%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: black;
+    --background-color: #121212;
     --font-color: white;
+    --card-bg: #1e1e1e;
     --primary-color: hsl(40, 90%, 65%);
   }
 }
- 
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--card-gap);
+  padding: var(--card-padding);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustment if screen is too narrow */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  border: 1px solid var(--primary-color);
+}
