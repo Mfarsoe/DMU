@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nummerplade Validering</title>
+    <style>
+        .container {
+            margin: 20px;
+            font-family: sans-serif;
+        }
+        input {
+            padding: 8px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .valid {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="plate">Indtast nummerplade (f.eks. AB12345):</label><br>
+        <input type="text" id="plate" maxlength="7" placeholder="AB12345">
+        <div id="feedback" class="message">Indtast 2 bogstaver og 5 tal</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
