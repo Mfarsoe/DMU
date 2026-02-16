@@ -1,0 +1,18 @@
+:root {
+  --size-unit: 1rem;
+  --card-padding: calc(var(--size-unit) * 2);
+  --card-gap: calc(var(--size-unit) * 3);
+  --card-radius: calc(var(--size-unit) * 0.5);
+  --background-color: white;
+  --font-color: black;
+  --primary-color: hsl(40, 40%, 35%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: black;
+    --font-color: white;
+    --primary-color: hsl(40, 90%, 65%);
+  }
+}
+ 
