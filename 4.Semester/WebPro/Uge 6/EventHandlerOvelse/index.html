@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler Læring</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; margin: 5px; }
+        #output { margin-top: 20px; padding: 10px; border: 1px solid #ccc; min-height: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Lær om Event Handlers</h1>
+    
+    <!-- 1. Inline Event Handler (Gammeldags) -->
+    <button onclick="alert('Du klikkede på inline-knappen!')">Inline Klik</button>
+
+    <!-- 2. DOM Property (Bedre) -->
+    <button id="propertyBtn">Property Klik</button>
+
+    <!-- 3. addEventListener (Bedst) -->
+    <button id="listenerBtn">addEventListener Klik</button>
+
+    <div id="output">Her vil beskeder dukke op...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
