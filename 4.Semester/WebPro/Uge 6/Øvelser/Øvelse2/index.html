@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Text Fields</title>
+    // CSS for vertikal layout i stedet for horisontalt
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="less">Less</a>
+    <a href="#" id="more">More</a>
+
+    <div id="container">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
