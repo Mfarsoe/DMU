@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .showcase-section {
+            margin-bottom: var(--spacing-huge);
+            padding-bottom: var(--spacing-xl);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-md);
+        }
+        
+        .swatch-container {
+            text-align: center;
+        }
+        
+        .swatch {
+            height: 80px;
+            width: 100%;
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-xs);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+        
+        .swatch-label {
+            font-size: var(--font-size-small);
+            font-weight: var(--font-weight-semibold);
+            display: block;
+        }
+        
+        .swatch-hex {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .spacing-box {
+            background: var(--primary);
+            height: 20px;
+            margin-bottom: var(--spacing-xs);
+            border-radius: var(--radius-sm);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-xl);
+            font-weight: var(--font-weight-medium);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Tilbage til CV</a>
+        
+        <header>
+            <h1>Design System</h1>
+            <p>En oversigt over de visuelle byggesten i projektet.</p>
+        </header>
+
+        <main>
+            <!-- COLORS -->
+            <section class="showcase-section">
+                <h2>Farvepalette</h2>
+                <h3>Brand</h3>
+                <div class="showcase-grid">
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-primary);"></div>
+                        <span class="swatch-label">Primary</span>
+                        <span class="swatch-hex">#2d6a4f</span>
+                    </div>
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-primary-light);"></div>
+                        <span class="swatch-label">Primary Light</span>
+                        <span class="swatch-hex">#40916c</span>
+                    </div>
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-secondary);"></div>
+                        <span class="swatch-label">Secondary</span>
+                        <span class="swatch-hex">#52b788</span>
+                    </div>
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-accent);"></div>
+                        <span class="swatch-label">Accent</span>
+                        <span class="swatch-hex">#74c69d</span>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: var(--spacing-xl);">Neutrale</h3>
+                <div class="showcase-grid">
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-neutral-100);"></div>
+                        <span class="swatch-label">100</span>
+                        <span class="swatch-hex">#f8faf9</span>
+                    </div>
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-neutral-400);"></div>
+                        <span class="swatch-label">400</span>
+                        <span class="swatch-hex">#b7c4bc</span>
+                    </div>
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-neutral-800);"></div>
+                        <span class="swatch-label">800</span>
+                        <span class="swatch-hex">#4a5d50</span>
+                    </div>
+                    <div class="swatch-container">
+                        <div class="swatch" style="background: var(--color-neutral-900);"></div>
+                        <span class="swatch-label">900</span>
+                        <span class="swatch-hex">#1b3022</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TYPOGRAPHY -->
+            <section class="showcase-section">
+                <h2>Typografi</h2>
+                <div style="margin-bottom: var(--spacing-lg); padding: var(--spacing-md); background: rgba(0,0,0,0.05); border-radius: var(--radius-sm);">
+                    <span class="swatch-label">Font Family:</span>
+                    <code style="font-size: 1.1rem; color: var(--primary);">var(--font-family-sans)</code>
+                    <p style="margin-top: var(--spacing-xs); font-style: italic;">'Segoe UI', system-ui, -apple-system, sans-serif</p>
+                </div>
+                <h1>Overskrift 1 (H1)</h1>
+                <h2>Overskrift 2 (H2)</h2>
+                <h3>Overskrift 3 (H3)</h3>
+                <p>Brødtekst (Paragraph). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><small>Lille tekst (Small). Bruges ofte til tidsangivelser eller sekundær info.</small></p>
+            </section>
+
+            <!-- COMPONENTS -->
+            <section class="showcase-section">
+                <h2>Komponenter</h2>
+                
+                <h3>Knapper (Theme Toggle)</h3>
+                <button class="theme-toggle" style="position: static;">Eksempel Knap</button>
+
+                <h3 style="margin-top: var(--spacing-xl);">Tags (Skills)</h3>
+                <ul class="skills-grid">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Design Systems</li>
+                </ul>
+
+                <h3 style="margin-top: var(--spacing-xl);">Kort (Cards / Job)</h3>
+                <article class="card">
+                    <h3>Frontend Udvikler</h3>
+                    <p><time>2024 - Nu</time></p>
+                    <p>Dette er et eksempel på hvordan et kort-element ser ud i systemet.</p>
+                </article>
+            </section>
+
+            <!-- SPACING -->
+            <section class="showcase-section">
+                <h2>Spacing Skala</h2>
+                <div>
+                    <span class="swatch-label">XS (0.5rem)</span>
+                    <div class="spacing-box" style="width: var(--spacing-xs);"></div>
+                    
+                    <span class="swatch-label">SM (0.8rem)</span>
+                    <div class="spacing-box" style="width: var(--spacing-sm);"></div>
+                    
+                    <span class="swatch-label">MD (1rem)</span>
+                    <div class="spacing-box" style="width: var(--spacing-md);"></div>
+                    
+                    <span class="swatch-label">LG (1.5rem)</span>
+                    <div class="spacing-box" style="width: var(--spacing-lg);"></div>
+                    
+                    <span class="swatch-label">XL (2rem)</span>
+                    <div class="spacing-box" style="width: var(--spacing-xl);"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

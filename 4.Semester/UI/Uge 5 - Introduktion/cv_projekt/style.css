@@ -1,14 +1,55 @@
 :root {
-  /* Standard: Light mode */
-  --bg-gradient: linear-gradient(135deg, #f0f4f1 0%, #d8e2dc 100%);
+  /* Color Palette - Neutrals */
+  --color-neutral-100: #f8faf9;
+  --color-neutral-200: #f0f4f1;
+  --color-neutral-300: #d8e2dc;
+  --color-neutral-400: #b7c4bc;
+  --color-neutral-800: #4a5d50;
+  --color-neutral-900: #1b3022;
+
+  /* Color Palette - Brand */
+  --color-primary: #2d6a4f;
+  --color-primary-light: #40916c;
+  --color-secondary: #52b788;
+  --color-accent: #74c69d;
+
+  /* Semantic Colors - Default (Light Mode) */
+  --bg-gradient: linear-gradient(135deg, var(--color-neutral-200) 0%, var(--color-neutral-300) 100%);
   --card-bg: rgba(255, 255, 255, 0.85);
-  --text-main: #1b3022;
-  --text-muted: #4a5d50;
-  --primary: #2d6a4f;
-  --accent: #40916c;
+  --text-main: var(--color-neutral-900);
+  --text-muted: var(--color-neutral-800);
+  --primary: var(--color-primary);
+  --accent: var(--color-primary-light);
   --border: rgba(45, 106, 79, 0.1);
   --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
   
+  /* Typography */
+  --font-family-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-h1: 3.5rem;
+  --font-size-h2: 1.2rem;
+  --font-size-h3: 1.1rem;
+  --font-size-small: 0.9rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 800;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  --spacing-huge: 4rem;
+
+  /* Borders & Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 50px;
+
   /* System */
   --container-width: 900px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -19,10 +60,10 @@
   :root:not([data-theme="light"]) {
     --bg-gradient: linear-gradient(135deg, #121a14 0%, #1b3022 100%);
     --card-bg: rgba(27, 48, 34, 0.9);
-    --text-main: #f8faf9;
-    --text-muted: #b7c4bc;
-    --primary: #52b788;
-    --accent: #74c69d;
+    --text-main: var(--color-neutral-100);
+    --text-muted: var(--color-neutral-400);
+    --primary: var(--color-secondary);
+    --accent: var(--color-accent);
     --border: rgba(255, 255, 255, 0.1);
     --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   }
@@ -32,21 +73,21 @@
 [data-theme="dark"] {
   --bg-gradient: linear-gradient(135deg, #121a14 0%, #1b3022 100%);
   --card-bg: rgba(27, 48, 34, 0.9);
-  --text-main: #f8faf9;
-  --text-muted: #b7c4bc;
-  --primary: #52b788;
-  --accent: #74c69d;
+  --text-main: var(--color-neutral-100);
+  --text-muted: var(--color-neutral-400);
+  --primary: var(--color-secondary);
+  --accent: var(--color-accent);
   --border: rgba(255, 255, 255, 0.1);
   --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="light"] {
-  --bg-gradient: linear-gradient(135deg, #f0f4f1 0%, #d8e2dc 100%);
+  --bg-gradient: linear-gradient(135deg, var(--color-neutral-200) 0%, var(--color-neutral-300) 100%);
   --card-bg: rgba(255, 255, 255, 0.85);
-  --text-main: #1b3022;
-  --text-muted: #4a5d50;
-  --primary: #2d6a4f;
-  --accent: #40916c;
+  --text-main: var(--color-neutral-900);
+  --text-muted: var(--color-neutral-800);
+  --primary: var(--color-primary);
+  --accent: var(--color-primary-light);
   --border: rgba(45, 106, 79, 0.1);
   --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
 }
@@ -57,7 +98,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
   line-height: 1.6;
   margin: 0;
   min-height: 100vh;
@@ -69,14 +111,14 @@ body {
 
 .container {
   max-width: var(--container-width);
-  margin: 4rem auto;
-  padding: 3rem;
+  margin: var(--spacing-huge) auto;
+  padding: var(--spacing-xxl);
   background: var(--card-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  border-radius: 24px;
+  border-radius: var(--radius-lg);
   position: relative;
   overflow: hidden;
 }
@@ -84,15 +126,15 @@ body {
 /* Interaktive elementer */
 .theme-toggle {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
   background: var(--primary);
   color: white;
   border: none;
-  padding: 0.8rem 1.2rem;
-  border-radius: 50px;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-pill);
   cursor: pointer;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: var(--transition);
 }
@@ -116,24 +158,24 @@ body {
 
 /* Overskrifter */
 h1 {
-  font-size: 3.5rem;
+  font-size: var(--font-size-h1);
   margin: 0;
   background: linear-gradient(45deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  font-weight: var(--font-weight-bold);
   letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: var(--font-size-h2);
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--accent);
-  margin-top: 3rem;
+  margin-top: var(--spacing-xxl);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--spacing-md);
 }
 
 h2::after {
@@ -143,26 +185,66 @@ h2::after {
   background: var(--border);
 }
 
-/* CV Sektioner */
-.job, .education {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  border-radius: 16px;
+h3 {
+  font-size: var(--font-size-h3);
+  color: var(--primary);
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Tekst og Links */
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Lister */
+ul {
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* CV Sektioner & Cards */
+.card, .job, .education {
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.03);
   border-left: 4px solid var(--primary);
   transition: var(--transition);
 }
 
-.job:hover {
+.card:hover, .job:hover, .education:hover {
   background: rgba(255, 255, 255, 0.05);
   transform: translateX(10px);
+}
+
+.job time, .education time {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-muted);
+  font-size: var(--font-size-small);
 }
 
 /* Skills Tags */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: var(--spacing-sm);
   list-style: none;
   padding: 0;
 }
@@ -170,10 +252,10 @@ h2::after {
 .skills-grid li {
   background: var(--primary);
   color: white;
-  padding: 0.5rem 1.2rem;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
   transition: var(--transition);
 }
 
@@ -185,8 +267,8 @@ h2::after {
 /* Responsivitet */
 @media (max-width: 768px) {
   .container {
-    margin: 1rem;
-    padding: 1.5rem;
+    margin: var(--spacing-md);
+    padding: var(--spacing-lg);
   }
   h1 { font-size: 2.5rem; }
 }
@@ -198,7 +280,7 @@ h2::after {
   left: 0;
   background: var(--primary);
   color: white;
-  padding: 1rem;
+  padding: var(--spacing-md);
   z-index: 999;
 }
 
