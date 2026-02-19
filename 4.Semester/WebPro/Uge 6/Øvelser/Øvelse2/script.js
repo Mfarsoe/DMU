@@ -10,16 +10,16 @@ more.addEventListener('click', addTextField);
 less.addEventListener('click', removeTextField);
 
 // Tilføjer et tekstfelt (max 5)
-function addTextField() {
+function addTextField(event) {
     var textFields = container.getElementsByTagName('input').length;
     if (textFields < 5) {
         var newInput = document.createElement('input');
         newInput.type = 'text';
-        container.appendChild(newInput);
+        container.appendChild(newInput);  
     }
 }
 // Fjerner et tekstfelt (min 0)
-function removeTextField() {
+function removeTextField(event) {
     var textFields = container.getElementsByTagName('input');
     if (textFields.length > 0) {
         container.removeChild(textFields[textFields.length - 1]);
