@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Øvelse 6 - Sprite Klassen</title>
+    <style>
+        canvas { border: 2px solid #333; background: #eee; }
+    </style>
+</head>
+<body>
+    <h1>Opgave 6: Sprite Klassen</h1>
+    <canvas id="myCanvas" width="500" height="300"></canvas>
+
+    <script src="script6a.js"></script>
+    <script src="script6b.js"></script>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        var img = new Image();
+        
+        // Når billedet er indlæst, tegner vi begge sprites
+        img.onload = function() {
+            // 6a: ES5 (Højre)
+            var es5Sprite = new Sprite(50, 50, 150, 150, img);
+            es5Sprite.draw(ctx);
+
+            // 6b: ES6 (Venstre)
+            // Bemærk: script6b.js overskriver ikke script6a.js' Sprite hvis vi bruger forskellige navne, 
+            // men i dette setup er klassen defineret to gange. Vi kalder den her.
+            var es6Sprite = new Sprite(250, 50, 150, 150, img);
+            es6Sprite.draw(ctx);
+        };
+        
+        // Placeholder billede til test
+        img.src = 'https://picsum.photos/200';
+    </script>
+</body>
+</html>
