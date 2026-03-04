@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Enheder – Din Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Literata:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #161616;
+    --surface2: #1f1f1f;
+    --border: #2a2a2a;
+    --accent: #e8ff47;
+    --accent2: #47c8ff;
+    --accent3: #ff6b6b;
+    --text: #f0ede6;
+    --muted: #888;
+    --relative-color: #47c8ff;
+    --absolute-color: #ff6b6b;
+    --font-color: #c084fc;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Literata', Georgia, serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 80px 40px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-label::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(42px, 7vw, 80px);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+  }
+
+  h1 span {
+    color: var(--accent);
+  }
+
+  .hero-desc {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 580px;
+    font-style: italic;
+  }
+
+  /* CATEGORY TABS */
+  .tabs {
+    display: flex;
+    gap: 0;
+    padding: 30px 40px 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .tab-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid var(--border);
+    border-bottom: none;
+    color: var(--muted);
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tab-btn:first-child { border-radius: 6px 0 0 0; }
+  .tab-btn:last-child { border-radius: 0 6px 0 0; }
+
+  .tab-btn.active-rel {
+    background: rgba(71,200,255,0.08);
+    border-color: var(--relative-color);
+    color: var(--relative-color);
+  }
+
+  .tab-btn.active-abs {
+    background: rgba(255,107,107,0.08);
+    border-color: var(--absolute-color);
+    color: var(--absolute-color);
+  }
+
+  .tab-btn.active-font {
+    background: rgba(192,132,252,0.08);
+    border-color: var(--font-color);
+    color: var(--font-color);
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+    border: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+  }
+
+  /* SECTION INTRO */
+  .section-intro {
+    padding: 30px 0 10px;
+    display: none;
+  }
+
+  .section-intro.visible { display: block; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .section-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  .badge-rel { background: rgba(71,200,255,0.15); color: var(--relative-color); border: 1px solid rgba(71,200,255,0.3); }
+  .badge-abs { background: rgba(255,107,107,0.15); color: var(--absolute-color); border: 1px solid rgba(255,107,107,0.3); }
+  .badge-font { background: rgba(192,132,252,0.15); color: var(--font-color); border: 1px solid rgba(192,132,252,0.3); }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .section-summary {
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: 30px;
+    padding-left: 2px;
+    border-left: 2px solid var(--border);
+    padding-left: 16px;
+  }
+
+  /* UNIT CARD */
+  .unit-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+
+  .unit-card:hover { border-color: #3a3a3a; }
+
+  .unit-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 24px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .unit-symbol {
+    font-family: 'DM Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    min-width: 60px;
+    color: var(--accent);
+  }
+
+  .unit-symbol.rel { color: var(--relative-color); }
+  .unit-symbol.abs { color: var(--absolute-color); }
+  .unit-symbol.font { color: var(--font-color); }
+
+  .unit-title-group { flex: 1; }
+
+  .unit-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .unit-tagline {
+    font-size: 13px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .usage-pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  .pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--surface2);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    letter-spacing: 0.05em;
+  }
+
+  .chevron {
+    color: var(--muted);
+    font-size: 18px;
+    transition: transform 0.2s;
+    margin-left: 8px;
+  }
+
+  .unit-card.open .chevron { transform: rotate(180deg); }
+
+  /* UNIT BODY */
+  .unit-body {
+    display: none;
+    padding: 0 24px 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .unit-card.open .unit-body { display: block; }
+
+  .unit-body-inner {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .explain-block h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .explain-block p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #ccc;
+  }
+
+  .code-block {
+    background: #0a0a0a;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.8;
+    overflow-x: auto;
+  }
+
+  .code-prop { color: var(--accent2); }
+  .code-val-rel { color: var(--relative-color); }
+  .code-val-abs { color: var(--absolute-color); }
+  .code-val-font { color: var(--font-color); }
+  .code-val { color: var(--accent); }
+  .code-comment { color: #555; font-style: italic; }
+  .code-selector { color: #888; }
+
+  /* DEMO ZONE */
+  .demo-zone {
+    margin-top: 20px;
+    grid-column: 1 / -1;
+  }
+
+  .demo-zone h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .demo-box {
+    background: #0a0a0a;
+    border: 1px dashed var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .demo-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    min-width: 60px;
+  }
+
+  .demo-bar-container {
+    flex: 1;
+    background: var(--surface2);
+    height: 28px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    min-width: 200px;
+  }
+
+  .demo-bar {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    transition: width 0.4s ease;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .bar-rel { background: linear-gradient(90deg, rgba(71,200,255,0.3), rgba(71,200,255,0.1)); color: var(--relative-color); }
+  .bar-abs { background: linear-gradient(90deg, rgba(255,107,107,0.3), rgba(255,107,107,0.1)); color: var(--absolute-color); }
+  .bar-font { background: linear-gradient(90deg, rgba(192,132,252,0.3), rgba(192,132,252,0.1)); color: var(--font-color); }
+
+  input[type=range] {
+    accent-color: var(--accent);
+    width: 130px;
+  }
+
+  /* DO/DON'T */
+  .dos-donts {
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .do-box, .dont-box {
+    border-radius: 6px;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .do-box {
+    background: rgba(71,255,100,0.06);
+    border: 1px solid rgba(71,255,100,0.2);
+  }
+
+  .dont-box {
+    background: rgba(255,107,107,0.06);
+    border: 1px solid rgba(255,107,107,0.2);
+  }
+
+  .do-box strong { color: #4fff64; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+  .dont-box strong { color: var(--accent3); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+
+  .do-box li, .dont-box li { margin-left: 14px; color: #bbb; margin-bottom: 4px; font-size: 13px; }
+
+  /* QUICK REF TABLE */
+  .quick-ref {
+    margin: 40px 0 0;
+    display: none;
+  }
+
+  .quick-ref.visible { display: block; }
+
+  .quick-ref h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  th {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #1a1a1a;
+    color: #ccc;
+    vertical-align: top;
+  }
+
+  tr:hover td { background: var(--surface); }
+
+  .t-unit { font-family: 'DM Mono', monospace; font-weight: 500; }
+  .t-rel { color: var(--relative-color); }
+  .t-abs { color: var(--absolute-color); }
+  .t-font { color: var(--font-color); }
+
+  @media (max-width: 640px) {
+    .hero { padding: 50px 20px 40px; }
+    .tabs { padding: 20px 20px 0; flex-wrap: wrap; }
+    .tab-btn { border-radius: 6px; border-bottom: 1px solid var(--border); margin-bottom: 4px; }
+    .content { padding: 0 20px 60px; }
+    .unit-body-inner { grid-template-columns: 1fr; }
+    .dos-donts { grid-template-columns: 1fr; }
+    .usage-pills { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-label">CSS Læringsguide</div>
+  <h1>CSS<br><span>Enheder</span></h1>
+  <p class="hero-desc">En komplet guide til relative og absolutte enheder — hvornår du bruger dem, og hvad de gør.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active-rel" onclick="showSection('relative')">📐 Relative</button>
+  <button class="tab-btn" onclick="showSection('absolute')">📏 Absolutte</button>
+  <button class="tab-btn" onclick="showSection('font')">🔤 Skrift-relative</button>
+  <button class="tab-btn" onclick="showSection('all')">📋 Oversigt</button>
+</div>
+
+<div class="content">
+
+  <!-- ── RELATIVE ─────────────────────────────── -->
+  <div class="section-intro visible" id="section-relative">
+    <div class="section-header">
+      <span class="section-badge badge-rel">Relative enheder</span>
+    </div>
+    <div class="section-title">Tilpasser sig omgivelserne</div>
+    <p class="section-summary">Relative enheder ændrer sig afhængigt af noget andet – skærmstørrelse, forældreelement eller brugerens indstillinger. De er rygraden i responsivt design.</p>
+
+    <!-- % -->
+    <div class="unit-card" id="card-pct">
+      <div class="unit-header" onclick="toggleCard('card-pct')">
+        <span class="unit-symbol rel">%</span>
+        <div class="unit-title-group">
+          <div class="unit-name">Procent</div>
+          <div class="unit-tagline">Relativ til forældreelement</div>
+        </div>
+        <div class="usage-pills">
+          <span class="pill">bredde</span>
+          <span class="pill">højde</span>
+          <span class="pill">padding</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-body-inner">
+          <div class="explain-block">
+            <h4>Hvad er det?</h4>
+            <p>Procent er altid relativ til <em>forælderelementet</em>. Hvis din container er 800px bred, bliver <code>width: 50%</code> til 400px. Padding og margin i % beregnes altid ud fra <strong>bredden</strong> af forælderen — også for top/bottom padding.</p>
+          </div>
+          <div class="code-block">
+<span class="code-selector">.container</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">width</span>: <span class="code-val-rel">80%</span>; <span class="code-comment">/* 80% af forælder */</span><br>
+}<br><br>
+<span class="code-selector">.child</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">width</span>: <span class="code-val-rel">50%</span>; <span class="code-comment">/* 50% af .container */</span><br>
+&nbsp;&nbsp;<span class="code-prop">padding</span>: <span class="code-val-rel">5%</span>;<br>
+}
+          </div>
+          <div class="dos-donts">
+            <div class="do-box">
+              <strong>✓ Brug til</strong>
+              <ul>
+                <li>Fleksible layouts og kolonner</li>
+                <li>Billeder der skalerer med forælder</li>
+                <li>Responsive containere</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <strong>✗ Undgå til</strong>
+              <ul>
+                <li>Skriftstørrelser (brug rem i stedet)</li>
+                <li>Præcise mål der aldrig skal ændre sig</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- vw / vh -->
+    <div class="unit-card" id="card-vw">
+      <div class="unit-header" onclick="toggleCard('card-vw')">
+        <span class="unit-symbol rel">vw / vh</span>
+        <div class="unit-title-group">
+          <div class="unit-name">Viewport Width / Height</div>
+          <div class="unit-tagline">Relativ til browservinduet</div>
+        </div>
+        <div class="usage-pills">
+          <span class="pill">hero</span>
+          <span class="pill">fullscreen</span>
+          <span class="pill">skriftstørrelse</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-body-inner">
+          <div class="explain-block">
+            <h4>Hvad er det?</h4>
+            <p><code>1vw</code> = 1% af browservinduets <strong>bredde</strong>. <code>1vh</code> = 1% af browservinduets <strong>højde</strong>. <code>100vw</code> er altid hele skærmbredden. Perfekt til elementer der fylder hele skærmen, uanset enhed.</p>
+          </div>
+          <div class="code-block">
+<span class="code-selector">.hero</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">width</span>: <span class="code-val-rel">100vw</span>;<br>
+&nbsp;&nbsp;<span class="code-prop">height</span>: <span class="code-val-rel">100vh</span>; <span class="code-comment">/* Fylder skærmen */</span><br>
+}<br><br>
+<span class="code-selector">h1</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">font-size</span>: <span class="code-val-rel">5vw</span>; <span class="code-comment">/* Skalerer med vinduet */</span><br>
+}
+          </div>
+          <div class="demo-zone">
+            <h4>🎛 Interaktiv demo — træk i slideren</h4>
+            <div class="demo-box">
+              <span class="demo-label">vw-bredde</span>
+              <div class="demo-bar-container">
+                <div class="demo-bar bar-rel" id="bar-vw" style="width:60%">60vw</div>
+              </div>
+              <input type="range" min="10" max="100" value="60" oninput="updateBar('bar-vw', this.value, 'vw')">
+            </div>
+          </div>
+          <div class="dos-donts">
+            <div class="do-box">
+              <strong>✓ Brug til</strong>
+              <ul>
+                <li>Hero-sektioner der fylder skærmen</li>
+                <li>Overskrifter der skalerer flot</li>
+                <li>Fuld-skærms baggrunde</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <strong>✗ Undgå til</strong>
+              <ul>
+                <li>Brødtekst (brug rem)</li>
+                <li>Elementer inde i en lille boks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- clamp -->
+    <div class="unit-card" id="card-clamp">
+      <div class="unit-header" onclick="toggleCard('card-clamp')">
+        <span class="unit-symbol rel">clamp()</span>
+        <div class="unit-title-group">
+          <div class="unit-name">Clamp — flydende størrelse</div>
+          <div class="unit-tagline">Min, foretrukken, max — alt i én linje</div>
+        </div>
+        <div class="usage-pills">
+          <span class="pill">typografi</span>
+          <span class="pill">spacing</span>
+          <span class="pill">layout</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-body-inner">
+          <div class="explain-block">
+            <h4>Hvad er det?</h4>
+            <p><code>clamp(min, foretrukken, max)</code> lader dig sige: "Vær mindst X, helst Y (flydende), men aldrig mere end Z." Ekstremt kraftfuldt til responsiv typografi — ingen media queries nødvendige!</p>
+          </div>
+          <div class="code-block">
+<span class="code-selector">h1</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">font-size</span>: <span class="code-val-rel">clamp(24px, 5vw, 72px)</span>;<br>
+&nbsp;&nbsp;<span class="code-comment">/* Min: 24px | Flydende: 5vw | Max: 72px */</span><br>
+}<br><br>
+<span class="code-selector">.container</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">padding</span>: <span class="code-val-rel">clamp(16px, 4vw, 60px)</span>;<br>
+}
+          </div>
+          <div class="dos-donts">
+            <div class="do-box">
+              <strong>✓ Brug til</strong>
+              <ul>
+                <li>Overskrifter der skalerer smukt</li>
+                <li>Responsiv spacing uden media queries</li>
+                <li>Moderne, flydende layouts</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <strong>✗ Undgå til</strong>
+              <ul>
+                <li>Meget simple sider (overkill)</li>
+                <li>Når du har brug for hårde breakpoints</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ABSOLUTTE ─────────────────────────────── -->
+  <div class="section-intro" id="section-absolute">
+    <div class="section-header">
+      <span class="section-badge badge-abs">Absolutte enheder</span>
+    </div>
+    <div class="section-title">Fast og præcis</div>
+    <p class="section-summary">Absolutte enheder er altid det samme, uanset skærmstørrelse eller indstillinger. Brug dem kun når du har brug for præcis kontrol — typisk til ikoner, borders og print.</p>
+
+    <!-- px -->
+    <div class="unit-card" id="card-px">
+      <div class="unit-header" onclick="toggleCard('card-px')">
+        <span class="unit-symbol abs">px</span>
+        <div class="unit-title-group">
+          <div class="unit-name">Pixel</div>
+          <div class="unit-tagline">Den mest brugte absolutte enhed</div>
+        </div>
+        <div class="usage-pills">
+          <span class="pill">border</span>
+          <span class="pill">border-radius</span>
+          <span class="pill">ikoner</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-body-inner">
+          <div class="explain-block">
+            <h4>Hvad er det?</h4>
+            <p>En pixel er en fast enhed — den ændrer sig ikke. Den er faktisk <em>ikke</em> direkte en skærmspixel på moderne enheder (high-DPI skærme), men opfører sig konsistent på tværs af browsere. God til præcise detaljer, men <strong>undgå den til skriftstørrelser og layout</strong> — det bryder tilgængelighed.</p>
+          </div>
+          <div class="code-block">
+<span class="code-selector">.card</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">border</span>: <span class="code-val-abs">1px</span> solid #333;<br>
+&nbsp;&nbsp;<span class="code-prop">border-radius</span>: <span class="code-val-abs">8px</span>;<br>
+&nbsp;&nbsp;<span class="code-prop">box-shadow</span>: <span class="code-val-abs">0 2px 12px</span> rgba(0,0,0,0.2);<br>
+}<br><br>
+<span class="code-selector">img.icon</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">width</span>: <span class="code-val-abs">24px</span>;<br>
+&nbsp;&nbsp;<span class="code-prop">height</span>: <span class="code-val-abs">24px</span>;<br>
+}
+          </div>
+          <div class="dos-donts">
+            <div class="do-box">
+              <strong>✓ Brug til</strong>
+              <ul>
+                <li>Borders og outlines (1px, 2px)</li>
+                <li>Border-radius på knapper/kort</li>
+                <li>Ikoner og faste billeder</li>
+                <li>Box-shadow værdier</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <strong>✗ Undgå til</strong>
+              <ul>
+                <li>Skriftstørrelser — bryder brugerens zoomindstillinger</li>
+                <li>Overordnet layout (brug %, rem, vw)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SKRIFT-RELATIVE ─────────────────────────────── -->
+  <div class="section-intro" id="section-font">
+    <div class="section-header">
+      <span class="section-badge badge-font">Skrift-relative enheder</span>
+    </div>
+    <div class="section-title">Bygget til typografi</div>
+    <p class="section-summary">Disse enheder er relative til skriftstørrelse — enten rodelementets (rem) eller forælderelementets (em). De er fundamentale for tilgængeligt og vedligeholdbart design.</p>
+
+    <!-- rem -->
+    <div class="unit-card" id="card-rem">
+      <div class="unit-header" onclick="toggleCard('card-rem')">
+        <span class="unit-symbol font">rem</span>
+        <div class="unit-title-group">
+          <div class="unit-name">Root Em</div>
+          <div class="unit-tagline">Relativ til &lt;html&gt; — den vigtigste enhed</div>
+        </div>
+        <div class="usage-pills">
+          <span class="pill">font-size</span>
+          <span class="pill">spacing</span>
+          <span class="pill">layout</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-body-inner">
+          <div class="explain-block">
+            <h4>Hvad er det?</h4>
+            <p><code>1rem</code> = skriftstørrelsen på <code>&lt;html&gt;</code>-elementet. Browseren sætter denne til <strong>16px</strong> som standard. Ændrer brugeren sin browserindstilling, skalerer <em>alt</em> i rem med. Det er den <strong>vigtigste enhed for tilgængelighed</strong>.</p>
+          </div>
+          <div class="code-block">
+<span class="code-comment">/* html = 16px standard */</span><br><br>
+<span class="code-selector">h1</span> { <span class="code-prop">font-size</span>: <span class="code-val-font">2rem</span>; } <span class="code-comment">/* = 32px */</span><br>
+<span class="code-selector">p</span> { <span class="code-prop">font-size</span>: <span class="code-val-font">1rem</span>; }  <span class="code-comment">/* = 16px */</span><br>
+<span class="code-selector">small</span> { <span class="code-prop">font-size</span>: <span class="code-val-font">0.75rem</span>; } <span class="code-comment">/* = 12px */</span><br><br>
+<span class="code-selector">.section</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">padding</span>: <span class="code-val-font">2rem</span> <span class="code-val-font">1.5rem</span>;<br>
+}
+          </div>
+          <div class="dos-donts">
+            <div class="do-box">
+              <strong>✓ Brug til</strong>
+              <ul>
+                <li>Alle skriftstørrelser</li>
+                <li>Padding og margin i layouts</li>
+                <li>Gap i grids og flex</li>
+                <li>Alt der skal respektere brugerens indstillinger</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <strong>✗ Undgå til</strong>
+              <ul>
+                <li>Borders — px er finere her</li>
+                <li>Meget præcise grafiske detaljer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- em -->
+    <div class="unit-card" id="card-em">
+      <div class="unit-header" onclick="toggleCard('card-em')">
+        <span class="unit-symbol font">em</span>
+        <div class="unit-title-group">
+          <div class="unit-name">Em</div>
+          <div class="unit-tagline">Relativ til forælderens skriftstørrelse</div>
+        </div>
+        <div class="usage-pills">
+          <span class="pill">padding i komponenter</span>
+          <span class="pill">nested tekst</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-body-inner">
+          <div class="explain-block">
+            <h4>Hvad er det?</h4>
+            <p><code>1em</code> = skriftstørrelsen på det <em>nuværende element</em> (arvet fra forælder). Det kan føre til <strong>kompounderende effekter</strong> i nestede elementer (em × em × em...). Nyttigt til padding på knapper og komponenter der skal skalere med deres egen skriftstørrelse.</p>
+          </div>
+          <div class="code-block">
+<span class="code-selector">.button</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">font-size</span>: <span class="code-val-font">1rem</span>;<br>
+&nbsp;&nbsp;<span class="code-prop">padding</span>: <span class="code-val-font">0.6em 1.2em</span>; <span class="code-comment">/* relativt til knappens font */</span><br>
+}<br><br>
+<span class="code-selector">.button.large</span> {<br>
+&nbsp;&nbsp;<span class="code-prop">font-size</span>: <span class="code-val-font">1.25rem</span>;<br>
+&nbsp;&nbsp;<span class="code-comment">/* padding skalerer automatisk! */</span><br>
+}
+          </div>
+          <div class="dos-donts">
+            <div class="do-box">
+              <strong>✓ Brug til</strong>
+              <ul>
+                <li>Padding på knapper og tags</li>
+                <li>Komponenter der skal skalere internt</li>
+                <li>Letter-spacing og line-height</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <strong>✗ Undgå til</strong>
+              <ul>
+                <li>Globale layouts (brug rem)</li>
+                <li>Indlejrede strukturer — kompounderer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── OVERSIGT ─────────────────────────────── -->
+  <div class="quick-ref" id="section-all">
+    <h3>📋 Komplet oversigt</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Enhed</th>
+          <th>Type</th>
+          <th>Relativ til</th>
+          <th>Typisk brug</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-unit t-rel">%</td>
+          <td>Relativ</td>
+          <td>Forælderelementet</td>
+          <td>Bredde, layout, billeder</td>
+        </tr>
+        <tr>
+          <td class="t-unit t-rel">vw</td>
+          <td>Relativ</td>
+          <td>Browservinduets bredde</td>
+          <td>Hero-sektioner, fluid typografi</td>
+        </tr>
+        <tr>
+          <td class="t-unit t-rel">vh</td>
+          <td>Relativ</td>
+          <td>Browservinduets højde</td>
+          <td>Fuld-skærms sektioner</td>
+        </tr>
+        <tr>
+          <td class="t-unit t-rel">clamp()</td>
+          <td>Relativ</td>
+          <td>Min + flydende + max</td>
+          <td>Responsiv typografi, spacing</td>
+        </tr>
+        <tr>
+          <td class="t-unit t-font">rem</td>
+          <td>Skrift-relativ</td>
+          <td>Root (&lt;html&gt;) skriftstørrelse</td>
+          <td>Skriftstørrelser, padding, gap</td>
+        </tr>
+        <tr>
+          <td class="t-unit t-font">em</td>
+          <td>Skrift-relativ</td>
+          <td>Forælderens skriftstørrelse</td>
+          <td>Komponent-intern padding, knapper</td>
+        </tr>
+        <tr>
+          <td class="t-unit t-abs">px</td>
+          <td>Absolut</td>
+          <td>Ingenting (fast)</td>
+          <td>Borders, border-radius, ikoner, shadows</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:30px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px;">
+      <div style="font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 12px;">🏆 Tommelfingerregel</div>
+      <p style="font-size: 15px; color: #ccc; line-height: 1.7;">
+        Brug <span class="t-font" style="font-family: monospace">rem</span> til skriftstørrelser og spacing,
+        <span class="t-rel" style="font-family: monospace">%</span> til layout og bredder,
+        <span class="t-abs" style="font-family: monospace">px</span> til borders og detaljer,
+        og <span class="t-rel" style="font-family: monospace">vw/vh</span> til fuld-skærmselementer.
+        <strong style="color: var(--text);">Undgå px til skriftstørrelser</strong> — det bryder tilgængelighed.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleCard(id) {
+    const card = document.getElementById(id);
+    card.classList.toggle('open');
+  }
+
+  function showSection(name) {
+    // Hide all sections
+    document.querySelectorAll('.section-intro, .quick-ref').forEach(el => {
+      el.classList.remove('visible');
+    });
+
+    // Reset tab buttons
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.className = 'tab-btn';
+    });
+
+    if (name === 'all') {
+      document.getElementById('section-all').classList.add('visible');
+      event.target.className = 'tab-btn active-rel';
+    } else if (name === 'relative') {
+      document.getElementById('section-relative').classList.add('visible');
+      event.target.className = 'tab-btn active-rel';
+    } else if (name === 'absolute') {
+      document.getElementById('section-absolute').classList.add('visible');
+      event.target.className = 'tab-btn active-abs';
+    } else if (name === 'font') {
+      document.getElementById('section-font').classList.add('visible');
+      event.target.className = 'tab-btn active-font';
+    }
+  }
+
+  function updateBar(barId, value, unit) {
+    const bar = document.getElementById(barId);
+    bar.style.width = value + '%';
+    bar.textContent = value + unit;
+  }
+</script>
+</body>
+</html>

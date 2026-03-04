@@ -1,0 +1,2676 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Opslagsværk – Komplet</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0c0c0e;
+  --surface: #13131a;
+  --surface2: #1a1a24;
+  --surface3: #20202e;
+  --border: #252535;
+  --border2: #2e2e42;
+  --text: #e8e6f0;
+  --muted: #7a7890;
+  --muted2: #5a5870;
+  --accent: #e2ff5a;
+
+  /* category colors */
+  --c-box:      #60d9a0;
+  --c-pos:      #f97316;
+  --c-sel:      #a78bfa;
+  --c-var:      #e879f9;
+  --c-typo:     #38bdf8;
+  --c-bg:       #fb923c;
+  --c-anim:     #f43f5e;
+  --c-transform:#06b6d4;
+  --c-layout:   #34d399;
+  --c-flex:     #fdba74;
+  --c-grid:     #f9a8d4;
+  --c-math:     #fbbf24;
+  --c-mq:       #818cf8;
+  --c-misc:     #94a3b8;
+  --c-colors:   #f472b6;
+  --c-borders:  #a3e635;
+  --c-shadows:  #818cf8;
+  --c-sizing:   #2dd4bf;
+  --c-spacing:  #34d399;
+  --c-comp:     #f97316;
+  --c-pseudo:   #c084fc;
+  --c-overflow: #22d3ee;
+  --c-zindex:   #fb7185;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 300;
+  line-height: 1.7;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ─── SIDEBAR ─────────────────────────────── */
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+.sidebar-brand {
+  padding: 20px 18px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-brand-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.sidebar-brand-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+}
+
+.sidebar-search {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-search input {
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s;
+}
+.sidebar-search input:focus { border-color: var(--accent); }
+.sidebar-search input::placeholder { color: var(--muted2); }
+
+.nav-group { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.nav-group-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  padding: 0 18px 6px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .15s;
+  border-left: 2px solid transparent;
+  white-space: nowrap;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  width: 100%;
+  text-align: left;
+}
+.nav-link:hover { color: var(--text); background: var(--surface2); }
+.nav-link.active { color: var(--text); border-left-color: currentColor; background: var(--surface2); }
+.nav-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+.progress-bar {
+  height: 2px;
+  background: var(--border);
+  margin: 0 18px 12px;
+  border-radius: 1px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+  width: 0%;
+  transition: width .3s;
+}
+
+/* ─── MAIN ────────────────────────────────── */
+.main {
+  margin-left: 220px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* ─── HERO ──── */
+.hero {
+  padding: 60px 56px 48px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, #0c0c0e 0%, #12102a 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: 'CSS';
+  position: absolute;
+  right: -20px; top: -40px;
+  font-family: 'Syne', sans-serif;
+  font-size: 280px;
+  font-weight: 800;
+  color: rgba(226,255,90,0.03);
+  pointer-events: none;
+  line-height: 1;
+}
+.hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero-eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--accent); }
+.hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+.hero h1 em { color: var(--accent); font-style: normal; }
+.hero-sub {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 560px;
+  font-style: italic;
+  margin-bottom: 28px;
+}
+.hero-stats {
+  display: flex; gap: 24px; flex-wrap: wrap;
+}
+.hero-stat {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  display: flex; align-items: center; gap: 6px;
+}
+.hero-stat strong { color: var(--accent); font-size: 18px; font-weight: 500; }
+
+/* ─── SECTION ──── */
+.section {
+  padding: 48px 56px;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-child { border-bottom: none; }
+
+.section-header {
+  display: flex; align-items: flex-start; gap: 16px;
+  margin-bottom: 8px;
+}
+.section-icon {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.section-meta { flex: 1; }
+.section-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.section-desc {
+  font-size: 15px;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 640px;
+  border-left: 2px solid var(--border2);
+  padding-left: 14px;
+  margin-bottom: 28px;
+}
+
+/* ─── CARDS ──── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.card:hover { border-color: var(--border2); }
+.card-header {
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.card-symbol {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 140px;
+  line-height: 1.3;
+}
+.card-info { flex: 1; }
+.card-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+.card-tagline { font-size: 12px; color: var(--muted); font-style: italic; }
+.card-pills { display: flex; gap: 4px; flex-wrap: wrap; margin-left: auto; }
+.pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: var(--surface2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+.chevron { color: var(--muted); font-size: 14px; transition: transform .2s; margin-left: 6px; flex-shrink: 0; }
+.card.open .chevron { transform: rotate(180deg); }
+
+.card-body { display: none; padding: 0 20px 20px; border-top: 1px solid var(--border); }
+.card.open .card-body { display: block; }
+.card-grid {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.span2 { grid-column: 1/-1; }
+
+.explain h4 {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.explain p { font-size: 13.5px; line-height: 1.65; color: #c8c6d8; }
+.explain p + p { margin-top: 8px; }
+.explain code {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  background: var(--surface2);
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: var(--accent);
+}
+.explain ul { margin: 8px 0 0 16px; }
+.explain li { font-size: 13.5px; color: #c8c6d8; margin-bottom: 3px; }
+.explain strong { font-weight: 600; }
+
+/* ─── CODE BLOCK ──── */
+.cb {
+  background: #08080f;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  line-height: 1.85;
+  overflow-x: auto;
+  color: #c8c6d8;
+  position: relative;
+}
+.cb-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: var(--muted2);
+  margin-bottom: 6px;
+}
+/* syntax colors */
+.ks { color: #c8c6d8; }      /* selector */
+.kp { color: #79c0ff; }      /* property */
+.kv { color: var(--accent); } /* value */
+.kc { color: #484060; font-style: italic; } /* comment */
+.kat { color: #f97316; }     /* at-rule */
+.km { color: #f43f5e; }      /* media */
+.kn { color: #e879f9; }      /* variable name */
+.kfn{ color: #60d9a0; }      /* function */
+.kstr{ color: #fb923c; }     /* string */
+
+/* ─── DO/DONT ──── */
+.dd { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.do { background: rgba(52,211,153,.06); border: 1px solid rgba(52,211,153,.2); border-radius: 7px; padding: 12px; }
+.dont { background: rgba(244,63,94,.06); border: 1px solid rgba(244,63,94,.2); border-radius: 7px; padding: 12px; }
+.do strong { color: #4ade80; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+.dont strong { color: #fb7185; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+.do li, .dont li { margin-left: 14px; color: #b0aec0; margin-bottom: 3px; font-size: 12.5px; }
+
+/* ─── LIVE DEMO ──── */
+.demo { margin-top: 12px; }
+.demo h4 {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.demo-frame {
+  background: #08080f;
+  border: 1px dashed var(--border2);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 13px;
+}
+.demo-controls {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;
+}
+.demo-controls label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  display: flex; flex-direction: column; gap: 3px;
+}
+.demo-controls select, .demo-controls input[type=range] {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  outline: none;
+}
+.demo-controls input[type=range] { accent-color: var(--accent); padding: 0; width: 120px; }
+
+/* ─── PROP TABLE ──── */
+.prop-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.prop-table th { font-family: 'DM Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; }
+.prop-table td { padding: 7px 10px; border-bottom: 1px solid #111118; color: #b0aec0; vertical-align: top; }
+.prop-table tr:hover td { background: var(--surface2); }
+.prop-table code { font-family: 'DM Mono', monospace; font-size: 11px; }
+
+/* ─── SPECIFICITY VIZ ──── */
+.spec-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.spec-label { font-family: 'DM Mono', monospace; font-size: 11px; color: #c8c6d8; min-width: 180px; }
+.spec-score { display: flex; gap: 3px; }
+.spec-block { width: 22px; height: 22px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; }
+.spec-a { background: rgba(244,63,94,.25); color: #fb7185; border: 1px solid rgba(244,63,94,.3); }
+.spec-b { background: rgba(167,139,250,.25); color: #a78bfa; border: 1px solid rgba(167,139,250,.3); }
+.spec-c { background: rgba(56,189,248,.25); color: #38bdf8; border: 1px solid rgba(56,189,248,.3); }
+.spec-arrow { color: var(--muted2); font-size: 11px; }
+.spec-result { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); }
+
+/* ─── BOX MODEL VIZ ──── */
+.box-model-viz {
+  display: flex; align-items: center; justify-content: center;
+  padding: 10px;
+}
+.bm-margin { background: rgba(251,146,60,.12); border: 1px dashed rgba(251,146,60,.4); border-radius: 4px; padding: 14px; position: relative; }
+.bm-border { background: rgba(96,217,160,.12); border: 3px solid rgba(96,217,160,.5); border-radius: 2px; padding: 10px; }
+.bm-padding { background: rgba(56,189,248,.12); border: 1px dashed rgba(56,189,248,.4); border-radius: 2px; padding: 10px; }
+.bm-content { background: rgba(226,255,90,.15); border: 1px solid rgba(226,255,90,.3); border-radius: 2px; padding: 10px 20px; text-align: center; font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); }
+.bm-label {
+  font-family: 'DM Mono', monospace; font-size: 9px; text-transform: uppercase;
+  letter-spacing: .1em; position: absolute; top: 2px; left: 6px;
+}
+.bm-margin .bm-label { color: rgba(251,146,60,.8); }
+
+/* ─── ANIMATION DEMO ──── */
+.anim-box {
+  width: 50px; height: 50px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--c-anim), #ff8c69);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+@keyframes demo-bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+@keyframes demo-spin { to{transform:rotate(360deg)} }
+@keyframes demo-pulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.3);opacity:.7} }
+@keyframes demo-shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-8px)} 75%{transform:translateX(8px)} }
+@keyframes demo-fade { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* ─── STACKING VIZ ──── */
+.stack-viz { position: relative; height: 100px; }
+.stack-el {
+  position: absolute;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: default;
+  border: 1px solid rgba(255,255,255,.1);
+  transition: all .3s;
+}
+
+/* ─── TRANSFORM VIZ ──── */
+.transform-box {
+  width: 60px; height: 60px; background: rgba(6,182,212,.25);
+  border: 2px solid rgba(6,182,212,.6); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Mono', monospace; font-size: 10px; color: var(--c-transform);
+  margin: 0 auto;
+  transition: transform .4s ease;
+}
+
+/* ─── GRADIENT DEMO ──── */
+.grad-preview {
+  height: 48px; border-radius: 6px; border: 1px solid var(--border2);
+  transition: background .3s;
+}
+
+/* ─── OVERVIEW TABLE ──── */
+.overview-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.overview-table th { font-family: 'DM Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted2); padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; white-space: nowrap; }
+.overview-table td { padding: 9px 12px; border-bottom: 1px solid #111118; color: #b0aec0; vertical-align: top; line-height: 1.5; }
+.overview-table tr:hover td { background: var(--surface2); }
+.ot-cat { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; white-space: nowrap; }
+
+/* ─── MOBILE ──── */
+.mobile-menu-btn {
+  display: none;
+  position: fixed; top: 12px; left: 12px;
+  z-index: 200;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  width: 38px; height: 38px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  align-items: center; justify-content: center;
+}
+
+@media(max-width: 900px) {
+  .sidebar { transform: translateX(-100%); transition: transform .3s; }
+  .sidebar.open { transform: translateX(0); }
+  .main { margin-left: 0; }
+  .hero, .section { padding: 36px 20px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .dd { grid-template-columns: 1fr; }
+  .card-pills { display: none; }
+  .mobile-menu-btn { display: flex; }
+}
+</style>
+</head>
+<body>
+
+<button class="mobile-menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+
+<!-- ═══ SIDEBAR ═══ -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="sidebar-brand-label">Læringsguide</div>
+    <div class="sidebar-brand-title">CSS Ref.</div>
+  </div>
+  <div class="sidebar-search">
+    <input type="text" id="search" placeholder="Søg efter emne..." oninput="filterNav(this.value)">
+  </div>
+
+  <div class="nav-group">
+    <div class="nav-group-label">Grundlag</div>
+    <button class="nav-link" onclick="navTo('box-model')" data-target="box-model"><span class="nav-dot" style="background:var(--c-box)"></span>Box Model</button>
+    <button class="nav-link" onclick="navTo('selectors')" data-target="selectors"><span class="nav-dot" style="background:var(--c-sel)"></span>Selektorer</button>
+    <button class="nav-link" onclick="navTo('specificity')" data-target="specificity"><span class="nav-dot" style="background:var(--c-sel)"></span>Specificitet</button>
+    <button class="nav-link" onclick="navTo('variables')" data-target="variables"><span class="nav-dot" style="background:var(--c-var)"></span>CSS Variabler</button>
+    <button class="nav-link" onclick="navTo('reset')" data-target="reset"><span class="nav-dot" style="background:var(--c-misc)"></span>Reset & Normalize</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Farver & Styling</div>
+    <button class="nav-link" onclick="navTo('colors')" data-target="colors"><span class="nav-dot" style="background:var(--c-colors)"></span>Farver & Farveformater</button>
+    <button class="nav-link" onclick="navTo('borders')" data-target="borders"><span class="nav-dot" style="background:var(--c-borders)"></span>Borders & Outline</button>
+    <button class="nav-link" onclick="navTo('shadows')" data-target="shadows"><span class="nav-dot" style="background:var(--c-shadows)"></span>Shadows</button>
+    <button class="nav-link" onclick="navTo('typography')" data-target="typography"><span class="nav-dot" style="background:var(--c-typo)"></span>Typografi</button>
+    <button class="nav-link" onclick="navTo('backgrounds')" data-target="backgrounds"><span class="nav-dot" style="background:var(--c-bg)"></span>Baggrunde & Gradienter</button>
+    <button class="nav-link" onclick="navTo('transforms')" data-target="transforms"><span class="nav-dot" style="background:var(--c-transform)"></span>Transform & Filter</button>
+    <button class="nav-link" onclick="navTo('animations')" data-target="animations"><span class="nav-dot" style="background:var(--c-anim)"></span>Transitions & Animationer</button>
+    <button class="nav-link" onclick="navTo('pseudo')" data-target="pseudo"><span class="nav-dot" style="background:var(--c-pseudo)"></span>Pseudo-klasser</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Størrelse & Spacing</div>
+    <button class="nav-link" onclick="navTo('sizing')" data-target="sizing"><span class="nav-dot" style="background:var(--c-sizing)"></span>Width, Height & Sizing</button>
+    <button class="nav-link" onclick="navTo('spacing')" data-target="spacing"><span class="nav-dot" style="background:var(--c-spacing)"></span>Spacing-strategier</button>
+    <button class="nav-link" onclick="navTo('cursor')" data-target="cursor"><span class="nav-dot" style="background:var(--c-misc)"></span>Cursor & Pointer Events</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Layout</div>
+    <button class="nav-link" onclick="navTo('positioning')" data-target="positioning"><span class="nav-dot" style="background:var(--c-pos)"></span>Positioning</button>
+    <button class="nav-link" onclick="navTo('layout-tables')" data-target="layout-tables"><span class="nav-dot" style="background:var(--c-layout)"></span>Tables & Floats</button>
+    <button class="nav-link" onclick="navTo('flexbox')" data-target="flexbox"><span class="nav-dot" style="background:var(--c-flex)"></span>Flexbox</button>
+    <button class="nav-link" onclick="navTo('grid')" data-target="grid"><span class="nav-dot" style="background:var(--c-grid)"></span>CSS Grid</button>
+    <button class="nav-link" onclick="navTo('overflow')" data-target="overflow"><span class="nav-dot" style="background:var(--c-overflow)"></span>Overflow & Display</button>
+    <button class="nav-link" onclick="navTo('zindex')" data-target="zindex"><span class="nav-dot" style="background:var(--c-zindex)"></span>Z-index & Stacking</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Komponenter</div>
+    <button class="nav-link" onclick="navTo('lists')" data-target="lists"><span class="nav-dot" style="background:var(--c-comp)"></span>Lister & Counters</button>
+    <button class="nav-link" onclick="navTo('forms')" data-target="forms"><span class="nav-dot" style="background:var(--c-comp)"></span>Formularer</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Responsivt</div>
+    <button class="nav-link" onclick="navTo('units')" data-target="units"><span class="nav-dot" style="background:var(--c-math)"></span>Enheder</button>
+    <button class="nav-link" onclick="navTo('math-functions')" data-target="math-functions"><span class="nav-dot" style="background:var(--c-math)"></span>Math-funktioner</button>
+    <button class="nav-link" onclick="navTo('media-queries')" data-target="media-queries"><span class="nav-dot" style="background:var(--c-mq)"></span>Media Queries</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Reference</div>
+    <button class="nav-link" onclick="navTo('overview')" data-target="overview"><span class="nav-dot" style="background:var(--accent)"></span>Komplet oversigt</button>
+  </div>
+
+  <div style="padding:14px 18px">
+    <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted2);text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px">Læsefremskridt</div>
+    <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+  </div>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">Komplet CSS Opslagsværk</div>
+  <h1>Cascading<br><em>Style Sheets</em></h1>
+  <p class="hero-sub">Et solidt referencepunkt til alle CSS-kernekoncepter — fra box model til animationer, skrevet på dansk.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>26</strong> emner</div>
+    <div class="hero-stat"><strong>50+</strong> egenskaber</div>
+    <div class="hero-stat"><strong>Live</strong> demoer</div>
+    <div class="hero-stat"><strong>Dansk</strong> forklaring</div>
+  </div>
+</div>
+
+<!-- ═══ BOX MODEL ═══ -->
+<div class="section" id="box-model">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(96,217,160,.12)">📦</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(96,217,160,.15);color:var(--c-box);border:1px solid rgba(96,217,160,.3)">Grundlag</span>
+      <div class="section-title">Box Model</div>
+    </div>
+  </div>
+  <p class="section-desc">Hvert HTML-element er en boks. Box model beskriver, hvordan dens plads beregnes: indhold, padding, border og margin. At forstå dette er fundamentet for alt CSS-layout.</p>
+
+  <div class="card" id="c-boxmodel">
+    <div class="card-header" onclick="tog('c-boxmodel')">
+      <span class="card-symbol" style="color:var(--c-box)">margin<br>border<br>padding<br>content</span>
+      <div class="card-info">
+        <div class="card-name">De fire lag</div>
+        <div class="card-tagline">Hvordan elementers størrelse og afstand beregnes</div>
+      </div>
+      <div class="card-pills"><span class="pill">margin</span><span class="pill">padding</span><span class="pill">border</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>De fire lag</h4>
+          <p><strong style="color:var(--accent)">Content</strong> — det faktiske indhold (tekst, billeder)<br>
+          <strong style="color:var(--c-overflow)">Padding</strong> — afstand mellem indhold og border (transparen, men farvet med baggrundsfarven)<br>
+          <strong style="color:var(--c-box)">Border</strong> — kanten rundt om elementet<br>
+          <strong style="color:var(--c-bg)">Margin</strong> — afstand til andre elementer (altid transparent)</p>
+          <p style="margin-top:10px"><strong>box-sizing: border-box</strong> er afgørende — den sørger for at padding og border er <em>inkluderet</em> i elementets bredde, ikke adderet ovenpå.</p>
+        </div>
+        <div>
+          <div class="cb-label">Visualisering</div>
+          <div class="demo-frame box-model-viz">
+            <div class="bm-margin" style="position:relative">
+              <span class="bm-label">margin</span>
+              <div class="bm-border">
+                <div style="font-family:'DM Mono',monospace;font-size:9px;color:rgba(96,217,160,.8);position:absolute;top:2px;left:6px">border</div>
+                <div class="bm-padding" style="position:relative">
+                  <div style="font-family:'DM Mono',monospace;font-size:9px;color:rgba(56,189,248,.8);position:absolute;top:2px;left:6px">padding</div>
+                  <div class="bm-content">content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cb span2">
+<span class="kc">/* ALTID sæt dette globalt — gem det udenad */</span><br>
+<span class="ks">*, *::before, *::after</span> {<br>
+&nbsp;&nbsp;<span class="kp">box-sizing</span>: <span class="kv">border-box</span>;<br>
+}<br><br>
+<span class="ks">.boks</span> {<br>
+&nbsp;&nbsp;<span class="kp">width</span>: <span class="kv">300px</span>;         <span class="kc">/* total bredde inkl. padding + border */</span><br>
+&nbsp;&nbsp;<span class="kp">padding</span>: <span class="kv">20px</span>;        <span class="kc">/* luft indeni på alle sider */</span><br>
+&nbsp;&nbsp;<span class="kp">border</span>: <span class="kv">2px solid #333</span>; <span class="kc">/* synlig kant */</span><br>
+&nbsp;&nbsp;<span class="kp">margin</span>: <span class="kv">16px auto</span>;   <span class="kc">/* udenfor + centrering med auto */</span><br>
+}<br><br>
+<span class="kc">/* Individuelle sider: top right bottom left */</span><br>
+<span class="ks">.asymmetrisk</span> {<br>
+&nbsp;&nbsp;<span class="kp">margin</span>: <span class="kv">8px 16px 24px 0</span>;<br>
+&nbsp;&nbsp;<span class="kp">padding-top</span>: <span class="kv">32px</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-bottom</span>: <span class="kv">1px solid #444</span>;<br>
+}
+        </div>
+        <div class="dd span2">
+          <div class="do"><strong>✓ Brug</strong><ul>
+            <li>Sæt altid <code>box-sizing: border-box</code> globalt</li>
+            <li>Brug <code>margin: 0 auto</code> til at centrere blok-elementer</li>
+            <li>Padding til intern luft, margin til afstand mellem elementer</li>
+          </ul></div>
+          <div class="dont"><strong>✗ Undgå</strong><ul>
+            <li>Negativ margin med forsigtighed (kan overlappe)</li>
+            <li>Margin på inline-elementer (virker ikke altid)</li>
+            <li>Ikke brug padding til afstand <em>mellem</em> elementer — brug gap i flex/grid</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SELECTORS ═══ -->
+<div class="section" id="selectors">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(167,139,250,.12)">🎯</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(167,139,250,.15);color:var(--c-sel);border:1px solid rgba(167,139,250,.3)">Grundlag</span>
+      <div class="section-title">Selektorer</div>
+    </div>
+  </div>
+  <p class="section-desc">Selektorer bestemmer hvilke HTML-elementer dine CSS-regler gælder for. Der er mange typer — fra simple element-selektorer til kraftfulde kombinations-selektorer.</p>
+
+  <div class="card" id="c-sel-basic">
+    <div class="card-header" onclick="tog('c-sel-basic')">
+      <span class="card-symbol" style="color:var(--c-sel)">element<br>.klasse<br>#id</span>
+      <div class="card-info"><div class="card-name">Basis-selektorer</div><div class="card-tagline">De tre fundamentale typer</div></div>
+      <div class="card-pills"><span class="pill">element</span><span class="pill">.class</span><span class="pill">#id</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>De tre grundtyper</h4>
+          <p><strong style="color:var(--c-sel)">Element-selektor</strong> — vælger alle elementer af en type: <code>p</code>, <code>h1</code>, <code>div</code></p>
+          <p><strong style="color:var(--c-sel)">Klasse-selektor</strong> — vælger elementer med en bestemt klasse: <code>.kortliste</code></p>
+          <p><strong style="color:var(--c-sel)">ID-selektor</strong> — vælger ét unikt element: <code>#menu</code>. Brug sparsomt — høj specificitet og genbruges ikke.</p>
+          <p>Du kan kombinere: <code>p.intro</code> = p-elementer med klassen "intro".</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Element */</span><br>
+<span class="ks">p</span> { <span class="kp">color</span>: <span class="kv">#333</span>; }<br><br>
+<span class="kc">/* Klasse — kan bruges mange gange */</span><br>
+<span class="ks">.kort</span> { <span class="kp">border-radius</span>: <span class="kv">8px</span>; }<br><br>
+<span class="kc">/* ID — kun én gang per side */</span><br>
+<span class="ks">#header</span> { <span class="kp">position</span>: <span class="kv">sticky</span>; }<br><br>
+<span class="kc">/* Universel — alle elementer */</span><br>
+<span class="ks">*</span> { <span class="kp">box-sizing</span>: <span class="kv">border-box</span>; }<br><br>
+<span class="kc">/* Kombination */</span><br>
+<span class="ks">p.ingress</span> { <span class="kp">font-size</span>: <span class="kv">1.2rem</span>; }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="c-sel-comb">
+    <div class="card-header" onclick="tog('c-sel-comb')">
+      <span class="card-symbol" style="color:var(--c-sel)">A B<br>A > B<br>A + B<br>A ~ B</span>
+      <div class="card-info"><div class="card-name">Kombinations-selektorer</div><div class="card-tagline">Vælg elementer baseret på deres relation til andre</div></div>
+      <div class="card-pills"><span class="pill">descendant</span><span class="pill">child</span><span class="pill">sibling</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Relationsselektorer</h4>
+          <p><code>A B</code> — efterkommer: alle B inde i A (uanset dybde)</p>
+          <p><code>A &gt; B</code> — direkte barn: kun B der er <em>direkte</em> under A</p>
+          <p><code>A + B</code> — næste søskende: B der kommer lige efter A</p>
+          <p><code>A ~ B</code> — alle søskende: alle B efter A på samme niveau</p>
+          <p><code>A, B</code> — komma = "og": stil A og B ens</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Alle li inde i .nav (alle niveauer) */</span><br>
+<span class="ks">.nav li</span> { <span class="kp">list-style</span>: <span class="kv">none</span>; }<br><br>
+<span class="kc">/* Kun direkte h2-børn af .sektion */</span><br>
+<span class="ks">.sektion > h2</span> { <span class="kp">font-size</span>: <span class="kv">1.5rem</span>; }<br><br>
+<span class="kc">/* p direkte efter h2 */</span><br>
+<span class="ks">h2 + p</span> { <span class="kp">margin-top</span>: <span class="kv">0</span>; }<br><br>
+<span class="kc">/* Alle .aktiv efter .markeret */</span><br>
+<span class="ks">.markeret ~ .aktiv</span> { <span class="kp">opacity</span>: <span class="kv">.5</span>; }<br><br>
+<span class="kc">/* Stil h1 og h2 ens */</span><br>
+<span class="ks">h1, h2</span> { <span class="kp">font-family</span>: <span class="kv">serif</span>; }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="c-sel-attr">
+    <div class="card-header" onclick="tog('c-sel-attr')">
+      <span class="card-symbol" style="color:var(--c-sel)">[attr]<br>[attr="val"]<br>[attr*="val"]</span>
+      <div class="card-info"><div class="card-name">Attribut-selektorer</div><div class="card-tagline">Vælg elementer baseret på HTML-attributter</div></div>
+      <div class="card-pills"><span class="pill">input</span><span class="pill">links</span><span class="pill">data-*</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Attribut-selektorer</h4>
+          <p>Vælg elementer baseret på tilstedeværelse eller indhold af HTML-attributter.</p>
+          <ul>
+            <li><code>[href]</code> — har en href-attribut</li>
+            <li><code>[type="email"]</code> — nøjagtigt match</li>
+            <li><code>[class*="btn"]</code> — indeholder "btn"</li>
+            <li><code>[href^="https"]</code> — begynder med</li>
+            <li><code>[href$=".pdf"]</code> — slutter med</li>
+          </ul>
+        </div>
+        <div class="cb">
+<span class="kc">/* Alle links med href */</span><br>
+<span class="ks">a[href]</span> { <span class="kp">color</span>: <span class="kv">blue</span>; }<br><br>
+<span class="kc">/* Emailfelter */</span><br>
+<span class="ks">input[type="email"]</span> { <span class="kp">border-color</span>: <span class="kv">teal</span>; }<br><br>
+<span class="kc">/* PDF-links — vis ikon */</span><br>
+<span class="ks">a[href$=".pdf"]::after</span> {<br>
+&nbsp;&nbsp;<span class="kp">content</span>: <span class="kstr">" 📄"</span>;<br>
+}<br><br>
+<span class="kc">/* Data-attributter */</span><br>
+<span class="ks">[data-status="aktiv"]</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kv">green</span>;<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SPECIFICITY ═══ -->
+<div class="section" id="specificity">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(167,139,250,.12)">⚖️</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(167,139,250,.15);color:var(--c-sel);border:1px solid rgba(167,139,250,.3)">Grundlag</span>
+      <div class="section-title">Specificitet & Cascade</div>
+    </div>
+  </div>
+  <p class="section-desc">Når to regler rammer det samme element, bestemmer specificitet hvilken der "vinder". Det er CSS's rangsystem — forstår du det, forstår du hvorfor CSS opfører sig som det gør.</p>
+
+  <div class="card" id="c-spec">
+    <div class="card-header" onclick="tog('c-spec')">
+      <span class="card-symbol" style="color:var(--c-sel)">0,0,0<br>specificity<br>score</span>
+      <div class="card-info"><div class="card-name">Specificitets-hierarkiet</div><div class="card-tagline">Tre tal der afgør hvilken regel der vinder</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Tre søjler: A, B, C</h4>
+          <p><strong style="color:#fb7185">A — Inline styles & !important</strong><br>Højest prioritet. <code>style=""</code> direkte på elementet.</p>
+          <p><strong style="color:#a78bfa">B — ID-selektorer</strong><br><code>#id</code> = 1 point i B-søjlen</p>
+          <p><strong style="color:#38bdf8">C — Klasse, pseudo, attribut</strong><br><code>.klasse</code>, <code>:hover</code>, <code>[attr]</code> = 1 point i C</p>
+          <p><strong style="color:var(--muted)">Elementer & pseudo-elementer</strong><br><code>div</code>, <code>p</code>, <code>::before</code> = laveste prioritet</p>
+          <p style="margin-top:8px">Cascaden: Specificitet → Kilderækkefølge. Samme specificitet = sidst-skrevet vinder.</p>
+        </div>
+        <div>
+          <div class="cb-label">Specificitet-scores (A, B, C)</div>
+          <div class="demo-frame" style="padding:12px">
+            <div class="spec-row">
+              <div class="spec-label"><code>p</code></div>
+              <div class="spec-score">
+                <div class="spec-block spec-a">0</div>
+                <div class="spec-block spec-b">0</div>
+                <div class="spec-block spec-c">1</div>
+              </div>
+              <span class="spec-arrow">→</span><span class="spec-result">lavest</span>
+            </div>
+            <div class="spec-row">
+              <div class="spec-label"><code>.klasse</code></div>
+              <div class="spec-score">
+                <div class="spec-block spec-a">0</div>
+                <div class="spec-block spec-b">1</div>
+                <div class="spec-block spec-c">0</div>
+              </div>
+            </div>
+            <div class="spec-row">
+              <div class="spec-label"><code>.klasse p</code></div>
+              <div class="spec-score">
+                <div class="spec-block spec-a">0</div>
+                <div class="spec-block spec-b">1</div>
+                <div class="spec-block spec-c">1</div>
+              </div>
+            </div>
+            <div class="spec-row">
+              <div class="spec-label"><code>#id .klasse p</code></div>
+              <div class="spec-score">
+                <div class="spec-block spec-a">1</div>
+                <div class="spec-block spec-b">1</div>
+                <div class="spec-block spec-c">1</div>
+              </div>
+              <span class="spec-arrow">→</span><span class="spec-result">høj</span>
+            </div>
+            <div class="spec-row">
+              <div class="spec-label"><code>style=""</code></div>
+              <div class="spec-score">
+                <div class="spec-block spec-a" style="background:rgba(244,63,94,.5)">!</div>
+                <div class="spec-block spec-a">-</div>
+                <div class="spec-block spec-a">-</div>
+              </div>
+              <span class="spec-arrow">→</span><span class="spec-result" style="color:#fb7185">højest</span>
+            </div>
+          </div>
+        </div>
+        <div class="cb span2">
+<span class="kc">/* Specificitet: 0,0,1 — element */</span><br>
+<span class="ks">p</span> { <span class="kp">color</span>: <span class="kv">red</span>; }<br><br>
+<span class="kc">/* Specificitet: 0,1,0 — klasse vinder over element */</span><br>
+<span class="ks">.tekst</span> { <span class="kp">color</span>: <span class="kv">blue</span>; }<br><br>
+<span class="kc">/* Specificitet: 1,0,0 — ID vinder over alt (næsten) */</span><br>
+<span class="ks">#unik</span> { <span class="kp">color</span>: <span class="kv">green</span>; }<br><br>
+<span class="kc">/* !important — sidst resort. Undgå hvis muligt */</span><br>
+<span class="ks">p</span> { <span class="kp">color</span>: <span class="kv">purple !important</span>; }<br><br>
+<span class="kc">/* :is() og :where() — moderne specificitetskontrol */</span><br>
+<span class="ks">:is(h1, h2, h3)</span> { <span class="kp">font-weight</span>: <span class="kv">700</span>; }    <span class="kc">/* arver højeste */</span><br>
+<span class="ks">:where(h1, h2)</span> { <span class="kp">margin-top</span>: <span class="kv">1rem</span>; }   <span class="kc">/* specificitet: 0 */</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CSS VARIABLES ═══ -->
+<div class="section" id="variables">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(232,121,249,.12)">🎨</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(232,121,249,.15);color:var(--c-var);border:1px solid rgba(232,121,249,.3)">Grundlag</span>
+      <div class="section-title">CSS Custom Properties</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS-variabler (custom properties) lader dig gemme værdier der kan genbruges overalt. Essentielle til temaer, dark mode og vedligeholdelig CSS.</p>
+
+  <div class="card" id="c-vars">
+    <div class="card-header" onclick="tog('c-vars')">
+      <span class="card-symbol" style="color:var(--c-var)">--navn<br>var(--navn)<br>:root { }</span>
+      <div class="card-info"><div class="card-name">Custom Properties</div><div class="card-tagline">Definer én gang, brug overalt</div></div>
+      <div class="card-pills"><span class="pill">:root</span><span class="pill">var()</span><span class="pill">fallback</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Hvad er det?</h4>
+          <p>Custom properties starter altid med <code>--</code>. De defineres typisk på <code>:root</code> (globalt scope) og bruges med <code>var(--navn)</code>.</p>
+          <p>De er <strong>dynamiske</strong> — JavaScript kan ændre dem, og de nedarves i DOM-træet. Du kan have fallback-værdier: <code>var(--farve, #333)</code>.</p>
+          <p>Perfekt til farvetemaer og dark mode!</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Globale variabler på :root */</span><br>
+<span class="ks">:root</span> {<br>
+&nbsp;&nbsp;<span class="kn">--farve-primær</span>: <span class="kv">#3b82f6</span>;<br>
+&nbsp;&nbsp;<span class="kn">--farve-tekst</span>: <span class="kv">#1a1a1a</span>;<br>
+&nbsp;&nbsp;<span class="kn">--radius</span>: <span class="kv">8px</span>;<br>
+&nbsp;&nbsp;<span class="kn">--skygge</span>: <span class="kv">0 2px 12px rgba(0,0,0,.15)</span>;<br>
+}<br><br>
+<span class="ks">.knap</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kfn">var</span>(<span class="kn">--farve-primær</span>);<br>
+&nbsp;&nbsp;<span class="kp">border-radius</span>: <span class="kfn">var</span>(<span class="kn">--radius</span>);<br>
+&nbsp;&nbsp;<span class="kp">box-shadow</span>: <span class="kfn">var</span>(<span class="kn">--skygge</span>);<br>
+}<br><br>
+<span class="kc">/* Dark mode — overskriver blot :root */</span><br>
+<span class="kat">@media</span> (prefers-color-scheme: <span class="km">dark</span>) {<br>
+&nbsp;&nbsp;<span class="ks">:root</span> { <span class="kn">--farve-tekst</span>: <span class="kv">#f0f0f0</span>; }<br>
+}
+        </div>
+        <div class="dd span2">
+          <div class="do"><strong>✓ Brug til</strong><ul>
+            <li>Farvepaletter og temaer</li>
+            <li>Gentagne spacing-værdier</li>
+            <li>Dark/light mode med @media</li>
+            <li>Animations-parametre styret af JS</li>
+          </ul></div>
+          <div class="dont"><strong>✗ Undgå</strong><ul>
+            <li>Brug ikke til ét-gangs værdier</li>
+            <li>Navngivning bør være semantisk (--farve-primær ikke --blå)</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ POSITIONING ═══ -->
+<div class="section" id="positioning">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(249,115,22,.12)">📌</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(249,115,22,.15);color:var(--c-pos);border:1px solid rgba(249,115,22,.3)">Layout</span>
+      <div class="section-title">Positioning</div>
+    </div>
+  </div>
+  <p class="section-desc">Position-egenskaben bestemmer, hvordan et element placeres i dokumentet. Det er fundamentalt at forstå de fem typer og hvornår man bruger dem.</p>
+
+  <div class="card" id="c-pos">
+    <div class="card-header" onclick="tog('c-pos')">
+      <span class="card-symbol" style="color:var(--c-pos)">static<br>relative<br>absolute<br>fixed<br>sticky</span>
+      <div class="card-info"><div class="card-name">De fem position-værdier</div><div class="card-tagline">Hvordan elementer placeres i forhold til deres kontekst</div></div>
+      <div class="card-pills"><span class="pill">top/left</span><span class="pill">z-index</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Positioneringstyper</h4>
+          <p><strong style="color:var(--c-pos)">static</strong> — standard. Elementet følger normal flow. <code>top/left</code> virker ikke.</p>
+          <p><strong style="color:var(--c-pos)">relative</strong> — forskyder elementet fra dets normale position. Skaber en <em>positioning context</em> for children.</p>
+          <p><strong style="color:var(--c-pos)">absolute</strong> — trækkes ud af flow. Placeres relativt til nærmeste <em>positioned</em> forfader.</p>
+          <p><strong style="color:var(--c-pos)">fixed</strong> — fastgjort til browservinduet. Bevæger sig ikke ved scroll.</p>
+          <p><strong style="color:var(--c-pos)">sticky</strong> — opfører sig som relative indtil scroll-grænsen nås, derefter som fixed.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Relative — skubbes 10px ned fra normal pos */</span><br>
+<span class="ks">.badge</span> {<br>
+&nbsp;&nbsp;<span class="kp">position</span>: <span class="kv">relative</span>;<br>
+&nbsp;&nbsp;<span class="kp">top</span>: <span class="kv">-2px</span>; <span class="kc">/* fin justering */</span><br>
+}<br><br>
+<span class="kc">/* Absolute inde i relative forælder */</span><br>
+<span class="ks">.kort</span> { <span class="kp">position</span>: <span class="kv">relative</span>; }<br>
+<span class="ks">.kort .hjørne-badge</span> {<br>
+&nbsp;&nbsp;<span class="kp">position</span>: <span class="kv">absolute</span>;<br>
+&nbsp;&nbsp;<span class="kp">top</span>: <span class="kv">8px</span>; <span class="kp">right</span>: <span class="kv">8px</span>;<br>
+}<br><br>
+<span class="kc">/* Fixed header */</span><br>
+<span class="ks">.topbar</span> {<br>
+&nbsp;&nbsp;<span class="kp">position</span>: <span class="kv">fixed</span>;<br>
+&nbsp;&nbsp;<span class="kp">top</span>: <span class="kv">0</span>; <span class="kp">left</span>: <span class="kv">0</span>; <span class="kp">right</span>: <span class="kv">0</span>;<br>
+}<br><br>
+<span class="kc">/* Sticky tabel-header */</span><br>
+<span class="ks">th</span> {<br>
+&nbsp;&nbsp;<span class="kp">position</span>: <span class="kv">sticky</span>;<br>
+&nbsp;&nbsp;<span class="kp">top</span>: <span class="kv">0</span>;<br>
+}
+        </div>
+        <div class="demo span2">
+          <h4>🎛 Interaktiv positioning-demo</h4>
+          <div class="demo-frame" style="position:relative;height:120px;overflow:hidden" id="pos-demo-container">
+            <div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr;gap:8px;padding:8px">
+              <div style="background:rgba(249,115,22,.1);border:1px dashed rgba(249,115,22,.3);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--c-pos)">static</div>
+              <div style="background:rgba(249,115,22,.2);border:1px solid rgba(249,115,22,.5);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--c-pos);position:relative;top:-8px">relative<br><span style="font-size:9px;opacity:.7">top:-8px</span></div>
+              <div style="position:relative"><div style="background:rgba(249,115,22,.3);border:1px solid var(--c-pos);border-radius:4px;font-family:'DM Mono',monospace;font-size:10px;color:var(--c-pos);position:absolute;top:4px;right:4px;padding:4px 6px">absolute<br><span style="font-size:9px;opacity:.7">top:4 right:4</span></div></div>
+              <div style="background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.4);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--c-pos)">fixed/<br>sticky</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TABLES & FLOATS ═══ -->
+<div class="section" id="layout-tables">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(52,211,153,.12)">🗂</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(52,211,153,.15);color:var(--c-layout);border:1px solid rgba(52,211,153,.3)">Layout</span>
+      <div class="section-title">Tables & Floats</div>
+    </div>
+  </div>
+  <p class="section-desc">Tables bruges til tabulær data. Floats var den klassiske layout-teknik, men bruges i dag primært til at lade tekst flyde rundt om billeder.</p>
+
+  <div class="card" id="c-tbl">
+    <div class="card-header" onclick="tog('c-tbl')">
+      <span class="card-symbol" style="color:var(--c-layout)">table<br>th / td<br>border-collapse</span>
+      <div class="card-info"><div class="card-name">CSS Tables</div><div class="card-tagline">Stil tabulær data — aldrig til layout</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Vigtige egenskaber</h4>
+          <ul>
+            <li><code>border-collapse: collapse</code> — fjerner dobbeltkanter</li>
+            <li><code>table-layout: fixed</code> — ensartede kolonnebredder</li>
+            <li><code>caption-side: bottom</code> — tabel-undertekst</li>
+            <li><code>vertical-align</code> på td/th — lodret justering</li>
+          </ul>
+        </div>
+        <div class="cb">
+<span class="ks">table</span> { <span class="kp">width</span>: <span class="kv">100%</span>; <span class="kp">border-collapse</span>: <span class="kv">collapse</span>; }<br>
+<span class="ks">th</span> {<br>
+&nbsp;&nbsp;<span class="kp">font-size</span>: <span class="kv">.75rem</span>; <span class="kp">text-transform</span>: <span class="kv">uppercase</span>;<br>
+&nbsp;&nbsp;<span class="kp">padding</span>: <span class="kv">.75rem 1rem</span>; <span class="kp">text-align</span>: <span class="kv">left</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-bottom</span>: <span class="kv">2px solid #ddd</span>;<br>
+}<br>
+<span class="ks">td</span> { <span class="kp">padding</span>: <span class="kv">.6rem 1rem</span>; <span class="kp">border-bottom</span>: <span class="kv">1px solid #eee</span>; }<br>
+<span class="ks">tr:hover td</span> { <span class="kp">background</span>: <span class="kv">#f9f9f9</span>; }<br>
+<span class="ks">tr:nth-child(even) td</span> { <span class="kp">background</span>: <span class="kv">#fafafa</span>; }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="c-float2">
+    <div class="card-header" onclick="tog('c-float2')">
+      <span class="card-symbol" style="color:var(--c-layout)">float<br>clear<br>clearfix</span>
+      <div class="card-info"><div class="card-name">Float</div><div class="card-tagline">Tekst flyder rundt om element</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Float & Clearfix</h4>
+          <p><code>float: left/right</code> trækker elementet ud af normal flow. Omgivende tekst og inline-elementer flyder rundt om det.</p>
+          <p><strong>Clearfix-problemet:</strong> En container der kun indeholder floated elementer, kollapser til 0 højde. Løsning: brug <code>overflow: auto/hidden</code> på containeren, eller <code>::after { clear: both }</code>.</p>
+          <p>I dag bruges floats primært til billeder i artikler.</p>
+        </div>
+        <div class="cb">
+<span class="ks">img.artikel-billede</span> {<br>
+&nbsp;&nbsp;<span class="kp">float</span>: <span class="kv">left</span>;<br>
+&nbsp;&nbsp;<span class="kp">margin</span>: <span class="kv">0 1.5rem 1rem 0</span>;<br>
+&nbsp;&nbsp;<span class="kp">max-width</span>: <span class="kv">240px</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-radius</span>: <span class="kv">6px</span>;<br>
+}<br><br>
+<span class="kc">/* Clearfix — klassisk løsning */</span><br>
+<span class="ks">.clearfix::after</span> {<br>
+&nbsp;&nbsp;<span class="kp">content</span>: <span class="kstr">""</span>;<br>
+&nbsp;&nbsp;<span class="kp">display</span>: <span class="kv">block</span>;<br>
+&nbsp;&nbsp;<span class="kp">clear</span>: <span class="kv">both</span>;<br>
+}<br><br>
+<span class="kc">/* Moderne løsning */</span><br>
+<span class="ks">.container</span> { <span class="kp">overflow</span>: <span class="kv">hidden</span>; }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FLEXBOX ═══ -->
+<div class="section" id="flexbox">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(253,186,116,.12)">↔</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(253,186,116,.15);color:var(--c-flex);border:1px solid rgba(253,186,116,.3)">Layout</span>
+      <div class="section-title">Flexbox</div>
+    </div>
+  </div>
+  <p class="section-desc">Flexbox arrangerer elementer langs én akse (vandret eller lodret). Den moderne løsning til navigation, knap-grupper, centrering og kortlister.</p>
+
+  <div class="card" id="c-flex2">
+    <div class="card-header" onclick="tog('c-flex2')">
+      <span class="card-symbol" style="color:var(--c-flex)">display:flex<br>justify-content<br>align-items<br>gap</span>
+      <div class="card-info"><div class="card-name">Container-egenskaber</div><div class="card-tagline">Forælderen styrer børnenes layout</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Flex container</h4>
+          <table class="prop-table" style="margin-top:4px">
+            <tr><th>Egenskab</th><th>Værdier</th></tr>
+            <tr><td><code>flex-direction</code></td><td>row | column | row-reverse</td></tr>
+            <tr><td><code>justify-content</code></td><td>flex-start | center | flex-end | space-between | space-around | space-evenly</td></tr>
+            <tr><td><code>align-items</code></td><td>flex-start | center | flex-end | stretch | baseline</td></tr>
+            <tr><td><code>flex-wrap</code></td><td>nowrap | wrap | wrap-reverse</td></tr>
+            <tr><td><code>gap</code></td><td>enhver størrelse, f.eks. 1rem</td></tr>
+          </table>
+        </div>
+        <div class="cb">
+<span class="ks">.nav</span> {<br>
+&nbsp;&nbsp;<span class="kp">display</span>: <span class="kv">flex</span>;<br>
+&nbsp;&nbsp;<span class="kp">justify-content</span>: <span class="kv">space-between</span>;<br>
+&nbsp;&nbsp;<span class="kp">align-items</span>: <span class="kv">center</span>;<br>
+&nbsp;&nbsp;<span class="kp">gap</span>: <span class="kv">1rem</span>;<br>
+}<br><br>
+<span class="kc">/* Centrer indhold perfekt */</span><br>
+<span class="ks">.centrer</span> {<br>
+&nbsp;&nbsp;<span class="kp">display</span>: <span class="kv">flex</span>;<br>
+&nbsp;&nbsp;<span class="kp">justify-content</span>: <span class="kv">center</span>;<br>
+&nbsp;&nbsp;<span class="kp">align-items</span>: <span class="kv">center</span>;<br>
+&nbsp;&nbsp;<span class="kp">min-height</span>: <span class="kv">100vh</span>;<br>
+}<br><br>
+<span class="kc">/* Flex item — fyld tilgængeligt rum */</span><br>
+<span class="ks">.main-content</span> { <span class="kp">flex</span>: <span class="kv">1</span>; }<br>
+<span class="ks">.sidebar</span> { <span class="kp">flex</span>: <span class="kv">0 0 260px</span>; }
+        </div>
+        <div class="demo span2">
+          <h4>🎛 Live flex-demo</h4>
+          <div class="demo-frame">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;transition:all .3s" id="flex-live">
+              <div style="background:rgba(253,186,116,.2);border:1px solid rgba(253,186,116,.4);border-radius:4px;padding:8px 14px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-flex)">Boks 1</div>
+              <div style="background:rgba(253,186,116,.2);border:1px solid rgba(253,186,116,.4);border-radius:4px;padding:8px 14px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-flex)">Boks 2</div>
+              <div style="background:rgba(253,186,116,.2);border:1px solid rgba(253,186,116,.4);border-radius:4px;padding:8px 14px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-flex)">Boks 3</div>
+              <div style="background:rgba(253,186,116,.2);border:1px solid rgba(253,186,116,.4);border-radius:4px;padding:8px 14px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-flex)">Boks 4</div>
+            </div>
+            <div class="demo-controls">
+              <label>justify-content<select onchange="document.getElementById('flex-live').style.justifyContent=this.value"><option value="flex-start">flex-start</option><option value="center">center</option><option value="flex-end">flex-end</option><option value="space-between">space-between</option><option value="space-around">space-around</option><option value="space-evenly">space-evenly</option></select></label>
+              <label>align-items<select onchange="document.getElementById('flex-live').style.alignItems=this.value"><option value="flex-start">flex-start</option><option value="center">center</option><option value="flex-end">flex-end</option><option value="stretch">stretch</option></select></label>
+              <label>flex-direction<select onchange="document.getElementById('flex-live').style.flexDirection=this.value"><option value="row">row</option><option value="row-reverse">row-reverse</option><option value="column">column</option></select></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ GRID ═══ -->
+<div class="section" id="grid">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(249,168,212,.12)">⊞</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(249,168,212,.15);color:var(--c-grid);border:1px solid rgba(249,168,212,.3)">Layout</span>
+      <div class="section-title">CSS Grid</div>
+    </div>
+  </div>
+  <p class="section-desc">Grid er CSS's kraftigste layout-system — det styrer både rækker og kolonner samtidigt. Perfekt til sideopbygning, gallerier og komplekse 2D layouts.</p>
+
+  <div class="card" id="c-grid2">
+    <div class="card-header" onclick="tog('c-grid2')">
+      <span class="card-symbol" style="color:var(--c-grid)">display:grid<br>grid-template<br>fr / minmax()<br>grid-area</span>
+      <div class="card-info"><div class="card-name">Grid-systemet</div><div class="card-tagline">Rækker, kolonner, fr-enheden og placement</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Grid-begreber</h4>
+          <p><strong style="color:var(--c-grid)">fr</strong> — "fraction unit". 1fr = én andel af ledig plads. <code>1fr 2fr</code> = 1/3 og 2/3.</p>
+          <p><strong style="color:var(--c-grid)">repeat()</strong> — gentag kolonner: <code>repeat(3, 1fr)</code></p>
+          <p><strong style="color:var(--c-grid)">minmax()</strong> — angiv min og max for en kolonne</p>
+          <p><strong style="color:var(--c-grid)">auto-fill/auto-fit</strong> — auto-antal kolonner, responsivt uden media queries</p>
+          <p><strong style="color:var(--c-grid)">grid-area</strong> — navngiv og placer elementer præcist</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Simpelt 3-kolonne grid */</span><br>
+<span class="ks">.grid</span> { <span class="kp">display</span>: <span class="kv">grid</span>; <span class="kp">grid-template-columns</span>: <span class="kv">repeat(3, 1fr)</span>; <span class="kp">gap</span>: <span class="kv">1.5rem</span>; }<br><br>
+<span class="kc">/* Responsivt uden media queries */</span><br>
+<span class="ks">.auto</span> {<br>
+&nbsp;&nbsp;<span class="kp">grid-template-columns</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kv">repeat(auto-fill, minmax(200px, 1fr))</span>;<br>
+}<br><br>
+<span class="kc">/* Navngivet layout */</span><br>
+<span class="ks">.side</span> {<br>
+&nbsp;&nbsp;<span class="kp">display</span>: <span class="kv">grid</span>;<br>
+&nbsp;&nbsp;<span class="kp">grid-template-areas</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kstr">"header header"</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kstr">"sidebar main  "</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kstr">"footer footer "</span>;<br>
+&nbsp;&nbsp;<span class="kp">grid-template-columns</span>: <span class="kv">260px 1fr</span>;<br>
+}<br>
+<span class="ks">header</span> { <span class="kp">grid-area</span>: <span class="kv">header</span>; }
+        </div>
+        <div class="demo span2">
+          <h4>🎛 Live grid-demo</h4>
+          <div class="demo-frame">
+            <div style="display:grid;gap:6px;grid-template-columns:repeat(3,1fr);transition:all .3s" id="grid-live">
+              <div style="background:rgba(249,168,212,.15);border:1px solid rgba(249,168,212,.3);border-radius:4px;padding:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-grid);text-align:center">1</div>
+              <div style="background:rgba(249,168,212,.15);border:1px solid rgba(249,168,212,.3);border-radius:4px;padding:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-grid);text-align:center">2</div>
+              <div style="background:rgba(249,168,212,.15);border:1px solid rgba(249,168,212,.3);border-radius:4px;padding:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-grid);text-align:center">3</div>
+              <div style="background:rgba(249,168,212,.15);border:1px solid rgba(249,168,212,.3);border-radius:4px;padding:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-grid);text-align:center">4</div>
+              <div style="background:rgba(249,168,212,.15);border:1px solid rgba(249,168,212,.3);border-radius:4px;padding:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-grid);text-align:center">5</div>
+              <div style="background:rgba(249,168,212,.15);border:1px solid rgba(249,168,212,.3);border-radius:4px;padding:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--c-grid);text-align:center">6</div>
+            </div>
+            <div class="demo-controls">
+              <label>kolonner<select onchange="document.getElementById('grid-live').style.gridTemplateColumns=this.value"><option value="repeat(3,1fr)">repeat(3, 1fr)</option><option value="repeat(2,1fr)">repeat(2, 1fr)</option><option value="1fr 2fr">1fr 2fr</option><option value="260px 1fr">260px 1fr</option><option value="repeat(auto-fill,minmax(80px,1fr))">auto-fill</option></select></label>
+              <label>gap<select onchange="document.getElementById('grid-live').style.gap=this.value"><option value="6px">6px</option><option value="16px">16px</option><option value="24px">24px</option></select></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ OVERFLOW & DISPLAY ═══ -->
+<div class="section" id="overflow">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(34,211,238,.12)">📄</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(34,211,238,.15);color:var(--c-overflow);border:1px solid rgba(34,211,238,.3)">Layout</span>
+      <div class="section-title">Overflow & Display</div>
+    </div>
+  </div>
+  <p class="section-desc">Display bestemmer, hvordan et element opfører sig i layoutet. Overflow styrer, hvad der sker, når indholdet er større end containeren.</p>
+
+  <div class="card" id="c-display">
+    <div class="card-header" onclick="tog('c-display')">
+      <span class="card-symbol" style="color:var(--c-overflow)">block<br>inline<br>inline-block<br>none</span>
+      <div class="card-info"><div class="card-name">Display-værdier</div><div class="card-tagline">Fundamentalt for elementers opførsel i flow</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>De vigtigste værdier</h4>
+          <p><strong style="color:var(--c-overflow)">block</strong> — fylder fuld bredde, starter på ny linje (div, p, h1)</p>
+          <p><strong style="color:var(--c-overflow)">inline</strong> — følger tekstflow, margin/width virker ikke horisontalt (span, a)</p>
+          <p><strong style="color:var(--c-overflow)">inline-block</strong> — som inline, men accepterer width/height og vertical margin</p>
+          <p><strong style="color:var(--c-overflow)">none</strong> — fjerner elementet helt (optager ingen plads)</p>
+          <p><strong style="color:var(--c-overflow)">flex / grid</strong> — se egne sektioner</p>
+          <p><strong style="color:var(--c-overflow)">contents</strong> — elementet selv "forsvinder", men children forbliver</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Skjul element — fjerner det fra layout */</span><br>
+<span class="ks">.skjult</span> { <span class="kp">display</span>: <span class="kv">none</span>; }<br><br>
+<span class="kc">/* Gør link til blok (fylder fuld bredde) */</span><br>
+<span class="ks">a.menu-link</span> { <span class="kp">display</span>: <span class="kv">block</span>; }<br><br>
+<span class="kc">/* inline-block — bruges til knapper */</span><br>
+<span class="ks">.badge</span> {<br>
+&nbsp;&nbsp;<span class="kp">display</span>: <span class="kv">inline-block</span>;<br>
+&nbsp;&nbsp;<span class="kp">padding</span>: <span class="kv">.25rem .75rem</span>;<br>
+}<br><br>
+<span class="kc">/* visibility: hidden — gemmer men beholder plads */</span><br>
+<span class="ks">.usynlig</span> { <span class="kp">visibility</span>: <span class="kv">hidden</span>; }<br>
+<span class="kc">/* opacity: 0 — transparent, men stadig i layout */</span><br>
+<span class="ks">.gennemsigtig</span> { <span class="kp">opacity</span>: <span class="kv">0</span>; }
+        </div>
+        <div class="cb span2">
+<span class="kc">/* overflow */</span><br>
+<span class="ks">.boks</span> { <span class="kp">overflow</span>: <span class="kv">hidden</span>; }   <span class="kc">/* klip indhold der løber ud */</span><br>
+<span class="ks">.scroll</span> { <span class="kp">overflow</span>: <span class="kv">auto</span>; }    <span class="kc">/* scroll kun ved behov */</span><br>
+<span class="ks">.scroll-x</span> { <span class="kp">overflow-x</span>: <span class="kv">auto</span>; <span class="kp">overflow-y</span>: <span class="kv">hidden</span>; }<br><br>
+<span class="kc">/* Afkort tekst med ellipsis */</span><br>
+<span class="ks">.ét-linje</span> {<br>
+&nbsp;&nbsp;<span class="kp">white-space</span>: <span class="kv">nowrap</span>;<br>
+&nbsp;&nbsp;<span class="kp">overflow</span>: <span class="kv">hidden</span>;<br>
+&nbsp;&nbsp;<span class="kp">text-overflow</span>: <span class="kv">ellipsis</span>;<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Z-INDEX ═══ -->
+<div class="section" id="zindex">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(251,113,133,.12)">📚</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(251,113,133,.15);color:var(--c-zindex);border:1px solid rgba(251,113,133,.3)">Layout</span>
+      <div class="section-title">Z-index & Stacking Context</div>
+    </div>
+  </div>
+  <p class="section-desc">Z-index bestemmer hvilke elementer der tegnes ovenpå andre. Men der er en hage: z-index virker kun på positioned elementer, og stacking contexts kan forvirre.</p>
+
+  <div class="card" id="c-zidx">
+    <div class="card-header" onclick="tog('c-zidx')">
+      <span class="card-symbol" style="color:var(--c-zindex)">z-index<br>stacking<br>context</span>
+      <div class="card-info"><div class="card-name">Z-index</div><div class="card-tagline">Hvem vises oven på hvem</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Regler</h4>
+          <p><code>z-index</code> virker kun på elementer med <code>position</code> ≠ <code>static</code> (eller flex/grid items).</p>
+          <p>Højere z-index = visually oven på. Standard = <code>auto</code>.</p>
+          <p><strong>Stacking context:</strong> Visse egenskaber skaber en ny stacking context (<code>opacity &lt; 1</code>, <code>transform</code>, <code>filter</code>, <code>isolation: isolate</code>). Elementer inde i én context kan ikke "slippe ud" af den.</p>
+          <p>Brug <code>isolation: isolate</code> bevidst for at afgrænse z-index-scope.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Typisk z-index skala */</span><br>
+<span class="ks">.dropdown</span>  { <span class="kp">z-index</span>: <span class="kv">100</span>;  <span class="kp">position</span>: <span class="kv">absolute</span>; }<br>
+<span class="ks">.modal</span>     { <span class="kp">z-index</span>: <span class="kv">500</span>;  <span class="kp">position</span>: <span class="kv">fixed</span>; }<br>
+<span class="ks">.overlay</span>   { <span class="kp">z-index</span>: <span class="kv">490</span>;  <span class="kp">position</span>: <span class="kv">fixed</span>; }<br>
+<span class="ks">.tooltip</span>   { <span class="kp">z-index</span>: <span class="kv">1000</span>; <span class="kp">position</span>: <span class="kv">absolute</span>; }<br><br>
+<span class="kc">/* isolation: isolate — begræns z-index scope */</span><br>
+<span class="ks">.kort-container</span> { <span class="kp">isolation</span>: <span class="kv">isolate</span>; }<br><br>
+<span class="kc">/* CSS-variabler til z-index skala */</span><br>
+<span class="ks">:root</span> {<br>
+&nbsp;&nbsp;<span class="kn">--z-dropdown</span>: <span class="kv">100</span>;<br>
+&nbsp;&nbsp;<span class="kn">--z-modal</span>: <span class="kv">500</span>;<br>
+&nbsp;&nbsp;<span class="kn">--z-toast</span>: <span class="kv">1000</span>;<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TYPOGRAPHY ═══ -->
+<div class="section" id="typography">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(56,189,248,.12)">✍️</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(56,189,248,.15);color:var(--c-typo);border:1px solid rgba(56,189,248,.3)">Visuel</span>
+      <div class="section-title">Typografi</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS har et rigt sæt egenskaber til at styre skrift. Gode typografi-valg er halvdelen af et godt webdesign.</p>
+
+  <div class="card" id="c-typo">
+    <div class="card-header" onclick="tog('c-typo')">
+      <span class="card-symbol" style="color:var(--c-typo)">font-family<br>font-size<br>line-height<br>letter-spacing</span>
+      <div class="card-info"><div class="card-name">Skrift-egenskaber</div><div class="card-tagline">Kontrol over al tekst på siden</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>De vigtigste egenskaber</h4>
+          <table class="prop-table">
+            <tr><th>Egenskab</th><th>Typisk brug</th></tr>
+            <tr><td><code>font-family</code></td><td>Skrifttype + fallbacks</td></tr>
+            <tr><td><code>font-size</code></td><td>Størrelse (brug rem)</td></tr>
+            <tr><td><code>font-weight</code></td><td>100–900 eller bold/normal</td></tr>
+            <tr><td><code>font-style</code></td><td>normal | italic | oblique</td></tr>
+            <tr><td><code>line-height</code></td><td>Linjehøjde, typisk 1.5–1.7</td></tr>
+            <tr><td><code>letter-spacing</code></td><td>Afstand mellem bogstaver</td></tr>
+            <tr><td><code>text-transform</code></td><td>uppercase | lowercase | capitalize</td></tr>
+            <tr><td><code>text-decoration</code></td><td>underline | line-through | none</td></tr>
+            <tr><td><code>text-align</code></td><td>left | center | right | justify</td></tr>
+          </table>
+        </div>
+        <div class="cb">
+<span class="ks">body</span> {<br>
+&nbsp;&nbsp;<span class="kp">font-family</span>: <span class="kv">'Georgia', serif</span>;<br>
+&nbsp;&nbsp;<span class="kp">font-size</span>: <span class="kv">1rem</span>;      <span class="kc">/* 16px */</span><br>
+&nbsp;&nbsp;<span class="kp">line-height</span>: <span class="kv">1.65</span>;  <span class="kc">/* ingen enhed = relativ */</span><br>
+&nbsp;&nbsp;<span class="kp">color</span>: <span class="kv">#333</span>;<br>
+}<br><br>
+<span class="ks">h1</span> {<br>
+&nbsp;&nbsp;<span class="kp">font-size</span>: <span class="kv">clamp(2rem, 5vw, 4rem)</span>;<br>
+&nbsp;&nbsp;<span class="kp">font-weight</span>: <span class="kv">800</span>;<br>
+&nbsp;&nbsp;<span class="kp">letter-spacing</span>: <span class="kv">-0.03em</span>;<br>
+&nbsp;&nbsp;<span class="kp">line-height</span>: <span class="kv">1.1</span>;<br>
+}<br><br>
+<span class="kc">/* Web font fra Google Fonts */</span><br>
+<span class="kat">@import</span> <span class="kstr">url('https://fonts.googleapis.com/css2?family=Syne')</span>;<br><br>
+<span class="kc">/* Eller self-hosted med @font-face */</span><br>
+<span class="kat">@font-face</span> {<br>
+&nbsp;&nbsp;<span class="kp">font-family</span>: <span class="kv">'MinSkrift'</span>;<br>
+&nbsp;&nbsp;<span class="kp">src</span>: <span class="kfn">url</span>(<span class="kstr">'font.woff2'</span>) <span class="kv">format('woff2')</span>;<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ BACKGROUNDS ═══ -->
+<div class="section" id="backgrounds">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(251,146,60,.12)">🖼</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(251,146,60,.15);color:var(--c-bg);border:1px solid rgba(251,146,60,.3)">Visuel</span>
+      <div class="section-title">Baggrunde & Gradienter</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS kan male rige baggrunde med farver, billeder, og gradienter. Gradienter er især kraftfulde og fuldt browserunderstøttede.</p>
+
+  <div class="card" id="c-bg">
+    <div class="card-header" onclick="tog('c-bg')">
+      <span class="card-symbol" style="color:var(--c-bg)">background<br>linear-gradient<br>radial-gradient<br>background-size</span>
+      <div class="card-info"><div class="card-name">Baggrunds-egenskaber</div><div class="card-tagline">Farver, billeder, gradienter og mønstre</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Vigtige egenskaber</h4>
+          <p><code>background-color</code> — baggrundfarve</p>
+          <p><code>background-image</code> — billede eller gradient</p>
+          <p><code>background-size: cover</code> — fyld altid beholder<br><code>background-size: contain</code> — vis alt, ingen afskæring</p>
+          <p><code>background-position</code> — placering af billede</p>
+          <p><code>background-repeat</code> — gentag billede</p>
+          <p>Gradienter er teknisk set <code>background-image</code>-værdier.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Lineær gradient */</span><br>
+<span class="ks">.hero</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kfn">linear-gradient</span>(<span class="kv">135deg, #667eea, #764ba2</span>);<br>
+}<br><br>
+<span class="kc">/* Radial gradient */</span><br>
+<span class="ks">.glow</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kfn">radial-gradient</span>(<span class="kv">circle at 50% 0%, #e8ff5a33, transparent 60%</span>);<br>
+}<br><br>
+<span class="kc">/* Billede med fallback */</span><br>
+<span class="ks">.banner</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kfn">url</span>(<span class="kstr">'billede.jpg'</span>) <span class="kv">center/cover no-repeat</span>;<br>
+&nbsp;&nbsp;<span class="kp">background-color</span>: <span class="kv">#333</span>; <span class="kc">/* fallback */</span><br>
+}<br><br>
+<span class="kc">/* Conic gradient — pie charts, spinners */</span><br>
+<span class="ks">.pie</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kfn">conic-gradient</span>(<span class="kv">red 0deg 90deg, blue 90deg 360deg</span>);<br>
+}
+        </div>
+        <div class="demo span2">
+          <h4>🎛 Gradient-generator</h4>
+          <div class="demo-frame">
+            <div class="grad-preview" id="grad-preview" style="background:linear-gradient(135deg,#667eea,#764ba2)"></div>
+            <div class="demo-controls" style="margin-top:10px">
+              <label>type<select onchange="updateGrad()" id="grad-type"><option value="linear-gradient">linear</option><option value="radial-gradient">radial</option><option value="conic-gradient">conic</option></select></label>
+              <label>vinkel/form<input type="range" id="grad-angle" min="0" max="360" value="135" oninput="updateGrad()"></label>
+              <label>farve 1<input type="color" id="gc1" value="#667eea" oninput="updateGrad()" style="width:50px;height:28px;border:none;background:none;padding:0;cursor:pointer"></label>
+              <label>farve 2<input type="color" id="gc2" value="#764ba2" oninput="updateGrad()" style="width:50px;height:28px;border:none;background:none;padding:0;cursor:pointer"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TRANSFORMS ═══ -->
+<div class="section" id="transforms">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(6,182,212,.12)">🔄</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(6,182,212,.15);color:var(--c-transform);border:1px solid rgba(6,182,212,.3)">Visuel</span>
+      <div class="section-title">Transform & Filter</div>
+    </div>
+  </div>
+  <p class="section-desc">Transform lader dig flytte, rotere, skalere og skæve elementer visuelt — uden at påvirke layout. Filter giver visuelle effekter som blur og brightness.</p>
+
+  <div class="card" id="c-transform">
+    <div class="card-header" onclick="tog('c-transform')">
+      <span class="card-symbol" style="color:var(--c-transform)">translate<br>rotate<br>scale<br>skew</span>
+      <div class="card-info"><div class="card-name">Transform-funktioner</div><div class="card-tagline">Flyt, roter og skaler uden at bryde layout</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Transform-funktioner</h4>
+          <p><code>translateX/Y(n)</code> — flyt vandret/lodret</p>
+          <p><code>rotate(ndeg)</code> — roter</p>
+          <p><code>scale(n)</code> — skaler (1 = original)</p>
+          <p><code>skewX/Y(ndeg)</code> — skæv</p>
+          <p>Kombinér: <code>transform: rotate(45deg) scale(1.2)</code></p>
+          <p><code>transform-origin</code> — ændr rotation-omdrejningspunkt</p>
+          <p>Transforms udføres af GPU — brug dem til animationer frem for <code>top/left</code>!</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Hover-effekt — løft knap */</span><br>
+<span class="ks">.knap:hover</span> {<br>
+&nbsp;&nbsp;<span class="kp">transform</span>: <span class="kfn">translateY</span>(<span class="kv">-2px</span>);<br>
+}<br><br>
+<span class="kc">/* Roter ikon */</span><br>
+<span class="ks">.pil.åben</span> {<br>
+&nbsp;&nbsp;<span class="kp">transform</span>: <span class="kfn">rotate</span>(<span class="kv">180deg</span>);<br>
+}<br><br>
+<span class="kc">/* Centrering med transform */</span><br>
+<span class="ks">.modal</span> {<br>
+&nbsp;&nbsp;<span class="kp">position</span>: <span class="kv">fixed</span>;<br>
+&nbsp;&nbsp;<span class="kp">top</span>: <span class="kv">50%</span>; <span class="kp">left</span>: <span class="kv">50%</span>;<br>
+&nbsp;&nbsp;<span class="kp">transform</span>: <span class="kfn">translate</span>(<span class="kv">-50%, -50%</span>);<br>
+}<br><br>
+<span class="kc">/* filter — visuelle effekter */</span><br>
+<span class="ks">.uklar</span> { <span class="kp">filter</span>: <span class="kfn">blur</span>(<span class="kv">4px</span>); }<br>
+<span class="ks">.gråtone</span> { <span class="kp">filter</span>: <span class="kfn">grayscale</span>(<span class="kv">100%</span>); }<br>
+<span class="ks">.lys</span> { <span class="kp">filter</span>: <span class="kfn">brightness</span>(<span class="kv">1.3</span>); }
+        </div>
+        <div class="demo span2">
+          <h4>🎛 Transform-demo</h4>
+          <div class="demo-frame" style="display:flex;flex-direction:column;align-items:center;gap:12px;min-height:100px">
+            <div class="transform-box" id="tx-box">CSS</div>
+            <div class="demo-controls">
+              <label>transform<select onchange="applyTransform(this.value)">
+                <option value="none">ingen</option>
+                <option value="rotate(45deg)">rotate(45deg)</option>
+                <option value="scale(1.4)">scale(1.4)</option>
+                <option value="translateX(30px)">translateX(30px)</option>
+                <option value="skewX(15deg)">skewX(15deg)</option>
+                <option value="rotate(15deg) scale(1.2)">rotate + scale</option>
+              </select></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ANIMATIONS ═══ -->
+<div class="section" id="animations">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(244,63,94,.12)">✨</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(244,63,94,.15);color:var(--c-anim);border:1px solid rgba(244,63,94,.3)">Visuel</span>
+      <div class="section-title">Transitions & Animationer</div>
+    </div>
+  </div>
+  <p class="section-desc">Transitions giver glidende overgange ved state-ændringer. Keyframe-animationer lader dig definere komplekse bevægelsesforløb.</p>
+
+  <div class="card" id="c-trans">
+    <div class="card-header" onclick="tog('c-trans')">
+      <span class="card-symbol" style="color:var(--c-anim)">transition<br>@keyframes<br>animation<br>easing</span>
+      <div class="card-info"><div class="card-name">Transitions & Keyframes</div><div class="card-tagline">Bevæg og animer elementer med CSS</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Transition-egenskaber</h4>
+          <p><code>transition: egenskab varighed easing delay</code></p>
+          <p>Easing-funktioner: <code>ease</code>, <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>, <code>cubic-bezier()</code></p>
+          <br>
+          <h4>Animation-egenskaber</h4>
+          <p><code>animation-name</code> — navn på @keyframes</p>
+          <p><code>animation-duration</code> — varighed</p>
+          <p><code>animation-timing-function</code> — easing</p>
+          <p><code>animation-iteration-count</code> — antal gange (infinite)</p>
+          <p><code>animation-direction</code> — alternate = frem og tilbage</p>
+          <p><code>animation-fill-mode</code> — forwards = behold slutstilstand</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Transition — glid ved hover */</span><br>
+<span class="ks">.knap</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kv">#3b82f6</span>;<br>
+&nbsp;&nbsp;<span class="kp">transition</span>: <span class="kv">background .2s ease, transform .2s ease</span>;<br>
+}<br>
+<span class="ks">.knap:hover</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kv">#2563eb</span>;<br>
+&nbsp;&nbsp;<span class="kp">transform</span>: <span class="kfn">translateY</span>(<span class="kv">-2px</span>);<br>
+}<br><br>
+<span class="kc">/* Keyframe animation */</span><br>
+<span class="kat">@keyframes</span> <span class="kv">puls</span> {<br>
+&nbsp;&nbsp;<span class="kv">0%, 100%</span> { <span class="kp">transform</span>: <span class="kfn">scale</span>(<span class="kv">1</span>); }<br>
+&nbsp;&nbsp;<span class="kv">50%</span>       { <span class="kp">transform</span>: <span class="kfn">scale</span>(<span class="kv">1.05</span>); }<br>
+}<br><br>
+<span class="ks">.pulserende</span> {<br>
+&nbsp;&nbsp;<span class="kp">animation</span>: <span class="kv">puls 2s ease-in-out infinite</span>;<br>
+}<br><br>
+<span class="kc">/* Respekter brugerindstillinger */</span><br>
+<span class="kat">@media</span> (prefers-reduced-motion: <span class="km">reduce</span>) {<br>
+&nbsp;&nbsp;<span class="ks">*</span> { <span class="kp">animation</span>: <span class="kv">none !important</span>; <span class="kp">transition</span>: <span class="kv">none !important</span>; }<br>
+}
+        </div>
+        <div class="demo span2">
+          <h4>🎛 Animation-demo</h4>
+          <div class="demo-frame" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+            <div class="anim-box" id="anim-box">🎯</div>
+            <div class="demo-controls">
+              <label>animation<select onchange="applyAnim(this.value)">
+                <option value="none">ingen</option>
+                <option value="demo-bounce 1s ease infinite">bounce</option>
+                <option value="demo-spin 1s linear infinite">spin</option>
+                <option value="demo-pulse 1.5s ease infinite">pulse</option>
+                <option value="demo-shake .5s ease infinite">shake</option>
+                <option value="demo-fade 2s ease infinite">fade</option>
+              </select></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PSEUDO ═══ -->
+<div class="section" id="pseudo">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(192,132,252,.12)">🔮</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(192,132,252,.15);color:var(--c-pseudo);border:1px solid rgba(192,132,252,.3)">Visuel</span>
+      <div class="section-title">Pseudo-klasser & Pseudo-elementer</div>
+    </div>
+  </div>
+  <p class="section-desc">Pseudo-klasser vælger elementer i bestemte tilstande (:hover, :focus). Pseudo-elementer lader dig style dele af et element (::before, ::after) eller indsætte indhold med CSS.</p>
+
+  <div class="card" id="c-pseudo">
+    <div class="card-header" onclick="tog('c-pseudo')">
+      <span class="card-symbol" style="color:var(--c-pseudo)">:hover<br>:focus<br>:nth-child<br>::before</span>
+      <div class="card-info"><div class="card-name">Pseudo-klasser</div><div class="card-tagline">Vælg elementer baseret på tilstand eller position</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Vigtige pseudo-klasser</h4>
+          <table class="prop-table">
+            <tr><th>Selektor</th><th>Hvad den rammer</th></tr>
+            <tr><td><code>:hover</code></td><td>Mus oven på elementet</td></tr>
+            <tr><td><code>:focus</code></td><td>Element i fokus (tab/klik)</td></tr>
+            <tr><td><code>:active</code></td><td>Klikkes på i øjeblikket</td></tr>
+            <tr><td><code>:visited</code></td><td>Besøgte links</td></tr>
+            <tr><td><code>:first-child</code></td><td>Første barn</td></tr>
+            <tr><td><code>:last-child</code></td><td>Sidste barn</td></tr>
+            <tr><td><code>:nth-child(n)</code></td><td>Hvert n. barn</td></tr>
+            <tr><td><code>:not(selektor)</code></td><td>Alt der IKKE matcher</td></tr>
+            <tr><td><code>:checked</code></td><td>Checkboxes og radio der er valgt</td></tr>
+            <tr><td><code>:disabled</code></td><td>Deaktiverede formfelter</td></tr>
+            <tr><td><code>:empty</code></td><td>Elementer uden børn</td></tr>
+          </table>
+        </div>
+        <div class="cb">
+<span class="kc">/* Hover + focus — altid begge for tilgængelighed */</span><br>
+<span class="ks">a:hover, a:focus</span> { <span class="kp">color</span>: <span class="kv">blue</span>; }<br><br>
+<span class="kc">/* Zebra-striber */</span><br>
+<span class="ks">tr:nth-child(even)</span> { <span class="kp">background</span>: <span class="kv">#f5f5f5</span>; }<br><br>
+<span class="kc">/* Alle li undtagen det første */</span><br>
+<span class="ks">li:not(:first-child)</span> { <span class="kp">border-top</span>: <span class="kv">1px solid #eee</span>; }<br><br>
+<span class="kc">/* Hvert 3. element */</span><br>
+<span class="ks">.kort:nth-child(3n)</span> { <span class="kp">background</span>: <span class="kv">lightyellow</span>; }
+        </div>
+        <div class="cb span2">
+<span class="kc">/* ::before og ::after — indsæt dekorativt indhold */</span><br>
+<span class="ks">.knap::before</span> {<br>
+&nbsp;&nbsp;<span class="kp">content</span>: <span class="kstr">"→ "</span>;  <span class="kc">/* SKAL have content-egenskab */</span><br>
+&nbsp;&nbsp;<span class="kp">transition</span>: <span class="kv">transform .2s</span>;<br>
+}<br>
+<span class="ks">.knap:hover::before</span> { <span class="kp">transform</span>: <span class="kfn">translateX</span>(<span class="kv">4px</span>); }<br><br>
+<span class="kc">/* ::placeholder — stil input-placeholder */</span><br>
+<span class="ks">input::placeholder</span> { <span class="kp">color</span>: <span class="kv">#aaa</span>; <span class="kp">font-style</span>: <span class="kv">italic</span>; }<br><br>
+<span class="kc">/* ::selection — stil markeret tekst */</span><br>
+<span class="ks">::selection</span> { <span class="kp">background</span>: <span class="kv">#e8ff5a</span>; <span class="kp">color</span>: <span class="kv">#000</span>; }<br><br>
+<span class="kc">/* ::first-line, ::first-letter */</span><br>
+<span class="ks">p::first-letter</span> { <span class="kp">font-size</span>: <span class="kv">3em</span>; <span class="kp">float</span>: <span class="kv">left</span>; <span class="kp">margin-right</span>: <span class="kv">.1em</span>; }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ UNITS ═══ -->
+<div class="section" id="units">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(251,191,36,.12)">📐</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(251,191,36,.15);color:var(--c-math);border:1px solid rgba(251,191,36,.3)">Responsivt</span>
+      <div class="section-title">CSS Enheder</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS har mange enheder — relative og absolutte. Valget af enhed er vigtigt for tilgængelighed, responsivitet og vedligeholdelse.</p>
+
+  <div class="card" id="c-units">
+    <div class="card-header" onclick="tog('c-units')">
+      <span class="card-symbol" style="color:var(--c-math)">rem / em<br>px<br>vw / vh<br>% / fr</span>
+      <div class="card-info"><div class="card-name">Alle enheder</div><div class="card-tagline">Hvornår bruges hvilken enhed</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain span2">
+          <table class="prop-table">
+            <tr><th>Enhed</th><th>Type</th><th>Relativ til</th><th>Typisk brug</th><th>Tilgængelighed</th></tr>
+            <tr><td><code>rem</code></td><td>Skrift-rel.</td><td>Root (&lt;html&gt;) font</td><td>Skrift, spacing, padding</td><td style="color:#4ade80">✓ God</td></tr>
+            <tr><td><code>em</code></td><td>Skrift-rel.</td><td>Forælderens font</td><td>Komponent-intern padding</td><td style="color:#fbbf24">~ Pas på nesting</td></tr>
+            <tr><td><code>px</code></td><td>Absolut</td><td>Ingen</td><td>Borders, shadows, ikoner</td><td style="color:#fb7185">✗ Ikke til skrift</td></tr>
+            <tr><td><code>%</code></td><td>Relativ</td><td>Forælderens bredde</td><td>Layout, bredder, billeder</td><td style="color:#4ade80">✓</td></tr>
+            <tr><td><code>vw</code></td><td>Viewport</td><td>Vinduets bredde</td><td>Hero-sektioner, fluid skrift</td><td style="color:#4ade80">✓</td></tr>
+            <tr><td><code>vh</code></td><td>Viewport</td><td>Vinduets højde</td><td>Fuld-skærm sections</td><td style="color:#4ade80">✓</td></tr>
+            <tr><td><code>vmin/vmax</code></td><td>Viewport</td><td>Mindste/største side</td><td>Responsive ikoner, badges</td><td style="color:#4ade80">✓</td></tr>
+            <tr><td><code>fr</code></td><td>Grid</td><td>Ledig plads i grid</td><td>Grid-kolonner og -rækker</td><td>— Grid kun</td></tr>
+            <tr><td><code>ch</code></td><td>Skrift</td><td>Bredden af "0"-tegnet</td><td>Tekst-container max-bredde</td><td style="color:#4ade80">✓</td></tr>
+            <tr><td><code>svh/dvh/lvh</code></td><td>Viewport</td><td>Small/Dynamic/Large vh</td><td>Mobil fuld-skærm (adressebjælke)</td><td style="color:#4ade80">✓ Moderne</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MATH FUNCTIONS ═══ -->
+<div class="section" id="math-functions">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(251,191,36,.12)">∑</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(251,191,36,.15);color:var(--c-math);border:1px solid rgba(251,191,36,.3)">Responsivt</span>
+      <div class="section-title">Matematiske Funktioner</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS har kraftfulde matematiske funktioner der lader dig beregne, begrænse og kombinere værdier dynamisk — direkte i CSS.</p>
+
+  <div class="card" id="c-mathfn">
+    <div class="card-header" onclick="tog('c-mathfn')">
+      <span class="card-symbol" style="color:var(--c-math)">clamp()<br>min() / max()<br>calc()<br>round()</span>
+      <div class="card-info"><div class="card-name">CSS Math</div><div class="card-tagline">Dynamiske værdier med logik direkte i CSS</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Funktioner</h4>
+          <p><strong style="color:var(--c-math)">clamp(min, val, max)</strong> — begræns til område. Perfekt til fluid typografi.</p>
+          <p><strong style="color:var(--c-math)">min(a, b)</strong> — vælg mindste. <code>min(100%, 800px)</code> = responsiv container.</p>
+          <p><strong style="color:var(--c-math)">max(a, b)</strong> — vælg største. <code>max(1rem, 2vw)</code> = tilgængelig skrift.</p>
+          <p><strong style="color:var(--c-math)">calc(udtryk)</strong> — beregn. Kan blande enheder: <code>calc(100% - 2rem)</code>.</p>
+          <p><strong style="color:var(--c-math)">round(), mod(), rem()</strong> — nyere funktioner til præcis matematik.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Fluid typografi — ingen media queries! */</span><br>
+<span class="ks">h1</span> { <span class="kp">font-size</span>: <span class="kfn">clamp</span>(<span class="kv">1.5rem, 5vw, 4rem</span>); }<br><br>
+<span class="kc">/* Responsiv container */</span><br>
+<span class="ks">.wrap</span> { <span class="kp">width</span>: <span class="kfn">min</span>(<span class="kv">100%, 960px</span>); <span class="kp">margin</span>: <span class="kv">0 auto</span>; }<br><br>
+<span class="kc">/* Sikr minimum skriftstørrelse */</span><br>
+<span class="ks">p</span> { <span class="kp">font-size</span>: <span class="kfn">max</span>(<span class="kv">1rem, 1.5vw</span>); }<br><br>
+<span class="kc">/* Beregn bredde */</span><br>
+<span class="ks">.sidebar-main</span> {<br>
+&nbsp;&nbsp;<span class="kp">width</span>: <span class="kfn">calc</span>(<span class="kv">100% - 260px - 2rem</span>);<br>
+}<br><br>
+<span class="kc">/* Fluid spacing-skala */</span><br>
+<span class="ks">:root</span> {<br>
+&nbsp;&nbsp;<span class="kn">--space-m</span>: <span class="kfn">clamp</span>(<span class="kv">1rem, 3vw, 2rem</span>);<br>
+&nbsp;&nbsp;<span class="kn">--space-l</span>: <span class="kfn">clamp</span>(<span class="kv">2rem, 6vw, 4rem</span>);<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MEDIA QUERIES ═══ -->
+<div class="section" id="media-queries">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(129,140,248,.12)">📱</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(129,140,248,.15);color:var(--c-mq);border:1px solid rgba(129,140,248,.3)">Responsivt</span>
+      <div class="section-title">Media Queries</div>
+    </div>
+  </div>
+  <p class="section-desc">Media queries er CSS's betingede logik — anvend regler kun når bestemte betingelser om enhed, skærmstørrelse eller brugerpræferencer er opfyldt.</p>
+
+  <div class="card" id="c-mq2">
+    <div class="card-header" onclick="tog('c-mq2')">
+      <span class="card-symbol" style="color:var(--c-mq)">@media<br>min-width<br>prefers-*<br>print</span>
+      <div class="card-info"><div class="card-name">Media Queries</div><div class="card-tagline">Betingede CSS-regler</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Typer og features</h4>
+          <table class="prop-table">
+            <tr><th>Feature</th><th>Eksempel</th></tr>
+            <tr><td><code>min-width</code></td><td>≥ 768px (mobil-first)</td></tr>
+            <tr><td><code>max-width</code></td><td>≤ 1024px (desktop-first)</td></tr>
+            <tr><td><code>orientation</code></td><td>portrait | landscape</td></tr>
+            <tr><td><code>prefers-color-scheme</code></td><td>dark | light</td></tr>
+            <tr><td><code>prefers-reduced-motion</code></td><td>reduce</td></tr>
+            <tr><td><code>prefers-contrast</code></td><td>more | less</td></tr>
+            <tr><td><code>hover</code></td><td>hover (mus) | none (touch)</td></tr>
+            <tr><td><code>print</code></td><td>printvenlig CSS</td></tr>
+            <tr><td><code>display-mode</code></td><td>standalone (PWA)</td></tr>
+          </table>
+        </div>
+        <div class="cb">
+<span class="kc">/* Mobile-first — anbefalet tilgang */</span><br>
+<span class="ks">.grid</span> { <span class="kp">grid-template-columns</span>: <span class="kv">1fr</span>; }<br><br>
+<span class="kat">@media</span> (min-width: <span class="km">768px</span>) {<br>
+&nbsp;&nbsp;<span class="ks">.grid</span> { <span class="kp">grid-template-columns</span>: <span class="kv">repeat(2, 1fr)</span>; }<br>
+}<br>
+<span class="kat">@media</span> (min-width: <span class="km">1024px</span>) {<br>
+&nbsp;&nbsp;<span class="ks">.grid</span> { <span class="kp">grid-template-columns</span>: <span class="kv">repeat(3, 1fr)</span>; }<br>
+}<br><br>
+<span class="kc">/* Dark mode */</span><br>
+<span class="kat">@media</span> (prefers-color-scheme: <span class="km">dark</span>) {<br>
+&nbsp;&nbsp;<span class="ks">:root</span> { <span class="kn">--bg</span>: <span class="kv">#111</span>; <span class="kn">--tekst</span>: <span class="kv">#eee</span>; }<br>
+}<br><br>
+<span class="kc">/* Kombinér betingelser med and / or */</span><br>
+<span class="kat">@media</span> (min-width: <span class="km">768px</span>) <span class="kv">and</span> (orientation: <span class="km">landscape</span>) { }<br><br>
+<span class="kc">/* Print */</span><br>
+<span class="kat">@media</span> <span class="km">print</span> {<br>
+&nbsp;&nbsp;<span class="ks">.nav, .sidebar, .annonce</span> { <span class="kp">display</span>: <span class="kv">none</span>; }<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ OVERVIEW ═══ -->
+
+<!-- ═══ RESET & NORMALIZE ═══ -->
+<div class="section" id="reset">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(148,163,184,.12)">🧹</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(148,163,184,.15);color:var(--c-misc);border:1px solid rgba(148,163,184,.3)">Grundlag</span>
+      <div class="section-title">CSS Reset & Normalize</div>
+    </div>
+  </div>
+  <p class="section-desc">Browsere har deres egne standard-styles for HTML-elementer. Et reset eller normalize fjerner eller udjævner disse forskelle, så du starter fra et forudsigeligt udgangspunkt.</p>
+
+  <div class="card" id="c-reset">
+    <div class="card-header" onclick="tog('c-reset')">
+      <span class="card-symbol" style="color:var(--c-misc)">* { margin:0 }<br>normalize<br>modern reset</span>
+      <div class="card-info"><div class="card-name">Reset vs. Normalize</div><div class="card-tagline">Fjern browser-defaults for konsistent udgangspunkt</div></div>
+      <div class="card-pills"><span class="pill">cross-browser</span><span class="pill">defaults</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>To tilgange</h4>
+          <p><strong style="color:var(--c-misc)">CSS Reset</strong> — fjerner ALT. Margin, padding, border-styles, font-størrelser m.m. Du bygger alt op selv. Eric Meyer's reset er klassikeren.</p>
+          <p><strong style="color:var(--c-misc)">Normalize.css</strong> — udjævner forskelle, men beholder nyttige browser-defaults. Fx. bevarer den <code>h1</code>'s store skrift, men gør den konsistent på tværs af browsere.</p>
+          <p><strong style="color:var(--c-misc)">Modern reset</strong> — moderne tilgang der tager det bedste fra begge. Inkluderer vigtige accessibility-fixes og typiske best-practices.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* ── Modern CSS Reset (anbefalet udgangspunkt) ── */</span><br>
+<span class="ks">*, *::before, *::after</span> {<br>
+&nbsp;&nbsp;<span class="kp">box-sizing</span>: <span class="kv">border-box</span>;<br>
+&nbsp;&nbsp;<span class="kp">margin</span>: <span class="kv">0</span>;<br>
+&nbsp;&nbsp;<span class="kp">padding</span>: <span class="kv">0</span>;<br>
+}<br>
+<span class="ks">html</span> {<br>
+&nbsp;&nbsp;<span class="kp">-webkit-text-size-adjust</span>: <span class="kv">100%</span>; <span class="kc">/* iOS rotation fix */</span><br>
+&nbsp;&nbsp;<span class="kp">scroll-behavior</span>: <span class="kv">smooth</span>;<br>
+}<br>
+<span class="ks">body</span> {<br>
+&nbsp;&nbsp;<span class="kp">min-height</span>: <span class="kv">100vh</span>;<br>
+&nbsp;&nbsp;<span class="kp">line-height</span>: <span class="kv">1.6</span>;<br>
+&nbsp;&nbsp;<span class="kp">-webkit-font-smoothing</span>: <span class="kv">antialiased</span>;<br>
+}<br>
+<span class="ks">img, picture, video, canvas, svg</span> {<br>
+&nbsp;&nbsp;<span class="kp">display</span>: <span class="kv">block</span>;<br>
+&nbsp;&nbsp;<span class="kp">max-width</span>: <span class="kv">100%</span>; <span class="kc">/* aldrig bredere end container */</span><br>
+}<br>
+<span class="ks">input, button, textarea, select</span> {<br>
+&nbsp;&nbsp;<span class="kp">font</span>: <span class="kv">inherit</span>; <span class="kc">/* form-elementer arver ikke font som standard */</span><br>
+}<br>
+<span class="ks">p, h1, h2, h3, h4, h5, h6</span> {<br>
+&nbsp;&nbsp;<span class="kp">overflow-wrap</span>: <span class="kv">break-word</span>; <span class="kc">/* undgå horisontalt overflow */</span><br>
+}<br>
+<span class="ks">ul[role="list"], ol[role="list"]</span> {<br>
+&nbsp;&nbsp;<span class="kp">list-style</span>: <span class="kv">none</span>; <span class="kc">/* fjern bullets fra navigations-lister */</span><br>
+}
+        </div>
+        <div class="dd span2">
+          <div class="do"><strong>✓ Altid inkluder</strong><ul>
+            <li><code>box-sizing: border-box</code> på alle elementer</li>
+            <li><code>max-width: 100%</code> på billeder</li>
+            <li><code>font: inherit</code> på form-elementer</li>
+            <li><code>line-height</code> på body</li>
+          </ul></div>
+          <div class="dont"><strong>✗ Pas på</strong><ul>
+            <li>Et fuldt reset nulstiller OGSÅ nyttige ting som <code>:focus</code>-outline</li>
+            <li>Husk at genindsætte focus-styles for tilgængelighed</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FARVER ═══ -->
+<div class="section" id="colors">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(244,114,182,.12)">🎨</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(244,114,182,.15);color:var(--c-colors);border:1px solid rgba(244,114,182,.3)">Farver & Styling</span>
+      <div class="section-title">Farver & Farveformater</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS understøtter mange farveformater. At kende dem alle giver dig fuld kontrol over farver, gennemsigtighed og dynamiske farveberegninger.</p>
+
+  <div class="card" id="c-colors-formats">
+    <div class="card-header" onclick="tog('c-colors-formats')">
+      <span class="card-symbol" style="color:var(--c-colors)">#hex<br>rgb / rgba<br>hsl / hsla<br>oklch</span>
+      <div class="card-info"><div class="card-name">Farveformater</div><div class="card-tagline">Seks måder at angive farver i CSS</div></div>
+      <div class="card-pills"><span class="pill">color</span><span class="pill">opacity</span><span class="pill">oklch</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Farveformater</h4>
+          <p><strong style="color:var(--c-colors)">#hex</strong> — <code>#rrggbb</code> eller kort form <code>#rgb</code>. Ingen alpha-kanal i standard hex, men <code>#rrggbbaa</code> understøttes i moderne browsere.</p>
+          <p><strong style="color:var(--c-colors)">rgb() / rgba()</strong> — rød, grøn, blå (0–255). <code>rgba(0,0,0,0.5)</code> = halvgennemsigtig sort.</p>
+          <p><strong style="color:var(--c-colors)">hsl() / hsla()</strong> — Hue (0–360°), Saturation (%), Lightness (%). Meget intuitivt til at lave farve-varianter.</p>
+          <p><strong style="color:var(--c-colors)">oklch()</strong> — moderne, perceptuelt ensartet farverum. Bedre til at beregne kontrast-sikre farver og farveinterpolation i gradienter.</p>
+          <p><strong style="color:var(--c-colors)">currentColor</strong> — arver elementets aktuelle <code>color</code>-egenskab. Nyttigt til borders og SVG-fills.</p>
+          <p><strong style="color:var(--c-colors)">transparent</strong> — nøgleord for fuldt gennemsigtig.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Hex */</span><br>
+<span class="ks">.el</span> { <span class="kp">color</span>: <span class="kv">#e83e8c</span>; }<br>
+<span class="ks">.el</span> { <span class="kp">color</span>: <span class="kv">#f00</span>; }         <span class="kc">/* kort form = #ff0000 */</span><br><br>
+<span class="kc">/* RGB / RGBA */</span><br>
+<span class="ks">.el</span> { <span class="kp">background</span>: <span class="kv">rgb(59 130 246)</span>; }     <span class="kc">/* moderne syntax */</span><br>
+<span class="ks">.el</span> { <span class="kp">background</span>: <span class="kv">rgba(0, 0, 0, 0.4)</span>; }  <span class="kc">/* 40% sort */</span><br><br>
+<span class="kc">/* HSL — nemmest at forstå visuelt */</span><br>
+<span class="ks">.el</span> { <span class="kp">color</span>: <span class="kv">hsl(210, 80%, 55%)</span>; }<br>
+<span class="ks">.el-lys</span> { <span class="kp">color</span>: <span class="kv">hsl(210, 80%, 75%)</span>; } <span class="kc">/* lysere variant */</span><br>
+<span class="ks">.el-mrk</span>  { <span class="kp">color</span>: <span class="kv">hsl(210, 80%, 35%)</span>; } <span class="kc">/* mørkere variant */</span><br><br>
+<span class="kc">/* OKLCH — moderne anbefaling */</span><br>
+<span class="ks">.el</span> { <span class="kp">color</span>: <span class="kv">oklch(65% 0.2 240)</span>; } <span class="kc">/* L% C H */</span><br><br>
+<span class="kc">/* currentColor — arver color-egenskaben */</span><br>
+<span class="ks">.ikon</span> {<br>
+&nbsp;&nbsp;<span class="kp">color</span>: <span class="kv">royalblue</span>;<br>
+&nbsp;&nbsp;<span class="kp">border</span>: <span class="kv">2px solid currentColor</span>; <span class="kc">/* samme blå */</span><br>
+&nbsp;&nbsp;<span class="kp">fill</span>: <span class="kv">currentColor</span>; <span class="kc">/* SVG-fill følger med */</span><br>
+}
+        </div>
+        <div class="demo span2">
+          <h4>🎛 Farveformat-demo</h4>
+          <div class="demo-frame" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px">
+            <div style="height:60px;border-radius:6px;background:#e83e8c;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:#fff">#e83e8c</div>
+            <div style="height:60px;border-radius:6px;background:rgb(59,130,246);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:#fff">rgb(59,130,246)</div>
+            <div style="height:60px;border-radius:6px;background:hsl(142,71%,45%);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:#fff">hsl(142,71%,45%)</div>
+            <div style="height:60px;border-radius:6px;background:rgba(255,100,0,0.6);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:#fff">rgba(.6 alpha)</div>
+            <div style="height:60px;border-radius:6px;background:transparent;border:2px dashed #555;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">transparent</div>
+            <div style="height:60px;border-radius:6px;background:linear-gradient(135deg,hsl(270,80%,60%),hsl(200,80%,60%));display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:#fff">HSL gradient</div>
+          </div>
+        </div>
+        <div class="explain span2">
+          <h4>opacity vs. rgba — hvad er forskellen?</h4>
+          <p><code>opacity: 0.5</code> gør <em>elementet og ALT dets indhold</em> gennemsigtigt — tekst, borders, children. Det kan ikke nedarves i omvendt retning.<br>
+          <code>rgba(0,0,0,0.5)</code> eller <code>hsl(0,0%,0%,50%)</code> gør kun <em>den specifikke farve</em> gennemsigtig — f.eks. baggrund, mens teksten forbliver fuldt synlig.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="c-colors-props">
+    <div class="card-header" onclick="tog('c-colors-props')">
+      <span class="card-symbol" style="color:var(--c-colors)">color<br>background-color<br>opacity<br>color-scheme</span>
+      <div class="card-info"><div class="card-name">Farve-egenskaber</div><div class="card-tagline">Alle steder CSS-farver bruges</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Hvor bruges farver?</h4>
+          <table class="prop-table">
+            <tr><th>Egenskab</th><th>Hvad den farver</th></tr>
+            <tr><td><code>color</code></td><td>Tekst (og currentColor-referencer)</td></tr>
+            <tr><td><code>background-color</code></td><td>Elementets baggrund</td></tr>
+            <tr><td><code>border-color</code></td><td>Kant-farve</td></tr>
+            <tr><td><code>outline-color</code></td><td>Outline (focus-ring)</td></tr>
+            <tr><td><code>box-shadow</code></td><td>Skyggefarve (del af shorthand)</td></tr>
+            <tr><td><code>text-shadow</code></td><td>Tekst-skygge</td></tr>
+            <tr><td><code>caret-color</code></td><td>Markør-farve i input-felter</td></tr>
+            <tr><td><code>fill</code> / <code>stroke</code></td><td>SVG-farver</td></tr>
+            <tr><td><code>accent-color</code></td><td>Farve på checkboxes, radio, range</td></tr>
+            <tr><td><code>color-scheme</code></td><td>Fortæl browseren light/dark preference</td></tr>
+          </table>
+        </div>
+        <div class="cb">
+<span class="ks">.knap</span> {<br>
+&nbsp;&nbsp;<span class="kp">color</span>: <span class="kv">white</span>;               <span class="kc">/* tekst */</span><br>
+&nbsp;&nbsp;<span class="kp">background-color</span>: <span class="kv">#3b82f6</span>; <span class="kc">/* baggrund */</span><br>
+&nbsp;&nbsp;<span class="kp">border-color</span>: <span class="kv">#2563eb</span>;    <span class="kc">/* kant */</span><br>
+}<br><br>
+<span class="kc">/* accent-color — style native form-elementer */</span><br>
+<span class="ks">:root</span> { <span class="kp">accent-color</span>: <span class="kv">#3b82f6</span>; }<br><br>
+<span class="kc">/* caret-color — blinkende markør */</span><br>
+<span class="ks">input</span> { <span class="kp">caret-color</span>: <span class="kv">hotpink</span>; }<br><br>
+<span class="kc">/* color-scheme — dark mode native UI */</span><br>
+<span class="ks">:root</span> { <span class="kp">color-scheme</span>: <span class="kv">dark light</span>; }<br><br>
+<span class="kc">/* Brug CSS variabler til konsistent farvepalette */</span><br>
+<span class="ks">:root</span> {<br>
+&nbsp;&nbsp;<span class="kn">--clr-primær</span>: <span class="kv">hsl(220, 90%, 56%)</span>;<br>
+&nbsp;&nbsp;<span class="kn">--clr-primær-lys</span>: <span class="kv">hsl(220, 90%, 70%)</span>;<br>
+&nbsp;&nbsp;<span class="kn">--clr-primær-mrk</span>: <span class="kv">hsl(220, 90%, 40%)</span>;<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ BORDERS ═══ -->
+<div class="section" id="borders">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(163,230,53,.12)">▢</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(163,230,53,.15);color:var(--c-borders);border:1px solid rgba(163,230,53,.3)">Farver & Styling</span>
+      <div class="section-title">Borders & Outline</div>
+    </div>
+  </div>
+  <p class="section-desc">Border og outline ligner hinanden, men opfører sig meget forskelligt. Border tager plads i box model. Outline gør ikke — og bruges primært til fokus-styling.</p>
+
+  <div class="card" id="c-border">
+    <div class="card-header" onclick="tog('c-border')">
+      <span class="card-symbol" style="color:var(--c-borders)">border<br>border-radius<br>border-image<br>outline</span>
+      <div class="card-info"><div class="card-name">Border-egenskaber</div><div class="card-tagline">Kanter, afrunding og fokus-ringe</div></div>
+      <div class="card-pills"><span class="pill">border-radius</span><span class="pill">outline</span><span class="pill">border-image</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Border vs. Outline</h4>
+          <p><code>border</code> — en del af box model. Tager plads. Kan styles individuelt per side.</p>
+          <p><code>outline</code> — tegnes <em>uden for</em> elementet. Tager ingen plads, forskydes ikke layout. Bruges til focus-rings — fjern aldrig <code>outline: none</code> uden alternativ!</p>
+          <p><code>border-radius</code> — afrunder hjørner. <code>50%</code> = cirkel. Kan sættes individuelt per hjørne.</p>
+          <p><code>border-image</code> — brug et billede eller gradient som border.</p>
+          <p><code>outline-offset</code> — afstand mellem elementet og outline-linjen.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Border shorthand: bredde stil farve */</span><br>
+<span class="ks">.kort</span> {<br>
+&nbsp;&nbsp;<span class="kp">border</span>: <span class="kv">1px solid #ddd</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-radius</span>: <span class="kv">12px</span>;<br>
+}<br><br>
+<span class="kc">/* Individuelle sider */</span><br>
+<span class="ks">.input</span> {<br>
+&nbsp;&nbsp;<span class="kp">border</span>: <span class="kv">none</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-bottom</span>: <span class="kv">2px solid #ccc</span>;<br>
+}<br>
+<span class="ks">.input:focus</span> { <span class="kp">border-bottom-color</span>: <span class="kv">#3b82f6</span>; }<br><br>
+<span class="kc">/* Afrunding per hjørne: top-left top-right bottom-right bottom-left */</span><br>
+<span class="ks">.pille</span> { <span class="kp">border-radius</span>: <span class="kv">999px</span>; } <span class="kc">/* perfekt pille */</span><br>
+<span class="ks">.cirkel</span> { <span class="kp">border-radius</span>: <span class="kv">50%</span>; }    <span class="kc">/* cirkel */</span><br>
+<span class="ks">.asym</span> { <span class="kp">border-radius</span>: <span class="kv">4px 16px 16px 4px</span>; }<br><br>
+<span class="kc">/* Outline til focus — tilgængelighed */</span><br>
+<span class="ks">:focus-visible</span> {<br>
+&nbsp;&nbsp;<span class="kp">outline</span>: <span class="kv">2px solid #3b82f6</span>;<br>
+&nbsp;&nbsp;<span class="kp">outline-offset</span>: <span class="kv">3px</span>;<br>
+}<br><br>
+<span class="kc">/* Gradient border med border-image */</span><br>
+<span class="ks">.fancy-border</span> {<br>
+&nbsp;&nbsp;<span class="kp">border</span>: <span class="kv">2px solid transparent</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-image</span>: <span class="kfn">linear-gradient</span>(<span class="kv">90deg, #e83e8c, #3b82f6</span>) <span class="kv">1</span>;<br>
+}
+        </div>
+        <div class="demo span2">
+          <h4>👁 Border-styles demo</h4>
+          <div class="demo-frame" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+            <div style="width:70px;height:50px;border:2px solid #a3e635;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--c-borders)">solid</div>
+            <div style="width:70px;height:50px;border:2px dashed #a3e635;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--c-borders)">dashed</div>
+            <div style="width:70px;height:50px;border:3px dotted #a3e635;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--c-borders)">dotted</div>
+            <div style="width:70px;height:50px;border:3px double #a3e635;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--c-borders)">double</div>
+            <div style="width:70px;height:50px;border-radius:999px;border:2px solid #a3e635;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--c-borders)">pille</div>
+            <div style="width:50px;height:50px;border-radius:50%;border:2px solid #a3e635;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--c-borders)">cirkel</div>
+            <div style="width:70px;height:50px;border:2px solid transparent;background:linear-gradient(#08080f,#08080f) padding-box,linear-gradient(135deg,#e83e8c,#3b82f6) border-box;border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;color:#e83e8c">gradient</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SHADOWS ═══ -->
+<div class="section" id="shadows">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(129,140,248,.12)">🌑</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(129,140,248,.15);color:var(--c-shadows);border:1px solid rgba(129,140,248,.3)">Farver & Styling</span>
+      <div class="section-title">Box Shadow & Text Shadow</div>
+    </div>
+  </div>
+  <p class="section-desc">Shadows tilføjer dybde og elevation til elementer. CSS understøtter både box-skygger på containere og text-skygger på tekst — med fuld kontrol over retning, spredning og farve.</p>
+
+  <div class="card" id="c-shadow">
+    <div class="card-header" onclick="tog('c-shadow')">
+      <span class="card-symbol" style="color:var(--c-shadows)">box-shadow<br>text-shadow<br>drop-shadow()<br>inset</span>
+      <div class="card-info"><div class="card-name">Shadow-egenskaber</div><div class="card-tagline">Dybde, elevation og glød</div></div>
+      <div class="card-pills"><span class="pill">elevation</span><span class="pill">inset</span><span class="pill">glow</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>box-shadow syntax</h4>
+          <p><code>box-shadow: x y blur spread farve</code></p>
+          <ul>
+            <li><strong>x</strong> — vandret offset (positiv = højre)</li>
+            <li><strong>y</strong> — lodret offset (positiv = nedad)</li>
+            <li><strong>blur</strong> — sløring (0 = skarp)</li>
+            <li><strong>spread</strong> — gør skyggen større/mindre</li>
+            <li><strong>inset</strong> — skygge <em>indeni</em> elementet</li>
+          </ul>
+          <p>Du kan stapele flere skygger med komma. <code>filter: drop-shadow()</code> følger elementets faktiske form (god til PNG med transparency).</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Simpel skygge */</span><br>
+<span class="ks">.kort</span> { <span class="kp">box-shadow</span>: <span class="kv">0 2px 8px rgba(0,0,0,.12)</span>; }<br><br>
+<span class="kc">/* Elevation-system (Material Design-stil) */</span><br>
+<span class="ks">.lav</span>  { <span class="kp">box-shadow</span>: <span class="kv">0 1px 3px rgba(0,0,0,.12)</span>; }<br>
+<span class="ks">.mid</span>  { <span class="kp">box-shadow</span>: <span class="kv">0 4px 16px rgba(0,0,0,.15)</span>; }<br>
+<span class="ks">.høj</span>  { <span class="kp">box-shadow</span>: <span class="kv">0 12px 40px rgba(0,0,0,.2)</span>; }<br><br>
+<span class="kc">/* Inset — fordybning / indre skygge */</span><br>
+<span class="ks">.input</span> { <span class="kp">box-shadow</span>: <span class="kv">inset 0 2px 4px rgba(0,0,0,.1)</span>; }<br><br>
+<span class="kc">/* Glød-effekt */</span><br>
+<span class="ks">.glød</span> { <span class="kp">box-shadow</span>: <span class="kv">0 0 20px rgba(59,130,246,.5)</span>; }<br><br>
+<span class="kc">/* Stablede skygger — mere realistisk */</span><br>
+<span class="ks">.naturlig</span> {<br>
+&nbsp;&nbsp;<span class="kp">box-shadow</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kv">0 1px 1px rgba(0,0,0,.06),</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kv">0 2px 4px rgba(0,0,0,.06),</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kv">0 4px 8px rgba(0,0,0,.06)</span>;<br>
+}<br><br>
+<span class="kc">/* text-shadow: x y blur farve */</span><br>
+<span class="ks">h1</span> { <span class="kp">text-shadow</span>: <span class="kv">2px 2px 4px rgba(0,0,0,.3)</span>; }<br>
+<span class="ks">.neon</span> { <span class="kp">text-shadow</span>: <span class="kv">0 0 10px #e83e8c, 0 0 30px #e83e8c</span>; }
+        </div>
+        <div class="demo span2">
+          <h4>👁 Shadow-demo</h4>
+          <div class="demo-frame" style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;padding:20px">
+            <div style="width:80px;height:60px;background:var(--surface2);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">lav</div>
+            <div style="width:80px;height:60px;background:var(--surface2);border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">mid</div>
+            <div style="width:80px;height:60px;background:var(--surface2);border-radius:8px;box-shadow:0 12px 40px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">høj</div>
+            <div style="width:80px;height:60px;background:var(--surface2);border-radius:8px;box-shadow:0 0 20px rgba(59,130,246,.6);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:#60a5fa">glow</div>
+            <div style="width:80px;height:60px;background:var(--surface2);border-radius:8px;box-shadow:inset 0 2px 6px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">inset</div>
+            <div style="font-size:22px;font-family:'Syne',sans-serif;font-weight:700;text-shadow:0 0 12px #f472b6, 0 0 30px #f472b6;color:#f472b6">neon text</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ WIDTH HEIGHT SIZING ═══ -->
+<div class="section" id="sizing">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(45,212,191,.12)">↕</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(45,212,191,.15);color:var(--c-sizing);border:1px solid rgba(45,212,191,.3)">Størrelse & Spacing</span>
+      <div class="section-title">Width, Height & Sizing</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS har mange måder at kontrollere elementers størrelse — faste mål, fleksible, og min/max-begrænsninger. At forstå hvornår man bruger hvad er afgørende for godt layout.</p>
+
+  <div class="card" id="c-sizing">
+    <div class="card-header" onclick="tog('c-sizing')">
+      <span class="card-symbol" style="color:var(--c-sizing)">width / height<br>min- / max-<br>aspect-ratio<br>fit-content</span>
+      <div class="card-info"><div class="card-name">Størrelses-egenskaber</div><div class="card-tagline">Faste, fleksible og begrænsede størrelser</div></div>
+      <div class="card-pills"><span class="pill">min-width</span><span class="pill">aspect-ratio</span><span class="pill">fit-content</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Størrelsesegenskaber</h4>
+          <p><code>width / height</code> — fast størrelse. Undgå fast <code>height</code> på tekst-containere.</p>
+          <p><code>min-width / min-height</code> — mindst X, må gerne vokse.</p>
+          <p><code>max-width / max-height</code> — højst X, må gerne krympe.</p>
+          <p><code>aspect-ratio</code> — bevar proportioner. Perfekt til billeder og video-wrappers.</p>
+          <p><code>width: fit-content</code> — vær så bred som indholdet kræver.</p>
+          <p><code>width: min-content</code> — krympet til mindste mulige bredde.</p>
+          <p><code>width: max-content</code> — bred nok til indholdet uden linjeskift.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Responsiv container — klassisk pattern */</span><br>
+<span class="ks">.container</span> {<br>
+&nbsp;&nbsp;<span class="kp">width</span>: <span class="kv">min(100%, 1200px)</span>;<br>
+&nbsp;&nbsp;<span class="kp">margin-inline</span>: <span class="kv">auto</span>; <span class="kc">/* centrering */</span><br>
+&nbsp;&nbsp;<span class="kp">padding-inline</span>: <span class="kv">1.5rem</span>;<br>
+}<br><br>
+<span class="kc">/* Aldrig kortere end 200px, aldrig bredere end 400px */</span><br>
+<span class="ks">.kort</span> {<br>
+&nbsp;&nbsp;<span class="kp">min-width</span>: <span class="kv">200px</span>;<br>
+&nbsp;&nbsp;<span class="kp">max-width</span>: <span class="kv">400px</span>;<br>
+}<br><br>
+<span class="kc">/* aspect-ratio — bevar 16:9 */</span><br>
+<span class="ks">.video-wrapper</span> {<br>
+&nbsp;&nbsp;<span class="kp">width</span>: <span class="kv">100%</span>;<br>
+&nbsp;&nbsp;<span class="kp">aspect-ratio</span>: <span class="kv">16 / 9</span>;<br>
+}<br><br>
+<span class="kc">/* fit-content — kun så bred som nødvendigt */</span><br>
+<span class="ks">.tag</span> { <span class="kp">width</span>: <span class="kv">fit-content</span>; }<br><br>
+<span class="kc">/* Logiske egenskaber (block = lodret, inline = vandret) */</span><br>
+<span class="ks">.el</span> {<br>
+&nbsp;&nbsp;<span class="kp">block-size</span>: <span class="kv">200px</span>;    <span class="kc">/* = height */</span><br>
+&nbsp;&nbsp;<span class="kp">inline-size</span>: <span class="kv">100%</span>;   <span class="kc">/* = width */</span><br>
+&nbsp;&nbsp;<span class="kp">margin-block</span>: <span class="kv">1rem</span>;  <span class="kc">/* = margin-top + bottom */</span><br>
+&nbsp;&nbsp;<span class="kp">padding-inline</span>: <span class="kv">2rem</span>; <span class="kc">/* = padding-left + right */</span><br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SPACING ═══ -->
+<div class="section" id="spacing">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(52,211,153,.12)">⬜</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(52,211,153,.15);color:var(--c-spacing);border:1px solid rgba(52,211,153,.3)">Størrelse & Spacing</span>
+      <div class="section-title">Spacing-strategier</div>
+    </div>
+  </div>
+  <p class="section-desc">Afstand er halvdelen af et godt design. CSS har mange måder at håndtere spacing — og der er klare regler for hvornår du bruger margin, padding, gap eller inset.</p>
+
+  <div class="card" id="c-spacing">
+    <div class="card-header" onclick="tog('c-spacing')">
+      <span class="card-symbol" style="color:var(--c-spacing)">margin<br>padding<br>gap<br>inset</span>
+      <div class="card-info"><div class="card-name">Spacing-egenskaber</div><div class="card-tagline">Hvornår bruges margin, padding og gap?</div></div>
+      <div class="card-pills"><span class="pill">margin: auto</span><span class="pill">gap</span><span class="pill">margin-collapse</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Hvornår hvad?</h4>
+          <p><strong style="color:var(--c-spacing)">padding</strong> — luft <em>indeni</em> et element. Baggrund og border strækker sig ind i padding. Brug til intern luft i kort, knapper, sektioner.</p>
+          <p><strong style="color:var(--c-spacing)">margin</strong> — afstand <em>mellem</em> elementer. Transparent altid. <code>margin: auto</code> centrerer blok-elementer vandret. Pas på <strong>margin collapse</strong> — lodrette margins mellem blok-elementer smelter sammen til den største.</p>
+          <p><strong style="color:var(--c-spacing)">gap</strong> — afstand <em>mellem</em> flex- eller grid-items. Bedre end margin til dette formål, da det ikke tilføjer afstand på yderkanter.</p>
+          <p><strong style="color:var(--c-spacing)">inset</strong> — shorthand for top/right/bottom/left på positioned elementer.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Padding — intern luft */</span><br>
+<span class="ks">.kort</span> { <span class="kp">padding</span>: <span class="kv">1.5rem</span>; }<br>
+<span class="ks">.knap</span> { <span class="kp">padding</span>: <span class="kv">.6em 1.2em</span>; }<br><br>
+<span class="kc">/* Margin — afstand til andre elementer */</span><br>
+<span class="ks">.afsnit</span> { <span class="kp">margin-bottom</span>: <span class="kv">1rem</span>; }<br>
+<span class="ks">.centrer</span> { <span class="kp">margin-inline</span>: <span class="kv">auto</span>; } <span class="kc">/* centrering */</span><br><br>
+<span class="kc">/* Gap — i flex/grid */</span><br>
+<span class="ks">.flex-row</span> { <span class="kp">display</span>: <span class="kv">flex</span>; <span class="kp">gap</span>: <span class="kv">1rem</span>; }<br>
+<span class="ks">.grid</span> { <span class="kp">display</span>: <span class="kv">grid</span>; <span class="kp">gap</span>: <span class="kv">1rem 2rem</span>; } <span class="kc">/* row col */</span><br><br>
+<span class="kc">/* inset — shorthand for positioned elementer */</span><br>
+<span class="ks">.overlay</span> {<br>
+&nbsp;&nbsp;<span class="kp">position</span>: <span class="kv">absolute</span>;<br>
+&nbsp;&nbsp;<span class="kp">inset</span>: <span class="kv">0</span>; <span class="kc">/* = top:0 right:0 bottom:0 left:0 */</span><br>
+}<br><br>
+<span class="kc">/* Spacing-skala med CSS-variabler */</span><br>
+<span class="ks">:root</span> {<br>
+&nbsp;&nbsp;<span class="kn">--s-xs</span>: <span class="kv">.25rem</span>;  <span class="kn">--s-sm</span>: <span class="kv">.5rem</span>;<br>
+&nbsp;&nbsp;<span class="kn">--s-md</span>: <span class="kv">1rem</span>;    <span class="kn">--s-lg</span>: <span class="kv">2rem</span>;<br>
+&nbsp;&nbsp;<span class="kn">--s-xl</span>: <span class="kv">4rem</span>;    <span class="kn">--s-2xl</span>: <span class="kv">8rem</span>;<br>
+}
+        </div>
+        <div class="explain span2">
+          <h4>⚠️ Margin Collapse</h4>
+          <p>Lodrette margins på blok-elementer <em>smelter</em> (collapper) — de adderes ikke, den største vinder. F.eks. en <code>h2</code> med <code>margin-bottom: 24px</code> efterfulgt af et <code>p</code> med <code>margin-top: 16px</code> giver <em>24px</em> afstand, ikke 40px. Collapse sker ikke ved: flex/grid-containers, floated elementer, eller <code>overflow: hidden</code>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CURSOR ═══ -->
+<div class="section" id="cursor">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(148,163,184,.12)">🖱</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(148,163,184,.15);color:var(--c-misc);border:1px solid rgba(148,163,184,.3)">Størrelse & Spacing</span>
+      <div class="section-title">Cursor & Pointer Events</div>
+    </div>
+  </div>
+  <p class="section-desc">Cursor-egenskaben styrer musepegens udseende. Pointer-events styrer om og hvordan et element reagerer på mus-interaktion.</p>
+
+  <div class="card" id="c-cursor">
+    <div class="card-header" onclick="tog('c-cursor')">
+      <span class="card-symbol" style="color:var(--c-misc)">cursor<br>pointer-events<br>user-select<br>touch-action</span>
+      <div class="card-info"><div class="card-name">Interaktions-egenskaber</div><div class="card-tagline">Kontrol over mus, touch og tekstvalg</div></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>cursor-værdier</h4>
+          <table class="prop-table">
+            <tr><th>Værdi</th><th>Bruges til</th></tr>
+            <tr><td><code>default</code></td><td>Standard pil</td></tr>
+            <tr><td><code>pointer</code></td><td>Klikbar ting (hånd)</td></tr>
+            <tr><td><code>text</code></td><td>Tekst der kan markeres</td></tr>
+            <tr><td><code>move</code></td><td>Flytbart element</td></tr>
+            <tr><td><code>grab / grabbing</code></td><td>Drag-elementer</td></tr>
+            <tr><td><code>not-allowed</code></td><td>Deaktiveret</td></tr>
+            <tr><td><code>zoom-in/out</code></td><td>Zoom-kontrol</td></tr>
+            <tr><td><code>crosshair</code></td><td>Præcisionsvalg</td></tr>
+            <tr><td><code>wait</code></td><td>Loading</td></tr>
+          </table>
+        </div>
+        <div class="cb">
+<span class="ks">button</span> { <span class="kp">cursor</span>: <span class="kv">pointer</span>; }<br>
+<span class="ks">button:disabled</span> { <span class="kp">cursor</span>: <span class="kv">not-allowed</span>; }<br>
+<span class="ks">.drag-item</span> { <span class="kp">cursor</span>: <span class="kv">grab</span>; }<br>
+<span class="ks">.drag-item:active</span> { <span class="kp">cursor</span>: <span class="kv">grabbing</span>; }<br><br>
+<span class="kc">/* pointer-events — deaktiver klik */</span><br>
+<span class="ks">.overlay</span> { <span class="kp">pointer-events</span>: <span class="kv">none</span>; }   <span class="kc">/* klik går igennem */</span><br>
+<span class="ks">.aktiv</span>   { <span class="kp">pointer-events</span>: <span class="kv">auto</span>; }   <span class="kc">/* normal */</span><br><br>
+<span class="kc">/* user-select — tillad/forhind tekstvalg */</span><br>
+<span class="ks">.ingen-valg</span> { <span class="kp">user-select</span>: <span class="kv">none</span>; }  <span class="kc">/* UI-elementer */</span><br>
+<span class="ks">.alt-valg</span>   { <span class="kp">user-select</span>: <span class="kv">all</span>; }   <span class="kc">/* klik markerer alt */</span><br><br>
+<span class="kc">/* touch-action — touch-optimering */</span><br>
+<span class="ks">.scroll-x</span> { <span class="kp">touch-action</span>: <span class="kv">pan-x</span>; }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ LISTER ═══ -->
+<div class="section" id="lists">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(249,115,22,.12)">≡</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(249,115,22,.15);color:var(--c-comp);border:1px solid rgba(249,115,22,.3)">Komponenter</span>
+      <div class="section-title">Lister & CSS Counters</div>
+    </div>
+  </div>
+  <p class="section-desc">CSS har kraftfulde værktøjer til at style og tilpasse lister — og med CSS Counters kan du lave automatisk nummerering og avancerede tæller-systemer helt uden JavaScript.</p>
+
+  <div class="card" id="c-lists">
+    <div class="card-header" onclick="tog('c-lists')">
+      <span class="card-symbol" style="color:var(--c-comp)">list-style<br>counter-reset<br>counter-increment<br>content:counter</span>
+      <div class="card-info"><div class="card-name">List-egenskaber & Counters</div><div class="card-tagline">Tilpas bullets, nummerering og tælle-logik</div></div>
+      <div class="card-pills"><span class="pill">list-style-type</span><span class="pill">counters</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>List-styling</h4>
+          <p><code>list-style-type</code> — disc, circle, square, decimal, lower-roman, none osv.</p>
+          <p><code>list-style-image</code> — brug et billede som bullet.</p>
+          <p><code>list-style-position</code> — inside/outside (om bullet er inden for eller uden for tekstflow).</p>
+          <br>
+          <h4>CSS Counters</h4>
+          <p><code>counter-reset: navn</code> — nulstil tæller.</p>
+          <p><code>counter-increment: navn</code> — tæl op ved hvert element.</p>
+          <p><code>content: counter(navn)</code> — vis tæller i <code>::before</code>.</p>
+        </div>
+        <div class="cb">
+<span class="kc">/* Simpel list-styling */</span><br>
+<span class="ks">ul.navliste</span> { <span class="kp">list-style</span>: <span class="kv">none</span>; <span class="kp">padding</span>: <span class="kv">0</span>; }<br><br>
+<span class="kc">/* Custom bullet med ::before */</span><br>
+<span class="ks">ul.check li::before</span> {<br>
+&nbsp;&nbsp;<span class="kp">content</span>: <span class="kstr">"✓ "</span>;<br>
+&nbsp;&nbsp;<span class="kp">color</span>: <span class="kv">green</span>;<br>
+&nbsp;&nbsp;<span class="kp">font-weight</span>: <span class="kv">bold</span>;<br>
+}<br><br>
+<span class="kc">/* CSS Counter — auto-nummerering */</span><br>
+<span class="ks">ol.trin</span> {<br>
+&nbsp;&nbsp;<span class="kp">list-style</span>: <span class="kv">none</span>;<br>
+&nbsp;&nbsp;<span class="kp">counter-reset</span>: <span class="kv">trin-tæller</span>;<br>
+}<br>
+<span class="ks">ol.trin li</span> {<br>
+&nbsp;&nbsp;<span class="kp">counter-increment</span>: <span class="kv">trin-tæller</span>;<br>
+}<br>
+<span class="ks">ol.trin li::before</span> {<br>
+&nbsp;&nbsp;<span class="kp">content</span>: <span class="kfn">counter</span>(<span class="kv">trin-tæller</span>) <span class="kstr">". "</span>;<br>
+&nbsp;&nbsp;<span class="kp">font-weight</span>: <span class="kv">bold</span>;<br>
+&nbsp;&nbsp;<span class="kp">color</span>: <span class="kv">royalblue</span>;<br>
+}<br><br>
+<span class="kc">/* Kapitelnummerering med indlejrede tællere */</span><br>
+<span class="ks">body</span> { <span class="kp">counter-reset</span>: <span class="kv">kapitel</span>; }<br>
+<span class="ks">h2::before</span> {<br>
+&nbsp;&nbsp;<span class="kp">counter-increment</span>: <span class="kv">kapitel</span>;<br>
+&nbsp;&nbsp;<span class="kp">content</span>: <span class="kstr">"Kapitel "</span> <span class="kfn">counter</span>(<span class="kv">kapitel</span>) <span class="kstr">": "</span>;<br>
+}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FORMS ═══ -->
+<div class="section" id="forms">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(249,115,22,.12)">📝</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(249,115,22,.15);color:var(--c-comp);border:1px solid rgba(249,115,22,.3)">Komponenter</span>
+      <div class="section-title">Formularer & Form-styling</div>
+    </div>
+  </div>
+  <p class="section-desc">Form-elementer er notorisk svære at style på tværs af browsere. Her er de vigtigste teknikker til at lave konsistente, tilgængelige og smukke formularer.</p>
+
+  <div class="card" id="c-forms">
+    <div class="card-header" onclick="tog('c-forms')">
+      <span class="card-symbol" style="color:var(--c-comp)">input / select<br>:focus<br>:valid/:invalid<br>appearance</span>
+      <div class="card-info"><div class="card-name">Form-elementer</div><div class="card-tagline">Input, select, textarea og native form-styling</div></div>
+      <div class="card-pills"><span class="pill">:focus-visible</span><span class="pill">:valid</span><span class="pill">appearance:none</span></div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="card-body">
+      <div class="card-grid">
+        <div class="explain">
+          <h4>Vigtige pseudo-klasser for forms</h4>
+          <table class="prop-table">
+            <tr><th>Pseudo-klasse</th><th>Hvornår</th></tr>
+            <tr><td><code>:focus</code></td><td>Elementet er i fokus</td></tr>
+            <tr><td><code>:focus-visible</code></td><td>Fokus via tastatur (ikke mus)</td></tr>
+            <tr><td><code>:hover</code></td><td>Mus over elementet</td></tr>
+            <tr><td><code>:disabled</code></td><td>Deaktiveret felt</td></tr>
+            <tr><td><code>:valid</code></td><td>Gyldigt indhold (HTML5 validation)</td></tr>
+            <tr><td><code>:invalid</code></td><td>Ugyldigt indhold</td></tr>
+            <tr><td><code>:placeholder-shown</code></td><td>Placeholder vises</td></tr>
+            <tr><td><code>:checked</code></td><td>Checkbox/radio valgt</td></tr>
+            <tr><td><code>:required</code></td><td>Obligatorisk felt</td></tr>
+          </table>
+        </div>
+        <div class="cb">
+<span class="kc">/* Basis input-reset + styling */</span><br>
+<span class="ks">input, textarea, select</span> {<br>
+&nbsp;&nbsp;<span class="kp">appearance</span>: <span class="kv">none</span>; <span class="kc">/* fjern browser-styling */</span><br>
+&nbsp;&nbsp;<span class="kp">font</span>: <span class="kv">inherit</span>;<br>
+&nbsp;&nbsp;<span class="kp">width</span>: <span class="kv">100%</span>;<br>
+&nbsp;&nbsp;<span class="kp">padding</span>: <span class="kv">.6rem .9rem</span>;<br>
+&nbsp;&nbsp;<span class="kp">border</span>: <span class="kv">1px solid #ccc</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-radius</span>: <span class="kv">6px</span>;<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kv">white</span>;<br>
+&nbsp;&nbsp;<span class="kp">color</span>: <span class="kv">inherit</span>;<br>
+&nbsp;&nbsp;<span class="kp">transition</span>: <span class="kv">border-color .2s, box-shadow .2s</span>;<br>
+}<br>
+<span class="ks">input:focus, textarea:focus</span> {<br>
+&nbsp;&nbsp;<span class="kp">outline</span>: <span class="kv">none</span>;<br>
+&nbsp;&nbsp;<span class="kp">border-color</span>: <span class="kv">#3b82f6</span>;<br>
+&nbsp;&nbsp;<span class="kp">box-shadow</span>: <span class="kv">0 0 0 3px rgba(59,130,246,.25)</span>;<br>
+}<br>
+<span class="ks">input:disabled</span> {<br>
+&nbsp;&nbsp;<span class="kp">background</span>: <span class="kv">#f5f5f5</span>;<br>
+&nbsp;&nbsp;<span class="kp">cursor</span>: <span class="kv">not-allowed</span>;<br>
+&nbsp;&nbsp;<span class="kp">opacity</span>: <span class="kv">.6</span>;<br>
+}<br><br>
+<span class="kc">/* Validering */</span><br>
+<span class="ks">input:valid</span>   { <span class="kp">border-color</span>: <span class="kv">#22c55e</span>; }<br>
+<span class="ks">input:invalid:not(:placeholder-shown)</span> {<br>
+&nbsp;&nbsp;<span class="kp">border-color</span>: <span class="kv">#ef4444</span>;<br>
+}<br><br>
+<span class="kc">/* ::placeholder */</span><br>
+<span class="ks">input::placeholder</span> { <span class="kp">color</span>: <span class="kv">#aaa</span>; <span class="kp">font-style</span>: <span class="kv">italic</span>; }
+        </div>
+        <div class="dd span2">
+          <div class="do"><strong>✓ Tilgængelighed</strong><ul>
+            <li>Stil altid <code>:focus-visible</code> — aldrig <code>outline:none</code> alene</li>
+            <li>Brug <code>label</code> elementer knyttet til inputs</li>
+            <li>Tilstrækkelig kontrast på placeholder-tekst</li>
+            <li><code>:disabled</code> skal visuelt adskille sig tydeligt</li>
+          </ul></div>
+          <div class="dont"><strong>✗ Undgå</strong><ul>
+            <li>Fjern aldrig focus-styling uden erstatning</li>
+            <li>Undgå <code>:invalid</code> på tom side-load — brug <code>:not(:placeholder-shown)</code></li>
+            <li>Ikke stole kun på farve til valideringsfeedback</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="overview" style="background:var(--surface)">
+  <div class="section-header">
+    <div class="section-icon" style="background:rgba(226,255,90,.08)">📋</div>
+    <div class="section-meta">
+      <span class="section-badge" style="background:rgba(226,255,90,.1);color:var(--accent);border:1px solid rgba(226,255,90,.25)">Reference</span>
+      <div class="section-title">Komplet oversigt</div>
+    </div>
+  </div>
+  <p class="section-desc">En hurtig reference over alle emner i dette opslagsværk — hvornår bruges hvad.</p>
+
+  <table class="overview-table">
+    <thead><tr><th>Emne</th><th>Hvornår bruges det?</th><th>Vigtigste egenskaber / begreber</th></tr></thead>
+    <tbody>
+      <tr><td class="ot-cat" style="color:var(--c-box)">Box Model</td><td>Altid — forstå dette først</td><td>margin, padding, border, box-sizing: border-box</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-sel)">Selektorer</td><td>Til at målrette præcis hvilke elementer der styles</td><td>element, .klasse, #id, A>B, A+B, [attr], :not()</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-sel)">Specificitet</td><td>Når CSS "ikke virker" som forventet</td><td>0,0,0 score — inline > ID > klasse > element</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-var)">CSS Variabler</td><td>Til temaer, genbrugelige værdier, dark mode</td><td>--navn, var(--navn), :root</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-pos)">Positioning</td><td>Til overlays, modaler, sticky headers, badges</td><td>relative, absolute, fixed, sticky, top/left/z-index</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-layout)">Tables</td><td>Kun til tabulær data — aldrig til layout</td><td>border-collapse, th/td, nth-child</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-layout)">Floats</td><td>Billeder i artikeltekst, legacy code</td><td>float: left/right, clear, clearfix</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-flex)">Flexbox</td><td>Navigation, knapper, centrering, kortlister</td><td>display:flex, justify-content, align-items, gap, flex:1</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-grid)">CSS Grid</td><td>Sideopbygning, gallerier, komplekse 2D layouts</td><td>display:grid, fr, repeat(), minmax(), grid-area</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-overflow)">Display & Overflow</td><td>Kontrol af elementers flow og indholdsklipning</td><td>block, inline, none, overflow, text-overflow:ellipsis</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-zindex)">Z-index</td><td>Modaler, dropdowns, overlays — lag-rækkefølge</td><td>z-index + position, isolation:isolate, stacking context</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-typo)">Typografi</td><td>Til al tekststyling</td><td>font-family, font-size (rem!), line-height, letter-spacing</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-bg)">Baggrunde</td><td>Farver, billeder, gradienter, mønstre</td><td>background, linear-gradient, radial-gradient, background-size:cover</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-transform)">Transform</td><td>Visuelle forskydninger, hover-effekter, centrering</td><td>translate, rotate, scale, skew, filter</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-anim)">Animationer</td><td>Glidende overgange og bevægelses-sekvenser</td><td>transition, @keyframes, animation, easing</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-pseudo)">Pseudo</td><td>Tilstandsbaseret styling og dekorativt indhold</td><td>:hover, :focus, :nth-child, ::before, ::after, ::selection</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-misc)">Reset</td><td>Altid — sæt det op fra start</td><td>box-sizing:border-box, img:max-width, font:inherit</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-colors)">Farver</td><td>Alle farve-egenskaber og -formater</td><td>#hex, rgb(), hsl(), oklch(), opacity, currentColor</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-borders)">Borders</td><td>Kanter, afrunding og fokus-ringe</td><td>border, border-radius, outline, :focus-visible</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-shadows)">Shadows</td><td>Dybde og elevation</td><td>box-shadow (x y blur spread farve inset), text-shadow</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-sizing)">Sizing</td><td>Størrelseskontrol på elementer</td><td>min/max-width/height, aspect-ratio, fit-content</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-spacing)">Spacing</td><td>Afstand og layout-rytme</td><td>padding (intern), margin (ekstern), gap (flex/grid)</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-misc)">Cursor</td><td>Museinteraktion og touch</td><td>cursor, pointer-events, user-select</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-comp)">Lister</td><td>Bullet-styling og auto-nummerering</td><td>list-style, counter-reset, counter-increment</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-comp)">Formularer</td><td>Input, select og textarea</td><td>appearance:none, :focus, :valid, :disabled, ::placeholder</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-math)">Enheder</td><td>Altid relevant — vælg rigtigt for tilgængelighed</td><td>rem (skrift), px (borders), % (layout), vw/vh (viewport), fr (grid)</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-math)">Math-funktioner</td><td>Fluid skalering og dynamiske størrelser</td><td>clamp(), min(), max(), calc()</td></tr>
+      <tr><td class="ot-cat" style="color:var(--c-mq)">Media Queries</td><td>Responsivt design og device-præferencer</td><td>@media min-width, prefers-color-scheme, print, hover</td></tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top:28px;padding:20px;background:var(--surface2);border:1px solid var(--border2);border-radius:10px">
+    <div style="font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:12px">🏆 De vigtigste ting at huske</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-box);font-size:11px;margin-bottom:4px">Box Model</div>
+        Sæt altid <code style="color:var(--accent);font-size:12px">box-sizing: border-box</code> globalt
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-typo);font-size:11px;margin-bottom:4px">Skrift</div>
+        Brug <code style="color:var(--accent);font-size:12px">rem</code> til font-size — aldrig px
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-flex);font-size:11px;margin-bottom:4px">Layout</div>
+        Flex til 1D — Grid til 2D
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-mq);font-size:11px;margin-bottom:4px">Responsivt</div>
+        Mobile-first med <code style="color:var(--accent);font-size:12px">min-width</code>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-colors);font-size:11px;margin-bottom:4px">Farver</div>
+        Brug <code style="color:var(--accent);font-size:12px">hsl()</code> til farve-varianter — nemt at justere lysstyrke
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-borders);font-size:11px;margin-bottom:4px">Borders & Focus</div>
+        Fjern aldrig <code style="color:var(--accent);font-size:12px">outline</code> uden alternativ
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-spacing);font-size:11px;margin-bottom:4px">Spacing</div>
+        Brug <code style="color:var(--accent);font-size:12px">gap</code> i flex/grid — ikke margin på items
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-transform);font-size:11px;margin-bottom:4px">Animationer</div>
+        Brug <code style="color:var(--accent);font-size:12px">transform</code> — ikke top/left
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:12px;font-size:13px;color:#b0aec0;line-height:1.6">
+        <div style="font-family:'DM Mono',monospace;color:var(--c-pseudo);font-size:11px;margin-bottom:4px">Tilgængelighed</div>
+        Stil altid <code style="color:var(--accent);font-size:12px">:focus</code> — aldrig fjern outline
+      </div>
+    </div>
+  </div>
+</div>
+
+</main><!-- /main -->
+
+<script>
+// ── Toggle cards ──
+function tog(id) {
+  const el = document.getElementById(id);
+  if (el) el.classList.toggle('open');
+}
+
+// ── Navigate to section (navTo avoids conflict with window.scrollTo) ──
+function navTo(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Close mobile sidebar
+  if (window.innerWidth < 900) {
+    document.querySelector('.sidebar').classList.remove('open');
+  }
+  // Update active state immediately on click
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+  const clicked = document.querySelector(`.nav-link[data-target="${id}"]`);
+  if (clicked) clicked.classList.add('active');
+}
+
+// ── Reading progress ──
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const pct = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+  const bar = document.getElementById('progress');
+  if (bar) bar.style.width = pct + '%';
+});
+
+// ── Active nav on scroll ──
+const allSections = document.querySelectorAll('.section[id], .hero');
+const allNavLinks = document.querySelectorAll('.nav-link');
+
+const scrollObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      allNavLinks.forEach(l => l.classList.remove('active'));
+      const match = document.querySelector(`.nav-link[data-target="${e.target.id}"]`);
+      if (match) match.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+
+allSections.forEach(s => scrollObserver.observe(s));
+
+// ── Search ──
+function filterNav(q) {
+  const term = q.toLowerCase().trim();
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.style.display = (!term || link.textContent.toLowerCase().includes(term)) ? '' : 'none';
+  });
+  // Also show/hide group labels if all links in group are hidden
+  document.querySelectorAll('.nav-group').forEach(group => {
+    const visible = [...group.querySelectorAll('.nav-link')].some(l => l.style.display !== 'none');
+    group.style.display = visible ? '' : 'none';
+  });
+}
+
+// ── Demo helpers ──
+function applyTransform(val) {
+  const el = document.getElementById('tx-box');
+  if (el) el.style.transform = val;
+}
+function applyAnim(val) {
+  const el = document.getElementById('anim-box');
+  if (el) el.style.animation = val;
+}
+
+function updateGrad() {
+  const type  = document.getElementById('grad-type').value;
+  const angle = document.getElementById('grad-angle').value;
+  const c1    = document.getElementById('gc1').value;
+  const c2    = document.getElementById('gc2').value;
+  let bg;
+  if (type === 'linear-gradient')      bg = `linear-gradient(${angle}deg, ${c1}, ${c2})`;
+  else if (type === 'radial-gradient') bg = `radial-gradient(circle, ${c1}, ${c2})`;
+  else                                  bg = `conic-gradient(${c1}, ${c2}, ${c1})`;
+  const preview = document.getElementById('grad-preview');
+  if (preview) preview.style.background = bg;
+}
+</script>
+</body>
+</html>
