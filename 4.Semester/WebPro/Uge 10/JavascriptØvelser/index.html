@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit">
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" name="Title">
+        <label for="Body">Body:</label>
+        <input type="text" id="Body" name="Body">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    //EventListener for formen Submit, som kalder addPost
+    document.querySelector('form').addEventListener('submit', addPost);
+
+    //addPost med Async/Await
+    async function addPost(e) {
+        e.preventDefault(); // Sender ikke formen til serveren
+        const title = document.getElementById('Title').value;
+        const body = document.getElementById('Body').value;
+
+        const post = { title, body }; //Objekt med title og body
+
+        try {
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify(post)
+            });
+            const data = await res.json();
+            console.log(data);
+        } catch (err) {
+            // Errorhandling
+            console.error(err);
+        }
+    }
+</script>
+</html>
+
