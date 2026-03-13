@@ -1,0 +1,188 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Advanced
+build_property.RootNamespace = Advanced
+build_property.ProjectDir = C:\DMU\4.Semester\SIK\Uge 11 - Roller\End of Chapter\Advanced\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\DMU\4.Semester\SIK\Uge 11 - Roller\End of Chapter\Advanced
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Bindings.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEJpbmRpbmdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/DepartmentList.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXERlcGFydG1lbnRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Events.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEV2ZW50cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Forms/CustomSelect.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEZvcm1zXEN1c3RvbVNlbGVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Forms/Details.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEZvcm1zXERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Forms/Editor.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEZvcm1zXEVkaXRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Forms/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEZvcm1zXEVtcHR5TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Forms/FormSpy.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEZvcm1zXEZvcm1TcHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Forms/List.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEZvcm1zXExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Forms/ValidButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXEZvcm1zXFZhbGlkQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/MultiNavLink.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXE11bHRpTmF2TGluay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/NavLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXE5hdkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/PeopleList.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXFBlb3BsZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/PersonDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXFBlcnNvbkRpc3BsYXkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Routed.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXFJvdXRlZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/SelectFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXFNlbGVjdEZpbHRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/Split.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXFNwbGl0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/TableTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXFRhYmxlVGVtcGxhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Blazor/ThemeWrapper.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yXFRoZW1lV3JhcHBlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Account/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Account/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Blazor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxhem9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Roles/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcRWRpdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Roles/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Roles/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Users/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Users/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/Users/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DMU/4.Semester/SIK/Uge 11 - Roller/End of Chapter/Advanced/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

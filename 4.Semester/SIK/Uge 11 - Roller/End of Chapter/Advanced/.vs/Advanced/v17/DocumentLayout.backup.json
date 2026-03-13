@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\blazor\\navlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:blazor\\navlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\models\\identityseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:models\\identityseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\blazor\\departmentlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:blazor\\departmentlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\blazor\\peoplelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:blazor\\peoplelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\controllers\\apiaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:controllers\\apiaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\blazor\\persondisplay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:blazor\\persondisplay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|c:\\dmu\\4.semester\\sik\\uge 11 - roller\\end of chapter\\advanced\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC36BF56-5F0D-466D-A8FB-6C1411625338}|Advanced.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentList.razor",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\DepartmentList.razor",
+              "RelativeDocumentMoniker": "Blazor\\DepartmentList.razor",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\DepartmentList.razor",
+              "RelativeToolTip": "Blazor\\DepartmentList.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T09:24:43.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T09:20:14.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataController.cs",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Controllers\\DataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DataController.cs",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Controllers\\DataController.cs",
+              "RelativeToolTip": "Controllers\\DataController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T09:20:23.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiAccountController.cs",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Controllers\\ApiAccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApiAccountController.cs",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Controllers\\ApiAccountController.cs",
+              "RelativeToolTip": "Controllers\\ApiAccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T09:20:38.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PeopleList.razor",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\PeopleList.razor",
+              "RelativeDocumentMoniker": "Blazor\\PeopleList.razor",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\PeopleList.razor",
+              "RelativeToolTip": "Blazor\\PeopleList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T09:35:30.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavLayout.razor",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\NavLayout.razor",
+              "RelativeDocumentMoniker": "Blazor\\NavLayout.razor",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\NavLayout.razor",
+              "RelativeToolTip": "Blazor\\NavLayout.razor",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T09:39:14.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IdentitySeedData.cs",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Models\\IdentitySeedData.cs",
+              "RelativeDocumentMoniker": "Models\\IdentitySeedData.cs",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Models\\IdentitySeedData.cs",
+              "RelativeToolTip": "Models\\IdentitySeedData.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T09:01:38.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Pages\\_Host.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T09:52:53.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PersonDisplay.razor",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\PersonDisplay.razor",
+              "RelativeDocumentMoniker": "Blazor\\PersonDisplay.razor",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Blazor\\PersonDisplay.razor",
+              "RelativeToolTip": "Blazor\\PersonDisplay.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T09:40:39.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T09:35:01.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DMU\\4.Semester\\SIK\\Uge 11 - Roller\\End of Chapter\\Advanced\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T09:35:21.641Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
