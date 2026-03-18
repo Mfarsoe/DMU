@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmer - DocJava Redesign</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hop til hovedindhold</a>
+
+    <header>
+        <div class="container">
+            <h1>DocJava</h1>
+            <p>Algoritmer og problemløsning</p>
+        </div>
+    </header>
+
+    <nav aria-label="Hovedmenu">
+        <div class="container">
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">☰ Menu</button>
+            <ul id="main-menu" class="main-menu">
+                <li><a href="../index.html">Hjem</a></li>
+                <li class="has-submenu">
+                    <a href="../index.html#grundlaeggende" aria-haspopup="true" aria-expanded="false">Grundlæggende</a>
+                    <ul class="submenu" aria-label="Undermenu for Grundlæggende">
+                        <li><a href="algoritmer.html">Algoritmer</a></li>
+                        <li><a href="../index.html#typer">Typer & Selektion</a></li>
+                        <li><a href="../index.html#metoder">Metoder & Rekursion</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#datastrukturer">Datastrukturer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+        <aside class="sidebar">
+            <nav aria-label="Hurtig navigation">
+                <section>
+                    <h3 tabindex="0">Algoritmer Emner</h3>
+                    <ul>
+                        <li><a href="#hvad-er-algoritme">Hvad er en algoritme?</a></li>
+                        <li><a href="#kompleksitet">Tidskompleksitet (Big O)</a></li>
+                        <li><a href="#sortering">Sorteringsalgoritmer</a></li>
+                        <li><a href="#bubble-sort">Bubble Sort</a></li>
+                        <li><a href="#soegning">Søgealgoritmer</a></li>
+                        <li><a href="#rekursion">Rekursion</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </aside>
+
+        <div class="content">
+            <article id="hvad-er-algoritme">
+                <header>
+                    <h2 tabindex="0">Hvad er en algoritme?</h2>
+                </header>
+                <p>En algoritme er en præcis opskrift på, hvordan en opgave skal løses.</p>
+                <p><a href="#">Se mere om algoritme-teori</a>.</p>
+            </article>
+
+            <article id="kompleksitet">
+                <h2 tabindex="0">Tidskompleksitet (Big O)</h2>
+                <ul>
+                    <li tabindex="0"><strong>O(1):</strong> Konstant tid.</li>
+                    <li tabindex="0"><strong>O(n):</strong> Lineær tid.</li>
+                    <li tabindex="0"><strong>O(n²):</strong> Kvadrastisk tid.</li>
+                </ul>
+            </article>
+
+            <article id="sortering">
+                <h2 tabindex="0">Sorteringsalgoritmer</h2>
+                <section id="bubble-sort">
+                    <h3 tabindex="0">Bubble Sort</h3>
+                    <figure>
+                        <pre><code>
+public void bubbleSort(int[] arr) {
+    // ... kode ...
+}
+                        </code></pre>
+                        <figcaption>Figur 1: Bubble Sort implementering.</figcaption>
+                    </figure>
+                </section>
+            </article>
+
+            <article id="soegning">
+                <h2 tabindex="0">Søgealgoritmer</h2>
+                <details>
+                    <summary>Hvordan virker binær søgning?</summary>
+                    <p>Man halverer søgefeltet hver gang!</p>
+                </details>
+            </article>
+
+            <article id="rekursion">
+                <h2 tabindex="0">Rekursion</h2>
+                <p>En teknik, hvor en metode kalder sig selv.</p>
+                <a href="#">Find øvelser i rekursion her</a>.
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav aria-label="Sekundær navigation">
+                <ul>
+                    <li><a href="#main-content">Til toppen</a></li>
+                    <li><a href="../index.html">Hjem</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 DocJava Redesign</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

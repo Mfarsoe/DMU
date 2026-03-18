@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUS Spørgeskema - DocJava</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Intro Side -->
+        <div id="intro-container">
+            <header>
+                <h1>Velkommen til Usability Test</h1>
+                <p>Vi undersøger tastaturnavigationen på redesign af <strong>DocJava</strong>.</p>
+            </header>
+            
+            <div class="instructions">
+                <h2>Inden du starter:</h2>
+                <ol>
+                    <li>Gå til <a href="http://mfarsoe.dk/docjava" target="_blank" rel="noopener">Redesign af DocJava</a> (åbner i nyt vindue).</li>
+                    <li>Prøv at navigere rundt på siden i et par minutter ved <strong>udelukkende</strong> at bruge dit tastatur (brug Tab, Enter, Pile-taster osv.).</li>
+                    <li>Når du har afprøvet siden, skal du vende tilbage her og udfylde spørgeskemaet.</li>
+                </ol>
+            </div>
+
+            <div class="actions">
+                <button id="start-btn">Jeg har testet siden - Start spørgeskema</button>
+            </div>
+        </div>
+
+        <!-- Spørgeskema Side (Skjult som standard) -->
+        <div id="survey-container" class="hidden">
+            <header>
+                <h1>SUS Spørgeskema</h1>
+                <p>Vurder din oplevelse med tastaturnavigation på DocJava.</p>
+            </header>
+
+            <form id="sus-form">
+                <div id="questions-container">
+                    <!-- Spørgsmål indsættes her via JavaScript -->
+                </div>
+                
+                <div class="actions">
+                    <button type="submit" id="submit-btn">Beregn SUS Score</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Resultat Side -->
+        <div id="result-container" class="hidden">
+            <h2>Dit Resultat</h2>
+            <div class="score-display">
+                <span id="sus-score">0</span>
+                <span class="max-score">/ 100</span>
+            </div>
+            <p id="score-interpretation"></p>
+            <button id="reset-btn">Tag testen igen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

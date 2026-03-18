@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocJava Redesign - Lær Java Programmering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hop til hovedindhold</a>
+
+    <header>
+        <div class="container">
+            <h1>DocJava</h1>
+            <p>Din guide til Java programmering og datastrukturer</p>
+        </div>
+    </header>
+
+    <nav aria-label="Hovedmenu">
+        <div class="container">
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">☰ Menu</button>
+            <ul id="main-menu" class="main-menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li class="has-submenu">
+                    <a href="#grundlaeggende" aria-haspopup="true" aria-expanded="false">Grundlæggende</a>
+                    <ul class="submenu" aria-label="Undermenu for Grundlæggende">
+                        <li><a href="grundlaeggende/algoritmer.html">Algoritmer</a></li>
+                        <li><a href="#typer">Typer & Selektion</a></li>
+                        <li><a href="#metoder">Metoder & Rekursion</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#oop" aria-haspopup="true" aria-expanded="false">OOP</a>
+                    <ul class="submenu" aria-label="Undermenu for OOP">
+                        <li><a href="#klasser">Klasser & Objekter</a></li>
+                        <li><a href="#nedarvning">Nedarvning</a></li>
+                        <li><a href="#polymorfi">Polymorfi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#patterns">Design Patterns</a></li>
+                <li><a href="#datastrukturer">Datastrukturer</a></li>
+                <li class="has-submenu">
+                    <a href="#mere" aria-haspopup="true" aria-expanded="false">Mere</a>
+                    <ul class="submenu" aria-label="Undermenu for Mere">
+                        <li><a href="#java-specielt">Java Specielt</a></li>
+                        <li><a href="#test">Test (JUnit)</a></li>
+                        <li><a href="#databaser">Databaser (SQL)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#netvaerk">Netværk & Tråde</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+        <!-- Vi beholder Sidebar først i DOM, da den fungerer som indholdsfortegnelse -->
+        <aside class="sidebar">
+            <nav aria-label="Hurtig navigation">
+                <section>
+                    <h3 tabindex="0">Hurtig oversigt</h3>
+                    <ul>
+                        <li><a href="#java-intro">Hvad er Java?</a></li>
+                        <li><a href="#setup">Installation & Miljø</a></li>
+                        <li><a href="#ide">Valg af IDE</a></li>
+                        <li><a href="#first-program">Dit første program</a></li>
+                        <li><a href="#variabler">Variabler & Typer</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </aside>
+
+        <div class="content">
+            <article id="java-intro">
+                <header>
+                    <h2 tabindex="0">Velkommen til DocJava</h2>
+                </header>
+                
+                <p>Dette er et redesign af DocJava.dk, skabt med fokus på semantisk HTML og moderne webstandarder. Siden er optimeret til undervisning i Java-programmering.</p>
+                
+                <section>
+                    <h3 tabindex="0">Hvorfor lære Java?</h3>
+                    <p>Java er et af verdens mest populære programmeringssprog. Det er platformsuafhængigt (<mark>Write Once, Run Anywhere</mark>), objektorienteret og har et kæmpe økosystem af biblioteker.</p>
+                </section>
+            </article>
+
+            <article id="setup">
+                <h2 tabindex="0">Installation & Miljø</h2>
+                <p>For at komme i gang med Java skal du installere et Java Development Kit (JDK).</p>
+                
+                <section>
+                    <h3 tabindex="0">JDK vs JRE</h3>
+                    <ul>
+                        <li><strong>JRE (Java Runtime Environment):</strong> Bruges kun til at køre Java-programmer.</li>
+                        <li><strong>JDK (Java Development Kit):</strong> Bruges til at udvikle og køre Java-programmer.</li>
+                    </ul>
+                </section>
+            </article>
+
+            <article id="ide">
+                <h2 tabindex="0">Valg af IDE</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h4>IntelliJ IDEA</h4>
+                        <p>Betragtes ofte som det bedste valg. <a href="#">Læs mere her</a>.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Eclipse</h4>
+                        <p>Klassisk open-source IDE. <a href="#">Læs mere her</a>.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="first-program">
+                <h2 tabindex="0">Dit første program</h2>
+                <section>
+                    <h3 tabindex="0">Eksempel: "Hello World"</h3>
+                    <figure>
+                        <pre><code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Velkommen til DocJava!");
+    }
+}
+                        </code></pre>
+                        <figcaption>Figur 1: Et simpelt Java program.</figcaption>
+                    </figure>
+                </section>
+            </article>
+
+            <article id="variabler">
+                <h2 tabindex="0">Variabler & Datatyper</h2>
+                <section>
+                    <h3 tabindex="0">Ofte stillede spørgsmål</h3>
+                    <details>
+                        <summary>Er Java det samme som JavaScript?</summary>
+                        <p>Nej, det er to vidt forskellige sprog.</p>
+                    </details>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav aria-label="Sekundær navigation">
+                <ul>
+                    <li><a href="#main-content">Til toppen</a></li>
+                    <li><a href="https://docjava.dk" target="_blank" rel="noopener">Original DocJava.dk</a></li>
+                    <li><a href="#">Privatliv og vilkår</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 DocJava Redesign - Skabt til undervisningsbrug.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

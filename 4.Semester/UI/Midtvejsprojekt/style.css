@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.question-block {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.question-block:hover {
+    border-color: var(--primary-color);
+}
+
+.question-text {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.likert-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.likert-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.likert-option:hover {
+    background-color: #f1f5f9;
+}
+
+.likert-option input {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.likert-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    padding: 0 5px;
+}
+
+.instructions {
+    background-color: #f1f5f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.instructions h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.instructions ol {
+    padding-left: 1.5rem;
+}
+
+.instructions li {
+    margin-bottom: 1rem;
+}
+
+.instructions a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.instructions a:hover {
+    border-color: var(--primary-color);
+}
+
+#start-btn {
+    width: auto;
+    max-width: none;
+    padding: 1.2rem 2rem;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    width: 100%;
+    max-width: 300px;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+#reset-btn {
+    margin-top: 1rem;
+    background-color: #64748b;
+    box-shadow: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-container {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.score-display {
+    font-size: clamp(3rem, 15vw, 5rem);
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.max-score {
+    font-size: 1.5rem;
+    color: #94a3b8;
+}
+
+#score-interpretation {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    .container {
+        padding: 1.5rem 1rem;
+        border-radius: 0;
+    }
+
+    .question-block {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .likert-scale {
+        background: #f8fafc;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .likert-option {
+        padding: 12px 8px;
+    }
+
+    .likert-option span {
+        font-weight: 600;
+    }
+}
