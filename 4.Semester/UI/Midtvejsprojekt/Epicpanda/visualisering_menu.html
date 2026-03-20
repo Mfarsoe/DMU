@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Konsol Menu - Visualisering</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1d;
+            --panel-bg: #242427;
+            --text-color: #c9c9c9;
+            --primary: #2c3e50;
+            --accent: #9b59b6;
+            --secondary: #3498db;
+            --white: #fff;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* CRT Scanline Effekt */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+            z-index: 2000;
+            background-size: 100% 3px, 3px 100%;
+            pointer-events: none;
+        }
+
+        header {
+            background-color: #000;
+            color: var(--white);
+            padding: 1rem 2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+            box-shadow: var(--shadow);
+        }
+
+        /* Navigationsmenu */
+        nav {
+            background: #000;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--secondary);
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-nav {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 1.2rem 1.5rem;
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .nav-link:hover {
+            background: #111;
+            color: var(--secondary);
+        }
+
+        /* Dropdown/Submenu */
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #000;
+            min-width: 200px;
+            box-shadow: var(--shadow);
+            display: none;
+            list-style: none;
+            border: 2px solid var(--accent);
+        }
+
+        .nav-item:hover .submenu {
+            display: block;
+        }
+
+        .submenu-link {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            text-decoration: none;
+            color: var(--white);
+            border-bottom: 1px solid #222;
+            transition: background 0.2s;
+        }
+
+        .submenu-link:hover {
+            background: var(--accent);
+            color: var(--white);
+            padding-left: 1.5rem;
+        }
+
+        /* Indhold */
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--panel-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid #333;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        h2 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .category-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .category-group h3 {
+            font-size: 1.1rem;
+            color: #aaa;
+            margin-bottom: 0.5rem;
+        }
+
+        .console-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .console-tag {
+            background: #333;
+            color: var(--secondary);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #444;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Epicpanda Retro-Shop</h1>
+</header>
+
+<nav>
+    <div class="menu-container">
+        <ul class="main-nav">
+            <li class="nav-item"><a href="#" class="nav-link" data-target="welcome">Forside</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="nintendo">Nintendo</a>
+                <ul class="submenu">
+                    <li><a href="#" class="submenu-link" data-target="nintendo-handheld">Håndholdte</a></li>
+                    <li><a href="#" class="submenu-link" data-target="nintendo-static">Stationære</a></li>
+                    <li><a href="#" class="submenu-link" data-target="nintendo-hybrid">Hybrid</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="playstation">PlayStation</a>
+                <ul class="submenu">
+                    <li><a href="#" class="submenu-link" data-target="ps-handheld">Håndholdte</a></li>
+                    <li><a href="#" class="submenu-link" data-target="ps-static">Stationære</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link" data-target="xbox">Xbox</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="sega">Sega</a>
+                <ul class="submenu">
+                    <li><a href="#" class="submenu-link" data-target="sega-static">Stationære</a></li>
+                    <li><a href="#" class="submenu-link" data-target="sega-handheld">Håndholdte</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link" data-target="atari">Atari</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-target="andet">Andet</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main id="content-area">
+    <div class="breadcrumb" id="breadcrumb">Vælg en kategori fra menuen</div>
+
+    <!-- Forside -->
+    <div id="welcome" class="content-section active">
+        <h2>Velkommen til Epicpanda</h2>
+        <p>Brug menuen ovenfor til at navigere mellem de forskellige konsol-generationer.</p>
+    </div>
+
+    <!-- Nintendo -->
+    <div id="nintendo" class="content-section">
+        <h2>Nintendo Oversigt</h2>
+        <p>Udforsk Nintendos rige historie fra de tidligste Gameboys til de nyeste hybrid-konsoller.</p>
+    </div>
+
+    <div id="nintendo-handheld" class="content-section">
+        <h2>Nintendo - Håndholdte</h2>
+        <div class="console-list">
+            <span class="console-tag">Gameboy</span>
+            <span class="console-tag">Gameboy Color</span>
+            <span class="console-tag">Gameboy Advance</span>
+            <span class="console-tag">Nintendo DS</span>
+            <span class="console-tag">Nintendo 3DS</span>
+        </div>
+    </div>
+
+    <div id="nintendo-static" class="content-section">
+        <h2>Nintendo - Stationære</h2>
+        <div class="console-list">
+            <span class="console-tag">NES</span>
+            <span class="console-tag">Nintendo 64</span>
+            <span class="console-tag">GameCube</span>
+            <span class="console-tag">Wii</span>
+        </div>
+    </div>
+
+    <div id="nintendo-hybrid" class="content-section">
+        <h2>Nintendo - Hybrid</h2>
+        <div class="console-list">
+            <span class="console-tag">Wii U</span>
+            <span class="console-tag">Switch</span>
+            <span class="console-tag">Switch 2</span>
+        </div>
+    </div>
+
+    <!-- PlayStation -->
+    <div id="playstation" class="content-section">
+        <h2>PlayStation Oversigt</h2>
+        <p>Fra Sony's indtog på markedet med PS1 til den kraftfulde PS5.</p>
+    </div>
+
+    <div id="ps-handheld" class="content-section">
+        <h2>PlayStation - Håndholdte</h2>
+        <div class="console-list">
+            <span class="console-tag">PSP</span>
+            <span class="console-tag">PS Vita</span>
+        </div>
+    </div>
+
+    <div id="ps-static" class="content-section">
+        <h2>PlayStation - Stationære</h2>
+        <div class="console-list">
+            <span class="console-tag">PS1</span>
+            <span class="console-tag">PS2</span>
+            <span class="console-tag">PS3</span>
+            <span class="console-tag">PS4</span>
+            <span class="console-tag">PS5</span>
+        </div>
+    </div>
+
+    <!-- Xbox -->
+    <div id="xbox" class="content-section">
+        <h2>Xbox</h2>
+        <div class="console-list">
+            <span class="console-tag">Original Xbox</span>
+            <span class="console-tag">Xbox 360</span>
+            <span class="console-tag">Xbox One</span>
+            <span class="console-tag">Xbox Series X</span>
+        </div>
+    </div>
+
+    <!-- Sega -->
+    <div id="sega" class="content-section">
+        <h2>Sega Oversigt</h2>
+        <p>De legendariske arkade-mestre og deres hjemmekonsoller.</p>
+    </div>
+
+    <div id="sega-static" class="content-section">
+        <h2>Sega - Stationære</h2>
+        <div class="console-list">
+            <span class="console-tag">Master System</span>
+            <span class="console-tag">Mega Drive</span>
+            <span class="console-tag">Saturn</span>
+            <span class="console-tag">Dreamcast</span>
+        </div>
+    </div>
+
+    <div id="sega-handheld" class="content-section">
+        <h2>Sega - Håndholdte</h2>
+        <div class="console-list">
+            <span class="console-tag">Game Gear</span>
+        </div>
+    </div>
+
+    <!-- Atari -->
+    <div id="atari" class="content-section">
+        <h2>Atari</h2>
+        <p>Pionererne inden for hjemme-gaming.</p>
+        <div class="console-list">
+            <span class="console-tag">Atari 2600</span>
+            <span class="console-tag">Atari 5200</span>
+            <span class="console-tag">Atari 7800</span>
+            <span class="console-tag">Atari Jaguar</span>
+        </div>
+    </div>
+
+    <!-- Andet -->
+    <div id="andet" class="content-section">
+        <h2>Andet</h2>
+        <div class="category-group">
+            <h3>Retro & Obscurity</h3>
+            <div class="console-list">
+                <span class="console-tag">Bip-Bip / Pong</span>
+                <span class="console-tag">Diverse Kloner</span>
+                <span class="console-tag">Obskure Maskiner</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('.nav-link, .submenu-link');
+        const sections = document.querySelectorAll('.content-section');
+        const breadcrumb = document.getElementById('breadcrumb');
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    // Skift aktiv sektion
+                    sections.forEach(s => s.classList.remove('active'));
+                    targetSection.classList.add('active');
+
+                    // Opdater breadcrumb
+                    let path = link.textContent;
+                    const parentMenu = link.closest('.nav-item')?.querySelector('.nav-link');
+                    if (parentMenu && parentMenu !== link) {
+                        path = `${parentMenu.textContent} > ${path}`;
+                    }
+                    breadcrumb.textContent = `Du er her: ${path}`;
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
