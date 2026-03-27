@@ -12,7 +12,7 @@ const rl = readline.createInterface({
 rl.question('Enter a password to hash: ', (password) => {
     //hash the password
     console.time('Hashing time');
-    bcrypt.hash(password, 12, (err, hash) => {
+    bcrypt.hash(password, 14, (err, hash) => {
         if (err) {
             console.error('Error hashing password:', err);
             return;

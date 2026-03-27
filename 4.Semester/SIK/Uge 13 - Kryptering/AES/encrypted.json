@@ -1,0 +1,7 @@
+{
+  "algorithm": "aes-256-gcm",
+  "ciphertext": "f68bc849b415dd92640798",
+  "iv": "eee5ea6722dd36dd64127ce6",
+  "tag": "6e7add25ad3e53a7545067606b20092b",
+  "key": "74a06a43904108abe2fde75044a0a1571355a4ef4bf2793274112ab5ab6027a3"
+}
