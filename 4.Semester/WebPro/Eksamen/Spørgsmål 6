@@ -1,0 +1,59 @@
+//Fetch Get - Spørgsmål 1
+fetch("https://api.example.com/users")
+  .then(response => response.json())
+  .then(users => {
+    console.log(users);
+  })
+  .catch(error => {
+    console.log("Fejl:", error);
+  });
+
+  //Fetch Post - Spørgsmål 2
+  fetch("https://api.example.com/users", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: "Anna",
+    email: "anna@example.com"
+  })
+})
+.then(response => response.json())
+.then(data => {
+  console.log("Ny bruger oprettet:", data);
+})
+.catch(error => {
+  console.log("Fejl:", error);
+});
+
+//React Komponent- Spørgsmål 3
+import { useState } from "react";
+
+function Counter({ startValue, title }) {
+  const [count, setCount] = useState(startValue);
+
+  return (
+    <div>
+      <h2>{title}</h2>
+      <p>Antal klik: {count}</p>
+
+      <button onClick={() => setCount(count + 1)}>
+        Klik mig
+      </button>
+
+      <button onClick={() => setCount(count - 1)}>
+        Træk fra
+      </button>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <div>
+      <Counter title="Min tæller" startValue={0} />
+      <Counter title="En anden tæller" startValue={10} />
+    </div>
+  );
+}
